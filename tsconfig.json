@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2022",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "noErrorTruncation": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "types": ["node", "react"],
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "lib": [ "dom", "dom.iterable","esnext"],
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "src/*": ["src/*"],
+      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
+    }
+  },
+  "include": [ "**/*.ts",  "**/*.tsx", ".eslintrc.cjs", "prettier.config.mjs"],
+  "exclude": ["node_modules", "**/*/*.d.ts"]
+}
