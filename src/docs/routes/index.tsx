@@ -95,6 +95,10 @@ export function Router() {
                   >
                     Kimi UI
                   </Typography>
+
+                  <Typography variant="caption" sx={{ ml: 1, color: 'text.secondary' }}>
+                    v0.0.6
+                  </Typography>
                 </Stack>
               ),
               bottom: null,
