@@ -88,7 +88,7 @@ module.exports = {
           'object',
           'unknown',
         ],
-        'internal-pattern': ['src/**', 'routes/**'],
+        'internal-pattern': ['src/**', 'lib/**', 'routes/**'],
       },
     ],
     'import/extensions': [

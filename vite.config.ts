@@ -9,10 +9,10 @@ const PORT = 8080;
 // https://vite.dev/config/
 export default defineConfig({
   build: {
+    copyPublicDir: false,
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      formats: ['es', 'cjs'],
-      fileName: (format) => (format === 'cjs' ? 'index.cjs.js' : 'index.esm.js'),
+      entry: path.resolve(__dirname, 'lib/main.ts'),
+      formats: ['es'],
     },
     rollupOptions: {
       output: {
@@ -32,11 +32,11 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    dts(),
+    dts({ include: 'lib' }),
     checker({
       typescript: true,
       eslint: {
-        lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"',
+        lintCommand: 'eslint "./**/*.{js,jsx,ts,tsx}"',
       },
       overlay: {
         position: 'tl',
@@ -48,6 +48,7 @@ export default defineConfig({
     alias: {
       '@mui/styled-engine': '@mui/styled-engine-sc',
       src: path.resolve(__dirname, './src'),
+      lib: path.resolve(__dirname, './lib'),
     },
   },
   server: { port: PORT, host: true, fs: { allow: ['..'] } },

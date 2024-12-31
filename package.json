@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "TypeScript",
   "private": false,
   "license": "MIT",
@@ -23,12 +23,12 @@
     "prepublishOnly": "npm run build"
   },
   "exports": {
-    "import": "./dist/index.js",
-    "require": "./dist/index.cjs"
+    "./locales": "./dist/locales/index.js",
+    "./components": "./dist/components/index.js",
+    "./hooks": "./dist/hooks/index.js",
+    "./utils": "./dist/utils/index.js",
+    "./theme": "./dist/theme/index.js"
   },
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
     "@dnd-kit/sortable": "^8.0.0",
