@@ -1,9 +1,10 @@
 import Switch from '@mui/material/Switch';
 import FormGroup from '@mui/material/FormGroup';
-import { paths } from 'kimi-theme/routes/paths';
 import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

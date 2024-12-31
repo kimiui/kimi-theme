@@ -2,10 +2,11 @@
 
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
-import { paths } from 'kimi-theme/routes/paths';
 import AlertTitle from '@mui/material/AlertTitle';
 import { varAlpha } from 'kimi-theme/theme/styles';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

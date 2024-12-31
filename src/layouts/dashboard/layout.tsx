@@ -27,7 +27,6 @@ import { NavHorizontal } from './nav-horizontal';
 import { NavHelper } from '../components/nav-helper';
 import { _workspaces } from '../config-nav-workspace';
 import { LayoutSection } from '../core/layout-section';
-import { navData as dashboardNavData } from '../config-nav-dashboard';
 
 // ----------------------------------------------------------------------
 
@@ -65,7 +64,7 @@ export function DashboardLayout({ sx, children, data, slotProps }: Readonly<Dash
 
   const layoutQuery: Breakpoint = 'lg';
 
-  const navData = data?.nav ?? dashboardNavData;
+  const navData = data?.nav ?? [];
 
   const isNavMini = settings.navLayout === 'mini';
 

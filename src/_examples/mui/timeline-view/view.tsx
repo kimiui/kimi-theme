@@ -3,7 +3,6 @@
 import Paper from '@mui/material/Paper';
 import Timeline from '@mui/lab/Timeline';
 import TimelineDot from '@mui/lab/TimelineDot';
-import { paths } from 'kimi-theme/routes/paths';
 import TimelineItem from '@mui/lab/TimelineItem';
 import Typography from '@mui/material/Typography';
 import { varAlpha } from 'kimi-theme/theme/styles';
@@ -13,6 +12,8 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

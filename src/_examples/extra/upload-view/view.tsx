@@ -4,13 +4,14 @@ import { useBoolean } from 'ahooks';
 import Stack from '@mui/material/Stack';
 import Switch from '@mui/material/Switch';
 import { useState, useCallback } from 'react';
-import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import { fData } from 'kimi-theme/utils/format-number';
 import { Iconify } from 'kimi-theme/components/iconify';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 import { Upload, UploadBox, UploadAvatar } from 'kimi-theme/components/upload';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ScrollToViewTemplate } from '../../component-template';

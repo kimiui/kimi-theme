@@ -3,9 +3,10 @@
 import type { ToastT } from 'kimi-theme/components/snackbar';
 
 import Button from '@mui/material/Button';
-import { paths } from 'kimi-theme/routes/paths';
 import { toast } from 'kimi-theme/components/snackbar';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

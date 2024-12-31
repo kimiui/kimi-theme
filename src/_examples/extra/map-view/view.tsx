@@ -1,10 +1,11 @@
 'use client';
 
 import { styled } from '@mui/material/styles';
-import { paths } from 'kimi-theme/routes/paths';
 import { cities as CITIES } from 'kimi-theme/_mock/_map/cities';
 import { countries as COUNTRIES } from 'kimi-theme/_mock/_map/countries';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { MapHeatmap } from './heatmap';
 import { MapClusters } from './clusters';

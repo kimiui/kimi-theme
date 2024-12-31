@@ -3,12 +3,13 @@
 import { useState } from 'react';
 import { _mock } from 'kimi-theme/_mock';
 import Accordion from '@mui/material/Accordion';
-import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import { Iconify } from 'kimi-theme/components/iconify';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

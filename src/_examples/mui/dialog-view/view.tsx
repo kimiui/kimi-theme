@@ -1,7 +1,8 @@
 'use client';
 
-import { paths } from 'kimi-theme/routes/paths';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { FormDialog } from './form-dialog';
 import { AlertDialog } from './alert-dialog';

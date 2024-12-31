@@ -8,86 +8,72 @@ import { DashboardLayout } from 'kimi-theme/layouts/dashboard';
 
 import { navData as docsNavData } from './config-nav-docs';
 
-const IntroductionPage = lazy(() => import('kimi-theme/pages/docs/introduction/page'));
-const GettingStartedPage = lazy(() => import('kimi-theme/pages/docs/getting-started/page'));
+const IntroductionPage = lazy(() => import('../pages/introduction/page'));
+const GettingStartedPage = lazy(() => import('../pages/getting-started/page'));
 
-const ComponentsPage = lazy(() => import('kimi-theme/pages/docs/components/page'));
+const ComponentsPage = lazy(() => import('../pages/components/page'));
 
 // FOUNDATION
-const ColorsPage = lazy(() => import('kimi-theme/pages/docs/foundation/colors/page'));
-const GridPage = lazy(() => import('kimi-theme/pages/docs/foundation/grid/page'));
-const IconsPage = lazy(() => import('kimi-theme/pages/docs/foundation/icons/page'));
-const ShadowsPage = lazy(() => import('kimi-theme/pages/docs/foundation/shadows/page'));
-const TypographyPage = lazy(() => import('kimi-theme/pages/docs/foundation/typography/page'));
+const ColorsPage = lazy(() => import('../pages/foundation/colors/page'));
+const GridPage = lazy(() => import('../pages/foundation/grid/page'));
+const IconsPage = lazy(() => import('../pages/foundation/icons/page'));
+const ShadowsPage = lazy(() => import('../pages/foundation/shadows/page'));
+const TypographyPage = lazy(() => import('../pages/foundation/typography/page'));
 
 // MUI
-const AccordionPage = lazy(() => import('kimi-theme/pages/docs/components/mui/accordion/page'));
-const AlertPage = lazy(() => import('kimi-theme/pages/docs/components/mui/alert/page'));
-const AutocompletePage = lazy(
-  () => import('kimi-theme/pages/docs/components/mui/autocomplete/page')
-);
-const AvatarPage = lazy(() => import('kimi-theme/pages/docs/components/mui/avatar/page'));
-const BadgePage = lazy(() => import('kimi-theme/pages/docs/components/mui/badge/page'));
-const BreadcrumbsPage = lazy(() => import('kimi-theme/pages/docs/components/mui/breadcrumbs/page'));
-const ButtonsPage = lazy(() => import('kimi-theme/pages/docs/components/mui/buttons/page'));
-const CheckboxPage = lazy(() => import('kimi-theme/pages/docs/components/mui/checkbox/page'));
-const ChipPage = lazy(() => import('kimi-theme/pages/docs/components/mui/chip/page'));
-const DataGridPage = lazy(() => import('kimi-theme/pages/docs/components/mui/data-grid/page'));
-const DialogPage = lazy(() => import('kimi-theme/pages/docs/components/mui/dialog/page'));
-const ListPage = lazy(() => import('kimi-theme/pages/docs/components/mui/list/page'));
-const MenuPage = lazy(() => import('kimi-theme/pages/docs/components/mui/menu/page'));
-const PaginationPage = lazy(() => import('kimi-theme/pages/docs/components/mui/pagination/page'));
-const PickersPage = lazy(() => import('kimi-theme/pages/docs/components/mui/pickers/page'));
-const PopoverPage = lazy(() => import('kimi-theme/pages/docs/components/mui/popover/page'));
-const ProgressPage = lazy(() => import('kimi-theme/pages/docs/components/mui/progress/page'));
-const RadioButtonsPage = lazy(
-  () => import('kimi-theme/pages/docs/components/mui/radio-button/page')
-);
-const RatingPage = lazy(() => import('kimi-theme/pages/docs/components/mui/rating/page'));
-const SliderPage = lazy(() => import('kimi-theme/pages/docs/components/mui/slider/page'));
-const SwitchPage = lazy(() => import('kimi-theme/pages/docs/components/mui/switch/page'));
-const TablePage = lazy(() => import('kimi-theme/pages/docs/components/mui/table/page'));
-const TabsPage = lazy(() => import('kimi-theme/pages/docs/components/mui/tabs/page'));
-const TextFieldPage = lazy(() => import('kimi-theme/pages/docs/components/mui/textfield/page'));
-const TimelinePage = lazy(() => import('kimi-theme/pages/docs/components/mui/timeline/page'));
-const TooltipPage = lazy(() => import('kimi-theme/pages/docs/components/mui/tooltip/page'));
-const TransferList = lazy(() => import('kimi-theme/pages/docs/components/mui/transfer-list/page'));
-const TreeViewPage = lazy(() => import('kimi-theme/pages/docs/components/mui/tree-view/page'));
+const AccordionPage = lazy(() => import('../pages/components/mui/accordion/page'));
+const AlertPage = lazy(() => import('../pages/components/mui/alert/page'));
+const AutocompletePage = lazy(() => import('../pages/components/mui/autocomplete/page'));
+const AvatarPage = lazy(() => import('../pages/components/mui/avatar/page'));
+const BadgePage = lazy(() => import('../pages/components/mui/badge/page'));
+const BreadcrumbsPage = lazy(() => import('../pages/components/mui/breadcrumbs/page'));
+const ButtonsPage = lazy(() => import('../pages/components/mui/buttons/page'));
+const CheckboxPage = lazy(() => import('../pages/components/mui/checkbox/page'));
+const ChipPage = lazy(() => import('../pages/components/mui/chip/page'));
+const DataGridPage = lazy(() => import('../pages/components/mui/data-grid/page'));
+const DialogPage = lazy(() => import('../pages/components/mui/dialog/page'));
+const ListPage = lazy(() => import('../pages/components/mui/list/page'));
+const MenuPage = lazy(() => import('../pages/components/mui/menu/page'));
+const PaginationPage = lazy(() => import('../pages/components/mui/pagination/page'));
+const PickersPage = lazy(() => import('../pages/components/mui/pickers/page'));
+const PopoverPage = lazy(() => import('../pages/components/mui/popover/page'));
+const ProgressPage = lazy(() => import('../pages/components/mui/progress/page'));
+const RadioButtonsPage = lazy(() => import('../pages/components/mui/radio-button/page'));
+const RatingPage = lazy(() => import('../pages/components/mui/rating/page'));
+const SliderPage = lazy(() => import('../pages/components/mui/slider/page'));
+const SwitchPage = lazy(() => import('../pages/components/mui/switch/page'));
+const TablePage = lazy(() => import('../pages/components/mui/table/page'));
+const TabsPage = lazy(() => import('../pages/components/mui/tabs/page'));
+const TextFieldPage = lazy(() => import('../pages/components/mui/textfield/page'));
+const TimelinePage = lazy(() => import('../pages/components/mui/timeline/page'));
+const TooltipPage = lazy(() => import('../pages/components/mui/tooltip/page'));
+const TransferList = lazy(() => import('../pages/components/mui/transfer-list/page'));
+const TreeViewPage = lazy(() => import('../pages/components/mui/tree-view/page'));
 
 // EXTRA
-const AnimatePage = lazy(() => import('kimi-theme/pages/docs/components/extra/animate/page'));
-const CarouselPage = lazy(() => import('kimi-theme/pages/docs/components/extra/carousel/page'));
-const ChartPage = lazy(() => import('kimi-theme/pages/docs/components/extra/chart/page'));
-const DndPage = lazy(() => import('kimi-theme/pages/docs/components/extra/dnd/page'));
-const EditorPage = lazy(() => import('kimi-theme/pages/docs/components/extra/editor/page'));
-const FormValidationPage = lazy(
-  () => import('kimi-theme/pages/docs/components/extra/form-validation/page')
-);
-const FormWizardPage = lazy(
-  () => import('kimi-theme/pages/docs/components/extra/form-wizard/page')
-);
-const ImagePage = lazy(() => import('kimi-theme/pages/docs/components/extra/image/page'));
-const LabelPage = lazy(() => import('kimi-theme/pages/docs/components/extra/label/page'));
-const LightboxPage = lazy(() => import('kimi-theme/pages/docs/components/extra/lightbox/page'));
-const MapPage = lazy(() => import('kimi-theme/pages/docs/components/extra/map/page'));
-const MarkdownPage = lazy(() => import('kimi-theme/pages/docs/components/extra/markdown/page'));
-const MegaMenuPage = lazy(() => import('kimi-theme/pages/docs/components/extra/mega-menu/page'));
-const MultiLanguagePage = lazy(
-  () => import('kimi-theme/pages/docs/components/extra/multi-language/page')
-);
-const NavigationBarPage = lazy(
-  () => import('kimi-theme/pages/docs/components/extra/navigation-bar/page')
-);
+const AnimatePage = lazy(() => import('../pages/components/extra/animate/page'));
+const CarouselPage = lazy(() => import('../pages/components/extra/carousel/page'));
+const ChartPage = lazy(() => import('../pages/components/extra/chart/page'));
+const DndPage = lazy(() => import('../pages/components/extra/dnd/page'));
+const EditorPage = lazy(() => import('../pages/components/extra/editor/page'));
+const FormValidationPage = lazy(() => import('../pages/components/extra/form-validation/page'));
+const FormWizardPage = lazy(() => import('../pages/components/extra/form-wizard/page'));
+const ImagePage = lazy(() => import('../pages/components/extra/image/page'));
+const LabelPage = lazy(() => import('../pages/components/extra/label/page'));
+const LightboxPage = lazy(() => import('../pages/components/extra/lightbox/page'));
+const MapPage = lazy(() => import('../pages/components/extra/map/page'));
+const MarkdownPage = lazy(() => import('../pages/components/extra/markdown/page'));
+const MegaMenuPage = lazy(() => import('../pages/components/extra/mega-menu/page'));
+const MultiLanguagePage = lazy(() => import('../pages/components/extra/multi-language/page'));
+const NavigationBarPage = lazy(() => import('../pages/components/extra/navigation-bar/page'));
 const OrganizationChartPage = lazy(
-  () => import('kimi-theme/pages/docs/components/extra/organization-chart/page')
+  () => import('../pages/components/extra/organization-chart/page')
 );
-const ScrollPage = lazy(() => import('kimi-theme/pages/docs/components/extra/scroll/page'));
-const ScrollProgressPage = lazy(
-  () => import('kimi-theme/pages/docs/components/extra/scroll-progress/page')
-);
-const SnackbarPage = lazy(() => import('kimi-theme/pages/docs/components/extra/snackbar/page'));
-const UploadPage = lazy(() => import('kimi-theme/pages/docs/components/extra/upload/page'));
-const UtilitiesPage = lazy(() => import('kimi-theme/pages/docs/components/extra/utilities/page'));
+const ScrollPage = lazy(() => import('../pages/components/extra/scroll/page'));
+const ScrollProgressPage = lazy(() => import('../pages/components/extra/scroll-progress/page'));
+const SnackbarPage = lazy(() => import('../pages/components/extra/snackbar/page'));
+const UploadPage = lazy(() => import('../pages/components/extra/upload/page'));
+const UtilitiesPage = lazy(() => import('../pages/components/extra/utilities/page'));
 // ----------------------------------------------------------------------
 
 export function Router() {

@@ -3,10 +3,11 @@
 import { useState } from 'react';
 import Switch from '@mui/material/Switch';
 import Divider from '@mui/material/Divider';
-import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ReactHookForm } from './react-hook-form';
 import { ComponentHero } from '../../component-hero';

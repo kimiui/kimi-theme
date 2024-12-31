@@ -1,4 +1,4 @@
-import { paths } from 'kimi-theme/routes/paths';
+import { paths } from 'src/docs/routes/paths';
 
 // ----------------------------------------------------------------------
 

@@ -5,10 +5,11 @@ import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import Paper from '@mui/material/Paper';
 import { useTabs } from 'kimi-theme/hooks';
-import { paths } from 'kimi-theme/routes/paths';
 import { Iconify } from 'kimi-theme/components/iconify';
 import { CustomTabs } from 'kimi-theme/components/custom-tabs';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

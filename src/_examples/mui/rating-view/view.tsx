@@ -5,9 +5,10 @@ import type { IconContainerProps } from '@mui/material/Rating';
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
-import { paths } from 'kimi-theme/routes/paths';
 import { Iconify } from 'kimi-theme/components/iconify';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

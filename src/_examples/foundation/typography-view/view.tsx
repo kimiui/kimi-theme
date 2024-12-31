@@ -7,11 +7,12 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
-import { paths } from 'kimi-theme/routes/paths';
 import { useResponsive } from 'kimi-theme/hooks';
 import Typography from '@mui/material/Typography';
 import { remToPx } from 'kimi-theme/theme/styles';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ScrollToViewTemplate } from '../../component-template';

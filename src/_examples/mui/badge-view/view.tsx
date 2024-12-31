@@ -2,10 +2,11 @@
 
 import Box from '@mui/material/Box';
 import Badge from '@mui/material/Badge';
-import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import { Iconify } from 'kimi-theme/components/iconify';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

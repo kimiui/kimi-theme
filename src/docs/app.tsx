@@ -5,8 +5,8 @@ import { LocalizationProvider } from 'kimi-theme/locales/localization-provider';
 import { SettingsDrawer, SettingsProvider } from 'kimi-theme/components/settings';
 
 import { Router } from './routes';
-import { Toaster } from './components/snackbar';
-import { ThemeProvider } from './theme/theme-provider';
+import { Toaster } from '../components/snackbar';
+import { ThemeProvider } from '../theme/theme-provider';
 
 // ----------------------------------------------------------------------
 

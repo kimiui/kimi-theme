@@ -11,7 +11,6 @@ import Tooltip from '@mui/material/Tooltip';
 import { useState, useCallback } from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@mui/material/styles';
-import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import { varAlpha } from 'kimi-theme/theme/styles';
@@ -21,6 +20,8 @@ import { useMockedUser } from 'kimi-theme/auth/hooks';
 import { Iconify } from 'kimi-theme/components/iconify';
 import { Scrollbar } from 'kimi-theme/components/scrollbar';
 import { AnimateAvatar } from 'kimi-theme/components/animate';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { UpgradeBlock } from './nav-helper';
 import { AccountButton } from './account-button';

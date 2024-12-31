@@ -1,9 +1,10 @@
 'use client';
 
-import { paths } from 'kimi-theme/routes/paths';
 import { useState, useEffect, useCallback } from 'react';
 import { SplashScreen } from 'kimi-theme/components/loading-screen';
 import { useRouter, usePathname, useSearchParams } from 'routes-react';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { useAuthContext } from '../hooks';
 

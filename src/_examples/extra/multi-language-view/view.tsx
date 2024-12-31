@@ -10,7 +10,6 @@ import Radio from '@mui/material/Radio';
 import Paper from '@mui/material/Paper';
 import { useState, useCallback } from 'react';
 import { styled } from '@mui/material/styles';
-import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import RadioGroup from '@mui/material/RadioGroup';
 import { fDate } from 'kimi-theme/utils/format-time';
@@ -28,6 +27,8 @@ import {
   fCurrency,
   fShortenNumber,
 } from 'kimi-theme/utils/format-number';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { navData as clientNavData } from './config-nav';

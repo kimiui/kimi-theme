@@ -2,11 +2,12 @@
 
 import Link from '@mui/material/Link';
 import Tooltip from '@mui/material/Tooltip';
-import { paths } from 'kimi-theme/routes/paths';
 import { countries } from 'kimi-theme/assets/data';
 import { SvgColor } from 'kimi-theme/components/svg-color';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 import { Iconify, FlagIcon, SocialIcon } from 'kimi-theme/components/iconify';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

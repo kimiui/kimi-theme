@@ -14,7 +14,6 @@ import { NavDesktop } from './nav/desktop';
 import { Footer, HomeFooter } from './footer';
 import { HeaderBase } from '../core/header-base';
 import { LayoutSection } from '../core/layout-section';
-import { navData as mainNavData } from '../config-nav-main';
 
 import type { NavMainProps } from './nav/types';
 
@@ -39,7 +38,7 @@ export function MainLayout({ sx, data, children }: Readonly<MainLayoutProps>) {
 
   const layoutQuery: Breakpoint = 'md';
 
-  const navData = data?.nav ?? mainNavData;
+  const navData = data?.nav ?? [];
 
   console.log('navData', navData);
 

@@ -4,12 +4,13 @@ import { useState } from 'react';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Switch from '@mui/material/Switch';
-import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import { Editor } from 'kimi-theme/components/editor';
 import { Markdown } from 'kimi-theme/components/markdown';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentContainer } from '../../component-block';

@@ -1,5 +1,6 @@
-import { paths } from 'kimi-theme/routes/paths';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { PickerDate } from './picker-date';
 import { PickerTime } from './picker-time';

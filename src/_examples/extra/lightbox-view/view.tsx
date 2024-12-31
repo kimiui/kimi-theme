@@ -9,12 +9,13 @@ import Stack from '@mui/material/Stack';
 import { _mock } from 'kimi-theme/_mock';
 import Switch from '@mui/material/Switch';
 import FormLabel from '@mui/material/FormLabel';
-import { paths } from 'kimi-theme/routes/paths';
 import FormControl from '@mui/material/FormControl';
 import { Image } from 'kimi-theme/components/image';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { Lightbox, useLightBox } from 'kimi-theme/components/lightbox';
 import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+
+import { paths } from 'src/docs/routes/paths';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentContainer } from '../../component-block';
