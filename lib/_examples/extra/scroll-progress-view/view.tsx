@@ -5,8 +5,8 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import CardContent from '@mui/material/CardContent';
 
-import { varAlpha } from 'lib/theme/styles';
 import { paths } from 'lib/routes/paths';
+import { varAlpha } from 'lib/theme/styles';
 import { Scrollbar } from 'lib/components/scrollbar';
 import { CustomBreadcrumbs } from 'lib/components/custom-breadcrumbs';
 import { ScrollProgress, useScrollProgress } from 'lib/components/animate/scroll-progress';

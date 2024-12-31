@@ -7,9 +7,9 @@ import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import type { Variant } from '@mui/material/styles/createTypography';
 
+import { paths } from 'lib/routes/paths';
 import { useResponsive } from 'lib/hooks';
 import { remToPx } from 'lib/theme/styles';
-import { paths } from 'lib/routes/paths';
 import type { MediaFontSize } from 'lib/theme/styles';
 import { CustomBreadcrumbs } from 'lib/components/custom-breadcrumbs';
 

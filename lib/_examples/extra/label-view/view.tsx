@@ -2,8 +2,8 @@
 
 import Tooltip from '@mui/material/Tooltip';
 
-import { Label } from 'lib/components/label';
 import { paths } from 'lib/routes/paths';
+import { Label } from 'lib/components/label';
 import { Iconify } from 'lib/components/iconify';
 import { CustomBreadcrumbs } from 'lib/components/custom-breadcrumbs';
 

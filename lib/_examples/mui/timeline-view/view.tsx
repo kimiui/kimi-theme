@@ -10,8 +10,8 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
-import { varAlpha } from 'lib/theme/styles';
 import { paths } from 'lib/routes/paths';
+import { varAlpha } from 'lib/theme/styles';
 import { Iconify } from 'lib/components/iconify';
 import { CustomBreadcrumbs } from 'lib/components/custom-breadcrumbs';
 

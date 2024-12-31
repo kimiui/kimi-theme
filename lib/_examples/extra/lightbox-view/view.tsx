@@ -11,8 +11,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import type { Slide, SlideImage, SlideVideo } from 'yet-another-react-lightbox';
 
 import { _mock } from 'lib/_mock';
-import { Image } from 'lib/components/image';
 import { paths } from 'lib/routes/paths';
+import { Image } from 'lib/components/image';
 import { Lightbox, useLightBox } from 'lib/components/lightbox';
 import { CustomBreadcrumbs } from 'lib/components/custom-breadcrumbs';
 

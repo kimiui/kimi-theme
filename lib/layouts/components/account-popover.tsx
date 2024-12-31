@@ -6,8 +6,8 @@ import Typography from '@mui/material/Typography';
 import { useRouter, usePathname } from 'routes-react';
 import type { IconButtonProps } from '@mui/material/IconButton';
 
-import { Label } from 'lib/components/label';
 import { paths } from 'lib/routes/paths';
+import { Label } from 'lib/components/label';
 import { useMockedUser } from 'lib/auth/hooks';
 import { usePopover, CustomPopover } from 'lib/components/custom-popover';
 

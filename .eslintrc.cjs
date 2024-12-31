@@ -10,16 +10,16 @@ module.exports = {
     sourceType: 'module',
     ecmaVersion: 'latest',
     ecmaFeatures: { jsx: true },
-    project: './tsconfig.json',
+    project: './tsconfig.app.json',
     tsconfigRootDir: __dirname,
   },
   settings: {
     'import/resolver': {
       typescript: {
-        project: './tsconfig.json',
+        project: './tsconfig.app.json',
       },
     },
-    'import/internal-regex': '^kimi/',
+    'import/internal-regex': ['^src/', '^lib/'],
   },
   /**
    * 0 ~ 'off'

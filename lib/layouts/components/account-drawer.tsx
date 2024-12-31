@@ -14,9 +14,9 @@ import { useRouter, usePathname } from 'routes-react';
 import type { IconButtonProps } from '@mui/material/IconButton';
 
 import { _mock } from 'lib/_mock';
+import { paths } from 'lib/routes/paths';
 import { varAlpha } from 'lib/theme/styles';
 import { Label } from 'lib/components/label';
-import { paths } from 'lib/routes/paths';
 import { useMockedUser } from 'lib/auth/hooks';
 import { Iconify } from 'lib/components/iconify';
 import { Scrollbar } from 'lib/components/scrollbar';

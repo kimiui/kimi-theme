@@ -5,8 +5,8 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 import { _mock } from 'lib/_mock';
-import { Image } from 'lib/components/image';
 import { paths } from 'lib/routes/paths';
+import { Image } from 'lib/components/image';
 import { CustomBreadcrumbs } from 'lib/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';

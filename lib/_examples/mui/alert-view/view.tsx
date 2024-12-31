@@ -4,8 +4,8 @@ import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import AlertTitle from '@mui/material/AlertTitle';
 
-import { varAlpha } from 'lib/theme/styles';
 import { paths } from 'lib/routes/paths';
+import { varAlpha } from 'lib/theme/styles';
 import { CustomBreadcrumbs } from 'lib/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
