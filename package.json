@@ -5,7 +5,6 @@
   "description": "TypeScript",
   "private": false,
   "license": "MIT",
-  "main": "src/index.ts",
   "type": "module",
   "repository": {
     "type": "git",
