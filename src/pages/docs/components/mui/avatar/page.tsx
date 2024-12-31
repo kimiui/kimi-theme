@@ -1,4 +1,4 @@
-import { AvatarView } from 'kimi-theme/sections/_examples/mui/avatar-view';
+import { AvatarView } from 'src/_examples/mui/avatar-view';
 
 // ----------------------------------------------------------------------
 

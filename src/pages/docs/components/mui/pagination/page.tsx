@@ -1,4 +1,4 @@
-import { PaginationView } from 'kimi-theme/sections/_examples/mui/pagination-view';
+import { PaginationView } from 'src/_examples/mui/pagination-view';
 
 // ----------------------------------------------------------------------
 

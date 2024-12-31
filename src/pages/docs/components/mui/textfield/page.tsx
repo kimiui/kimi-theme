@@ -1,4 +1,4 @@
-import { TextfieldView } from 'kimi-theme/sections/_examples/mui/textfield-view';
+import { TextfieldView } from 'src/_examples/mui/textfield-view';
 
 // ----------------------------------------------------------------------
 

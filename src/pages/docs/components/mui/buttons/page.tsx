@@ -1,4 +1,4 @@
-import { ButtonView } from 'kimi-theme/sections/_examples/mui/button-view';
+import { ButtonView } from 'src/_examples/mui/button-view';
 
 // ----------------------------------------------------------------------
 

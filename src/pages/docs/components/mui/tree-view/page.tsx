@@ -1,4 +1,4 @@
-import { TreeView } from 'kimi-theme/sections/_examples/mui/tree-view';
+import { TreeView } from 'src/_examples/mui/tree-view';
 
 // ----------------------------------------------------------------------
 

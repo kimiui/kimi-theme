@@ -1,4 +1,4 @@
-import { ScrollProgressView } from 'kimi-theme/sections/_examples/extra/scroll-progress-view';
+import { ScrollProgressView } from 'src/_examples/extra/scroll-progress-view';
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-import { ImageView } from 'kimi-theme/sections/_examples/extra/image-view';
+import { ImageView } from 'src/_examples/extra/image-view';
 
 // ----------------------------------------------------------------------
 

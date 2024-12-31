@@ -1,4 +1,4 @@
-import { TimelineView } from 'kimi-theme/sections/_examples/mui/timeline-view';
+import { TimelineView } from 'src/_examples/mui/timeline-view';
 
 // ----------------------------------------------------------------------
 

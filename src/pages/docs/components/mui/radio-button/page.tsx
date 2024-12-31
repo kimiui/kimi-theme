@@ -1,4 +1,4 @@
-import { RadioButtonView } from 'kimi-theme/sections/_examples/mui/radio-button-view';
+import { RadioButtonView } from 'src/_examples/mui/radio-button-view';
 
 // ----------------------------------------------------------------------
 

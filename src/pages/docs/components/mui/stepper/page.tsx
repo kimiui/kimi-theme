@@ -1,4 +1,4 @@
-import { StepperView } from 'kimi-theme/sections/_examples/mui/stepper-view';
+import { StepperView } from 'src/_examples/mui/stepper-view';
 
 // ----------------------------------------------------------------------
 

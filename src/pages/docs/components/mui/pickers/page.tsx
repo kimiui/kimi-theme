@@ -1,4 +1,4 @@
-import { PickerView } from 'kimi-theme/sections/_examples/mui/picker-view';
+import { PickerView } from 'src/_examples/mui/picker-view';
 
 // ----------------------------------------------------------------------
 

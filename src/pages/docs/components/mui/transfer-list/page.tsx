@@ -1,4 +1,4 @@
-import { TransferListView } from 'kimi-theme/sections/_examples/mui/transfer-list-view';
+import { TransferListView } from 'src/_examples/mui/transfer-list-view';
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-import { TooltipView } from 'kimi-theme/sections/_examples/mui/tooltip-view';
+import { TooltipView } from 'src/_examples/mui/tooltip-view';
 
 // ----------------------------------------------------------------------
 

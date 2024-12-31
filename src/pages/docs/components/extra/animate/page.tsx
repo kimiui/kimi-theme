@@ -1,4 +1,4 @@
-import { AnimateView } from 'kimi-theme/sections/_examples/extra/animate-view';
+import { AnimateView } from 'src/_examples/extra/animate-view';
 
 // ----------------------------------------------------------------------
 

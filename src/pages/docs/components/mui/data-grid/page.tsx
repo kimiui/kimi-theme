@@ -1,4 +1,4 @@
-import { DataGridView } from 'kimi-theme/sections/_examples/mui/data-grid-view';
+import { DataGridView } from 'src/_examples/mui/data-grid-view';
 
 // ----------------------------------------------------------------------
 

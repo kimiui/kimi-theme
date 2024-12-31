@@ -1,4 +1,4 @@
-import { AccordionView } from 'kimi-theme/sections/_examples/mui/accordion-view';
+import { AccordionView } from 'src/_examples/mui/accordion-view';
 
 // ----------------------------------------------------------------------
 

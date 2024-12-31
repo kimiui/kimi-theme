@@ -1,4 +1,4 @@
-import { ColorsView } from 'kimi-theme/sections/_examples/foundation/colors-view';
+import { ColorsView } from 'src/_examples/foundation/colors-view';
 
 // ----------------------------------------------------------------------
 

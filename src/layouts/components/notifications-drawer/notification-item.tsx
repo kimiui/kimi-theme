@@ -22,7 +22,9 @@ export type NotificationItemProps = {
   createdAt: string | number | null;
 };
 
-export function NotificationItem({ notification }: { notification: NotificationItemProps }) {
+export function NotificationItem({
+  notification,
+}: Readonly<{ notification: NotificationItemProps }>) {
   const renderAvatar = (
     <ListItemAvatar>
       {notification.avatarUrl ? (

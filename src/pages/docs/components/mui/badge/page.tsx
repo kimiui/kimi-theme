@@ -1,4 +1,4 @@
-import { BadgeView } from 'kimi-theme/sections/_examples/mui/badge-view';
+import { BadgeView } from 'src/_examples/mui/badge-view';
 
 // ----------------------------------------------------------------------
 

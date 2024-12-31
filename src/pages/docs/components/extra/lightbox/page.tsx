@@ -1,4 +1,4 @@
-import { LightboxView } from 'kimi-theme/sections/_examples/extra/lightbox-view';
+import { LightboxView } from 'src/_examples/extra/lightbox-view';
 
 // ----------------------------------------------------------------------
 

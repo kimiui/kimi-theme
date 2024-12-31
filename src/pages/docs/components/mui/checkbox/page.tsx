@@ -1,4 +1,4 @@
-import { CheckboxView } from 'kimi-theme/sections/_examples/mui/checkbox-view';
+import { CheckboxView } from 'src/_examples/mui/checkbox-view';
 
 // ----------------------------------------------------------------------
 

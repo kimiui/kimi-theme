@@ -1,4 +1,4 @@
-import { ChipView } from 'kimi-theme/sections/_examples/mui/chip-view';
+import { ChipView } from 'src/_examples/mui/chip-view';
 
 // ----------------------------------------------------------------------
 

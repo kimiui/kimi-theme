@@ -1,4 +1,4 @@
-import { DialogView } from 'kimi-theme/sections/_examples/mui/dialog-view';
+import { DialogView } from 'src/_examples/mui/dialog-view';
 
 // ----------------------------------------------------------------------
 

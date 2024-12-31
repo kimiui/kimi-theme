@@ -1,4 +1,4 @@
-import { MultiLanguageView } from 'kimi-theme/sections/_examples/extra/multi-language-view';
+import { MultiLanguageView } from 'src/_examples/extra/multi-language-view';
 
 // ----------------------------------------------------------------------
 

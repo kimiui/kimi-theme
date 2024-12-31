@@ -1,4 +1,4 @@
-import { SwitchView } from 'kimi-theme/sections/_examples/mui/switch-view';
+import { SwitchView } from 'src/_examples/mui/switch-view';
 
 // ----------------------------------------------------------------------
 

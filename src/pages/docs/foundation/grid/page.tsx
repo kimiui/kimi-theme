@@ -1,4 +1,4 @@
-import { GridView } from 'kimi-theme/sections/_examples/foundation/grid-view';
+import { GridView } from 'src/_examples/foundation/grid-view';
 
 // ----------------------------------------------------------------------
 

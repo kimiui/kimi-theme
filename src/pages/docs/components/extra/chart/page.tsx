@@ -1,4 +1,4 @@
-import { ChartView } from 'kimi-theme/sections/_examples/extra/chart-view';
+import { ChartView } from 'src/_examples/extra/chart-view';
 
 // ----------------------------------------------------------------------
 

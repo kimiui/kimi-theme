@@ -1,4 +1,4 @@
-import { AlertView } from 'kimi-theme/sections/_examples/mui/alert-view';
+import { AlertView } from 'src/_examples/mui/alert-view';
 
 // ----------------------------------------------------------------------
 

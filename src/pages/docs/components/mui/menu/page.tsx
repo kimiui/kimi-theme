@@ -1,4 +1,4 @@
-import { MenuView } from 'kimi-theme/sections/_examples/mui/menu-view';
+import { MenuView } from 'src/_examples/mui/menu-view';
 
 // ----------------------------------------------------------------------
 

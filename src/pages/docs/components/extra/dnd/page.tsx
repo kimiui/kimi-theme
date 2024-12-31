@@ -1,4 +1,4 @@
-import { DndView } from 'kimi-theme/sections/_examples/extra/dnd-view';
+import { DndView } from 'src/_examples/extra/dnd-view';
 
 // ----------------------------------------------------------------------
 

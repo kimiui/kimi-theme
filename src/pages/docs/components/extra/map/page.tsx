@@ -1,4 +1,4 @@
-import { MapView } from 'kimi-theme/sections/_examples/extra/map-view';
+import { MapView } from 'src/_examples/extra/map-view';
 
 // ----------------------------------------------------------------------
 

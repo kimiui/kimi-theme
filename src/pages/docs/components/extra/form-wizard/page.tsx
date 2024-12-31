@@ -1,4 +1,4 @@
-import { FormWizardView } from 'kimi-theme/sections/_examples/extra/form-wizard-view';
+import { FormWizardView } from 'src/_examples/extra/form-wizard-view';
 
 // ----------------------------------------------------------------------
 

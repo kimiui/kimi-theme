@@ -15,9 +15,9 @@ export function useDateRangePicker(
 ): UseDateRangePickerReturn {
   const [open, setOpen] = useState(false);
 
-  const [endDate, setEndDate] = useState(end as IDatePickerControl);
+  const [endDate, setEndDate] = useState(end);
 
-  const [startDate, setStartDate] = useState(start as IDatePickerControl);
+  const [startDate, setStartDate] = useState(start);
 
   const error = fIsAfter(startDate, endDate);
 
@@ -49,8 +49,8 @@ export function useDateRangePicker(
   }, []);
 
   return {
-    startDate: startDate as IDatePickerControl,
-    endDate: endDate as IDatePickerControl,
+    startDate,
+    endDate,
     onChangeStartDate,
     onChangeEndDate,
     //
