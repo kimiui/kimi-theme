@@ -6,7 +6,7 @@ import type { ContainerProps } from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
-import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
+import { varAlpha } from 'kimi-theme/theme/styles';
 
 // ----------------------------------------------------------------------
 
@@ -45,13 +45,11 @@ export function ComponentBlock({ title, sx, children, ...other }: ComponentBlock
             py: 0.25,
             borderRadius: 2,
             position: 'absolute',
-            color: 'text.primary',
-            bgcolor: 'common.white',
+            bgcolor: (theme) => theme.vars.palette.background.paper,
             transform: 'translateY(-50%)',
             fontSize: (theme) => theme.typography.caption.fontSize,
             fontWeight: (theme) => theme.typography.fontWeightSemiBold,
             border: (theme) => `solid 1px ${varAlpha(theme.vars.palette.grey['500Channel'], 0.24)}`,
-            [stylesMode.dark]: { bgcolor: 'background.neutral' },
           }}
         >
           {title}

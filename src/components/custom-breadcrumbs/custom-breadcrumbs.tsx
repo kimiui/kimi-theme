@@ -44,7 +44,7 @@ export function CustomBreadcrumbs({
   const renderAction = <Box sx={{ flexShrink: 0, ...slotProps?.action }}> {action} </Box>;
 
   const renderMoreLink = (
-    <Box component="ul">
+    <Box component="ul" sx={{ p: 0 }}>
       {moreLink?.map((href) => (
         <Box key={href} component="li" sx={{ display: 'flex' }}>
           <Link href={href} variant="body2" target="_blank" rel="noopener" sx={slotProps?.moreLink}>

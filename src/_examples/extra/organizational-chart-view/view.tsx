@@ -45,14 +45,7 @@ export function OrganizationalChartView() {
                 data={SIMPLE_DATA}
                 lineColor={theme.vars.palette.primary.light}
                 nodeItem={(props: NodeProps) => (
-                  <SimpleNode
-                    sx={
-                      {
-                        // ...
-                      }
-                    }
-                    {...props}
-                  />
+                  <SimpleNode sx={{ color: theme.vars.palette.text.primary }} {...props} />
                 )}
                 /* Or
                  * nodeItem={SimpleNode}
