@@ -6,7 +6,16 @@
     "declarationMap": true,
     "sourceMap": true,
     "rootDir": "./lib",
-    "composite": true
+    "composite": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    
+
+    "paths": {
+      "lib/*": ["./lib/*"]
+    }
   },
-  "include": ["lib"]
+  "include": ["lib"],
+  "exclude": ["node_modules"]
 }

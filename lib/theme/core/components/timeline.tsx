@@ -1,16 +1,15 @@
-import type { Theme } from '@mui/material/styles';
-import type { LabComponents } from '@mui/lab/themeAugmentation';
+import type { Theme, Components } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
 
-const MuiTimelineDot: LabComponents['MuiTimelineDot'] = {
+const MuiTimelineDot: Components<Theme>['MuiTimelineDot'] = {
   /** **************************************
    * STYLE
    *************************************** */
   styleOverrides: { root: { boxShadow: 'none' } },
 };
 
-const MuiTimelineConnector: LabComponents['MuiTimelineConnector'] = {
+const MuiTimelineConnector: Components<Theme>['MuiTimelineConnector'] = {
   /** **************************************
    * STYLE
    *************************************** */
@@ -20,4 +19,7 @@ const MuiTimelineConnector: LabComponents['MuiTimelineConnector'] = {
 };
 
 // ----------------------------------------------------------------------export the type
-export const timeline = { MuiTimelineDot, MuiTimelineConnector } as const;
+export const timeline = {
+  MuiTimelineDot,
+  MuiTimelineConnector,
+} as const;

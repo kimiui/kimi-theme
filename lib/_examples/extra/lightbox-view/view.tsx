@@ -7,8 +7,8 @@ import Stack from '@mui/material/Stack';
 import Switch from '@mui/material/Switch';
 import FormLabel from '@mui/material/FormLabel';
 import FormControl from '@mui/material/FormControl';
+import type { Slide } from 'yet-another-react-lightbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import type { Slide, SlideImage, SlideVideo } from 'yet-another-react-lightbox';
 
 import { _mock } from 'lib/_mock';
 import { paths } from 'lib/routes/paths';
@@ -86,8 +86,7 @@ export function LightboxView() {
             sx={{ p: 3 }}
           >
             {slides.map((slide) => {
-              const thumbnail =
-                slide.type === 'video' ? (slide as SlideVideo).poster : (slide as SlideImage).src;
+              const thumbnail = slide.type === 'video' ? slide.poster : slide.src;
 
               return (
                 <Image

@@ -74,7 +74,7 @@ type ObjectValue = {
   [key: string]: string | number;
 };
 
-type InputValue = CarouselOptions['slidesToShow'];
+type InputValue = CarouselOptions['slidesToShow'] | string | number;
 
 function getSize(slidesToShow: InputValue): InputValue {
   if (slidesToShow && typeof slidesToShow === 'object') {
@@ -85,7 +85,7 @@ function getSize(slidesToShow: InputValue): InputValue {
     }, {});
   }
 
-  return getValue(slidesToShow);
+  return getValue(slidesToShow as string | number);
 }
 
 function getValue(value: string | number = 1): string {
