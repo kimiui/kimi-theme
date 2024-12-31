@@ -1,4 +1,4 @@
-import type { IDateValue } from 'src/types/common';
+import type { IDateValue } from 'kimi-theme/types/common';
 
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
@@ -7,9 +7,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-
-import { fDate } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
+import { fDate } from 'kimi-theme/utils/format-time';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

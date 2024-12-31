@@ -6,8 +6,7 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import { memo, forwardRef } from 'react';
 import { styled } from '@mui/material/styles';
-
-import { varAlpha, stylesMode } from 'src/theme/styles';
+import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
 
 import { kanbanClasses } from '../classes';
 

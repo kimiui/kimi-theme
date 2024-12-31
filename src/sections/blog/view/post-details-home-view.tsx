@@ -1,4 +1,4 @@
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 
 import Chip from '@mui/material/Chip';
 import Grid from '@mui/material/Grid2';
@@ -9,16 +9,15 @@ import { RouterLink } from 'routes-react';
 import Divider from '@mui/material/Divider';
 import Checkbox from '@mui/material/Checkbox';
 import Container from '@mui/material/Container';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import AvatarGroup from '@mui/material/AvatarGroup';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Markdown } from 'kimi-theme/components/markdown';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { Markdown } from 'src/components/markdown';
-import { fShortenNumber } from 'src/utils/format-number';
-import { EmptyContent } from 'src/components/empty-content';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { fShortenNumber } from 'kimi-theme/utils/format-number';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { PostItem } from '../post-item';
 import { PostDetailsSkeleton } from '../post-skeleton';

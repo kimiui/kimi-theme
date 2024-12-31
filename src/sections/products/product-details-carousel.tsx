@@ -1,19 +1,18 @@
 'use client';
 
-import type { IProductItem } from 'src/types/product';
+import type { IProductItem } from 'kimi-theme/types/product';
 
 import { useEffect } from 'react';
 import Box from '@mui/material/Box';
-
-import { Image } from 'src/components/image';
-import { Lightbox, useLightBox } from 'src/components/lightbox';
+import { Image } from 'kimi-theme/components/image';
+import { Lightbox, useLightBox } from 'kimi-theme/components/lightbox';
 import {
   Carousel,
   useCarousel,
   CarouselThumb,
   CarouselThumbs,
   CarouselArrowNumberButtons,
-} from 'src/components/carousel';
+} from 'kimi-theme/components/carousel';
 
 // ----------------------------------------------------------------------
 

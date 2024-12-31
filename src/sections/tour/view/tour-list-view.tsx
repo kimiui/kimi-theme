@@ -1,22 +1,21 @@
 'use client';
 
-import type { ITourItem, ITourFilters } from 'src/types/tour';
+import type { ITourItem, ITourFilters } from 'kimi-theme/types/tour';
 
 import { useBoolean } from 'ahooks';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { RouterLink } from 'routes-react';
 import { useState, useCallback } from 'react';
-
-import { useSetState } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { orderBy } from 'src/utils/helper';
-import { Iconify } from 'src/components/iconify';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { EmptyContent } from 'src/components/empty-content';
-import { fIsAfter, fIsBetween } from 'src/utils/format-time';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
-import { _tours, _tourGuides, TOUR_SORT_OPTIONS, TOUR_SERVICE_OPTIONS } from 'src/_mock';
+import { useSetState } from 'kimi-theme/hooks';
+import { paths } from 'kimi-theme/routes/paths';
+import { orderBy } from 'kimi-theme/utils/helper';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
+import { fIsAfter, fIsBetween } from 'kimi-theme/utils/format-time';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import { _tours, _tourGuides, TOUR_SORT_OPTIONS, TOUR_SERVICE_OPTIONS } from 'kimi-theme/_mock';
 
 import { TourList } from '../tour-list';
 import { TourSort } from '../tour-sort';

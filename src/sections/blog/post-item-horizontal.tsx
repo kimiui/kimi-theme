@@ -1,4 +1,4 @@
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
@@ -8,18 +8,17 @@ import Avatar from '@mui/material/Avatar';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@mui/material/styles';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { maxLine } from 'kimi-theme/theme/styles';
+import { Image } from 'kimi-theme/components/image';
+import { Label } from 'kimi-theme/components/label';
 import { useRouter, RouterLink } from 'routes-react';
-
-import { paths } from 'src/routes/paths';
-import { maxLine } from 'src/theme/styles';
-import { Image } from 'src/components/image';
-import { Label } from 'src/components/label';
-import { fDate } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
-import { fShortenNumber } from 'src/utils/format-number';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { fDate } from 'kimi-theme/utils/format-time';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fShortenNumber } from 'kimi-theme/utils/format-number';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

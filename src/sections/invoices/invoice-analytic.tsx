@@ -1,11 +1,10 @@
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
 import CircularProgress from '@mui/material/CircularProgress';
-
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
-import { fCurrency, fShortenNumber } from 'src/utils/format-number';
+import { fCurrency, fShortenNumber } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

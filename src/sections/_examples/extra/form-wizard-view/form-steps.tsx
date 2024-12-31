@@ -4,9 +4,8 @@ import Button from '@mui/material/Button';
 import MuiStepper from '@mui/material/Stepper';
 import StepLabel from '@mui/material/StepLabel';
 import Typography from '@mui/material/Typography';
-
-import { Iconify } from 'src/components/iconify';
-import { Field } from 'src/components/hook-form';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Field } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

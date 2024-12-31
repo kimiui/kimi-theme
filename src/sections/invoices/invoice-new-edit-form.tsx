@@ -1,6 +1,6 @@
 'use client';
 
-import type { IInvoice } from 'src/types/invoice';
+import type { IInvoice } from 'kimi-theme/types/invoice';
 
 import { z as zod } from 'zod';
 import { useMemo } from 'react';
@@ -9,13 +9,12 @@ import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import { useRouter } from 'routes-react';
 import { useForm } from 'react-hook-form';
+import { paths } from 'kimi-theme/routes/paths';
+import { _addressBooks } from 'kimi-theme/_mock';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
-
-import { paths } from 'src/routes/paths';
-import { _addressBooks } from 'src/_mock';
-import { today, fIsAfter } from 'src/utils/format-time';
-import { Form, schemaHelper } from 'src/components/hook-form';
+import { today, fIsAfter } from 'kimi-theme/utils/format-time';
+import { Form, schemaHelper } from 'kimi-theme/components/hook-form';
 
 import { InvoiceNewEditAddress } from './invoice-new-edit-address';
 import { InvoiceNewEditDetails } from './invoice-new-edit-details';

@@ -1,6 +1,6 @@
-import { _mock } from 'src/_mock';
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { _mock } from 'kimi-theme/_mock';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

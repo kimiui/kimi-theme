@@ -9,7 +9,7 @@ import {
   varRotate,
   varBgColor,
   varBgKenburns,
-} from 'src/components/animate';
+} from 'kimi-theme/components/animate';
 
 // ----------------------------------------------------------------------
 

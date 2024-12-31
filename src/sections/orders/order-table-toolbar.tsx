@@ -1,6 +1,6 @@
-import type { UseSetStateReturn } from 'src/hooks';
-import type { IOrderTableFilters } from 'src/types/order';
-import type { IDatePickerControl } from 'src/types/common';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
+import type { IOrderTableFilters } from 'kimi-theme/types/order';
+import type { IDatePickerControl } from 'kimi-theme/types/common';
 
 import { useCallback } from 'react';
 import Stack from '@mui/material/Stack';
@@ -8,12 +8,11 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { formHelperTextClasses } from '@mui/material/FormHelperText';
-
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

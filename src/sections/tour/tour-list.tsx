@@ -1,11 +1,10 @@
-import type { ITourItem } from 'src/types/tour';
+import type { ITourItem } from 'kimi-theme/types/tour';
 
 import { useCallback } from 'react';
 import Box from '@mui/material/Box';
 import { useRouter } from 'routes-react';
+import { paths } from 'kimi-theme/routes/paths';
 import Pagination, { paginationClasses } from '@mui/material/Pagination';
-
-import { paths } from 'src/routes/paths';
 
 import { TourItem } from './tour-item';
 

@@ -1,6 +1,6 @@
 import type { BoxProps } from '@mui/material/Box';
-import type { IDateValue } from 'src/types/common';
 import type { CardProps } from '@mui/material/Card';
+import type { IDateValue } from 'kimi-theme/types/common';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -8,10 +8,9 @@ import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import CardHeader from '@mui/material/CardHeader';
 import ListItemText from '@mui/material/ListItemText';
-
-import { fToNow } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
+import { fToNow } from 'kimi-theme/utils/format-time';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
 
 // ----------------------------------------------------------------------
 

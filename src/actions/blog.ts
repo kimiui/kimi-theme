@@ -1,11 +1,10 @@
 'use client';
 
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 
 import useSWR from 'swr';
 import { useMemo } from 'react';
-
-import { fetcher, endpoints } from 'src/utils/axios';
+import { fetcher, endpoints } from 'kimi-theme/utils/axios';
 
 // ----------------------------------------------------------------------
 

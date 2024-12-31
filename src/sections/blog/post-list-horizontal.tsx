@@ -1,4 +1,4 @@
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 
 import Box from '@mui/material/Box';
 import Pagination, { paginationClasses } from '@mui/material/Pagination';

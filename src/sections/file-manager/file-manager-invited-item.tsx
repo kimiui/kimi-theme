@@ -1,6 +1,6 @@
 'use client';
 
-import type { IFileShared } from 'src/types/file';
+import type { IFileShared } from 'kimi-theme/types/file';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -11,9 +11,8 @@ import { useState, useCallback } from 'react';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemText from '@mui/material/ListItemText';
-
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

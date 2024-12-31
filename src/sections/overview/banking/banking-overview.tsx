@@ -4,15 +4,14 @@ import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
+import { useTabs } from 'kimi-theme/hooks';
 import Tooltip from '@mui/material/Tooltip';
 import { useTheme } from '@mui/material/styles';
-
-import { useTabs } from 'src/hooks';
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { Chart, useChart } from 'src/components/chart';
-import { CustomTabs } from 'src/components/custom-tabs';
-import { fPercent, fCurrency } from 'src/utils/format-number';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Chart, useChart } from 'kimi-theme/components/chart';
+import { CustomTabs } from 'kimi-theme/components/custom-tabs';
+import { fPercent, fCurrency } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

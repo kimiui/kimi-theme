@@ -3,12 +3,11 @@
 import { useState } from 'react';
 import Checkbox from '@mui/material/Checkbox';
 import FormGroup from '@mui/material/FormGroup';
+import { paths } from 'kimi-theme/routes/paths';
 import FormControl from '@mui/material/FormControl';
+import { Iconify } from 'kimi-theme/components/iconify';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

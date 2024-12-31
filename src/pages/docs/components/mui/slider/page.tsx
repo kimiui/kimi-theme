@@ -1,4 +1,4 @@
-import { SliderView } from 'src/sections/_examples/mui/slider-view';
+import { SliderView } from 'kimi-theme/sections/_examples/mui/slider-view';
 
 // ----------------------------------------------------------------------
 

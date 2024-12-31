@@ -1,6 +1,5 @@
 import Stack from '@mui/material/Stack';
-
-import { NavUl } from 'src/components/nav-section';
+import { NavUl } from 'kimi-theme/components/nav-section';
 
 import { NavList } from './nav-desktop-list';
 

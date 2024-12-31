@@ -18,13 +18,12 @@ import Typography from '@mui/material/Typography';
 import DialogTitle from '@mui/material/DialogTitle';
 import ListItemText from '@mui/material/ListItemText';
 import DialogActions from '@mui/material/DialogActions';
+import { Iconify } from 'kimi-theme/components/iconify';
 import { useState, useEffect, useCallback } from 'react';
 import Input, { inputClasses } from '@mui/material/Input';
-
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { varAlpha, stylesMode } from 'src/theme/styles';
-import { Carousel, useCarousel, CarouselArrowFloatButtons } from 'src/components/carousel';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
+import { Carousel, useCarousel, CarouselArrowFloatButtons } from 'kimi-theme/components/carousel';
 
 // ----------------------------------------------------------------------
 

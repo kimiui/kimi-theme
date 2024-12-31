@@ -1,12 +1,11 @@
 import Box from '@mui/material/Box';
-
-import { Image } from 'src/components/image';
+import { Image } from 'kimi-theme/components/image';
 import {
   Carousel,
   useCarousel,
   CarouselDotButtons,
   CarouselArrowFloatButtons,
-} from 'src/components/carousel';
+} from 'kimi-theme/components/carousel';
 
 import { IndexLabel } from './elements';
 

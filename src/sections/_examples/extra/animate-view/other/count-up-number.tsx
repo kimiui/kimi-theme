@@ -1,4 +1,4 @@
-import { AnimateCountUp } from 'src/components/animate';
+import { AnimateCountUp } from 'kimi-theme/components/animate';
 
 // ----------------------------------------------------------------------
 

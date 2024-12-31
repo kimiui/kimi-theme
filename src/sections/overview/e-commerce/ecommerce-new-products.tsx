@@ -8,10 +8,9 @@ import Button from '@mui/material/Button';
 import Autoplay from 'embla-carousel-autoplay';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
-import { Image } from 'src/components/image';
-import { Carousel, useCarousel, CarouselDotButtons } from 'src/components/carousel';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Image } from 'kimi-theme/components/image';
+import { Carousel, useCarousel, CarouselDotButtons } from 'kimi-theme/components/carousel';
 
 // ----------------------------------------------------------------------
 

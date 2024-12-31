@@ -2,8 +2,7 @@ import type { StackProps } from '@mui/material/Stack';
 
 import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

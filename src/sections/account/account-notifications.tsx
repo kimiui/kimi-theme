@@ -7,10 +7,9 @@ import Switch from '@mui/material/Switch';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { useForm, Controller } from 'react-hook-form';
 import ListItemText from '@mui/material/ListItemText';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Form } from 'kimi-theme/components/hook-form';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { toast } from 'src/components/snackbar';
-import { Form } from 'src/components/hook-form';
 
 // ----------------------------------------------------------------------
 

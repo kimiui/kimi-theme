@@ -1,6 +1,6 @@
 'use client';
 
-import type { IPaymentCard } from 'src/types/common';
+import type { IPaymentCard } from 'kimi-theme/types/common';
 
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -8,10 +8,9 @@ import Dialog from '@mui/material/Dialog';
 import { useState, useCallback } from 'react';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { Iconify } from 'src/components/iconify';
-import { SearchNotFound } from 'src/components/search-not-found';
+import { SearchNotFound } from 'kimi-theme/components/search-not-found';
 
 import { PaymentCardItem } from './payment-card-item';
 

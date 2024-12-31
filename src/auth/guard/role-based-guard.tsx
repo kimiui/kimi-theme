@@ -3,9 +3,8 @@ import type { Theme, SxProps } from '@mui/material/styles';
 import { m } from 'framer-motion';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-
-import { ForbiddenIllustration } from 'src/assets/illustrations';
-import { varBounce, MotionContainer } from 'src/components/animate';
+import { ForbiddenIllustration } from 'kimi-theme/assets/illustrations';
+import { varBounce, MotionContainer } from 'kimi-theme/components/animate';
 
 // ----------------------------------------------------------------------
 

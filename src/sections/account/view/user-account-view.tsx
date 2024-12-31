@@ -2,13 +2,18 @@
 
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
-
-import { useTabs } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
-import { _userAbout, _userPlans, _userPayment, _userInvoices, _userAddressBook } from 'src/_mock';
+import { useTabs } from 'kimi-theme/hooks';
+import { paths } from 'kimi-theme/routes/paths';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import {
+  _userAbout,
+  _userPlans,
+  _userPayment,
+  _userInvoices,
+  _userAddressBook,
+} from 'kimi-theme/_mock';
 
 import { AccountBilling } from '../account-billing';
 import { AccountGeneral } from '../account-general';

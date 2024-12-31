@@ -1,4 +1,4 @@
-import type { IProductReview } from 'src/types/product';
+import type { IProductReview } from 'kimi-theme/types/product';
 
 import Pagination, { paginationClasses } from '@mui/material/Pagination';
 

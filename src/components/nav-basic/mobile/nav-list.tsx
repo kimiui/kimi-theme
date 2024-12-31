@@ -2,10 +2,9 @@
 
 import { usePathname } from 'routes-react';
 import Collapse from '@mui/material/Collapse';
+import { isExternalLink } from 'kimi-theme/utils';
 import { useState, useEffect, useCallback } from 'react';
-
-import { isExternalLink } from 'src/utils';
-import { useActiveLink } from 'src/hooks/useActiveLink';
+import { useActiveLink } from 'kimi-theme/hooks/useActiveLink';
 
 import { NavItem } from './nav-item';
 import { NavLi, NavUl, navSectionClasses } from '../../nav-section';

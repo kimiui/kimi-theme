@@ -3,9 +3,8 @@
 import type { BoxProps } from '@mui/material';
 
 import { Icon } from '@iconify/react';
+import { Chart } from 'kimi-theme/components/chart';
 import { Box, Card, useTheme, ButtonBase, Typography } from '@mui/material';
-
-import { Chart } from 'src/components/chart';
 
 type Props = BoxProps & {
   title?: string;

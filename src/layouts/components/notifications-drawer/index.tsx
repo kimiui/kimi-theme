@@ -15,12 +15,11 @@ import Tooltip from '@mui/material/Tooltip';
 import { useState, useCallback } from 'react';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { varHover } from 'src/components/animate';
-import { Scrollbar } from 'src/components/scrollbar';
-import { CustomTabs } from 'src/components/custom-tabs';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { varHover } from 'kimi-theme/components/animate';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { CustomTabs } from 'kimi-theme/components/custom-tabs';
 
 import { NotificationItem } from './notification-item';
 

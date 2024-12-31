@@ -5,12 +5,11 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import { useFormContext } from 'react-hook-form';
+import { useResponsive } from 'kimi-theme/hooks';
+import { _addressBooks } from 'kimi-theme/_mock';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { useResponsive } from 'src/hooks';
-import { _addressBooks } from 'src/_mock';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { AddressListDialog } from '../address';
 

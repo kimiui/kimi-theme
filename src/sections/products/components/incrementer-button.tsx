@@ -3,9 +3,8 @@ import type { StackProps } from '@mui/material/Stack';
 import { forwardRef } from 'react';
 import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
-
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

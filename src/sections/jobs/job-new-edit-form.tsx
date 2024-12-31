@@ -1,6 +1,6 @@
 'use client';
 
-import type { IJobItem } from 'src/types/job';
+import type { IJobItem } from 'kimi-theme/types/job';
 
 import { z as zod } from 'zod';
 import Box from '@mui/material/Box';
@@ -12,19 +12,18 @@ import { useRouter } from 'routes-react';
 import Switch from '@mui/material/Switch';
 import { useMemo, useEffect } from 'react';
 import Divider from '@mui/material/Divider';
+import { paths } from 'kimi-theme/routes/paths';
 import ButtonBase from '@mui/material/ButtonBase';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, Controller } from 'react-hook-form';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { paths } from 'src/routes/paths';
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { Form, Field, schemaHelper } from 'src/components/hook-form';
+import { Form, Field, schemaHelper } from 'kimi-theme/components/hook-form';
 import {
   _roles,
   JOB_SKILL_OPTIONS,
@@ -32,7 +31,7 @@ import {
   JOB_EXPERIENCE_OPTIONS,
   JOB_EMPLOYMENT_TYPE_OPTIONS,
   JOB_WORKING_SCHEDULE_OPTIONS,
-} from 'src/_mock';
+} from 'kimi-theme/_mock';
 
 // ----------------------------------------------------------------------
 

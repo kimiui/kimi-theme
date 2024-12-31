@@ -1,10 +1,10 @@
 'use client';
 
-import type { ITourItem } from 'src/types/tour';
+import type { ITourItem } from 'kimi-theme/types/tour';
 
-import { paths } from 'src/routes/paths';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { paths } from 'kimi-theme/routes/paths';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { TourNewEditForm } from '../tour-new-edit-form';
 

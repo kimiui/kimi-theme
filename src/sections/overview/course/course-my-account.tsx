@@ -5,11 +5,10 @@ import Card from '@mui/material/Card';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
-import { useMockedUser } from 'src/auth/hooks';
-import { Iconify } from 'src/components/iconify';
-import { AnimateAvatar } from 'src/components/animate';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { AnimateAvatar } from 'kimi-theme/components/animate';
 
 // ----------------------------------------------------------------------
 

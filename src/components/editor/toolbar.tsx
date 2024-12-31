@@ -1,7 +1,6 @@
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
-
-import { varAlpha } from 'src/theme/styles';
+import { varAlpha } from 'kimi-theme/theme/styles';
 
 import { editorClasses } from './classes';
 import { LinkBlock } from './components/link-block';

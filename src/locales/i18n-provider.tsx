@@ -4,9 +4,8 @@ import React from 'react';
 import i18next from 'i18next';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import { localStorageGetItem } from 'kimi-theme/utils/storage-available';
 import { initReactI18next, I18nextProvider as Provider } from 'react-i18next';
-
-import { localStorageGetItem } from 'src/utils/storage-available';
 
 import { fallbackLng, i18nOptions } from './config-locales';
 

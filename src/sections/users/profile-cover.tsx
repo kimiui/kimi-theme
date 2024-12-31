@@ -1,12 +1,11 @@
-import type { IUserProfileCover } from 'src/types/user';
+import type { IUserProfileCover } from 'kimi-theme/types/user';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import { useTheme } from '@mui/material/styles';
 import ListItemText from '@mui/material/ListItemText';
-
-import { varAlpha, bgGradient } from 'src/theme/styles';
+import { varAlpha, bgGradient } from 'kimi-theme/theme/styles';
 
 // ----------------------------------------------------------------------
 

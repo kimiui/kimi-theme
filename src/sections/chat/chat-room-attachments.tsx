@@ -1,12 +1,11 @@
-import type { IChatAttachment } from 'src/types/chat';
+import type { IChatAttachment } from 'kimi-theme/types/chat';
 
 import { useBoolean } from 'ahooks';
 import Stack from '@mui/material/Stack';
 import Collapse from '@mui/material/Collapse';
 import ListItemText from '@mui/material/ListItemText';
-
-import { fDateTime } from 'src/utils/format-time';
-import { FileThumbnail } from 'src/components/file-thumbnail';
+import { fDateTime } from 'kimi-theme/utils/format-time';
+import { FileThumbnail } from 'kimi-theme/components/file-thumbnail';
 
 import { CollapseButton } from './styles';
 

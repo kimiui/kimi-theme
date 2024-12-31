@@ -1,5 +1,5 @@
 import type { CardProps } from '@mui/material/Card';
-import type { TableHeadCustomProps } from 'src/components/table';
+import type { TableHeadCustomProps } from 'kimi-theme/components/table';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -9,12 +9,11 @@ import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 import CardHeader from '@mui/material/CardHeader';
-
-import { Label } from 'src/components/label';
-import { FlagIcon } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { Scrollbar } from 'src/components/scrollbar';
-import { TableHeadCustom } from 'src/components/table';
+import { Label } from 'kimi-theme/components/label';
+import { FlagIcon } from 'kimi-theme/components/iconify';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { TableHeadCustom } from 'kimi-theme/components/table';
 
 // ----------------------------------------------------------------------
 

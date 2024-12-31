@@ -1,10 +1,10 @@
 'use client';
 
-import type { IUserItem } from 'src/types/user';
+import type { IUserItem } from 'kimi-theme/types/user';
 
-import { paths } from 'src/routes/paths';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { paths } from 'kimi-theme/routes/paths';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { UserNewEditForm } from '../user-new-edit-form';
 

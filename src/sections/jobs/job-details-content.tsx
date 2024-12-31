@@ -1,4 +1,4 @@
-import type { IJobItem } from 'src/types/job';
+import type { IJobItem } from 'kimi-theme/types/job';
 
 import Chip from '@mui/material/Chip';
 import Card from '@mui/material/Card';
@@ -7,12 +7,11 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+import { fDate } from 'kimi-theme/utils/format-time';
 import ListItemText from '@mui/material/ListItemText';
-
-import { fDate } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
-import { Markdown } from 'src/components/markdown';
-import { fCurrency } from 'src/utils/format-number';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Markdown } from 'kimi-theme/components/markdown';
+import { fCurrency } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

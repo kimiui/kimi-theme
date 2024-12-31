@@ -5,12 +5,11 @@ import Grid from '@mui/material/Grid2';
 import Radio from '@mui/material/Radio';
 import Paper from '@mui/material/Paper';
 import { useTheme } from '@mui/material/styles';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { paths } from 'src/routes/paths';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

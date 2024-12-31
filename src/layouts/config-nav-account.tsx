@@ -1,6 +1,5 @@
 import SvgIcon from '@mui/material/SvgIcon';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

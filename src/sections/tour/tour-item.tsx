@@ -1,4 +1,4 @@
-import type { ITourItem } from 'src/types/tour';
+import type { ITourItem } from 'kimi-theme/types/tour';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
@@ -7,15 +7,14 @@ import Stack from '@mui/material/Stack';
 import { RouterLink } from 'routes-react';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
+import { Image } from 'kimi-theme/components/image';
 import ListItemText from '@mui/material/ListItemText';
-
-import { paths } from 'src/routes/paths';
-import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { fDateTime, fDateRangeShortLabel } from 'src/utils/format-time';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { fDateTime, fDateRangeShortLabel } from 'kimi-theme/utils/format-time';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

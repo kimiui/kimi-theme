@@ -7,8 +7,7 @@ import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
-import { varContainer, MotionViewport } from 'src/components/animate';
+import { varContainer, MotionViewport } from 'kimi-theme/components/animate';
 
 import { getVariant } from '../get-variant';
 

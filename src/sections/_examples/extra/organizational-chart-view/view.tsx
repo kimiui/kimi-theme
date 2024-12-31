@@ -2,10 +2,9 @@
 
 import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
-
-import { paths } from 'src/routes/paths';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
-import { OrganizationalChart } from 'src/components/organizational-chart';
+import { paths } from 'kimi-theme/routes/paths';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import { OrganizationalChart } from 'kimi-theme/components/organizational-chart';
 
 import { GroupNode } from './group-node';
 import { SimpleNode } from './simple-node';

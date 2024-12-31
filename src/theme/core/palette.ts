@@ -1,7 +1,7 @@
 import type { ColorSystemOptions } from '@mui/material/styles';
 import type { Channels, PaletteColor } from '@mui/material/styles/createPalette';
 
-import { varAlpha, createPaletteChannel } from 'src/theme/styles';
+import { varAlpha, createPaletteChannel } from 'kimi-theme/theme/styles';
 
 import { themeConfig } from '../theme-config';
 

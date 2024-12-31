@@ -1,4 +1,4 @@
-import { ListView } from 'src/sections/_examples/mui/list-view';
+import { ListView } from 'kimi-theme/sections/_examples/mui/list-view';
 
 // ----------------------------------------------------------------------
 

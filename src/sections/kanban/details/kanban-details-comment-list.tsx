@@ -1,13 +1,12 @@
 import type { Theme } from '@mui/material/styles';
-import type { IKanbanComment } from 'src/types/kanban';
+import type { IKanbanComment } from 'kimi-theme/types/kanban';
 
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-
-import { Image } from 'src/components/image';
-import { fToNow } from 'src/utils/format-time';
-import { Lightbox, useLightBox } from 'src/components/lightbox';
+import { Image } from 'kimi-theme/components/image';
+import { fToNow } from 'kimi-theme/utils/format-time';
+import { Lightbox, useLightBox } from 'kimi-theme/components/lightbox';
 
 // ----------------------------------------------------------------------
 

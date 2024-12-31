@@ -6,14 +6,13 @@ import Tab from '@mui/material/Tab';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
+import { useTabs } from 'kimi-theme/hooks';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
-
-import { useTabs } from 'src/hooks';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { CustomTabs } from 'src/components/custom-tabs';
-import { fCurrency, fShortenNumber } from 'src/utils/format-number';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { CustomTabs } from 'kimi-theme/components/custom-tabs';
+import { fCurrency, fShortenNumber } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

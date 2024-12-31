@@ -7,12 +7,11 @@ import { useBoolean } from 'ahooks';
 import Button from '@mui/material/Button';
 import { useState, useCallback } from 'react';
 import TextField from '@mui/material/TextField';
+import { uuidv4 } from 'kimi-theme/utils/uuidv4';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { createColumn } from 'kimi-theme/actions/kanban';
 import { inputBaseClasses } from '@mui/material/InputBase';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
-
-import { uuidv4 } from 'src/utils/uuidv4';
-import { Iconify } from 'src/components/iconify';
-import { createColumn } from 'src/actions/kanban';
 
 // ----------------------------------------------------------------------
 

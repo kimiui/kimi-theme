@@ -7,13 +7,12 @@ import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-
-import { maxLine } from 'src/theme/styles';
-import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
-import { Label, labelClasses } from 'src/components/label';
-import { fCurrency, fShortenNumber } from 'src/utils/format-number';
-import { Carousel, useCarousel, CarouselArrowBasicButtons } from 'src/components/carousel';
+import { maxLine } from 'kimi-theme/theme/styles';
+import { Image } from 'kimi-theme/components/image';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Label, labelClasses } from 'kimi-theme/components/label';
+import { fCurrency, fShortenNumber } from 'kimi-theme/utils/format-number';
+import { Carousel, useCarousel, CarouselArrowBasicButtons } from 'kimi-theme/components/carousel';
 
 // ----------------------------------------------------------------------
 

@@ -1,8 +1,8 @@
 'use client';
 
-import { _mock } from 'src/_mock';
-import { paths } from 'src/routes/paths';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { _mock } from 'kimi-theme/_mock';
+import { paths } from 'kimi-theme/routes/paths';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { CarouselYaxis } from './carousel-yaxis';
 import { CarouselAlign } from './carousel-align';

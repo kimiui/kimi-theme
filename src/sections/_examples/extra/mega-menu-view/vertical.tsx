@@ -3,9 +3,8 @@ import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
-import { MegaMenuVertical } from 'src/components/mega-menu';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { MegaMenuVertical } from 'kimi-theme/components/mega-menu';
 
 import { navItems1 } from './data';
 

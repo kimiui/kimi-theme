@@ -1,6 +1,6 @@
 'use client';
 
-import type { IUserProfileFollower } from 'src/types/user';
+import type { IUserProfileFollower } from 'kimi-theme/types/user';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -9,8 +9,7 @@ import Avatar from '@mui/material/Avatar';
 import { useState, useCallback } from 'react';
 import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

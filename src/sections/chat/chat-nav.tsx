@@ -1,6 +1,6 @@
 'use client';
 
-import type { IChatParticipant, IChatConversation } from 'src/types/chat';
+import type { IChatParticipant, IChatConversation } from 'kimi-theme/types/chat';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -8,15 +8,14 @@ import { useRouter } from 'routes-react';
 import Drawer from '@mui/material/Drawer';
 import { useTheme } from '@mui/material/styles';
 import TextField from '@mui/material/TextField';
+import { paths } from 'kimi-theme/routes/paths';
+import { useResponsive } from 'kimi-theme/hooks';
 import IconButton from '@mui/material/IconButton';
+import { Iconify } from 'kimi-theme/components/iconify';
 import { useState, useEffect, useCallback } from 'react';
 import InputAdornment from '@mui/material/InputAdornment';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
-
-import { paths } from 'src/routes/paths';
-import { useResponsive } from 'src/hooks';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
 
 import { ToggleButton } from './styles';
 import { ChatNavItem } from './chat-nav-item';

@@ -10,10 +10,9 @@ import Collapse from '@mui/material/Collapse';
 import { useTheme } from '@mui/material/styles';
 import { useFormContext } from 'react-hook-form';
 import ButtonBase from '@mui/material/ButtonBase';
-
-import { Iconify } from 'src/components/iconify';
-import { bgBlur, varAlpha } from 'src/theme/styles';
-import { fileData } from 'src/components/file-thumbnail';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { bgBlur, varAlpha } from 'kimi-theme/theme/styles';
+import { fileData } from 'kimi-theme/components/file-thumbnail';
 
 // ----------------------------------------------------------------------
 

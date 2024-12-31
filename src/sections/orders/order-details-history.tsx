@@ -1,4 +1,4 @@
-import type { IOrderHistory } from 'src/types/order';
+import type { IOrderHistory } from 'kimi-theme/types/order';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -9,11 +9,10 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
 import TimelineContent from '@mui/lab/TimelineContent';
+import { fDateTime } from 'kimi-theme/utils/format-time';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
-
-import { fDateTime } from 'src/utils/format-time';
 
 // ----------------------------------------------------------------------
 

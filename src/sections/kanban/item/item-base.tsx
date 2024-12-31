@@ -1,6 +1,6 @@
 import type { Transform } from '@dnd-kit/utilities';
-import type { IKanbanTask } from 'src/types/kanban';
 import type { StackProps } from '@mui/material/Stack';
+import type { IKanbanTask } from 'kimi-theme/types/kanban';
 import type { DraggableSyntheticListeners } from '@dnd-kit/core';
 
 import Box from '@mui/material/Box';
@@ -10,11 +10,10 @@ import ListItem from '@mui/material/ListItem';
 import Typography from '@mui/material/Typography';
 import { memo, useEffect, forwardRef } from 'react';
 import { styled, useTheme } from '@mui/material/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { imageClasses } from 'kimi-theme/components/image';
+import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
 import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
-
-import { Iconify } from 'src/components/iconify';
-import { imageClasses } from 'src/components/image';
-import { varAlpha, stylesMode } from 'src/theme/styles';
 
 import { kanbanClasses } from '../classes';
 

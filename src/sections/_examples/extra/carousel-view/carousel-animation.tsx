@@ -5,11 +5,10 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-
-import { Image } from 'src/components/image';
-import { varAlpha, bgGradient } from 'src/theme/styles';
-import { varFade, MotionContainer } from 'src/components/animate';
-import { Carousel, useCarousel, CarouselArrowNumberButtons } from 'src/components/carousel';
+import { Image } from 'kimi-theme/components/image';
+import { varAlpha, bgGradient } from 'kimi-theme/theme/styles';
+import { varFade, MotionContainer } from 'kimi-theme/components/animate';
+import { Carousel, useCarousel, CarouselArrowNumberButtons } from 'kimi-theme/components/carousel';
 
 import { IndexLabel } from './elements';
 

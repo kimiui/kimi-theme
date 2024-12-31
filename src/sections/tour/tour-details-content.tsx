@@ -1,7 +1,7 @@
 'use client';
 
-import type { ITourItem } from 'src/types/tour';
 import type { Theme } from '@mui/material/styles';
+import type { ITourItem } from 'kimi-theme/types/tour';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
@@ -10,14 +10,13 @@ import Divider from '@mui/material/Divider';
 import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { Image } from 'kimi-theme/components/image';
+import { fDate } from 'kimi-theme/utils/format-time';
 import ListItemText from '@mui/material/ListItemText';
-
-import { Image } from 'src/components/image';
-import { fDate } from 'src/utils/format-time';
-import { TOUR_SERVICE_OPTIONS } from 'src/_mock';
-import { Iconify } from 'src/components/iconify';
-import { Markdown } from 'src/components/markdown';
-import { Lightbox, useLightBox } from 'src/components/lightbox';
+import { TOUR_SERVICE_OPTIONS } from 'kimi-theme/_mock';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Markdown } from 'kimi-theme/components/markdown';
+import { Lightbox, useLightBox } from 'kimi-theme/components/lightbox';
 // ----------------------------------------------------------------------
 
 type Props = {

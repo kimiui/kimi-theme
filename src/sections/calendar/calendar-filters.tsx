@@ -1,6 +1,6 @@
-import type { UseSetStateReturn } from 'src/hooks';
-import type { IDatePickerControl } from 'src/types/common';
-import type { ICalendarEvent, ICalendarFilters } from 'src/types/calendar';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
+import type { IDatePickerControl } from 'kimi-theme/types/common';
+import type { ICalendarEvent, ICalendarFilters } from 'kimi-theme/types/calendar';
 
 import { useCallback } from 'react';
 import Box from '@mui/material/Box';
@@ -10,15 +10,14 @@ import Divider from '@mui/material/Divider';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { orderBy } from 'kimi-theme/utils/helper';
 import ListItemText from '@mui/material/ListItemText';
+import { Iconify } from 'kimi-theme/components/iconify';
 import ListItemButton from '@mui/material/ListItemButton';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-
-import { orderBy } from 'src/utils/helper';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { fDate, fDateTime } from 'src/utils/format-time';
-import { ColorPicker } from 'src/components/color-utils';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { fDate, fDateTime } from 'kimi-theme/utils/format-time';
+import { ColorPicker } from 'kimi-theme/components/color-utils';
 
 // ----------------------------------------------------------------------
 

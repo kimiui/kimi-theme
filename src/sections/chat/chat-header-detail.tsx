@@ -1,4 +1,4 @@
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from 'kimi-theme/types/chat';
 
 import { useCallback } from 'react';
 import Badge from '@mui/material/Badge';
@@ -7,14 +7,13 @@ import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
+import { useResponsive } from 'kimi-theme/hooks';
 import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
+import { fToNow } from 'kimi-theme/utils/format-time';
+import { Iconify } from 'kimi-theme/components/iconify';
 import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
-
-import { useResponsive } from 'src/hooks';
-import { fToNow } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 import { ChatHeaderSkeleton } from './chat-skeleton';
 

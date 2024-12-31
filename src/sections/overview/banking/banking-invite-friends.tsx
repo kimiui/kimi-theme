@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import InputBase from '@mui/material/InputBase';
 import { useTheme } from '@mui/material/styles';
-
-import { varAlpha, bgGradient } from 'src/theme/styles';
+import { varAlpha, bgGradient } from 'kimi-theme/theme/styles';
 
 // ----------------------------------------------------------------------
 

@@ -9,10 +9,9 @@ import Link from '@mui/material/Link';
 import { RouterLink } from 'routes-react';
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
+import { Iconify } from 'kimi-theme/components/iconify';
 import CardActionArea from '@mui/material/CardActionArea';
-
-import { Iconify } from 'src/components/iconify';
-import { useNavItem } from 'src/components/nav-section/hooks';
+import { useNavItem } from 'kimi-theme/components/nav-section/hooks';
 
 import type { NavItemProps, NavItemStateProps } from '../types';
 

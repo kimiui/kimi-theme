@@ -6,8 +6,7 @@ import type { Easing, RepeatType } from 'framer-motion';
 import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import { useRef, useState, useEffect } from 'react';
-
-import { borderGradient } from 'src/theme/styles';
+import { borderGradient } from 'kimi-theme/theme/styles';
 
 // ----------------------------------------------------------------------
 

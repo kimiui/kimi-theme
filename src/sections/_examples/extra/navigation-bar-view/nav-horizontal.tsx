@@ -1,6 +1,5 @@
 import Paper from '@mui/material/Paper';
-
-import { NavSectionHorizontal } from 'src/components/nav-section';
+import { NavSectionHorizontal } from 'kimi-theme/components/nav-section';
 
 import { NAV_ITEMS } from './data';
 

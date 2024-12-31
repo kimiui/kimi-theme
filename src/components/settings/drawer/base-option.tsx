@@ -4,9 +4,8 @@ import Box from '@mui/material/Box';
 import Switch from '@mui/material/Switch';
 import Tooltip from '@mui/material/Tooltip';
 import ButtonBase from '@mui/material/ButtonBase';
-
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { SvgColor } from '../../svg-color';
 

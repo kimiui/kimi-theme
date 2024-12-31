@@ -1,4 +1,4 @@
-import type { IPostComment } from 'src/types/blog';
+import type { IPostComment } from 'kimi-theme/types/blog';
 
 import Box from '@mui/material/Box';
 import Pagination from '@mui/material/Pagination';

@@ -4,15 +4,20 @@ import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import Card from '@mui/material/Card';
 import Tabs from '@mui/material/Tabs';
+import { useTabs } from 'kimi-theme/hooks';
 import { useState, useCallback } from 'react';
-
-import { useTabs } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { useMockedUser } from 'src/auth/hooks';
-import { Iconify } from 'src/components/iconify';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
-import { _userAbout, _userFeeds, _userFriends, _userGallery, _userFollowers } from 'src/_mock';
+import { paths } from 'kimi-theme/routes/paths';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import {
+  _userAbout,
+  _userFeeds,
+  _userFriends,
+  _userGallery,
+  _userFollowers,
+} from 'kimi-theme/_mock';
 
 import { ProfileHome } from '../profile-home';
 import { ProfileCover } from '../profile-cover';

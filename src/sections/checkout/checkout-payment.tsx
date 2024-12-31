@@ -4,7 +4,7 @@ import type {
   ICheckoutCardOption,
   ICheckoutPaymentOption,
   ICheckoutDeliveryOption,
-} from 'src/types/checkout';
+} from 'kimi-theme/types/checkout';
 
 import { z as zod } from 'zod';
 import Grid from '@mui/material/Grid2';
@@ -12,9 +12,8 @@ import { useForm } from 'react-hook-form';
 import Button from '@mui/material/Button';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
-
-import { Form } from 'src/components/hook-form';
-import { Iconify } from 'src/components/iconify';
+import { Form } from 'kimi-theme/components/hook-form';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { useCheckoutContext } from './context';
 import { CheckoutSummary } from './checkout-summary';

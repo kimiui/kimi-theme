@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
-
-import { varAlpha, stylesMode } from 'src/theme/styles';
+import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
 
 import { Block } from './styles';
 import { SvgColor, svgColorClasses } from '../../svg-color';

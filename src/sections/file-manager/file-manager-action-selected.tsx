@@ -4,9 +4,8 @@ import Box from '@mui/material/Box';
 import Portal from '@mui/material/Portal';
 import Checkbox from '@mui/material/Checkbox';
 import Typography from '@mui/material/Typography';
-
-import { stylesMode } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
+import { stylesMode } from 'kimi-theme/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

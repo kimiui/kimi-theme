@@ -1,4 +1,4 @@
-import type { IProductItem } from 'src/types/product';
+import type { IProductItem } from 'kimi-theme/types/product';
 
 import Fab from '@mui/material/Fab';
 import Box from '@mui/material/Box';
@@ -7,13 +7,12 @@ import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import { RouterLink } from 'routes-react';
 import Tooltip from '@mui/material/Tooltip';
-
-import { paths } from 'src/routes/paths';
-import { Image } from 'src/components/image';
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { ColorPreview } from 'src/components/color-utils';
+import { paths } from 'kimi-theme/routes/paths';
+import { Image } from 'kimi-theme/components/image';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { ColorPreview } from 'kimi-theme/components/color-utils';
 
 import { useCheckoutContext } from '../checkout/context';
 

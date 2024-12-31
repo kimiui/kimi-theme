@@ -1,13 +1,12 @@
-import type { IKanbanTask } from 'src/types/kanban';
+import type { IKanbanTask } from 'kimi-theme/types/kanban';
 
 import Paper from '@mui/material/Paper';
+import { _mock } from 'kimi-theme/_mock';
+import { uuidv4 } from 'kimi-theme/utils/uuidv4';
 import { useMemo, useState, useCallback } from 'react';
 import FormHelperText from '@mui/material/FormHelperText';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import InputBase, { inputBaseClasses } from '@mui/material/InputBase';
-
-import { _mock } from 'src/_mock';
-import { uuidv4 } from 'src/utils/uuidv4';
 
 // ----------------------------------------------------------------------
 

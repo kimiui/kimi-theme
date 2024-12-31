@@ -1,15 +1,14 @@
 import type { CardProps } from '@mui/material/Card';
-import type { ChartOptions } from 'src/components/chart';
+import type { ChartOptions } from 'kimi-theme/components/chart';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import { useTheme } from '@mui/material/styles';
+import { sumBy } from 'kimi-theme/utils/helper';
 import CardHeader from '@mui/material/CardHeader';
-
-import { sumBy } from 'src/utils/helper';
-import { varAlpha } from 'src/theme/styles';
-import { fNumber } from 'src/utils/format-number';
-import { Chart, useChart } from 'src/components/chart';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { fNumber } from 'kimi-theme/utils/format-number';
+import { Chart, useChart } from 'kimi-theme/components/chart';
 
 // ----------------------------------------------------------------------
 

@@ -4,10 +4,9 @@ import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import { cardClasses } from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { _coursesContinue, _coursesFeatured, _coursesReminder } from 'src/_mock';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { _coursesContinue, _coursesFeatured, _coursesReminder } from 'kimi-theme/_mock';
 
 import { CourseProgress } from '../course-progress';
 import { CourseContinue } from '../course-continue';

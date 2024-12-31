@@ -2,9 +2,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
-
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

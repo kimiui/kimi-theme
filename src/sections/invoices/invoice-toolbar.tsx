@@ -1,4 +1,4 @@
-import type { IInvoice } from 'src/types/invoice';
+import type { IInvoice } from 'kimi-theme/types/invoice';
 
 import { useCallback } from 'react';
 import Box from '@mui/material/Box';
@@ -11,13 +11,12 @@ import Dialog from '@mui/material/Dialog';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
 import DialogActions from '@mui/material/DialogActions';
+import { Iconify } from 'kimi-theme/components/iconify';
 import CircularProgress from '@mui/material/CircularProgress';
 import { PDFViewer, PDFDownloadLink } from '@react-pdf/renderer';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
 
 import { InvoicePDF } from './invoice-pdf';
 

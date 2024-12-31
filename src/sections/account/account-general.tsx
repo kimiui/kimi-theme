@@ -10,12 +10,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
+import { fData } from 'kimi-theme/utils/format-number';
+import { toast } from 'kimi-theme/components/snackbar';
 import { isValidPhoneNumber } from 'react-phone-number-input/input';
-
-import { useMockedUser } from 'src/auth/hooks';
-import { fData } from 'src/utils/format-number';
-import { toast } from 'src/components/snackbar';
-import { Form, Field, schemaHelper } from 'src/components/hook-form';
+import { Form, Field, schemaHelper } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

@@ -2,8 +2,7 @@ import type { StackProps } from '@mui/material/Stack';
 
 import Stack from '@mui/material/Stack';
 import Skeleton from '@mui/material/Skeleton';
-
-import { useResponsive } from 'src/hooks';
+import { useResponsive } from 'kimi-theme/hooks';
 
 // ----------------------------------------------------------------------
 

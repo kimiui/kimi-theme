@@ -1,6 +1,6 @@
 'use client';
 
-import type { IAddressItem } from 'src/types/common';
+import type { IAddressItem } from 'kimi-theme/types/common';
 
 import { useBoolean } from 'ahooks';
 import Card from '@mui/material/Card';
@@ -11,9 +11,8 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import CardHeader from '@mui/material/CardHeader';
 import IconButton from '@mui/material/IconButton';
-
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 import { AddressItem, AddressNewForm } from '../address';
 

@@ -1,6 +1,6 @@
 'use client';
 
-import type { IUserItem, IUserTableFilters } from 'src/types/user';
+import type { IUserItem, IUserTableFilters } from 'kimi-theme/types/user';
 
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
@@ -11,21 +11,20 @@ import Table from '@mui/material/Table';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import { useState, useCallback } from 'react';
+import { useSetState } from 'kimi-theme/hooks';
 import TableBody from '@mui/material/TableBody';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Label } from 'kimi-theme/components/label';
 import { useRouter, RouterLink } from 'routes-react';
-
-import { useSetState } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { varAlpha } from 'src/theme/styles';
-import { Label } from 'src/components/label';
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { _roles, _userList, USER_STATUS_OPTIONS } from 'src/_mock';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { _roles, _userList, USER_STATUS_OPTIONS } from 'kimi-theme/_mock';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 import {
   useTable,
   emptyRows,
@@ -36,7 +35,7 @@ import {
   TableHeadCustom,
   TableSelectedAction,
   TablePaginationCustom,
-} from 'src/components/table';
+} from 'kimi-theme/components/table';
 
 import { UserTableRow } from '../user-table-row';
 import { UserTableToolbar } from '../user-table-toolbar';

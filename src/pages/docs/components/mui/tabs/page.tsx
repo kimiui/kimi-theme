@@ -1,4 +1,4 @@
-import { TabsView } from 'src/sections/_examples/mui/tabs-view';
+import { TabsView } from 'kimi-theme/sections/_examples/mui/tabs-view';
 
 // ----------------------------------------------------------------------
 

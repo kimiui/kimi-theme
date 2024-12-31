@@ -1,25 +1,24 @@
 'use client';
 
-import type { IFile, IFileFilters } from 'src/types/file';
+import type { IFile, IFileFilters } from 'kimi-theme/types/file';
 
 import { useBoolean } from 'ahooks';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useState, useCallback } from 'react';
+import { useSetState } from 'kimi-theme/hooks';
 import Typography from '@mui/material/Typography';
 import ToggleButton from '@mui/material/ToggleButton';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-
-import { useSetState } from 'src/hooks';
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { _allFiles, FILE_TYPE_OPTIONS } from 'src/_mock';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { fileFormat } from 'src/components/file-thumbnail';
-import { EmptyContent } from 'src/components/empty-content';
-import { fIsAfter, fIsBetween } from 'src/utils/format-time';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { useTable, rowInPage, getComparator } from 'src/components/table';
+import { _allFiles, FILE_TYPE_OPTIONS } from 'kimi-theme/_mock';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { fileFormat } from 'kimi-theme/components/file-thumbnail';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
+import { fIsAfter, fIsBetween } from 'kimi-theme/utils/format-time';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { useTable, rowInPage, getComparator } from 'kimi-theme/components/table';
 
 import { FileManagerTable } from '../file-manager-table';
 import { FileManagerFilters } from '../file-manager-filters';

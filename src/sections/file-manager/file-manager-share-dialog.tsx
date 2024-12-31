@@ -1,5 +1,5 @@
-import type { IFileShared } from 'src/types/file';
 import type { DialogProps } from '@mui/material/Dialog';
+import type { IFileShared } from 'kimi-theme/types/file';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -7,10 +7,9 @@ import Dialog from '@mui/material/Dialog';
 import TextField from '@mui/material/TextField';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogActions from '@mui/material/DialogActions';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
 
 import { FileManagerInvitedItem } from './file-manager-invited-item';
 

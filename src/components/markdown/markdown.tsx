@@ -7,9 +7,8 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import Link from '@mui/material/Link';
 import rehypeHighlight from 'rehype-highlight';
-
-import { isExternalLink } from 'src/utils';
-import { Image } from 'src/components/image';
+import { isExternalLink } from 'kimi-theme/utils';
+import { Image } from 'kimi-theme/components/image';
 
 import { StyledRoot } from './styles';
 import { markdownClasses } from './classes';

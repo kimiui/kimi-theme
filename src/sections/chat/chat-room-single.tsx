@@ -1,12 +1,11 @@
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from 'kimi-theme/types/chat';
 
 import { useBoolean } from 'ahooks';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Collapse from '@mui/material/Collapse';
 import Typography from '@mui/material/Typography';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { CollapseButton } from './styles';
 

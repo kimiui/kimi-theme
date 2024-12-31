@@ -4,11 +4,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
-import { Scrollbar } from 'src/components/scrollbar';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

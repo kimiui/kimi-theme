@@ -1,4 +1,4 @@
-import { UtilitiesView } from 'src/sections/_examples/extra/utilities-view';
+import { UtilitiesView } from 'kimi-theme/sections/_examples/extra/utilities-view';
 
 // ----------------------------------------------------------------------
 

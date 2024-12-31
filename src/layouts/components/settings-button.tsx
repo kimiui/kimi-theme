@@ -3,9 +3,8 @@ import type { IconButtonProps } from '@mui/material/IconButton';
 import { memo, useMemo } from 'react';
 import Badge from '@mui/material/Badge';
 import IconButton from '@mui/material/IconButton';
-
-import { Iconify } from 'src/components/iconify';
-import { useSettingsContext } from 'src/components/settings/context';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { useSettingsContext } from 'kimi-theme/components/settings/context';
 
 // ----------------------------------------------------------------------
 

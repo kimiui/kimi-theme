@@ -3,9 +3,8 @@ import type { FileRejection } from 'react-dropzone';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
-import { fData } from 'src/utils/format-number';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { fData } from 'kimi-theme/utils/format-number';
 
 import { fileData } from '../../file-thumbnail';
 

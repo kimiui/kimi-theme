@@ -5,9 +5,8 @@ import type { ButtonBaseProps } from '@mui/material/ButtonBase';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import SvgIcon from '@mui/material/SvgIcon';
+import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
 import ButtonBase, { buttonBaseClasses } from '@mui/material/ButtonBase';
-
-import { varAlpha, stylesMode } from 'src/theme/styles';
 
 import { carouselClasses } from '../classes';
 

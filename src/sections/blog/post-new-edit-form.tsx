@@ -1,6 +1,6 @@
 'use client';
 
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 
 import { z as zod } from 'zod';
 import Box from '@mui/material/Box';
@@ -9,21 +9,20 @@ import Card from '@mui/material/Card';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import { useRouter } from 'routes-react';
+import { _tags } from 'kimi-theme/_mock';
 import { useForm } from 'react-hook-form';
 import Button from '@mui/material/Button';
 import Switch from '@mui/material/Switch';
 import Divider from '@mui/material/Divider';
+import { paths } from 'kimi-theme/routes/paths';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { toast } from 'kimi-theme/components/snackbar';
 import { useMemo, useEffect, useCallback } from 'react';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { _tags } from 'src/_mock';
-import { paths } from 'src/routes/paths';
-import { toast } from 'src/components/snackbar';
-import { Form, Field, schemaHelper } from 'src/components/hook-form';
+import { Form, Field, schemaHelper } from 'kimi-theme/components/hook-form';
 
 import { PostDetailsPreview } from './post-details-preview';
 

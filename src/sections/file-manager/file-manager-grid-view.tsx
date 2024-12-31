@@ -1,5 +1,5 @@
-import type { IFile } from 'src/types/file';
-import type { TableProps } from 'src/components/table';
+import type { IFile } from 'kimi-theme/types/file';
+import type { TableProps } from 'kimi-theme/components/table';
 
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
@@ -7,8 +7,7 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Collapse from '@mui/material/Collapse';
 import { useRef, useState, useCallback } from 'react';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { FileManagerPanel } from './file-manager-panel';
 import { FileManagerFileItem } from './file-manager-file-item';

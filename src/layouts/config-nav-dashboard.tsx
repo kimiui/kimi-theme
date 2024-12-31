@@ -1,6 +1,6 @@
-import { paths } from 'src/routes/paths';
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { paths } from 'kimi-theme/routes/paths';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

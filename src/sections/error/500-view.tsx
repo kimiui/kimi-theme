@@ -5,10 +5,9 @@ import Button from '@mui/material/Button';
 import { RouterLink } from 'routes-react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-
-import { SimpleLayout } from 'src/layouts/simple';
-import { ServerErrorIllustration } from 'src/assets/illustrations';
-import { varBounce, MotionContainer } from 'src/components/animate';
+import { SimpleLayout } from 'kimi-theme/layouts/simple';
+import { ServerErrorIllustration } from 'kimi-theme/assets/illustrations';
+import { varBounce, MotionContainer } from 'kimi-theme/components/animate';
 
 // ----------------------------------------------------------------------
 

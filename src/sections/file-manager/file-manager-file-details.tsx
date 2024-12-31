@@ -1,6 +1,6 @@
 'use client';
 
-import type { IFile } from 'src/types/file';
+import type { IFile } from 'kimi-theme/types/file';
 import type { DrawerProps } from '@mui/material/Drawer';
 
 import Box from '@mui/material/Box';
@@ -16,12 +16,11 @@ import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Autocomplete from '@mui/material/Autocomplete';
-
-import { fData } from 'src/utils/format-number';
-import { Iconify } from 'src/components/iconify';
-import { fDateTime } from 'src/utils/format-time';
-import { Scrollbar } from 'src/components/scrollbar';
-import { fileFormat, FileThumbnail } from 'src/components/file-thumbnail';
+import { fData } from 'kimi-theme/utils/format-number';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fDateTime } from 'kimi-theme/utils/format-time';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { fileFormat, FileThumbnail } from 'kimi-theme/components/file-thumbnail';
 
 import { FileManagerInvitedItem } from './file-manager-invited-item';
 import { FileManagerShareDialog } from './file-manager-share-dialog';

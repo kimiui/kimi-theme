@@ -1,4 +1,4 @@
-import type { IProductItem } from 'src/types/product';
+import type { IProductItem } from 'kimi-theme/types/product';
 
 import Box from '@mui/material/Box';
 import { useRouter } from 'routes-react';
@@ -6,13 +6,12 @@ import Avatar from '@mui/material/Avatar';
 import parse from 'autosuggest-highlight/parse';
 import match from 'autosuggest-highlight/match';
 import TextField from '@mui/material/TextField';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
+import { SearchNotFound } from 'kimi-theme/components/search-not-found';
 import Autocomplete, { autocompleteClasses } from '@mui/material/Autocomplete';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { SearchNotFound } from 'src/components/search-not-found';
 
 // ----------------------------------------------------------------------
 

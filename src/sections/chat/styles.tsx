@@ -5,9 +5,8 @@ import type { ListItemButtonProps } from '@mui/material/ListItemButton';
 
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
+import { Iconify } from 'kimi-theme/components/iconify';
 import ListItemButton from '@mui/material/ListItemButton';
-
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

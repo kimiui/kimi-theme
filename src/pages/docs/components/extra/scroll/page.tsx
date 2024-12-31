@@ -1,4 +1,4 @@
-import { ScrollbarView } from 'src/sections/_examples/extra/scrollbar-view';
+import { ScrollbarView } from 'kimi-theme/sections/_examples/extra/scrollbar-view';
 
 // ----------------------------------------------------------------------
 

@@ -9,17 +9,16 @@ import { useState, useCallback } from 'react';
 import ListItem from '@mui/material/ListItem';
 import Collapse from '@mui/material/Collapse';
 import Checkbox from '@mui/material/Checkbox';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
+import { Iconify } from 'kimi-theme/components/iconify';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemSecondaryAction from '@mui/material/ListItemSecondaryAction';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

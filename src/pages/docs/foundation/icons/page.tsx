@@ -1,4 +1,4 @@
-import { IconsView } from 'src/sections/_examples/foundation/icons-view';
+import { IconsView } from 'kimi-theme/sections/_examples/foundation/icons-view';
 
 // ----------------------------------------------------------------------
 

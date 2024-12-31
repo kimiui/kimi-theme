@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha, stylesMode } from 'src/theme/styles';
+import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
 
 import type { NodeProps } from './data';
 

@@ -1,12 +1,11 @@
-import type { UseSetStateReturn } from 'src/hooks';
-import type { IProductFilters } from 'src/types/product';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
 import type { Theme, SxProps } from '@mui/material/styles';
+import type { IProductFilters } from 'kimi-theme/types/product';
 
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
-
-import { varAlpha } from 'src/theme/styles';
-import { chipProps, FiltersBlock, FiltersResult } from 'src/components/filters-result';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { chipProps, FiltersBlock, FiltersResult } from 'kimi-theme/components/filters-result';
 
 // ----------------------------------------------------------------------
 

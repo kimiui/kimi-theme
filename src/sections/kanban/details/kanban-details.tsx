@@ -1,6 +1,6 @@
 'use client';
 
-import type { IKanbanTask } from 'src/types/kanban';
+import type { IKanbanTask } from 'kimi-theme/types/kanban';
 
 import dayjs from 'dayjs';
 import Box from '@mui/material/Box';
@@ -10,6 +10,7 @@ import Chip from '@mui/material/Chip';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
+import { useTabs } from 'kimi-theme/hooks';
 import Tooltip from '@mui/material/Tooltip';
 import { useState, useCallback } from 'react';
 import Checkbox from '@mui/material/Checkbox';
@@ -18,15 +19,16 @@ import FormGroup from '@mui/material/FormGroup';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
 import LinearProgress from '@mui/material/LinearProgress';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { useTabs } from 'src/hooks';
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { CustomTabs } from 'src/components/custom-tabs';
-import { useDateRangePicker, CustomDateRangePicker } from 'src/components/custom-date-range-picker';
+import { CustomTabs } from 'kimi-theme/components/custom-tabs';
+import {
+  useDateRangePicker,
+  CustomDateRangePicker,
+} from 'kimi-theme/components/custom-date-range-picker';
 
 import { KanbanDetailsToolbar } from './kanban-details-toolbar';
 import { KanbanInputName } from '../components/kanban-input-name';

@@ -6,9 +6,8 @@ import React from 'react';
 import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-
-import { _mock } from 'src/_mock';
-import { AnimateText, MotionContainer } from 'src/components/animate';
+import { _mock } from 'kimi-theme/_mock';
+import { AnimateText, MotionContainer } from 'kimi-theme/components/animate';
 
 import { getVariant } from '../get-variant';
 

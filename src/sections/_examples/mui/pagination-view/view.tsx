@@ -1,11 +1,10 @@
 'use client';
 
 import { useState, useCallback } from 'react';
+import { paths } from 'kimi-theme/routes/paths';
 import Pagination from '@mui/material/Pagination';
 import TablePagination from '@mui/material/TablePagination';
-
-import { paths } from 'src/routes/paths';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { PaginationItems } from './pagination-items';
 import { ComponentHero } from '../../component-hero';

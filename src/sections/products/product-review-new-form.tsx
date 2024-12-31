@@ -13,8 +13,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import { zodResolver } from '@hookform/resolvers/zod';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-
-import { Form, Field } from 'src/components/hook-form';
+import { Form, Field } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

@@ -4,8 +4,7 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-
-import { maxLine } from 'src/theme/styles';
+import { maxLine } from 'kimi-theme/theme/styles';
 
 import { ComponentBlock } from '../../component-block';
 

@@ -1,6 +1,6 @@
 'use client';
 
-import type { IUserItem } from 'src/types/user';
+import type { IUserItem } from 'kimi-theme/types/user';
 
 import { z as zod } from 'zod';
 import { useMemo } from 'react';
@@ -13,13 +13,12 @@ import MenuItem from '@mui/material/MenuItem';
 import LoadingButton from '@mui/lab/LoadingButton';
 import DialogTitle from '@mui/material/DialogTitle';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { USER_STATUS_OPTIONS } from 'kimi-theme/_mock';
+import { toast } from 'kimi-theme/components/snackbar';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import { isValidPhoneNumber } from 'react-phone-number-input/input';
-
-import { USER_STATUS_OPTIONS } from 'src/_mock';
-import { toast } from 'src/components/snackbar';
-import { Form, Field, schemaHelper } from 'src/components/hook-form';
+import { Form, Field, schemaHelper } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

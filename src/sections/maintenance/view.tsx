@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { RouterLink } from 'routes-react';
 import Typography from '@mui/material/Typography';
-
-import { MaintenanceIllustration } from 'src/assets/illustrations';
+import { MaintenanceIllustration } from 'kimi-theme/assets/illustrations';
 
 // ----------------------------------------------------------------------
 

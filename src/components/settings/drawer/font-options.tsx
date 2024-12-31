@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
-
-import { setFont, varAlpha, stylesMode } from 'src/theme/styles';
+import { setFont, varAlpha, stylesMode } from 'kimi-theme/theme/styles';
 
 import { Block } from './styles';
 import { SvgColor } from '../../svg-color';

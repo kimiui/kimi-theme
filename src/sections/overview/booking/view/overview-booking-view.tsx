@@ -2,14 +2,13 @@
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
-
-import { DashboardContent } from 'src/layouts/dashboard';
-import { _bookings, _bookingNew, _bookingReview, _bookingsOverview } from 'src/_mock';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { _bookings, _bookingNew, _bookingReview, _bookingsOverview } from 'kimi-theme/_mock';
 import {
   BookingIllustration,
   CheckInIllustration,
   CheckoutIllustration,
-} from 'src/assets/illustrations';
+} from 'kimi-theme/assets/illustrations';
 
 import { BookingBooked } from '../booking-booked';
 import { BookingNewest } from '../booking-newest';

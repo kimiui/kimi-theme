@@ -1,8 +1,7 @@
 import { cloneElement } from 'react';
 import { useTheme } from '@mui/material/styles';
+import { flattenArray } from 'kimi-theme/utils/helper';
 import { Tree, TreeNode } from 'react-organizational-chart';
-
-import { flattenArray } from 'src/utils/helper';
 
 import type { OrgChartProps, OrgChartListProps, OrgChartSubListProps } from './types';
 

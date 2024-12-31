@@ -1,7 +1,7 @@
 import type { ColorSystem } from '@mui/material/styles';
-import type { SettingsState } from 'src/components/settings';
+import type { SettingsState } from 'kimi-theme/components/settings';
 
-import { setFont, hexToRgbChannel } from 'src/theme/styles';
+import { setFont, hexToRgbChannel } from 'kimi-theme/theme/styles';
 
 import type { ThemeOptions, ThemeColorScheme } from '../types';
 

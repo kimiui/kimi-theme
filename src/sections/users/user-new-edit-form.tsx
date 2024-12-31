@@ -1,6 +1,6 @@
 'use client';
 
-import type { IUserItem } from 'src/types/user';
+import type { IUserItem } from 'kimi-theme/types/user';
 
 import { z as zod } from 'zod';
 import { useMemo } from 'react';
@@ -11,18 +11,17 @@ import Stack from '@mui/material/Stack';
 import { useRouter } from 'routes-react';
 import Button from '@mui/material/Button';
 import Switch from '@mui/material/Switch';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
+import { Label } from 'kimi-theme/components/label';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, Controller } from 'react-hook-form';
+import { fData } from 'kimi-theme/utils/format-number';
+import { toast } from 'kimi-theme/components/snackbar';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { isValidPhoneNumber } from 'react-phone-number-input/input';
-
-import { paths } from 'src/routes/paths';
-import { Label } from 'src/components/label';
-import { fData } from 'src/utils/format-number';
-import { toast } from 'src/components/snackbar';
-import { Form, Field, schemaHelper } from 'src/components/hook-form';
+import { Form, Field, schemaHelper } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

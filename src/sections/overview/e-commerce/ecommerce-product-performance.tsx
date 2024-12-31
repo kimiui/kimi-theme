@@ -1,7 +1,7 @@
 'use client';
 
 import type { BoxProps } from '@mui/material/Box';
-import type { TableHeadCustomProps } from 'src/components/table';
+import type { TableHeadCustomProps } from 'kimi-theme/components/table';
 
 import React from 'react';
 import Box from '@mui/material/Box';
@@ -13,10 +13,9 @@ import TableRow from '@mui/material/TableRow';
 import { useTheme } from '@mui/material/styles';
 import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
-
-import { fCurrency } from 'src/utils/format-number';
-import { Scrollbar } from 'src/components/scrollbar';
-import { TableHeadCustom } from 'src/components/table';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { TableHeadCustom } from 'kimi-theme/components/table';
 
 type Props = BoxProps & {
   title?: string;

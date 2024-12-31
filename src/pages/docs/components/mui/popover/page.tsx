@@ -1,4 +1,4 @@
-import { PopoverView } from 'src/sections/_examples/mui/popover-view';
+import { PopoverView } from 'kimi-theme/sections/_examples/mui/popover-view';
 
 // ----------------------------------------------------------------------
 

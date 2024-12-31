@@ -4,15 +4,14 @@ import { z as zod } from 'zod';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import { useForm } from 'react-hook-form';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { useRouter, RouterLink } from 'routes-react';
 import { zodResolver } from '@hookform/resolvers/zod';
-
-import { paths } from 'src/routes/paths';
-import { resetPassword } from 'src/auth/context';
-import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
+import { resetPassword } from 'kimi-theme/auth/context';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Form, Field } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-import { FormValidationView } from 'src/sections/_examples/extra/form-validation-view';
+import { FormValidationView } from 'kimi-theme/sections/_examples/extra/form-validation-view';
 
 // ----------------------------------------------------------------------
 

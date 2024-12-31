@@ -2,9 +2,8 @@ import Table from '@mui/material/Table';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
-
-import { Scrollbar } from 'src/components/scrollbar';
-import { TableHeadCustom } from 'src/components/table';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { TableHeadCustom } from 'kimi-theme/components/table';
 
 // ----------------------------------------------------------------------
 

@@ -1,5 +1,5 @@
-import { paths } from 'src/routes/paths';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { paths } from 'kimi-theme/routes/paths';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { Textfields } from './textfield';
 import { ComponentHero } from '../../component-hero';

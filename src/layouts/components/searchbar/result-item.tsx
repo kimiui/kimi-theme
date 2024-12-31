@@ -1,9 +1,8 @@
 import Box from '@mui/material/Box';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Label } from 'kimi-theme/components/label';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemButton from '@mui/material/ListItemButton';
-
-import { varAlpha } from 'src/theme/styles';
-import { Label } from 'src/components/label';
 
 // ----------------------------------------------------------------------
 
@@ -41,8 +40,10 @@ export function ResultItem({ title, path, groupLabel, onClickItem }: Readonly<Pr
       }}
     >
       <ListItemText
-        primaryTypographyProps={{ typography: 'subtitle2', sx: { textTransform: 'capitalize' } }}
-        secondaryTypographyProps={{ typography: 'caption', noWrap: true }}
+        slotProps={{
+          primary: { typography: 'subtitle2', sx: { textTransform: 'capitalize' } },
+          secondary: { typography: 'caption', noWrap: true },
+        }}
         primary={title.map((part, index) => (
           <Box
             key={index}

@@ -1,4 +1,4 @@
-import 'src/components/scrollbar/styles.css';
+import 'kimi-theme/components/scrollbar/styles.css';
 
 import ReactDOM from 'react-dom/client';
 import { Suspense, StrictMode } from 'react';

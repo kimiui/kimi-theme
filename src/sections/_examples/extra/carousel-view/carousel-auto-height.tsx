@@ -1,8 +1,7 @@
 import Box from '@mui/material/Box';
 import AutoHeight from 'embla-carousel-auto-height';
-
-import { Image } from 'src/components/image';
-import { Carousel, useCarousel, CarouselArrowBasicButtons } from 'src/components/carousel';
+import { Image } from 'kimi-theme/components/image';
+import { Carousel, useCarousel, CarouselArrowBasicButtons } from 'kimi-theme/components/carousel';
 
 import { IndexLabel } from './elements';
 

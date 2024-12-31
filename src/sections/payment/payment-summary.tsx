@@ -6,9 +6,8 @@ import Button from '@mui/material/Button';
 import Switch from '@mui/material/Switch';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

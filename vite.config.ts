@@ -22,7 +22,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@mui/styled-engine': '@mui/styled-engine-sc',
-      kimi: path.resolve(__dirname, './src'),
+      'kimi-theme': path.resolve(__dirname, './src'),
       src: path.resolve(__dirname, './src'),
     },
   },

@@ -1,5 +1,5 @@
-import type { UseSetStateReturn } from 'src/hooks';
-import type { IProductFilters } from 'src/types/product';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
+import type { IProductFilters } from 'kimi-theme/types/product';
 
 import { useCallback } from 'react';
 import Box from '@mui/material/Box';
@@ -15,13 +15,12 @@ import Tooltip from '@mui/material/Tooltip';
 import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { ColorPicker } from 'kimi-theme/components/color-utils';
 import InputBase, { inputBaseClasses } from '@mui/material/InputBase';
-
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { ColorPicker } from 'src/components/color-utils';
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-import type { IJobCandidate } from 'src/types/job';
+import type { IJobCandidate } from 'kimi-theme/types/job';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -7,10 +7,9 @@ import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import Pagination from '@mui/material/Pagination';
 import IconButton from '@mui/material/IconButton';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import ListItemText from '@mui/material/ListItemText';
-
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

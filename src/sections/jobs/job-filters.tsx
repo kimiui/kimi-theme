@@ -1,5 +1,5 @@
-import type { IJobFilters } from 'src/types/job';
-import type { UseSetStateReturn } from 'src/hooks';
+import type { IJobFilters } from 'kimi-theme/types/job';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
 
 import { useCallback } from 'react';
 import Box from '@mui/material/Box';
@@ -16,11 +16,10 @@ import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Autocomplete from '@mui/material/Autocomplete';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { CountrySelect } from 'src/components/country-select';
+import { CountrySelect } from 'kimi-theme/components/country-select';
 
 // ----------------------------------------------------------------------
 

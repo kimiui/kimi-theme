@@ -1,4 +1,4 @@
-import { MarkdownView } from 'src/sections/_examples/extra/markdown-view';
+import { MarkdownView } from 'kimi-theme/sections/_examples/extra/markdown-view';
 
 // ----------------------------------------------------------------------
 

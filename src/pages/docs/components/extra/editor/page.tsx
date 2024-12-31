@@ -1,4 +1,4 @@
-import { EditorView } from 'src/sections/_examples/extra/editor-view';
+import { EditorView } from 'kimi-theme/sections/_examples/extra/editor-view';
 
 // ----------------------------------------------------------------------
 

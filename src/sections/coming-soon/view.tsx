@@ -4,17 +4,16 @@ import Box from '@mui/material/Box';
 import { useCountDown } from 'ahooks';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { _socials } from 'kimi-theme/_mock';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import InputAdornment from '@mui/material/InputAdornment';
+import { Waiting } from 'kimi-theme/assets/illustrations';
+import { SocialIcon } from 'kimi-theme/components/iconify';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
-
-import { _socials } from 'src/_mock';
-import { varAlpha } from 'src/theme/styles';
-import { Waiting } from 'src/assets/illustrations';
-import { SocialIcon } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

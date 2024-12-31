@@ -1,4 +1,4 @@
-import type { FileUploadType } from 'src/components/upload';
+import type { FileUploadType } from 'kimi-theme/components/upload';
 
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -8,10 +8,9 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
 import DialogActions from '@mui/material/DialogActions';
-
-import { Markdown } from 'src/components/markdown';
-import { Scrollbar } from 'src/components/scrollbar';
-import { EmptyContent } from 'src/components/empty-content';
+import { Markdown } from 'kimi-theme/components/markdown';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
 
 import { PostDetailsHero } from './post-details-hero';
 

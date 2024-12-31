@@ -1,4 +1,4 @@
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 
 import Link from '@mui/material/Link';
 import { useRouter } from 'routes-react';
@@ -7,11 +7,10 @@ import parse from 'autosuggest-highlight/parse';
 import match from 'autosuggest-highlight/match';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
+import { SearchNotFound } from 'kimi-theme/components/search-not-found';
 import Autocomplete, { autocompleteClasses } from '@mui/material/Autocomplete';
-
-import { Iconify } from 'src/components/iconify';
-import { SearchNotFound } from 'src/components/search-not-found';
 
 // ----------------------------------------------------------------------
 

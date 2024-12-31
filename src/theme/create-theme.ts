@@ -1,7 +1,7 @@
 'use client';
 
-import type { SettingsState } from 'src/components/settings';
 import type { Theme, Components } from '@mui/material/styles';
+import type { SettingsState } from 'kimi-theme/components/settings';
 
 import { createTheme as createMuiTheme } from '@mui/material/styles';
 

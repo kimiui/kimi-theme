@@ -1,6 +1,6 @@
 import type { Theme, SxProps } from '@mui/material/styles';
 import type { DropAnimation, UniqueIdentifier } from '@dnd-kit/core';
-import type { IKanban, IKanbanTask, IKanbanColumn } from 'src/types/kanban';
+import type { IKanban, IKanbanTask, IKanbanColumn } from 'kimi-theme/types/kanban';
 
 import Portal from '@mui/material/Portal';
 import { DragOverlay as DndDragOverlay, defaultDropAnimationSideEffects } from '@dnd-kit/core';

@@ -1,8 +1,7 @@
 import type { Country } from 'react-phone-number-input';
 
 import { parsePhoneNumber } from 'react-phone-number-input';
-
-import { countries } from 'src/assets/data/countries';
+import { countries } from 'kimi-theme/assets/data/countries';
 
 // ----------------------------------------------------------------------
 

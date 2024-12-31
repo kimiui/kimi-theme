@@ -1,4 +1,4 @@
-import axios from 'src/utils/axios';
+import axios from 'kimi-theme/utils/axios';
 
 import { STORAGE_KEY } from './constant';
 

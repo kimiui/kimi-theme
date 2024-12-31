@@ -4,9 +4,8 @@ import type { BoxProps } from '@mui/material';
 import type { ApexOptions } from 'apexcharts';
 
 import { useTheme } from '@mui/material/styles';
+import { Chart } from 'kimi-theme/components/chart';
 import { Box, Card, Stack, Typography } from '@mui/material';
-
-import { Chart } from 'src/components/chart';
 
 type ChartSeries = {
   name: string;

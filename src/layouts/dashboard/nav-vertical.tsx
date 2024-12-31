@@ -1,12 +1,11 @@
 import type { Breakpoint } from '@mui/material/styles';
-import type { NavSectionProps } from 'src/components/nav-section';
+import type { NavSectionProps } from 'kimi-theme/components/nav-section';
 
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-
-import { Scrollbar } from 'src/components/scrollbar';
-import { varAlpha, hideScrollY } from 'src/theme/styles';
-import { NavSectionMini, NavSectionVertical } from 'src/components/nav-section';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { varAlpha, hideScrollY } from 'kimi-theme/theme/styles';
+import { NavSectionMini, NavSectionVertical } from 'kimi-theme/components/nav-section';
 
 import { NavToggleButton } from '../components/nav-toggle-button';
 
@@ -15,7 +14,7 @@ import { NavToggleButton } from '../components/nav-toggle-button';
 export type NavVerticalProps = NavSectionProps & {
   isNavMini: boolean;
   layoutQuery: Breakpoint;
-  onToggleNav: () => void;
+  onToggleNav?: () => void;
   slotProps?: {
     top?: React.ReactNode;
     topMini?: React.ReactNode;
@@ -90,16 +89,18 @@ export function NavVertical({
         ...sx,
       }}
     >
-      <NavToggleButton
-        isNavMini={isNavMini}
-        onClick={onToggleNav}
-        sx={{
-          display: 'none',
-          [theme.breakpoints.up(layoutQuery)]: {
-            display: 'inline-flex',
-          },
-        }}
-      />
+      {onToggleNav && (
+        <NavToggleButton
+          isNavMini={isNavMini}
+          onClick={onToggleNav}
+          sx={{
+            display: 'none',
+            [theme.breakpoints.up(layoutQuery)]: {
+              display: 'inline-flex',
+            },
+          }}
+        />
+      )}
       {isNavMini ? renderNavMini : renderNavVertical}
     </Box>
   );

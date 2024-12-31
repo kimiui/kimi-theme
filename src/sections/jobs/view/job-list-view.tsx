@@ -1,20 +1,19 @@
 'use client';
 
-import type { IJobItem, IJobFilters } from 'src/types/job';
+import type { IJobItem, IJobFilters } from 'kimi-theme/types/job';
 
 import { useBoolean } from 'ahooks';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { RouterLink } from 'routes-react';
 import { useState, useCallback } from 'react';
-
-import { useSetState } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { orderBy } from 'src/utils/helper';
-import { Iconify } from 'src/components/iconify';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { EmptyContent } from 'src/components/empty-content';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { useSetState } from 'kimi-theme/hooks';
+import { paths } from 'kimi-theme/routes/paths';
+import { orderBy } from 'kimi-theme/utils/helper';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 import {
   _jobs,
   _roles,
@@ -22,7 +21,7 @@ import {
   JOB_BENEFIT_OPTIONS,
   JOB_EXPERIENCE_OPTIONS,
   JOB_EMPLOYMENT_TYPE_OPTIONS,
-} from 'src/_mock';
+} from 'kimi-theme/_mock';
 
 import { JobList } from '../job-list';
 import { JobSort } from '../job-sort';

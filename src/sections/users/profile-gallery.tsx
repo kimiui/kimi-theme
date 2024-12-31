@@ -1,17 +1,16 @@
-import type { IUserProfileGallery } from 'src/types/user';
+import type { IUserProfileGallery } from 'kimi-theme/types/user';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Image } from 'kimi-theme/components/image';
+import { fDate } from 'kimi-theme/utils/format-time';
 import ListItemText from '@mui/material/ListItemText';
-
-import { varAlpha } from 'src/theme/styles';
-import { Image } from 'src/components/image';
-import { fDate } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
-import { Lightbox, useLightBox } from 'src/components/lightbox';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Lightbox, useLightBox } from 'kimi-theme/components/lightbox';
 
 // ----------------------------------------------------------------------
 

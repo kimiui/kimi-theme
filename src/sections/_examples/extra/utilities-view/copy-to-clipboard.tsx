@@ -5,11 +5,10 @@ import { useState, useCallback } from 'react';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { useDoubleClick, useCopyToClipboard } from 'src/hooks';
+import { useDoubleClick, useCopyToClipboard } from 'kimi-theme/hooks';
 
 import { ComponentBlock, ComponentContainer } from '../../component-block';
 

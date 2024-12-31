@@ -1,14 +1,13 @@
-import type { IChatMessage, IChatParticipant } from 'src/types/chat';
+import type { IChatMessage, IChatParticipant } from 'kimi-theme/types/chat';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { fToNow } from 'src/utils/format-time';
-import { useMockedUser } from 'src/auth/hooks';
-import { Iconify } from 'src/components/iconify';
+import { fToNow } from 'kimi-theme/utils/format-time';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { useMessage } from './hooks/use-message';
 

@@ -4,9 +4,8 @@ import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import ToggleButton from '@mui/material/ToggleButton';
+import { Iconify } from 'kimi-theme/components/iconify';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-
-import { Iconify } from 'src/components/iconify';
 
 import { ComponentBlock } from '../../component-block';
 

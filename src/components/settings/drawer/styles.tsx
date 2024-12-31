@@ -2,9 +2,8 @@ import type { Theme, SxProps } from '@mui/material/styles';
 
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
-
-import { Iconify } from 'src/components/iconify';
-import { varAlpha, stylesMode } from 'src/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
 
 // ----------------------------------------------------------------------
 

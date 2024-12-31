@@ -1,7 +1,6 @@
 import AcUnitIcon from '@mui/icons-material/AcUnit';
+import { Iconify } from 'kimi-theme/components/iconify';
 import { Link, Stack, Divider, Typography } from '@mui/material';
-
-import { Iconify } from 'src/components/iconify';
 // ------------------------------------------------------------------
 export default function Content() {
   return (

@@ -1,6 +1,6 @@
 'use client';
 
-import type { IInvoice } from 'src/types/invoice';
+import type { IInvoice } from 'kimi-theme/types/invoice';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -13,13 +13,12 @@ import TableRow from '@mui/material/TableRow';
 import TableHead from '@mui/material/TableHead';
 import TableBody from '@mui/material/TableBody';
 import Typography from '@mui/material/Typography';
+import { Label } from 'kimi-theme/components/label';
+import { fDate } from 'kimi-theme/utils/format-time';
+import { INVOICE_STATUS_OPTIONS } from 'kimi-theme/_mock';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-
-import { Label } from 'src/components/label';
-import { fDate } from 'src/utils/format-time';
-import { INVOICE_STATUS_OPTIONS } from 'src/_mock';
-import { fCurrency } from 'src/utils/format-number';
-import { Scrollbar } from 'src/components/scrollbar';
 
 import { InvoiceToolbar } from './invoice-toolbar';
 

@@ -1,6 +1,5 @@
 import { faker } from '@faker-js/faker';
-
-import { uuidv4 } from 'src/utils/uuidv4';
+import { uuidv4 } from 'kimi-theme/utils/uuidv4';
 
 import { _mock } from './_mock';
 

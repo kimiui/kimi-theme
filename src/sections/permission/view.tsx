@@ -3,16 +3,15 @@
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import { useState, useCallback } from 'react';
+import { paths } from 'kimi-theme/routes/paths';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
 import ToggleButton from '@mui/material/ToggleButton';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
+import { RoleBasedGuard } from 'kimi-theme/auth/guard';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-
-import { paths } from 'src/routes/paths';
-import { useMockedUser } from 'src/auth/hooks';
-import { RoleBasedGuard } from 'src/auth/guard';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 // ----------------------------------------------------------------------
 

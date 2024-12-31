@@ -1,4 +1,4 @@
-import type { IMail, IMailLabel } from 'src/types/mail';
+import type { IMail, IMailLabel } from 'kimi-theme/types/mail';
 
 import { useBoolean } from 'ahooks';
 import Link from '@mui/material/Link';
@@ -11,18 +11,17 @@ import Collapse from '@mui/material/Collapse';
 import ButtonBase from '@mui/material/ButtonBase';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { Label } from 'kimi-theme/components/label';
+import { Editor } from 'kimi-theme/components/editor';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fDateTime } from 'kimi-theme/utils/format-time';
+import { Markdown } from 'kimi-theme/components/markdown';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { maxLine, stylesMode } from 'kimi-theme/theme/styles';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
+import { FileThumbnail } from 'kimi-theme/components/file-thumbnail';
+import { LoadingScreen } from 'kimi-theme/components/loading-screen';
 import { darken, lighten, useTheme, alpha as hexAlpha } from '@mui/material/styles';
-
-import { Label } from 'src/components/label';
-import { Editor } from 'src/components/editor';
-import { Iconify } from 'src/components/iconify';
-import { fDateTime } from 'src/utils/format-time';
-import { Markdown } from 'src/components/markdown';
-import { Scrollbar } from 'src/components/scrollbar';
-import { maxLine, stylesMode } from 'src/theme/styles';
-import { EmptyContent } from 'src/components/empty-content';
-import { FileThumbnail } from 'src/components/file-thumbnail';
-import { LoadingScreen } from 'src/components/loading-screen';
 
 // ----------------------------------------------------------------------
 

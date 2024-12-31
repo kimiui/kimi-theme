@@ -1,4 +1,4 @@
-import { MegaMenuView } from 'src/sections/_examples/extra/mega-menu-view';
+import { MegaMenuView } from 'kimi-theme/sections/_examples/extra/mega-menu-view';
 
 // ----------------------------------------------------------------------
 

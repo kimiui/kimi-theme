@@ -1,7 +1,7 @@
 'use client';
 
 import Calendar from '@fullcalendar/react'; // => request placed at the top
-import type { ICalendarEvent, ICalendarFilters } from 'src/types/calendar';
+import type { ICalendarEvent, ICalendarFilters } from 'kimi-theme/types/calendar';
 
 import { useEffect } from 'react';
 import { useBoolean } from 'ahooks';
@@ -10,20 +10,19 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import listPlugin from '@fullcalendar/list';
+import { useSetState } from 'kimi-theme/hooks';
 import { useTheme } from '@mui/material/styles';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import Typography from '@mui/material/Typography';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import timelinePlugin from '@fullcalendar/timeline';
 import DialogTitle from '@mui/material/DialogTitle';
+import { Iconify } from 'kimi-theme/components/iconify';
 import interactionPlugin from '@fullcalendar/interaction';
-
-import { useSetState } from 'src/hooks';
-import { Iconify } from 'src/components/iconify';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { CALENDAR_COLOR_OPTIONS } from 'src/_mock/_calendar';
-import { updateEvent, useGetEvents } from 'src/actions/calendar';
-import { fDate, fIsAfter, fIsBetween } from 'src/utils/format-time';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { CALENDAR_COLOR_OPTIONS } from 'kimi-theme/_mock/_calendar';
+import { updateEvent, useGetEvents } from 'kimi-theme/actions/calendar';
+import { fDate, fIsAfter, fIsBetween } from 'kimi-theme/utils/format-time';
 
 import { StyledCalendar } from '../styles';
 import { useEvent } from '../hooks/use-event';

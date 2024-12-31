@@ -1,6 +1,6 @@
-import type { NavSectionProps, NavItemBaseProps } from 'src/components/nav-section';
+import type { NavSectionProps, NavItemBaseProps } from 'kimi-theme/components/nav-section';
 
-import { flattenArray } from 'src/utils/helper';
+import { flattenArray } from 'kimi-theme/utils/helper';
 
 // ----------------------------------------------------------------------
 

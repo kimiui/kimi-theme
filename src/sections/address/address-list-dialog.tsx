@@ -1,6 +1,6 @@
 'use client';
 
-import type { IAddressItem } from 'src/types/common';
+import type { IAddressItem } from 'kimi-theme/types/common';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -9,12 +9,11 @@ import { useState, useCallback } from 'react';
 import TextField from '@mui/material/TextField';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { SearchNotFound } from 'src/components/search-not-found';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { SearchNotFound } from 'kimi-theme/components/search-not-found';
 
 // ----------------------------------------------------------------------
 

@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'routes-react';
-
-import { SplashScreen } from 'src/components/loading-screen';
+import { SplashScreen } from 'kimi-theme/components/loading-screen';
 
 import { useAuthContext } from '../hooks';
 

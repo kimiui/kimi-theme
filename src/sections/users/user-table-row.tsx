@@ -1,4 +1,4 @@
-import type { IUserItem } from 'src/types/user';
+import type { IUserItem } from 'kimi-theme/types/user';
 
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
@@ -13,11 +13,10 @@ import MenuList from '@mui/material/MenuList';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import IconButton from '@mui/material/IconButton';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 import { UserQuickEditForm } from './user-quick-edit-form';
 

@@ -1,11 +1,10 @@
 import type FullCalendar from '@fullcalendar/react';
 import type { EventResizeDoneArg } from '@fullcalendar/interaction';
 import type { EventDropArg, DateSelectArg, EventClickArg } from '@fullcalendar/core';
-import type { ICalendarView, ICalendarEvent, ICalendarRange } from 'src/types/calendar';
+import type { ICalendarView, ICalendarEvent, ICalendarRange } from 'kimi-theme/types/calendar';
 
+import { useResponsive } from 'kimi-theme/hooks';
 import { useRef, useState, useCallback } from 'react';
-
-import { useResponsive } from 'src/hooks';
 
 // ----------------------------------------------------------------------
 

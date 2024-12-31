@@ -8,11 +8,10 @@ import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
-
-import { fToNow } from 'src/utils/format-time';
-import { varHover } from 'src/components/animate';
-import { Scrollbar } from 'src/components/scrollbar';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { fToNow } from 'kimi-theme/utils/format-time';
+import { varHover } from 'kimi-theme/components/animate';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

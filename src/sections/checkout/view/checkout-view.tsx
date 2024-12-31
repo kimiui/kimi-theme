@@ -4,8 +4,7 @@ import { useEffect } from 'react';
 import Grid from '@mui/material/Grid2';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-
-import { PRODUCT_CHECKOUT_STEPS } from 'src/_mock/_product';
+import { PRODUCT_CHECKOUT_STEPS } from 'kimi-theme/_mock/_product';
 
 import { CheckoutCart } from '../checkout-cart';
 import { useCheckoutContext } from '../context';

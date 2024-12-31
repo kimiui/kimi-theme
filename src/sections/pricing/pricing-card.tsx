@@ -6,11 +6,10 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { varAlpha, stylesMode } from 'src/theme/styles';
-import { PlanFreeIcon, PlanStarterIcon, PlanPremiumIcon } from 'src/assets/icons';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
+import { PlanFreeIcon, PlanStarterIcon, PlanPremiumIcon } from 'kimi-theme/assets/icons';
 
 // ----------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 'use client';
 
-import type { IPostItem, IPostFilters } from 'src/types/blog';
+import type { IPostItem, IPostFilters } from 'kimi-theme/types/blog';
 
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
@@ -8,16 +8,15 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { RouterLink } from 'routes-react';
 import { useState, useCallback } from 'react';
-
-import { paths } from 'src/routes/paths';
-import { orderBy } from 'src/utils/helper';
-import { Label } from 'src/components/label';
-import { POST_SORT_OPTIONS } from 'src/_mock';
-import { useGetPosts } from 'src/actions/blog';
-import { Iconify } from 'src/components/iconify';
-import { useDebounce, useSetState } from 'src/hooks';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { paths } from 'kimi-theme/routes/paths';
+import { orderBy } from 'kimi-theme/utils/helper';
+import { Label } from 'kimi-theme/components/label';
+import { POST_SORT_OPTIONS } from 'kimi-theme/_mock';
+import { useGetPosts } from 'kimi-theme/actions/blog';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { useDebounce, useSetState } from 'kimi-theme/hooks';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { PostSort } from '../post-sort';
 import { PostSearch } from '../post-search';

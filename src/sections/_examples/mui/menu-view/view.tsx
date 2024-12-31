@@ -4,13 +4,12 @@ import Menu from '@mui/material/Menu';
 import Button from '@mui/material/Button';
 import { useState, useCallback } from 'react';
 import MenuItem from '@mui/material/MenuItem';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
+import { Iconify } from 'kimi-theme/components/iconify';
 import ListItemButton from '@mui/material/ListItemButton';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

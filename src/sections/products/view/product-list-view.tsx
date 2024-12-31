@@ -1,7 +1,7 @@
 'use client';
 
-import type { UseSetStateReturn } from 'src/hooks';
-import type { IProductItem, IProductTableFilters } from 'src/types/product';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
+import type { IProductItem, IProductTableFilters } from 'kimi-theme/types/product';
 import type {
   GridSlots,
   GridColDef,
@@ -13,8 +13,18 @@ import { useBoolean } from 'ahooks';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { useSetState } from 'kimi-theme/hooks';
+import { paths } from 'kimi-theme/routes/paths';
 import { useRouter, RouterLink } from 'routes-react';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
 import { useState, useEffect, useCallback } from 'react';
+import { PRODUCT_STOCK_OPTIONS } from 'kimi-theme/_mock';
+import { useGetProducts } from 'kimi-theme/actions/product';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 import {
   DataGrid,
   gridClasses,
@@ -25,17 +35,6 @@ import {
   GridToolbarFilterButton,
   GridToolbarColumnsButton,
 } from '@mui/x-data-grid';
-
-import { useSetState } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { PRODUCT_STOCK_OPTIONS } from 'src/_mock';
-import { useGetProducts } from 'src/actions/product';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { EmptyContent } from 'src/components/empty-content';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ProductTableToolbar } from '../product-table-toolbar';
 import { ProductTableFiltersResult } from '../product-table-filters-result';

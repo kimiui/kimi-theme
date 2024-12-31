@@ -1,10 +1,9 @@
-import type { IInvoice } from 'src/types/invoice';
+import type { IInvoice } from 'kimi-theme/types/invoice';
 
 import { useMemo } from 'react';
+import { fDate } from 'kimi-theme/utils/format-time';
+import { fCurrency } from 'kimi-theme/utils/format-number';
 import { Page, View, Text, Font, Image, Document, StyleSheet } from '@react-pdf/renderer';
-
-import { fDate } from 'src/utils/format-time';
-import { fCurrency } from 'src/utils/format-number';
 
 // ----------------------------------------------------------------------
 

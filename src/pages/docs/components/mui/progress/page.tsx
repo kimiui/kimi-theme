@@ -1,4 +1,4 @@
-import { ProgressView } from 'src/sections/_examples/mui/progress-view';
+import { ProgressView } from 'kimi-theme/sections/_examples/mui/progress-view';
 
 // ----------------------------------------------------------------------
 

@@ -7,10 +7,9 @@ import Step from '@mui/material/Step';
 import Stack from '@mui/material/Stack';
 import Stepper from '@mui/material/Stepper';
 import { styled } from '@mui/material/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
 import StepLabel, { stepLabelClasses } from '@mui/material/StepLabel';
 import MuiStepConnector, { stepConnectorClasses } from '@mui/material/StepConnector';
-
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

@@ -8,9 +8,8 @@ import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import { memo, useEffect, forwardRef } from 'react';
-
-import { Iconify } from 'src/components/iconify';
-import { varAlpha, stylesMode } from 'src/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
 
 import { itemClasses } from './classes';
 

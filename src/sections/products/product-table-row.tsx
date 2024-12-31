@@ -4,12 +4,11 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
+import { Label } from 'kimi-theme/components/label';
 import ListItemText from '@mui/material/ListItemText';
 import LinearProgress from '@mui/material/LinearProgress';
-
-import { Label } from 'src/components/label';
-import { fCurrency } from 'src/utils/format-number';
-import { fTime, fDate } from 'src/utils/format-time';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { fTime, fDate } from 'kimi-theme/utils/format-time';
 
 // ----------------------------------------------------------------------
 

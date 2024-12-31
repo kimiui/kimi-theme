@@ -1,12 +1,11 @@
-import type { UseSetStateReturn } from 'src/hooks';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
 import type { Theme, SxProps } from '@mui/material/styles';
-import type { IProductTableFilters } from 'src/types/product';
+import type { IProductTableFilters } from 'kimi-theme/types/product';
 
 import { useCallback } from 'react';
 import Chip from '@mui/material/Chip';
-
-import { sentenceCase } from 'src/utils/change-case';
-import { chipProps, FiltersBlock, FiltersResult } from 'src/components/filters-result';
+import { sentenceCase } from 'kimi-theme/utils/change-case';
+import { chipProps, FiltersBlock, FiltersResult } from 'kimi-theme/components/filters-result';
 
 // ----------------------------------------------------------------------
 

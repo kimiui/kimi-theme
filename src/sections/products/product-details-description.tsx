@@ -1,4 +1,4 @@
-import { Markdown } from 'src/components/markdown';
+import { Markdown } from 'kimi-theme/components/markdown';
 
 // ----------------------------------------------------------------------
 

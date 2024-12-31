@@ -1,4 +1,4 @@
-import { CarouselView } from 'src/sections/_examples/extra/carousel-view';
+import { CarouselView } from 'kimi-theme/sections/_examples/extra/carousel-view';
 
 // ----------------------------------------------------------------------
 

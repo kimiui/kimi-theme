@@ -1,9 +1,8 @@
-import type { ICalendarEvent, ICalendarRange } from 'src/types/calendar';
+import type { ICalendarEvent, ICalendarRange } from 'kimi-theme/types/calendar';
 
 import dayjs from 'dayjs';
 import { useMemo } from 'react';
-
-import { CALENDAR_COLOR_OPTIONS } from 'src/_mock/_calendar';
+import { CALENDAR_COLOR_OPTIONS } from 'kimi-theme/_mock/_calendar';
 
 // ----------------------------------------------------------------------
 

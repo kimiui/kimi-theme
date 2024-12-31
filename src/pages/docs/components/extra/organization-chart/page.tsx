@@ -1,4 +1,4 @@
-import { OrganizationalChartView } from 'src/sections/_examples/extra/organizational-chart-view';
+import { OrganizationalChartView } from 'kimi-theme/sections/_examples/extra/organizational-chart-view';
 
 // ----------------------------------------------------------------------
 

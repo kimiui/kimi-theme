@@ -1,7 +1,7 @@
 'use client';
 
-import type { IDateValue } from 'src/types/common';
 import type { RatingProps } from '@mui/material/Rating';
+import type { IDateValue } from 'kimi-theme/types/common';
 import type {
   GridSlots,
   GridColDef,
@@ -18,7 +18,12 @@ import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
 import LinearProgress from '@mui/material/LinearProgress';
+import { fPercent } from 'kimi-theme/utils/format-number';
+import { fDate, fTime } from 'kimi-theme/utils/format-time';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
 import { useRef, useMemo, useState, useImperativeHandle } from 'react';
 import {
   DataGrid,
@@ -31,12 +36,6 @@ import {
   GridToolbarColumnsButton,
   GridToolbarDensitySelector,
 } from '@mui/x-data-grid';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { fPercent } from 'src/utils/format-number';
-import { fDate, fTime } from 'src/utils/format-time';
-import { EmptyContent } from 'src/components/empty-content';
 
 // ----------------------------------------------------------------------
 

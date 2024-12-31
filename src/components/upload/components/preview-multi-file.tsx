@@ -1,9 +1,8 @@
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import ListItemText from '@mui/material/ListItemText';
-
-import { varAlpha } from 'src/theme/styles';
-import { fData } from 'src/utils/format-number';
+import { fData } from 'kimi-theme/utils/format-number';
 
 import { Iconify } from '../../iconify';
 import { fileData, FileThumbnail } from '../../file-thumbnail';

@@ -5,10 +5,9 @@ import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { fData } from 'kimi-theme/utils/format-number';
+import { Iconify } from 'kimi-theme/components/iconify';
 import LinearProgress from '@mui/material/LinearProgress';
-
-import { fData } from 'src/utils/format-number';
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

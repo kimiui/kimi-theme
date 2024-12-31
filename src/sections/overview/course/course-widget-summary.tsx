@@ -1,14 +1,13 @@
 import type { CardProps } from '@mui/material/Card';
-import type { PaletteColorKey } from 'src/theme/core/palette';
+import type { PaletteColorKey } from 'kimi-theme/theme/core/palette';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
-import { fNumber } from 'src/utils/format-number';
-import { SvgColor } from 'src/components/svg-color';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { fNumber } from 'kimi-theme/utils/format-number';
+import { SvgColor } from 'kimi-theme/components/svg-color';
 
 // ----------------------------------------------------------------------
 

@@ -9,13 +9,12 @@ import Portal from '@mui/material/Portal';
 import { useState, useCallback } from 'react';
 import Backdrop from '@mui/material/Backdrop';
 import InputBase from '@mui/material/InputBase';
+import { useResponsive } from 'kimi-theme/hooks';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { useResponsive } from 'src/hooks';
-import { varAlpha } from 'src/theme/styles';
-import { Editor } from 'src/components/editor';
-import { Iconify } from 'src/components/iconify';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Editor } from 'kimi-theme/components/editor';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

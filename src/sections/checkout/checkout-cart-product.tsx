@@ -1,4 +1,4 @@
-import type { ICheckoutItem } from 'src/types/checkout';
+import type { ICheckoutItem } from 'kimi-theme/types/checkout';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -8,11 +8,10 @@ import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { ColorPreview } from 'src/components/color-utils';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { ColorPreview } from 'kimi-theme/components/color-utils';
 
 import { IncrementerButton } from '../products/components/incrementer-button';
 

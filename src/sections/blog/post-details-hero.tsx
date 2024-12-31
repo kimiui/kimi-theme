@@ -1,20 +1,19 @@
-import type { IPostHero } from 'src/types/blog';
+import type { IPostHero } from 'kimi-theme/types/blog';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
+import { _socials } from 'kimi-theme/_mock';
 import Container from '@mui/material/Container';
 import SpeedDial from '@mui/material/SpeedDial';
 import { useTheme } from '@mui/material/styles';
+import { useResponsive } from 'kimi-theme/hooks';
 import Typography from '@mui/material/Typography';
+import { fDate } from 'kimi-theme/utils/format-time';
 import ListItemText from '@mui/material/ListItemText';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-
-import { _socials } from 'src/_mock';
-import { useResponsive } from 'src/hooks';
-import { fDate } from 'src/utils/format-time';
-import { varAlpha, bgGradient } from 'src/theme/styles';
-import { Iconify, SocialIcon } from 'src/components/iconify';
+import { varAlpha, bgGradient } from 'kimi-theme/theme/styles';
+import { Iconify, SocialIcon } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

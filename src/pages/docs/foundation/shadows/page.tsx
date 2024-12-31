@@ -1,4 +1,4 @@
-import { ShadowsView } from 'src/sections/_examples/foundation/shadows-view';
+import { ShadowsView } from 'kimi-theme/sections/_examples/foundation/shadows-view';
 
 // ----------------------------------------------------------------------
 

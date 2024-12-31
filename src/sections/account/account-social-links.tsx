@@ -1,15 +1,14 @@
 'use client';
 
-import type { ISocialLink } from 'src/types/common';
+import type { ISocialLink } from 'kimi-theme/types/common';
 
 import Card from '@mui/material/Card';
 import { useForm } from 'react-hook-form';
 import LoadingButton from '@mui/lab/LoadingButton';
+import { toast } from 'kimi-theme/components/snackbar';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { toast } from 'src/components/snackbar';
-import { SocialIcon } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
+import { SocialIcon } from 'kimi-theme/components/iconify';
+import { Form, Field } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

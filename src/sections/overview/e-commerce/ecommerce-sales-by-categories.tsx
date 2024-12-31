@@ -4,9 +4,8 @@ import type { BoxProps } from '@mui/material';
 import type { ApexOptions } from 'apexcharts';
 
 import { useTheme } from '@mui/material/styles';
+import { Chart } from 'kimi-theme/components/chart';
 import { Box, Card, Stack, Divider, Typography } from '@mui/material';
-
-import { Chart } from 'src/components/chart';
 
 type Props = BoxProps & {
   title: string;

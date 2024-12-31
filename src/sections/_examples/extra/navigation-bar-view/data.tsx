@@ -1,5 +1,5 @@
-import { Label } from 'src/components/label';
-import { SvgColor } from 'src/components/svg-color';
+import { Label } from 'kimi-theme/components/label';
+import { SvgColor } from 'kimi-theme/components/svg-color';
 
 // ----------------------------------------------------------------------
 

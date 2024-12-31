@@ -10,9 +10,8 @@ import { useState, useCallback } from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import Pagination from '@mui/material/Pagination';
 import InputLabel from '@mui/material/InputLabel';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import FormControl from '@mui/material/FormControl';
-
-import { varAlpha } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

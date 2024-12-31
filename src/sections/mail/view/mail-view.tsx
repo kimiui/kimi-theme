@@ -2,13 +2,12 @@
 
 import { useBoolean } from 'ahooks';
 import { useEffect, useCallback } from 'react';
+import { paths } from 'kimi-theme/routes/paths';
+import { useResponsive } from 'kimi-theme/hooks';
 import Typography from '@mui/material/Typography';
 import { useRouter, useSearchParams } from 'routes-react';
-
-import { paths } from 'src/routes/paths';
-import { useResponsive } from 'src/hooks';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { useGetMail, useGetMails, useGetLabels } from 'src/actions/mail';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { useGetMail, useGetMails, useGetLabels } from 'kimi-theme/actions/mail';
 
 import { Layout } from '../layout';
 import { MailNav } from '../mail-nav';

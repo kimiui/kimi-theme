@@ -1,11 +1,10 @@
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { PostItemSkeleton } from './post-skeleton';
 import { PostItem, PostItemLatest } from './post-item';

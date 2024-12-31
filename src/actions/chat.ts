@@ -1,9 +1,8 @@
-import type { IChatMessage, IChatParticipant, IChatConversation } from 'src/types/chat';
+import type { IChatMessage, IChatParticipant, IChatConversation } from 'kimi-theme/types/chat';
 
 import { useMemo } from 'react';
 import useSWR, { mutate } from 'swr';
-
-import axios, { fetcher, endpoints } from 'src/utils/axios';
+import axios, { fetcher, endpoints } from 'kimi-theme/utils/axios';
 
 // ----------------------------------------------------------------------
 

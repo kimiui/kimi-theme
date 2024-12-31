@@ -1,6 +1,5 @@
 import { usePathname } from 'routes-react';
-
-import { hasParams, removeParams, isExternalLink, removeLastSlash } from 'src/utils/helper';
+import { hasParams, removeParams, isExternalLink, removeLastSlash } from 'kimi-theme/utils/helper';
 
 // ----------------------------------------------------------------------
 

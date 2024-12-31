@@ -1,17 +1,16 @@
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from 'kimi-theme/types/chat';
 
 import Stack from '@mui/material/Stack';
 import { useRouter } from 'routes-react';
 import InputBase from '@mui/material/InputBase';
+import { paths } from 'kimi-theme/routes/paths';
+import { uuidv4 } from 'kimi-theme/utils/uuidv4';
 import IconButton from '@mui/material/IconButton';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fSub, today } from 'kimi-theme/utils/format-time';
 import { useRef, useMemo, useState, useCallback } from 'react';
-
-import { paths } from 'src/routes/paths';
-import { uuidv4 } from 'src/utils/uuidv4';
-import { useMockedUser } from 'src/auth/hooks';
-import { Iconify } from 'src/components/iconify';
-import { fSub, today } from 'src/utils/format-time';
-import { sendMessage, createConversation } from 'src/actions/chat';
+import { sendMessage, createConversation } from 'kimi-theme/actions/chat';
 
 // ----------------------------------------------------------------------
 

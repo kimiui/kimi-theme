@@ -1,14 +1,13 @@
 'use client';
 
 import type { BoxProps } from '@mui/material';
-import type { ChartOptions } from 'src/components/chart';
+import type { ChartOptions } from 'kimi-theme/components/chart';
 
 import Card from '@mui/material/Card';
 import { useTheme } from '@mui/material/styles';
 import { Box, Typography } from '@mui/material';
-
-import { fCurrency } from 'src/utils/format-number';
-import { Chart, useChart } from 'src/components/chart';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { Chart, useChart } from 'kimi-theme/components/chart';
 
 type Props = BoxProps & {
   title?: string;

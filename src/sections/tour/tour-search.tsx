@@ -1,5 +1,5 @@
-import type { ITourItem } from 'src/types/tour';
-import type { UseSetStateReturn } from 'src/hooks';
+import type { ITourItem } from 'kimi-theme/types/tour';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
 
 import Box from '@mui/material/Box';
 import { useRouter } from 'routes-react';
@@ -7,13 +7,12 @@ import Avatar from '@mui/material/Avatar';
 import match from 'autosuggest-highlight/match';
 import parse from 'autosuggest-highlight/parse';
 import TextField from '@mui/material/TextField';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
+import { SearchNotFound } from 'kimi-theme/components/search-not-found';
 import Autocomplete, { autocompleteClasses } from '@mui/material/Autocomplete';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { SearchNotFound } from 'src/components/search-not-found';
 
 // ----------------------------------------------------------------------
 

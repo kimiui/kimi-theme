@@ -1,5 +1,5 @@
-import type { IFile } from 'src/types/file';
-import type { TableProps } from 'src/components/table';
+import type { IFile } from 'kimi-theme/types/file';
+import type { TableProps } from 'kimi-theme/components/table';
 
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
@@ -7,17 +7,16 @@ import Tooltip from '@mui/material/Tooltip';
 import { useTheme } from '@mui/material/styles';
 import TableBody from '@mui/material/TableBody';
 import IconButton from '@mui/material/IconButton';
+import { Iconify } from 'kimi-theme/components/iconify';
 import TableContainer from '@mui/material/TableContainer';
 import { tableCellClasses } from '@mui/material/TableCell';
 import { tablePaginationClasses } from '@mui/material/TablePagination';
-
-import { Iconify } from 'src/components/iconify';
 import {
   TableNoData,
   TableHeadCustom,
   TableSelectedAction,
   TablePaginationCustom,
-} from 'src/components/table';
+} from 'kimi-theme/components/table';
 
 import { FileManagerTableRow } from './file-manager-table-row';
 

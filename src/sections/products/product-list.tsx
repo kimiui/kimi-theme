@@ -1,5 +1,5 @@
 import type { BoxProps } from '@mui/material/Box';
-import type { IProductItem } from 'src/types/product';
+import type { IProductItem } from 'kimi-theme/types/product';
 
 import Box from '@mui/material/Box';
 import Pagination, { paginationClasses } from '@mui/material/Pagination';

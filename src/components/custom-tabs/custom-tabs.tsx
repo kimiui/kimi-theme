@@ -3,9 +3,8 @@ import type { Theme, SxProps } from '@mui/material/styles';
 
 import NoSsr from '@mui/material/NoSsr';
 import { tabClasses } from '@mui/material/Tab';
+import { stylesMode } from 'kimi-theme/theme/styles';
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
-
-import { stylesMode } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

@@ -2,10 +2,9 @@
 
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
-
-import { DashboardContent } from 'src/layouts/dashboard';
-import { Iconify } from 'src/components/iconify/iconify';
-import { _bankingContacts, _bankingCreditCard, _bankingRecentTransitions } from 'src/_mock';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { Iconify } from 'kimi-theme/components/iconify/iconify';
+import { _bankingContacts, _bankingCreditCard, _bankingRecentTransitions } from 'kimi-theme/_mock';
 
 import { BankingContacts } from '../banking-contacts';
 import { BankingOverview } from '../banking-overview';

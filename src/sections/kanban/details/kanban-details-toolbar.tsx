@@ -7,12 +7,11 @@ import Tooltip from '@mui/material/Tooltip';
 import { useState, useCallback } from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
+import { useResponsive } from 'kimi-theme/hooks';
 import IconButton from '@mui/material/IconButton';
-
-import { useResponsive } from 'src/hooks';
-import { Iconify } from 'src/components/iconify';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

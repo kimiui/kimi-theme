@@ -6,10 +6,9 @@ import Divider from '@mui/material/Divider';
 import TextField from '@mui/material/TextField';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
+import { fCurrency } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

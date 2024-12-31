@@ -2,7 +2,7 @@
 
 import type { CardProps } from '@mui/material/Card';
 import type { PaperProps } from '@mui/material/Paper';
-import type { ICheckoutCardOption, ICheckoutPaymentOption } from 'src/types/checkout';
+import type { ICheckoutCardOption, ICheckoutPaymentOption } from 'kimi-theme/types/checkout';
 
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
@@ -13,10 +13,9 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import CardHeader from '@mui/material/CardHeader';
 import ListItemText from '@mui/material/ListItemText';
+import { Iconify } from 'kimi-theme/components/iconify';
 import FormHelperText from '@mui/material/FormHelperText';
 import { Controller, useFormContext } from 'react-hook-form';
-
-import { Iconify } from 'src/components/iconify';
 
 import { PaymentNewCardDialog } from '../payment/payment-new-card-dialog';
 

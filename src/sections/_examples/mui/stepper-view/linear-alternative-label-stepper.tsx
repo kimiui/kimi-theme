@@ -9,8 +9,7 @@ import Button from '@mui/material/Button';
 import Stepper from '@mui/material/Stepper';
 import StepLabel from '@mui/material/StepLabel';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
+import { varAlpha } from 'kimi-theme/theme/styles';
 
 // ----------------------------------------------------------------------
 

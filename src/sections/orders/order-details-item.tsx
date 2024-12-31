@@ -1,4 +1,4 @@
-import type { IOrderProductItem } from 'src/types/order';
+import type { IOrderProductItem } from 'kimi-theme/types/order';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -7,10 +7,9 @@ import Avatar from '@mui/material/Avatar';
 import CardHeader from '@mui/material/CardHeader';
 import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
-
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { Scrollbar } from 'src/components/scrollbar';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
 
 // ----------------------------------------------------------------------
 

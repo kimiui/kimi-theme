@@ -7,12 +7,11 @@ import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import TextField from '@mui/material/TextField';
 import DialogTitle from '@mui/material/DialogTitle';
+import { Upload } from 'kimi-theme/components/upload';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
+import { Iconify } from 'kimi-theme/components/iconify';
 import { useState, useEffect, useCallback } from 'react';
-
-import { Upload } from 'src/components/upload';
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

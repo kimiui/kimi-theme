@@ -1,10 +1,9 @@
-import type { IChatMessage, IChatParticipant } from 'src/types/chat';
+import type { IChatMessage, IChatParticipant } from 'kimi-theme/types/chat';
 
 import Stack from '@mui/material/Stack';
 import LinearProgress from '@mui/material/LinearProgress';
-
-import { Scrollbar } from 'src/components/scrollbar';
-import { Lightbox, useLightBox } from 'src/components/lightbox';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { Lightbox, useLightBox } from 'kimi-theme/components/lightbox';
 
 import { ChatMessageItem } from './chat-message-item';
 import { useMessagesScroll } from './hooks/use-messages-scroll';

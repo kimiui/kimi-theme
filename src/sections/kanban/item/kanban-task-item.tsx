@@ -1,16 +1,15 @@
 'use client';
 
-import type { IKanbanTask } from 'src/types/kanban';
 import type { UniqueIdentifier } from '@dnd-kit/core';
+import type { IKanbanTask } from 'kimi-theme/types/kanban';
 import type { Theme, SxProps } from '@mui/material/styles';
 
 import { useBoolean } from 'ahooks';
 import { useSortable } from '@dnd-kit/sortable';
+import { toast } from 'kimi-theme/components/snackbar';
 import { useState, useEffect, useCallback } from 'react';
-
-import { toast } from 'src/components/snackbar';
-import { imageClasses } from 'src/components/image';
-import { deleteTask, updateTask } from 'src/actions/kanban';
+import { imageClasses } from 'kimi-theme/components/image';
+import { deleteTask, updateTask } from 'kimi-theme/actions/kanban';
 
 import ItemBase from './item-base';
 import { KanbanDetails } from '../details/kanban-details';

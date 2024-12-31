@@ -6,11 +6,10 @@ import { useBoolean } from 'ahooks';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import IconButton from '@mui/material/IconButton';
-
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
-import { Carousel, useCarousel, CarouselDotButtons } from 'src/components/carousel';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
+import { Carousel, useCarousel, CarouselDotButtons } from 'kimi-theme/components/carousel';
 
 // ----------------------------------------------------------------------
 

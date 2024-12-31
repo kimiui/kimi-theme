@@ -1,6 +1,6 @@
 'use client';
 
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from 'kimi-theme/types/chat';
 
 import { useBoolean } from 'ahooks';
 import Badge from '@mui/material/Badge';

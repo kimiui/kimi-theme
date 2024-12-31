@@ -1,4 +1,4 @@
-import { TableView } from 'src/sections/_examples/mui/table-view';
+import { TableView } from 'kimi-theme/sections/_examples/mui/table-view';
 
 // ----------------------------------------------------------------------
 

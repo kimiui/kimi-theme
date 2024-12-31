@@ -1,9 +1,8 @@
 import type { GridColDef } from '@mui/x-data-grid';
-import type { IDateValue } from 'src/types/common';
+import type { IDateValue } from 'kimi-theme/types/common';
 
+import { Iconify } from 'kimi-theme/components/iconify';
 import { DataGrid, GridActionsCellItem } from '@mui/x-data-grid';
-
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

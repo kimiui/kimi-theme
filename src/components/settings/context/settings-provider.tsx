@@ -1,10 +1,9 @@
 'use client';
 
+import { useLocalStorage } from 'kimi-theme/hooks';
 import { useMemo, useState, useCallback, createContext } from 'react';
 
-import { useLocalStorage } from 'src/hooks';
-
-import { STORAGE_KEY } from '../config-settings';
+import { STORAGE_KEY, defaultSettings } from '../config-settings';
 
 import type { SettingsState, SettingsContextValue, SettingsProviderProps } from '../types';
 
@@ -17,7 +16,7 @@ export const SettingsConsumer = SettingsContext.Consumer;
 // ----------------------------------------------------------------------
 
 export function SettingsProvider({ children, settings }: Readonly<SettingsProviderProps>) {
-  const values = useLocalStorage<SettingsState>(STORAGE_KEY, settings);
+  const values = useLocalStorage<SettingsState>(STORAGE_KEY, settings ?? defaultSettings);
 
   const [openDrawer, setOpenDrawer] = useState(false);
 

@@ -1,18 +1,17 @@
 import type { BoxProps } from '@mui/material/Box';
-import type { IDateValue } from 'src/types/common';
 import type { CardProps } from '@mui/material/Card';
+import type { IDateValue } from 'kimi-theme/types/common';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Card from '@mui/material/Card';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fDateTime } from 'kimi-theme/utils/format-time';
+import { fPercent } from 'kimi-theme/utils/format-number';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
-
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
-import { fDateTime } from 'src/utils/format-time';
-import { fPercent } from 'src/utils/format-number';
 
 // ----------------------------------------------------------------------
 

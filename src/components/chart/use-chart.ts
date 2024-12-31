@@ -1,6 +1,5 @@
 import { useTheme } from '@mui/material/styles';
-
-import { varAlpha } from 'src/theme/styles';
+import { varAlpha } from 'kimi-theme/theme/styles';
 
 import type { ChartOptions } from './types';
 

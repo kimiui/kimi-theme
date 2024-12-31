@@ -1,12 +1,11 @@
 'use client';
 
-import type { ToastT } from 'src/components/snackbar';
+import type { ToastT } from 'kimi-theme/components/snackbar';
 
 import Button from '@mui/material/Button';
-
-import { paths } from 'src/routes/paths';
-import { toast } from 'src/components/snackbar';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { paths } from 'kimi-theme/routes/paths';
+import { toast } from 'kimi-theme/components/snackbar';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

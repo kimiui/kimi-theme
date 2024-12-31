@@ -1,6 +1,6 @@
 'use client';
 
-import type { IAddressItem } from 'src/types/common';
+import type { IAddressItem } from 'kimi-theme/types/common';
 
 import { z as zod } from 'zod';
 import Box from '@mui/material/Box';
@@ -14,8 +14,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import { isValidPhoneNumber } from 'react-phone-number-input/input';
-
-import { Form, Field, schemaHelper } from 'src/components/hook-form';
+import { Form, Field, schemaHelper } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

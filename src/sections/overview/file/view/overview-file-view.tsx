@@ -4,14 +4,13 @@ import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
 import Grid from '@mui/material/Grid2';
 import { useState, useCallback } from 'react';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
-import { _files, _folders } from 'src/_mock';
-import { Iconify } from 'src/components/iconify';
-import { UploadBox } from 'src/components/upload';
-import { Scrollbar } from 'src/components/scrollbar';
-import { DashboardContent } from 'src/layouts/dashboard';
+import { _files, _folders } from 'kimi-theme/_mock';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { UploadBox } from 'kimi-theme/components/upload';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
 
 import { FileWidget } from '../../../file-manager/file-widget';
 import { FileUpgrade } from '../../../file-manager/file-upgrade';

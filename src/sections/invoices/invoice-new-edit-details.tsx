@@ -1,6 +1,6 @@
 'use client';
 
-import type { IInvoiceItem } from 'src/types/invoice';
+import type { IInvoiceItem } from 'kimi-theme/types/invoice';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -9,14 +9,13 @@ import Divider from '@mui/material/Divider';
 import MenuItem from '@mui/material/MenuItem';
 import { useEffect, useCallback } from 'react';
 import Typography from '@mui/material/Typography';
+import { Field } from 'kimi-theme/components/hook-form';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
 import { inputBaseClasses } from '@mui/material/InputBase';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { INVOICE_SERVICE_OPTIONS } from 'kimi-theme/_mock';
 import { useFieldArray, useFormContext } from 'react-hook-form';
-
-import { Field } from 'src/components/hook-form';
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { INVOICE_SERVICE_OPTIONS } from 'src/_mock';
 
 // ----------------------------------------------------------------------
 

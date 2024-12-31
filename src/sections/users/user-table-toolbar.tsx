@@ -1,6 +1,6 @@
-import type { UseSetStateReturn } from 'src/hooks';
-import type { IUserTableFilters } from 'src/types/user';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
 import type { SelectChangeEvent } from '@mui/material/Select';
+import type { IUserTableFilters } from 'kimi-theme/types/user';
 
 import { useCallback } from 'react';
 import Stack from '@mui/material/Stack';
@@ -13,10 +13,9 @@ import IconButton from '@mui/material/IconButton';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

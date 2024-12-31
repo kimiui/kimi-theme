@@ -3,8 +3,7 @@ import type { CardProps } from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
-
-import { fCurrency } from 'src/utils/format-number';
+import { fCurrency } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

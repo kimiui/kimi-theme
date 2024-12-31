@@ -2,9 +2,8 @@ import { useBoolean } from 'ahooks';
 import Grid from '@mui/material/Grid2';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-
-import { _addressBooks } from 'src/_mock';
-import { Iconify } from 'src/components/iconify';
+import { _addressBooks } from 'kimi-theme/_mock';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { useCheckoutContext } from './context';
 import { CheckoutSummary } from './checkout-summary';

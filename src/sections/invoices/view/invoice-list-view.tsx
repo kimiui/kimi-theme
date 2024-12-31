@@ -1,6 +1,6 @@
 'use client';
 
-import type { IInvoice, IInvoiceTableFilters } from 'src/types/invoice';
+import type { IInvoice, IInvoiceTableFilters } from 'kimi-theme/types/invoice';
 
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
@@ -13,24 +13,23 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Tooltip from '@mui/material/Tooltip';
 import { useState, useCallback } from 'react';
+import { useSetState } from 'kimi-theme/hooks';
 import TableBody from '@mui/material/TableBody';
 import { useTheme } from '@mui/material/styles';
+import { sumBy } from 'kimi-theme/utils/helper';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Label } from 'kimi-theme/components/label';
 import { useRouter, RouterLink } from 'routes-react';
-
-import { useSetState } from 'src/hooks';
-import { sumBy } from 'src/utils/helper';
-import { paths } from 'src/routes/paths';
-import { varAlpha } from 'src/theme/styles';
-import { Label } from 'src/components/label';
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { fIsAfter, fIsBetween } from 'src/utils/format-time';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { _invoices, INVOICE_SERVICE_OPTIONS } from 'src/_mock';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { fIsAfter, fIsBetween } from 'kimi-theme/utils/format-time';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { _invoices, INVOICE_SERVICE_OPTIONS } from 'kimi-theme/_mock';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 import {
   useTable,
   emptyRows,
@@ -41,7 +40,7 @@ import {
   TableHeadCustom,
   TableSelectedAction,
   TablePaginationCustom,
-} from 'src/components/table';
+} from 'kimi-theme/components/table';
 
 import { InvoiceAnalytic } from '../invoice-analytic';
 import { InvoiceTableRow } from '../invoice-table-row';

@@ -1,4 +1,4 @@
-import type { IUserAccountBillingHistory } from 'src/types/user';
+import type { IUserAccountBillingHistory } from 'kimi-theme/types/user';
 
 import { useBoolean } from 'ahooks';
 import Card from '@mui/material/Card';
@@ -8,11 +8,10 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
+import { fDate } from 'kimi-theme/utils/format-time';
 import ListItemText from '@mui/material/ListItemText';
-
-import { fDate } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fCurrency } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

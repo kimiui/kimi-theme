@@ -2,9 +2,8 @@
 
 import Grid from '@mui/material/Grid2';
 import { faker } from '@faker-js/faker';
-
-import { DashboardContent } from 'src/layouts/dashboard';
-import { _mock, _ecommerceProductPerformance } from 'src/_mock';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { _mock, _ecommerceProductPerformance } from 'kimi-theme/_mock';
 
 import { EcommerceWeeklySales } from '../ecommerce-weekly-sales';
 import { EcommerceRecentOrders } from '../ecommerce-recent-orders';

@@ -11,8 +11,7 @@ import { useState, useCallback } from 'react';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { PaymentNewCardDialog } from './payment-new-card-dialog';
 

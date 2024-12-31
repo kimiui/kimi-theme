@@ -1,11 +1,10 @@
 import type { Theme, CSSObject } from '@mui/material/styles';
 
+import { varAlpha } from 'kimi-theme/theme/styles';
 import { dividerClasses } from '@mui/material/Divider';
 import { checkboxClasses } from '@mui/material/Checkbox';
 import { menuItemClasses } from '@mui/material/MenuItem';
 import { autocompleteClasses } from '@mui/material/Autocomplete';
-
-import { varAlpha } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

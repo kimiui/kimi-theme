@@ -1,14 +1,13 @@
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from 'kimi-theme/types/chat';
 
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Dialog from '@mui/material/Dialog';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import DialogContent from '@mui/material/DialogContent';
-
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

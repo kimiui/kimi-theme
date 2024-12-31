@@ -1,11 +1,10 @@
-import type { IJobItem } from 'src/types/job';
+import type { IJobItem } from 'kimi-theme/types/job';
 
 import { useCallback } from 'react';
 import Box from '@mui/material/Box';
 import { useRouter } from 'routes-react';
+import { paths } from 'kimi-theme/routes/paths';
 import Pagination, { paginationClasses } from '@mui/material/Pagination';
-
-import { paths } from 'src/routes/paths';
 
 import { JobItem } from './job-item';
 

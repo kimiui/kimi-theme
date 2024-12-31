@@ -1,10 +1,10 @@
 'use client';
 
-import type { IProductItem } from 'src/types/product';
+import type { IProductItem } from 'kimi-theme/types/product';
 
-import { paths } from 'src/routes/paths';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { paths } from 'kimi-theme/routes/paths';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ProductNewEditForm } from '../product-new-edit-form';
 

@@ -1,14 +1,13 @@
 'use client';
 
-import type { IOrderItem } from 'src/types/order';
+import type { IOrderItem } from 'kimi-theme/types/order';
 
 import Grid from '@mui/material/Grid2';
 import Stack from '@mui/material/Stack';
 import { useState, useCallback } from 'react';
-
-import { paths } from 'src/routes/paths';
-import { ORDER_STATUS_OPTIONS } from 'src/_mock';
-import { DashboardContent } from 'src/layouts/dashboard';
+import { paths } from 'kimi-theme/routes/paths';
+import { ORDER_STATUS_OPTIONS } from 'kimi-theme/_mock';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
 
 import { OrderDetailsInfo } from '../order-details-info';
 import { OrderDetailsItems } from '../order-details-item';

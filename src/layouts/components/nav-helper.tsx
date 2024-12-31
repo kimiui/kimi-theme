@@ -7,8 +7,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { alpha as hexAlpha } from '@mui/material/styles';
-
-import { varAlpha, bgGradient } from 'src/theme/styles';
+import { varAlpha, bgGradient } from 'kimi-theme/theme/styles';
 
 // ----------------------------------------------------------------------
 

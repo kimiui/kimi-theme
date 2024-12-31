@@ -1,4 +1,4 @@
-import { NavigationBarView } from 'src/sections/_examples/extra/navigation-bar-view';
+import { NavigationBarView } from 'kimi-theme/sections/_examples/extra/navigation-bar-view';
 
 // ----------------------------------------------------------------------
 

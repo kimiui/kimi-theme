@@ -2,11 +2,10 @@ import useSWR from 'swr';
 import { useMemo } from 'react';
 import Paper from '@mui/material/Paper';
 import Skeleton from '@mui/material/Skeleton';
-
-import { fetcher } from 'src/utils/axios';
-import { Label } from 'src/components/label';
-import { SvgColor } from 'src/components/svg-color';
-import { NavSectionVertical } from 'src/components/nav-section';
+import { fetcher } from 'kimi-theme/utils/axios';
+import { Label } from 'kimi-theme/components/label';
+import { SvgColor } from 'kimi-theme/components/svg-color';
+import { NavSectionVertical } from 'kimi-theme/components/nav-section';
 
 // ----------------------------------------------------------------------
 

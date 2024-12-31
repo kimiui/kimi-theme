@@ -11,8 +11,12 @@ import type {
 import Stack from '@mui/material/Stack';
 import Switch from '@mui/material/Switch';
 import Typography from '@mui/material/Typography';
+import { hideScrollY } from 'kimi-theme/theme/styles';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
 import { useRef, useState, useEffect, useCallback } from 'react';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
+import { moveTask, moveColumn, useGetBoard } from 'kimi-theme/actions/kanban';
 import {
   arrayMove,
   SortableContext,
@@ -32,11 +36,6 @@ import {
   getFirstCollision,
   MeasuringStrategy,
 } from '@dnd-kit/core';
-
-import { hideScrollY } from 'src/theme/styles';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { EmptyContent } from 'src/components/empty-content';
-import { moveTask, moveColumn, useGetBoard } from 'src/actions/kanban';
 
 import { kanbanClasses } from '../classes';
 import { coordinateGetter } from '../utils';

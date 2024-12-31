@@ -2,10 +2,9 @@ import type { CardProps } from '@mui/material/Card';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-
 // ----------------------------------------------------------------------
-import { Iconify } from 'src/components/iconify';
-import { fPercent, fShortenNumber } from 'src/utils/format-number';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fPercent, fShortenNumber } from 'kimi-theme/utils/format-number';
 
 type Props = CardProps & {
   title: string;

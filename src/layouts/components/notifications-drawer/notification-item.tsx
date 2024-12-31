@@ -3,13 +3,12 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+import { Label } from 'kimi-theme/components/label';
 import ListItemText from '@mui/material/ListItemText';
+import { fToNow } from 'kimi-theme/utils/format-time';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemButton from '@mui/material/ListItemButton';
-
-import { Label } from 'src/components/label';
-import { fToNow } from 'src/utils/format-time';
-import { FileThumbnail } from 'src/components/file-thumbnail';
+import { FileThumbnail } from 'kimi-theme/components/file-thumbnail';
 
 // ----------------------------------------------------------------------
 

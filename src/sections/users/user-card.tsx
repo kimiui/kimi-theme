@@ -1,20 +1,19 @@
-import type { IUserCard } from 'src/types/user';
+import type { IUserCard } from 'kimi-theme/types/user';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Divider from '@mui/material/Divider';
+import { _socials } from 'kimi-theme/_mock';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Image } from 'kimi-theme/components/image';
 import ListItemText from '@mui/material/ListItemText';
-
-import { _socials } from 'src/_mock';
-import { varAlpha } from 'src/theme/styles';
-import { Image } from 'src/components/image';
-import { SocialIcon } from 'src/components/iconify';
-import { AvatarShape } from 'src/assets/illustrations';
-import { fShortenNumber } from 'src/utils/format-number';
+import { SocialIcon } from 'kimi-theme/components/iconify';
+import { AvatarShape } from 'kimi-theme/assets/illustrations';
+import { fShortenNumber } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

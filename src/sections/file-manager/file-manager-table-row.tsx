@@ -1,6 +1,6 @@
 'use client';
 
-import type { IFileManager } from 'src/types/file';
+import type { IFileManager } from 'kimi-theme/types/file';
 
 import { useBoolean } from 'ahooks';
 import Stack from '@mui/material/Stack';
@@ -14,20 +14,19 @@ import MenuList from '@mui/material/MenuList';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import ListItemText from '@mui/material/ListItemText';
+import { fData } from 'kimi-theme/utils/format-number';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fDate, fTime } from 'kimi-theme/utils/format-time';
 import TableRow, { tableRowClasses } from '@mui/material/TableRow';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { FileThumbnail } from 'kimi-theme/components/file-thumbnail';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import { useDoubleClick, useCopyToClipboard } from 'kimi-theme/hooks';
 import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
-
-import { varAlpha } from 'src/theme/styles';
-import { fData } from 'src/utils/format-number';
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { fDate, fTime } from 'src/utils/format-time';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { FileThumbnail } from 'src/components/file-thumbnail';
-import { useDoubleClick, useCopyToClipboard } from 'src/hooks';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 import { FileManagerFileDetails } from './file-manager-file-details';
 import { FileManagerShareDialog } from './file-manager-share-dialog';

@@ -6,8 +6,7 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-
-import { orderBy } from 'src/utils/helper';
+import { orderBy } from 'kimi-theme/utils/helper';
 
 import { ComponentCard } from './component-card';
 import { muiNav, extraNav, foundationNav } from './config-nav';

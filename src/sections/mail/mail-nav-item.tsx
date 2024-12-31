@@ -1,10 +1,9 @@
-import type { IMailLabel } from 'src/types/mail';
+import type { IMailLabel } from 'kimi-theme/types/mail';
 import type { ListItemButtonProps } from '@mui/material/ListItemButton';
 
 import Box from '@mui/material/Box';
+import { Iconify } from 'kimi-theme/components/iconify';
 import ListItemButton from '@mui/material/ListItemButton';
-
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

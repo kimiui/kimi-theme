@@ -2,9 +2,8 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useDropzone } from 'react-dropzone';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import FormHelperText from '@mui/material/FormHelperText';
-
-import { varAlpha } from 'src/theme/styles';
 
 import { Iconify } from '../iconify';
 import { UploadPlaceholder } from './components/placeholder';

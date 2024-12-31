@@ -1,4 +1,4 @@
-import { AutocompleteView } from 'src/sections/_examples/mui/autocomplete-view';
+import { AutocompleteView } from 'kimi-theme/sections/_examples/mui/autocomplete-view';
 
 // ----------------------------------------------------------------------
 

@@ -6,14 +6,13 @@ import Grid from '@mui/material/Grid2';
 import Stack from '@mui/material/Stack';
 import { RouterLink } from 'routes-react';
 import Divider from '@mui/material/Divider';
+import { _socials } from 'kimi-theme/_mock';
 import { useTheme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { _socials } from 'src/_mock';
-import { Logo } from 'src/components/logo';
-import { SocialIcon } from 'src/components/iconify';
+import { Logo } from 'kimi-theme/components/logo';
+import { SocialIcon } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

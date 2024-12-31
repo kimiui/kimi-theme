@@ -4,8 +4,7 @@ import Switch from '@mui/material/Switch';
 import { styled } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
+import { varAlpha } from 'kimi-theme/theme/styles';
 
 import { StyledControlPanel } from '../styles';
 

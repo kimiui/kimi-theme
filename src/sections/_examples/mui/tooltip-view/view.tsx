@@ -8,13 +8,12 @@ import Zoom from '@mui/material/Zoom';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { varHover } from 'kimi-theme/components/animate';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { varHover } from 'src/components/animate';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

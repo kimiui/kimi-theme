@@ -1,4 +1,4 @@
-import { TypographyView } from 'src/sections/_examples/foundation/typography-view';
+import { TypographyView } from 'kimi-theme/sections/_examples/foundation/typography-view';
 
 // ----------------------------------------------------------------------
 

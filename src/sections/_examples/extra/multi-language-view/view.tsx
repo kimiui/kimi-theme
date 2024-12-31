@@ -1,8 +1,8 @@
 'use client';
 
 import type { Dayjs } from 'dayjs';
-import type { LanguageValue } from 'src/locales';
 import type { PaperProps } from '@mui/material/Paper';
+import type { LanguageValue } from 'kimi-theme/locales';
 
 import dayjs from 'dayjs';
 import Box from '@mui/material/Box';
@@ -10,19 +10,24 @@ import Radio from '@mui/material/Radio';
 import Paper from '@mui/material/Paper';
 import { useState, useCallback } from 'react';
 import { styled } from '@mui/material/styles';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import RadioGroup from '@mui/material/RadioGroup';
+import { fDate } from 'kimi-theme/utils/format-time';
+import { FlagIcon } from 'kimi-theme/components/iconify';
 import TablePagination from '@mui/material/TablePagination';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import { allLangs, useTranslate } from 'kimi-theme/locales';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { paths } from 'src/routes/paths';
-import { fDate } from 'src/utils/format-time';
-import { FlagIcon } from 'src/components/iconify';
-import { allLangs, useTranslate } from 'src/locales';
-import { NavSectionVertical } from 'src/components/nav-section';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
-import { fData, fNumber, fPercent, fCurrency, fShortenNumber } from 'src/utils/format-number';
+import { NavSectionVertical } from 'kimi-theme/components/nav-section';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import {
+  fData,
+  fNumber,
+  fPercent,
+  fCurrency,
+  fShortenNumber,
+} from 'kimi-theme/utils/format-number';
 
 import { ComponentHero } from '../../component-hero';
 import { navData as clientNavData } from './config-nav';

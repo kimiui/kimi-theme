@@ -1,4 +1,4 @@
-import type { IJobItem } from 'src/types/job';
+import type { IJobItem } from 'kimi-theme/types/job';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
@@ -9,15 +9,14 @@ import { RouterLink } from 'routes-react';
 import Divider from '@mui/material/Divider';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { fDate } from 'kimi-theme/utils/format-time';
 import ListItemText from '@mui/material/ListItemText';
-
-import { paths } from 'src/routes/paths';
-import { fDate } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-import type { IProductReview } from 'src/types/product';
+import type { IProductReview } from 'kimi-theme/types/product';
 
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
@@ -6,12 +6,11 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
 import Divider from '@mui/material/Divider';
+import { sumBy } from 'kimi-theme/utils/helper';
 import Typography from '@mui/material/Typography';
+import { Iconify } from 'kimi-theme/components/iconify';
 import LinearProgress from '@mui/material/LinearProgress';
-
-import { sumBy } from 'src/utils/helper';
-import { Iconify } from 'src/components/iconify';
-import { fShortenNumber } from 'src/utils/format-number';
+import { fShortenNumber } from 'kimi-theme/utils/format-number';
 
 import { ProductReviewList } from './product-review-list';
 import { ProductReviewNewForm } from './product-review-new-form';

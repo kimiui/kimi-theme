@@ -6,10 +6,9 @@ import Badge from '@mui/material/Badge';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { paper, varAlpha } from 'kimi-theme/theme/styles';
 import Drawer, { drawerClasses } from '@mui/material/Drawer';
 import { useTheme, useColorScheme } from '@mui/material/styles';
-
-import { paper, varAlpha } from 'src/theme/styles';
 
 import { Iconify } from '../../iconify';
 import { BaseOption } from './base-option';

@@ -1,24 +1,23 @@
 'use client';
 
-import type { IProductItem, IProductFilters } from 'src/types/product';
+import type { IProductItem, IProductFilters } from 'kimi-theme/types/product';
 
 import { useBoolean } from 'ahooks';
 import Stack from '@mui/material/Stack';
 import { useState, useCallback } from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-
-import { orderBy } from 'src/utils/helper';
-import { useGetProducts } from 'src/actions/product';
-import { useDebounce, useSetState } from 'src/hooks';
-import { EmptyContent } from 'src/components/empty-content';
+import { orderBy } from 'kimi-theme/utils/helper';
+import { useGetProducts } from 'kimi-theme/actions/product';
+import { useDebounce, useSetState } from 'kimi-theme/hooks';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
 import {
   PRODUCT_SORT_OPTIONS,
   PRODUCT_COLOR_OPTIONS,
   PRODUCT_GENDER_OPTIONS,
   PRODUCT_RATING_OPTIONS,
   PRODUCT_CATEGORY_OPTIONS,
-} from 'src/_mock';
+} from 'kimi-theme/_mock';
 
 import { ProductList } from '../product-list';
 import { ProductSort } from '../product-sort';

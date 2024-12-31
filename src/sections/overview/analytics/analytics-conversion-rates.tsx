@@ -1,12 +1,11 @@
 import type { CardProps } from '@mui/material/Card';
-import type { ChartOptions } from 'src/components/chart';
+import type { ChartOptions } from 'kimi-theme/components/chart';
 
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
+import { fNumber } from 'kimi-theme/utils/format-number';
+import { Chart, useChart } from 'kimi-theme/components/chart';
 import { useTheme, alpha as hexAlpha } from '@mui/material/styles';
-
-import { fNumber } from 'src/utils/format-number';
-import { Chart, useChart } from 'src/components/chart';
 
 // ----------------------------------------------------------------------
 

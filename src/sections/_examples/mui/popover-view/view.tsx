@@ -1,22 +1,21 @@
 'use client';
 
-import type { PopoverArrow } from 'src/components/custom-popover';
+import type { PopoverArrow } from 'kimi-theme/components/custom-popover';
 
 import Box from '@mui/material/Box';
 import Radio from '@mui/material/Radio';
 import Button from '@mui/material/Button';
 import FormLabel from '@mui/material/FormLabel';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
 import { useRef, useState, useCallback } from 'react';
+import { Iconify } from 'kimi-theme/components/iconify';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

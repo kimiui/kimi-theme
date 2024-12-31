@@ -5,10 +5,9 @@ import Card from '@mui/material/Card';
 import { useTheme } from '@mui/material/styles';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
-import { SocialIcon } from 'src/components/iconify';
-import { fShortenNumber } from 'src/utils/format-number';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { SocialIcon } from 'kimi-theme/components/iconify';
+import { fShortenNumber } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

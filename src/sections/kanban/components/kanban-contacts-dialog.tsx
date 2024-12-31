@@ -1,23 +1,22 @@
 'use client';
 
-import type { IKanbanAssignee } from 'src/types/kanban';
+import type { IKanbanAssignee } from 'kimi-theme/types/kanban';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import Dialog from '@mui/material/Dialog';
+import { _contacts } from 'kimi-theme/_mock';
 import { useState, useCallback } from 'react';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import DialogTitle from '@mui/material/DialogTitle';
 import ListItemText from '@mui/material/ListItemText';
 import DialogContent from '@mui/material/DialogContent';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { _contacts } from 'src/_mock';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { SearchNotFound } from 'src/components/search-not-found';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { SearchNotFound } from 'kimi-theme/components/search-not-found';
 
 // ----------------------------------------------------------------------
 

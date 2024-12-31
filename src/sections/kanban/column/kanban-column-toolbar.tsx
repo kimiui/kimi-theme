@@ -5,13 +5,12 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import IconButton from '@mui/material/IconButton';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
 import { useRef, useState, useEffect, useCallback } from 'react';
-
-import { varAlpha } from 'src/theme/styles';
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 import { KanbanInputName } from '../components/kanban-input-name';
 

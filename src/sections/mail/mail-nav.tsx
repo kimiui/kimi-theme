@@ -1,14 +1,13 @@
-import type { IMailLabel } from 'src/types/mail';
+import type { IMailLabel } from 'kimi-theme/types/mail';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
-
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { EmptyContent } from 'src/components/empty-content';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
 
 import { MailNavItem } from './mail-nav-item';
 import { MailNavItemSkeleton } from './mail-skeleton';

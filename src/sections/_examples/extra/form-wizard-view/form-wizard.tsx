@@ -8,9 +8,8 @@ import Button from '@mui/material/Button';
 import { useState, useCallback } from 'react';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
-
-import { toast } from 'src/components/snackbar';
-import { Form } from 'src/components/hook-form';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Form } from 'kimi-theme/components/hook-form';
 
 import { Stepper, StepOne, StepTwo, StepThree, StepCompleted } from './form-steps';
 

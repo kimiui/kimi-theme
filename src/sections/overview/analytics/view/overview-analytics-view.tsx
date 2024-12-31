@@ -2,14 +2,13 @@
 
 import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
-
-import { DashboardContent } from 'src/layouts/dashboard';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
 import {
   _analyticTasks,
   _analyticPosts,
   _analyticTraffic,
   _analyticOrderTimeline,
-} from 'src/_mock';
+} from 'kimi-theme/_mock';
 
 import { AnalyticsNews } from '../analytics-news';
 import { AnalyticsTasks } from '../analytics-tasks';

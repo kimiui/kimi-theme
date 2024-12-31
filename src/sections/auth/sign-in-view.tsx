@@ -8,19 +8,18 @@ import Link from '@mui/material/Link';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import { useForm } from 'react-hook-form';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { Logo } from 'kimi-theme/components/logo';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { useRouter, RouterLink } from 'routes-react';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useAuthContext } from 'kimi-theme/auth/hooks';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { paths } from 'src/routes/paths';
-import { Logo } from 'src/components/logo';
-import { useAuthContext } from 'src/auth/hooks';
-import { Iconify } from 'src/components/iconify';
-import { signInWithPassword } from 'src/auth/context';
-import { Form, Field } from 'src/components/hook-form';
+import { signInWithPassword } from 'kimi-theme/auth/context';
+import { Form, Field } from 'kimi-theme/components/hook-form';
 // ----------------------------------------------------------------------
 
 export type SignInSchemaType = zod.infer<typeof SignInSchema>;

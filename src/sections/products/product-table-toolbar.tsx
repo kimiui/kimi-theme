@@ -1,20 +1,19 @@
-import type { UseSetStateReturn } from 'src/hooks';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
 import type { SelectChangeEvent } from '@mui/material/Select';
-import type { IProductTableFilters } from 'src/types/product';
+import type { IProductTableFilters } from 'kimi-theme/types/product';
 
 import { useCallback } from 'react';
 import Select from '@mui/material/Select';
 import Checkbox from '@mui/material/Checkbox';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
+import { useSetState } from 'kimi-theme/hooks';
 import InputLabel from '@mui/material/InputLabel';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
-
-import { useSetState } from 'src/hooks';
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

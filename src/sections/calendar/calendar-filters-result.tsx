@@ -1,14 +1,13 @@
-import type { UseSetStateReturn } from 'src/hooks';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
 import type { Theme, SxProps } from '@mui/material/styles';
-import type { ICalendarFilters } from 'src/types/calendar';
+import type { ICalendarFilters } from 'kimi-theme/types/calendar';
 
 import { useCallback } from 'react';
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
-
-import { varAlpha } from 'src/theme/styles';
-import { fDateRangeShortLabel } from 'src/utils/format-time';
-import { chipProps, FiltersBlock, FiltersResult } from 'src/components/filters-result';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { fDateRangeShortLabel } from 'kimi-theme/utils/format-time';
+import { chipProps, FiltersBlock, FiltersResult } from 'kimi-theme/components/filters-result';
 
 // ----------------------------------------------------------------------
 

@@ -4,9 +4,8 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Switch from '@mui/material/Switch';
 import Container from '@mui/material/Container';
+import { _pricingPlans } from 'kimi-theme/_mock';
 import Typography from '@mui/material/Typography';
-
-import { _pricingPlans } from 'src/_mock';
 
 import { PricingCard } from '../pricing-card';
 

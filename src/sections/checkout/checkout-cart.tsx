@@ -2,12 +2,11 @@ import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid2';
 import Button from '@mui/material/Button';
 import { RouterLink } from 'routes-react';
+import { paths } from 'kimi-theme/routes/paths';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { EmptyContent } from 'src/components/empty-content';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
 
 import { useCheckoutContext } from './context';
 import { CheckoutSummary } from './checkout-summary';

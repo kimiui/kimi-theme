@@ -5,16 +5,15 @@ import Link from '@mui/material/Link';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
-
-import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
-import { maxLine, varAlpha, bgGradient } from 'src/theme/styles';
+import { Image } from 'kimi-theme/components/image';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { maxLine, varAlpha, bgGradient } from 'kimi-theme/theme/styles';
 import {
   Carousel,
   useCarousel,
   CarouselDotButtons,
   CarouselArrowFloatButtons,
-} from 'src/components/carousel';
+} from 'kimi-theme/components/carousel';
 
 import { IndexLabel } from './elements';
 

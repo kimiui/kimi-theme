@@ -1,6 +1,6 @@
 'use client';
 
-import type { IAddressItem, IPaymentCard } from 'src/types/common';
+import type { IAddressItem, IPaymentCard } from 'kimi-theme/types/common';
 
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
@@ -12,10 +12,9 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import { useState, useCallback } from 'react';
 import CardHeader from '@mui/material/CardHeader';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { PlanFreeIcon, PlanPremiumIcon, PlanStarterIcon } from 'src/assets/icons';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { PlanFreeIcon, PlanPremiumIcon, PlanStarterIcon } from 'kimi-theme/assets/icons';
 
 import { AddressListDialog } from '../address';
 import { PaymentCardListDialog } from '../payment/payment-card-list-dialog';

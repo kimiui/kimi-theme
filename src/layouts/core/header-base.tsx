@@ -1,11 +1,10 @@
 'use client';
 
-import type { NavSectionProps } from 'src/components/nav-section';
+import type { NavSectionProps } from 'kimi-theme/components/nav-section';
 
 import Box from '@mui/material/Box';
 import { styled, useTheme } from '@mui/material/styles';
-
-import { ThemeModeToggle } from 'src/components/theme-mode-toggle';
+import { ThemeModeToggle } from 'kimi-theme/components/theme-mode-toggle';
 
 import { HeaderSection } from './header-section';
 import { Searchbar } from '../components/searchbar';

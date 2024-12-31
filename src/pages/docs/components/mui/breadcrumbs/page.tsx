@@ -1,4 +1,4 @@
-import { BreadcrumbsView } from 'src/sections/_examples/mui/breadcrumbs-view';
+import { BreadcrumbsView } from 'kimi-theme/sections/_examples/mui/breadcrumbs-view';
 
 // ----------------------------------------------------------------------
 

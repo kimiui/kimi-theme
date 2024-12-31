@@ -1,4 +1,4 @@
-import { ComponentsView } from 'src/sections/_examples/view';
+import { ComponentsView } from 'kimi-theme/sections/_examples/view';
 
 // ----------------------------------------------------------------------
 

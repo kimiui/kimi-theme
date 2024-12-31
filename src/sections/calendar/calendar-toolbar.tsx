@@ -1,5 +1,5 @@
-import type { IDateValue } from 'src/types/common';
-import type { ICalendarView } from 'src/types/calendar';
+import type { IDateValue } from 'kimi-theme/types/common';
+import type { ICalendarView } from 'kimi-theme/types/calendar';
 
 import Stack from '@mui/material/Stack';
 import Badge from '@mui/material/Badge';
@@ -8,10 +8,9 @@ import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { Iconify } from 'kimi-theme/components/iconify';
 import LinearProgress from '@mui/material/LinearProgress';
-
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

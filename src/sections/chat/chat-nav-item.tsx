@@ -1,4 +1,4 @@
-import type { IChatConversation } from 'src/types/chat';
+import type { IChatConversation } from 'kimi-theme/types/chat';
 
 import { useCallback } from 'react';
 import Box from '@mui/material/Box';
@@ -6,16 +6,15 @@ import Badge from '@mui/material/Badge';
 import Stack from '@mui/material/Stack';
 import { useRouter } from 'routes-react';
 import Avatar from '@mui/material/Avatar';
+import { paths } from 'kimi-theme/routes/paths';
+import { useResponsive } from 'kimi-theme/hooks';
 import Typography from '@mui/material/Typography';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import ListItemText from '@mui/material/ListItemText';
+import { fToNow } from 'kimi-theme/utils/format-time';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
 import ListItemButton from '@mui/material/ListItemButton';
-
-import { paths } from 'src/routes/paths';
-import { useResponsive } from 'src/hooks';
-import { fToNow } from 'src/utils/format-time';
-import { useMockedUser } from 'src/auth/hooks';
-import { clickConversation } from 'src/actions/chat';
+import { clickConversation } from 'kimi-theme/actions/chat';
 
 import { useNavItem } from './hooks/use-nav-item';
 

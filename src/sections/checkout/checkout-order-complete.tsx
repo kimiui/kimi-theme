@@ -6,9 +6,8 @@ import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-
-import { Iconify } from 'src/components/iconify';
-import { OrderCompleteIllustration } from 'src/assets/illustrations';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { OrderCompleteIllustration } from 'kimi-theme/assets/illustrations';
 
 // ----------------------------------------------------------------------
 

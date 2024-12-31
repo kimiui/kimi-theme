@@ -3,13 +3,12 @@
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
+import { paths } from 'kimi-theme/routes/paths';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import CardContent from '@mui/material/CardContent';
-
-import { paths } from 'src/routes/paths';
-import { varAlpha } from 'src/theme/styles';
-import { Scrollbar } from 'src/components/scrollbar';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
-import { ScrollProgress, useScrollProgress } from 'src/components/animate/scroll-progress';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import { ScrollProgress, useScrollProgress } from 'kimi-theme/components/animate/scroll-progress';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

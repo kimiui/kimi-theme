@@ -6,8 +6,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-
-import { SvgColor } from 'src/components/svg-color';
+import { SvgColor } from 'kimi-theme/components/svg-color';
 
 // ----------------------------------------------------------------------
 

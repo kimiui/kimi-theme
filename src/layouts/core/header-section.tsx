@@ -10,10 +10,9 @@ import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
+import { useScrollOffSetTop } from 'kimi-theme/hooks';
 import { styled, useTheme } from '@mui/material/styles';
-
-import { useScrollOffSetTop } from 'src/hooks';
-import { bgBlur, varAlpha } from 'src/theme/styles';
+import { bgBlur, varAlpha } from 'kimi-theme/theme/styles';
 
 import { layoutClasses } from '../classes';
 

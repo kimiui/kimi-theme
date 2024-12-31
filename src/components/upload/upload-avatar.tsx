@@ -4,9 +4,8 @@ import Box from '@mui/material/Box';
 import { useState, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
-import { Image } from 'src/components/image';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Image } from 'kimi-theme/components/image';
 
 import { Iconify } from '../iconify';
 import { RejectionFiles } from './components/rejection-files';

@@ -1,15 +1,18 @@
 'use client';
 
-import type { IAddressItem } from 'src/types/common';
-import type { ICheckoutItem, ICheckoutState, CheckoutContextValue } from 'src/types/checkout';
+import type { IAddressItem } from 'kimi-theme/types/common';
+import type {
+  ICheckoutItem,
+  ICheckoutState,
+  CheckoutContextValue,
+} from 'kimi-theme/types/checkout';
 
+import { paths } from 'kimi-theme/routes/paths';
 import { useRouter, useSearchParams } from 'routes-react';
+import { getStorage, useLocalStorage } from 'kimi-theme/hooks';
+import { PRODUCT_CHECKOUT_STEPS } from 'kimi-theme/_mock/_product';
+import { SplashScreen } from 'kimi-theme/components/loading-screen';
 import { memo, useMemo, Suspense, useEffect, useCallback, createContext } from 'react';
-
-import { paths } from 'src/routes/paths';
-import { getStorage, useLocalStorage } from 'src/hooks';
-import { PRODUCT_CHECKOUT_STEPS } from 'src/_mock/_product';
-import { SplashScreen } from 'src/components/loading-screen';
 // ----------------------------------------------------------------------
 
 export const CheckoutContext = createContext<CheckoutContextValue | undefined>(undefined);

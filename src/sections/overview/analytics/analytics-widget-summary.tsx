@@ -1,16 +1,15 @@
 import type { CardProps } from '@mui/material/Card';
-import type { ChartOptions } from 'src/components/chart';
-import type { PaletteColorKey } from 'src/theme/core/palette';
+import type { ChartOptions } from 'kimi-theme/components/chart';
+import type { PaletteColorKey } from 'kimi-theme/theme/core/palette';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import { useTheme } from '@mui/material/styles';
-
-import { Iconify } from 'src/components/iconify';
-import { SvgColor } from 'src/components/svg-color';
-import { Chart, useChart } from 'src/components/chart';
-import { varAlpha, bgGradient } from 'src/theme/styles';
-import { fNumber, fPercent, fShortenNumber } from 'src/utils/format-number';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { SvgColor } from 'kimi-theme/components/svg-color';
+import { Chart, useChart } from 'kimi-theme/components/chart';
+import { varAlpha, bgGradient } from 'kimi-theme/theme/styles';
+import { fNumber, fPercent, fShortenNumber } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

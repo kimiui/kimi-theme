@@ -1,6 +1,6 @@
 'use client';
 
-import type { ITourBooker } from 'src/types/tour';
+import type { ITourBooker } from 'kimi-theme/types/tour';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -10,10 +10,9 @@ import Avatar from '@mui/material/Avatar';
 import { useState, useCallback } from 'react';
 import Pagination from '@mui/material/Pagination';
 import IconButton from '@mui/material/IconButton';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import ListItemText from '@mui/material/ListItemText';
-
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

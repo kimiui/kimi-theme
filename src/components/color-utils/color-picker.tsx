@@ -5,9 +5,8 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import { forwardRef, useCallback } from 'react';
 import ButtonBase from '@mui/material/ButtonBase';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import { styled, alpha as hexAlpha } from '@mui/material/styles';
-
-import { varAlpha } from 'src/theme/styles';
 
 import { Iconify } from '../iconify';
 

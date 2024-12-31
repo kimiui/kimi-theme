@@ -6,10 +6,9 @@ import Link from '@mui/material/Link';
 import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
 import CardHeader from '@mui/material/CardHeader';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { fPercent } from 'kimi-theme/utils/format-number';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
-
-import { varAlpha } from 'src/theme/styles';
-import { fPercent } from 'src/utils/format-number';
 
 // ----------------------------------------------------------------------
 

@@ -1,11 +1,10 @@
 import type { Breakpoint } from '@mui/material/styles';
-import type { NavSectionProps } from 'src/components/nav-section';
+import type { NavSectionProps } from 'kimi-theme/components/nav-section';
 
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
-
-import { varAlpha } from 'src/theme/styles';
-import { NavSectionHorizontal } from 'src/components/nav-section';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { NavSectionHorizontal } from 'kimi-theme/components/nav-section';
 
 // ----------------------------------------------------------------------
 

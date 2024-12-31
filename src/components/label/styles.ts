@@ -3,8 +3,7 @@
 import type { CSSObject } from '@mui/material/styles';
 
 import { styled } from '@mui/material/styles';
-
-import { varAlpha } from 'src/theme/styles';
+import { varAlpha } from 'kimi-theme/theme/styles';
 
 import type { LabelProps } from './types';
 

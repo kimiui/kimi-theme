@@ -1,9 +1,8 @@
-import type { IMail, IMailLabel } from 'src/types/mail';
+import type { IMail, IMailLabel } from 'kimi-theme/types/mail';
 
 import useSWR from 'swr';
 import { useMemo } from 'react';
-
-import { fetcher, endpoints } from 'src/utils/axios';
+import { fetcher, endpoints } from 'kimi-theme/utils/axios';
 
 // ----------------------------------------------------------------------
 

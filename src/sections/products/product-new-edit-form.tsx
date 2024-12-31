@@ -1,6 +1,6 @@
 'use client';
 
-import type { IProductItem } from 'src/types/product';
+import type { IProductItem } from 'kimi-theme/types/product';
 
 import { z as zod } from 'zod';
 import Box from '@mui/material/Box';
@@ -11,24 +11,23 @@ import { useRouter } from 'routes-react';
 import { useForm } from 'react-hook-form';
 import Switch from '@mui/material/Switch';
 import Divider from '@mui/material/Divider';
+import { paths } from 'kimi-theme/routes/paths';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { toast } from 'kimi-theme/components/snackbar';
 import InputAdornment from '@mui/material/InputAdornment';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { useMemo, useState, useEffect, useCallback } from 'react';
-
-import { paths } from 'src/routes/paths';
-import { toast } from 'src/components/snackbar';
-import { Form, Field, schemaHelper } from 'src/components/hook-form';
+import { Form, Field, schemaHelper } from 'kimi-theme/components/hook-form';
 import {
   _tags,
   PRODUCT_SIZE_OPTIONS,
   PRODUCT_GENDER_OPTIONS,
   PRODUCT_COLOR_NAME_OPTIONS,
   PRODUCT_CATEGORY_GROUP_OPTIONS,
-} from 'src/_mock';
+} from 'kimi-theme/_mock';
 
 // ----------------------------------------------------------------------
 

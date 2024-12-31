@@ -1,6 +1,6 @@
 'use client';
 
-import type { IProductItem } from 'src/types/product';
+import type { IProductItem } from 'kimi-theme/types/product';
 
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
@@ -9,16 +9,15 @@ import Tabs from '@mui/material/Tabs';
 import Grid from '@mui/material/Grid2';
 import Button from '@mui/material/Button';
 import { RouterLink } from 'routes-react';
+import { useTabs } from 'kimi-theme/hooks';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Iconify } from 'kimi-theme/components/iconify';
 import { useState, useEffect, useCallback } from 'react';
-
-import { useTabs } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
-import { PRODUCT_PUBLISH_OPTIONS } from 'src/_mock';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { EmptyContent } from 'src/components/empty-content';
+import { PRODUCT_PUBLISH_OPTIONS } from 'kimi-theme/_mock';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
 
 import { ProductDetailsSkeleton } from '../product-skeleton';
 import { ProductDetailsReview } from '../product-details-review';

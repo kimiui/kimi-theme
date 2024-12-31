@@ -1,12 +1,11 @@
-import type { IAddressItem } from 'src/types/common';
 import type { PaperProps } from '@mui/material/Paper';
+import type { IAddressItem } from 'kimi-theme/types/common';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-
-import { Label } from 'src/components/label';
+import { Label } from 'kimi-theme/components/label';
 
 // ----------------------------------------------------------------------
 

@@ -4,11 +4,10 @@ import type { DatePickerProps } from '@mui/x-date-pickers/DatePicker';
 import type { MobileDateTimePickerProps } from '@mui/x-date-pickers/MobileDateTimePicker';
 
 import dayjs from 'dayjs';
+import { formatStr } from 'kimi-theme/utils/format-time';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { Controller, useFormContext } from 'react-hook-form';
 import { MobileDateTimePicker } from '@mui/x-date-pickers/MobileDateTimePicker';
-
-import { formatStr } from 'src/utils/format-time';
 
 // ----------------------------------------------------------------------
 

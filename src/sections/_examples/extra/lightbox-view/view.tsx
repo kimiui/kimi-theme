@@ -6,16 +6,15 @@ import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
+import { _mock } from 'kimi-theme/_mock';
 import Switch from '@mui/material/Switch';
 import FormLabel from '@mui/material/FormLabel';
+import { paths } from 'kimi-theme/routes/paths';
 import FormControl from '@mui/material/FormControl';
+import { Image } from 'kimi-theme/components/image';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { _mock } from 'src/_mock';
-import { paths } from 'src/routes/paths';
-import { Image } from 'src/components/image';
-import { Lightbox, useLightBox } from 'src/components/lightbox';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { Lightbox, useLightBox } from 'kimi-theme/components/lightbox';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentContainer } from '../../component-block';

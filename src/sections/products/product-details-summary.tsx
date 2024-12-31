@@ -1,7 +1,7 @@
 'use client';
 
-import type { IProductItem } from 'src/types/product';
-import type { ICheckoutItem } from 'src/types/checkout';
+import type { IProductItem } from 'kimi-theme/types/product';
+import type { ICheckoutItem } from 'kimi-theme/types/checkout';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
@@ -12,16 +12,15 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import MenuItem from '@mui/material/MenuItem';
 import { useEffect, useCallback } from 'react';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
+import { Label } from 'kimi-theme/components/label';
 import { useForm, Controller } from 'react-hook-form';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Form, Field } from 'kimi-theme/components/hook-form';
+import { ColorPicker } from 'kimi-theme/components/color-utils';
 import { formHelperTextClasses } from '@mui/material/FormHelperText';
-
-import { paths } from 'src/routes/paths';
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
-import { ColorPicker } from 'src/components/color-utils';
-import { fCurrency, fShortenNumber } from 'src/utils/format-number';
+import { fCurrency, fShortenNumber } from 'kimi-theme/utils/format-number';
 
 import { IncrementerButton } from './components/incrementer-button';
 

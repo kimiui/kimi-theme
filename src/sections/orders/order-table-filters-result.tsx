@@ -1,12 +1,11 @@
-import type { UseSetStateReturn } from 'src/hooks';
-import type { IOrderTableFilters } from 'src/types/order';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
 import type { Theme, SxProps } from '@mui/material/styles';
+import type { IOrderTableFilters } from 'kimi-theme/types/order';
 
 import { useCallback } from 'react';
 import Chip from '@mui/material/Chip';
-
-import { fDateRangeShortLabel } from 'src/utils/format-time';
-import { chipProps, FiltersBlock, FiltersResult } from 'src/components/filters-result';
+import { fDateRangeShortLabel } from 'kimi-theme/utils/format-time';
+import { chipProps, FiltersBlock, FiltersResult } from 'kimi-theme/components/filters-result';
 
 // ----------------------------------------------------------------------
 

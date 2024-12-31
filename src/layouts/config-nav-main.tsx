@@ -1,5 +1,5 @@
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
+import { paths } from 'kimi-theme/routes/paths';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

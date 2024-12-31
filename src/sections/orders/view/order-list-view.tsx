@@ -1,6 +1,6 @@
 'use client';
 
-import type { IOrderItem, IOrderTableFilters } from 'src/types/order';
+import type { IOrderItem, IOrderTableFilters } from 'kimi-theme/types/order';
 
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
@@ -12,21 +12,20 @@ import { useRouter } from 'routes-react';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import { useState, useCallback } from 'react';
+import { useSetState } from 'kimi-theme/hooks';
 import TableBody from '@mui/material/TableBody';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
-
-import { useSetState } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { varAlpha } from 'src/theme/styles';
-import { Label } from 'src/components/label';
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { _orders, ORDER_STATUS_OPTIONS } from 'src/_mock';
-import { fIsAfter, fIsBetween } from 'src/utils/format-time';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Label } from 'kimi-theme/components/label';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { _orders, ORDER_STATUS_OPTIONS } from 'kimi-theme/_mock';
+import { fIsAfter, fIsBetween } from 'kimi-theme/utils/format-time';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 import {
   useTable,
   emptyRows,
@@ -37,7 +36,7 @@ import {
   TableHeadCustom,
   TableSelectedAction,
   TablePaginationCustom,
-} from 'src/components/table';
+} from 'kimi-theme/components/table';
 
 import { OrderTableRow } from '../order-table-row';
 import { OrderTableToolbar } from '../order-table-toolbar';

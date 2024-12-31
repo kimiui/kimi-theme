@@ -14,12 +14,11 @@ import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import FormControl from '@mui/material/FormControl';
 import ListItemText from '@mui/material/ListItemText';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
 import { svgIconClasses } from '@mui/material/SvgIcon';
+import { Iconify } from 'kimi-theme/components/iconify';
 import Badge, { badgeClasses } from '@mui/material/Badge';
-
-import { useMockedUser } from 'src/auth/hooks';
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

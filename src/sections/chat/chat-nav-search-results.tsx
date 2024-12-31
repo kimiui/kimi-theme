@@ -1,11 +1,10 @@
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from 'kimi-theme/types/chat';
 
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import ListItemButton from '@mui/material/ListItemButton';
-
-import { SearchNotFound } from 'src/components/search-not-found';
+import { SearchNotFound } from 'kimi-theme/components/search-not-found';
 
 // ----------------------------------------------------------------------
 

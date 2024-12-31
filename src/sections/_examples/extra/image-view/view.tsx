@@ -2,12 +2,11 @@
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
+import { _mock } from 'kimi-theme/_mock';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
-
-import { _mock } from 'src/_mock';
-import { paths } from 'src/routes/paths';
-import { Image } from 'src/components/image';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { Image } from 'kimi-theme/components/image';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ScrollToViewTemplate } from '../../component-template';

@@ -1,7 +1,7 @@
 'use client';
 
-import type { IFileManager } from 'src/types/file';
 import type { CardProps } from '@mui/material/Card';
+import type { IFileManager } from 'kimi-theme/types/file';
 
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
@@ -17,17 +17,16 @@ import MenuList from '@mui/material/MenuList';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { maxLine } from 'kimi-theme/theme/styles';
+import { useCopyToClipboard } from 'kimi-theme/hooks';
+import { fData } from 'kimi-theme/utils/format-number';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fDateTime } from 'kimi-theme/utils/format-time';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { FileThumbnail } from 'kimi-theme/components/file-thumbnail';
 import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
-
-import { maxLine } from 'src/theme/styles';
-import { useCopyToClipboard } from 'src/hooks';
-import { fData } from 'src/utils/format-number';
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { fDateTime } from 'src/utils/format-time';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { FileThumbnail } from 'src/components/file-thumbnail';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 import { FileManagerFileDetails } from './file-manager-file-details';
 import { FileManagerShareDialog } from './file-manager-share-dialog';

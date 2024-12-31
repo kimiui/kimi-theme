@@ -1,10 +1,9 @@
-import type { ICheckoutItem } from 'src/types/checkout';
+import type { ICheckoutItem } from 'kimi-theme/types/checkout';
 
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
-
-import { Scrollbar } from 'src/components/scrollbar';
-import { TableHeadCustom } from 'src/components/table';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { TableHeadCustom } from 'kimi-theme/components/table';
 
 import { CheckoutCartProduct } from './checkout-cart-product';
 

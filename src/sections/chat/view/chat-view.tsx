@@ -1,16 +1,15 @@
 'use client';
 
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from 'kimi-theme/types/chat';
 
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
 import { useState, useEffect, useCallback } from 'react';
 import { useRouter, useSearchParams } from 'routes-react';
-
-import { paths } from 'src/routes/paths';
-import { useMockedUser } from 'src/auth/hooks';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { EmptyContent } from 'src/components/empty-content';
-import { useGetContacts, useGetConversation, useGetConversations } from 'src/actions/chat';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
+import { useGetContacts, useGetConversation, useGetConversations } from 'kimi-theme/actions/chat';
 
 import { Layout } from '../layout';
 import { ChatNav } from '../chat-nav';

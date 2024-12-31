@@ -1,9 +1,8 @@
 'use client';
 
+import { paths } from 'kimi-theme/routes/paths';
 import { useRef, useState, useEffect } from 'react';
-
-import { paths } from 'src/routes/paths';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ProgressLinear } from './progress-linear';
 import { ComponentHero } from '../../component-hero';

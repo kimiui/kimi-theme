@@ -1,4 +1,4 @@
-import type { IInvoice } from 'src/types/invoice';
+import type { IInvoice } from 'kimi-theme/types/invoice';
 
 import { useBoolean } from 'ahooks';
 import Link from '@mui/material/Link';
@@ -13,14 +13,13 @@ import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import { Label } from 'kimi-theme/components/label';
 import ListItemText from '@mui/material/ListItemText';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { fCurrency } from 'src/utils/format-number';
-import { fDate, fTime } from 'src/utils/format-time';
-import { ConfirmDialog } from 'src/components/custom-dialog';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fCurrency } from 'kimi-theme/utils/format-number';
+import { fDate, fTime } from 'kimi-theme/utils/format-time';
+import { ConfirmDialog } from 'kimi-theme/components/custom-dialog';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

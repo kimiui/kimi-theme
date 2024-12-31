@@ -1,12 +1,11 @@
-import type { IPaymentCard } from 'src/types/common';
+import type { IPaymentCard } from 'kimi-theme/types/common';
 
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import CardHeader from '@mui/material/CardHeader';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 import { PaymentCardItem } from '../payment/payment-card-item';
 import { PaymentNewCardDialog } from '../payment/payment-new-card-dialog';

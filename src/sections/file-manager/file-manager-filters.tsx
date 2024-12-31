@@ -1,22 +1,21 @@
-import type { IFileFilters } from 'src/types/file';
-import type { UseSetStateReturn } from 'src/hooks';
-import type { IDatePickerControl } from 'src/types/common';
+import type { IFileFilters } from 'kimi-theme/types/file';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
+import type { IDatePickerControl } from 'kimi-theme/types/common';
 
 import { useCallback } from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
 import CardActionArea from '@mui/material/CardActionArea';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { varAlpha } from 'src/theme/styles';
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { fDateRangeShortLabel } from 'src/utils/format-time';
-import { FileThumbnail } from 'src/components/file-thumbnail';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
-import { CustomDateRangePicker } from 'src/components/custom-date-range-picker';
+import { fDateRangeShortLabel } from 'kimi-theme/utils/format-time';
+import { FileThumbnail } from 'kimi-theme/components/file-thumbnail';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
+import { CustomDateRangePicker } from 'kimi-theme/components/custom-date-range-picker';
 
 // ----------------------------------------------------------------------
 

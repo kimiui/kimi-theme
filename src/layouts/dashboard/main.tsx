@@ -7,9 +7,8 @@ import type { ContainerProps } from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
-
-import { layoutClasses } from 'src/layouts/classes';
-import { useSettingsContext } from 'src/components/settings';
+import { layoutClasses } from 'kimi-theme/layouts/classes';
+import { useSettingsContext } from 'kimi-theme/components/settings';
 
 // ----------------------------------------------------------------------
 

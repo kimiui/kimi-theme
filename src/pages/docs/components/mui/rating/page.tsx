@@ -1,4 +1,4 @@
-import { RatingView } from 'src/sections/_examples/mui/rating-view';
+import { RatingView } from 'kimi-theme/sections/_examples/mui/rating-view';
 
 // ----------------------------------------------------------------------
 

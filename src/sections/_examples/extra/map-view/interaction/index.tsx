@@ -3,8 +3,7 @@
 import type { MapProps } from 'react-map-gl';
 
 import { useState, useCallback } from 'react';
-
-import { MapWrapper, MapControl } from 'src/components/map';
+import { MapWrapper, MapControl } from 'kimi-theme/components/map';
 
 import { ControlPanel } from './control-panel';
 

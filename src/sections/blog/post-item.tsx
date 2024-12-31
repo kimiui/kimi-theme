@@ -1,4 +1,4 @@
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 import type { Theme, SxProps } from '@mui/material/styles';
 
 import Box from '@mui/material/Box';
@@ -8,16 +8,15 @@ import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import { RouterLink } from 'routes-react';
 import { useTheme } from '@mui/material/styles';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
-
-import { paths } from 'src/routes/paths';
-import { Image } from 'src/components/image';
-import { fDate } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
-import { maxLine, varAlpha } from 'src/theme/styles';
-import { AvatarShape } from 'src/assets/illustrations';
-import { fShortenNumber } from 'src/utils/format-number';
+import { Image } from 'kimi-theme/components/image';
+import { fDate } from 'kimi-theme/utils/format-time';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { maxLine, varAlpha } from 'kimi-theme/theme/styles';
+import { AvatarShape } from 'kimi-theme/assets/illustrations';
+import { fShortenNumber } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

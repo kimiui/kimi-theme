@@ -1,4 +1,4 @@
-import { LabelView } from 'src/sections/_examples/extra/label-view';
+import { LabelView } from 'kimi-theme/sections/_examples/extra/label-view';
 
 // ----------------------------------------------------------------------
 

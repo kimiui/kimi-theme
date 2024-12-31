@@ -1,6 +1,6 @@
 'use client';
 
-import type { ITourItem, ITourGuide } from 'src/types/tour';
+import type { ITourItem, ITourGuide } from 'kimi-theme/types/tour';
 
 import { z as zod } from 'zod';
 import Chip from '@mui/material/Chip';
@@ -11,18 +11,17 @@ import { useForm } from 'react-hook-form';
 import Avatar from '@mui/material/Avatar';
 import Switch from '@mui/material/Switch';
 import Divider from '@mui/material/Divider';
+import { paths } from 'kimi-theme/routes/paths';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { toast } from 'kimi-theme/components/snackbar';
 import { useMemo, useEffect, useCallback } from 'react';
+import { fIsAfter } from 'kimi-theme/utils/format-time';
 import FormControlLabel from '@mui/material/FormControlLabel';
-
-import { paths } from 'src/routes/paths';
-import { toast } from 'src/components/snackbar';
-import { fIsAfter } from 'src/utils/format-time';
-import { _tags, _tourGuides, TOUR_SERVICE_OPTIONS } from 'src/_mock';
-import { Form, Field, schemaHelper } from 'src/components/hook-form';
+import { _tags, _tourGuides, TOUR_SERVICE_OPTIONS } from 'kimi-theme/_mock';
+import { Form, Field, schemaHelper } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

@@ -11,10 +11,9 @@ import Stepper from '@mui/material/Stepper';
 import { styled } from '@mui/material/styles';
 import StepLabel from '@mui/material/StepLabel';
 import Typography from '@mui/material/Typography';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { varAlpha, bgGradient, stylesMode } from 'kimi-theme/theme/styles';
 import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector';
-
-import { Iconify } from 'src/components/iconify';
-import { varAlpha, bgGradient, stylesMode } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

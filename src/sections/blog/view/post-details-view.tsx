@@ -1,6 +1,6 @@
 'use client';
 
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
@@ -10,18 +10,17 @@ import { RouterLink } from 'routes-react';
 import Divider from '@mui/material/Divider';
 import Checkbox from '@mui/material/Checkbox';
 import Container from '@mui/material/Container';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
+import { POST_PUBLISH_OPTIONS } from 'kimi-theme/_mock';
+import { Iconify } from 'kimi-theme/components/iconify';
 import { useState, useEffect, useCallback } from 'react';
+import { Markdown } from 'kimi-theme/components/markdown';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { fShortenNumber } from 'kimi-theme/utils/format-number';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { EmptyContent } from 'kimi-theme/components/empty-content';
 import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
-
-import { paths } from 'src/routes/paths';
-import { POST_PUBLISH_OPTIONS } from 'src/_mock';
-import { Iconify } from 'src/components/iconify';
-import { Markdown } from 'src/components/markdown';
-import { fShortenNumber } from 'src/utils/format-number';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { EmptyContent } from 'src/components/empty-content';
 
 import { PostDetailsHero } from '../post-details-hero';
 import { PostCommentList } from '../post-comment-list';

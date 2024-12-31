@@ -3,9 +3,8 @@
 import { m } from 'framer-motion';
 import Fab from '@mui/material/Fab';
 import IconButton from '@mui/material/IconButton';
-
-import { Iconify } from 'src/components/iconify';
-import { varHover } from 'src/components/animate';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { varHover } from 'kimi-theme/components/animate';
 
 // ----------------------------------------------------------------------
 

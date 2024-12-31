@@ -1,8 +1,7 @@
 'use client';
 
 import { styled } from '@mui/material/styles';
-
-import { bgBlur, varAlpha } from 'src/theme/styles';
+import { bgBlur, varAlpha } from 'kimi-theme/theme/styles';
 
 // ----------------------------------------------------------------------
 

@@ -2,12 +2,11 @@
 
 import Button from '@mui/material/Button';
 import { RouterLink } from 'routes-react';
-
-import { _userCards } from 'src/_mock';
-import { paths } from 'src/routes/paths';
-import { Iconify } from 'src/components/iconify';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { _userCards } from 'kimi-theme/_mock';
+import { paths } from 'kimi-theme/routes/paths';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { UserCardList } from '../user-card-list';
 

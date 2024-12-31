@@ -4,9 +4,8 @@ import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
-
-import { useMockedUser } from 'src/auth/hooks';
-import { Iconify } from 'src/components/iconify';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

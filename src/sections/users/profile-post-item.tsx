@@ -1,4 +1,4 @@
-import type { IUserProfilePost } from 'src/types/user';
+import type { IUserProfilePost } from 'kimi-theme/types/user';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
@@ -11,17 +11,16 @@ import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { Image } from 'kimi-theme/components/image';
+import { fDate } from 'kimi-theme/utils/format-time';
 import { useRef, useState, useCallback } from 'react';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { fShortenNumber } from 'kimi-theme/utils/format-number';
 import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
-
-import { varAlpha } from 'src/theme/styles';
-import { Image } from 'src/components/image';
-import { fDate } from 'src/utils/format-time';
-import { useMockedUser } from 'src/auth/hooks';
-import { Iconify } from 'src/components/iconify';
-import { fShortenNumber } from 'src/utils/format-number';
 
 // ----------------------------------------------------------------------
 

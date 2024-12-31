@@ -1,11 +1,10 @@
-import type { UseSetStateReturn } from 'src/hooks';
-import type { IUserTableFilters } from 'src/types/user';
+import type { UseSetStateReturn } from 'kimi-theme/hooks';
 import type { Theme, SxProps } from '@mui/material/styles';
+import type { IUserTableFilters } from 'kimi-theme/types/user';
 
 import { useCallback } from 'react';
 import Chip from '@mui/material/Chip';
-
-import { chipProps, FiltersBlock, FiltersResult } from 'src/components/filters-result';
+import { chipProps, FiltersBlock, FiltersResult } from 'kimi-theme/components/filters-result';
 
 // ----------------------------------------------------------------------
 

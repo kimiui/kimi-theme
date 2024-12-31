@@ -1,6 +1,6 @@
 'use client';
 
-import type { ICalendarEvent } from 'src/types/calendar';
+import type { ICalendarEvent } from 'kimi-theme/types/calendar';
 
 import { z as zod } from 'zod';
 import { useCallback } from 'react';
@@ -8,20 +8,19 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
+import { uuidv4 } from 'kimi-theme/utils/uuidv4';
 import IconButton from '@mui/material/IconButton';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, Controller } from 'react-hook-form';
+import { toast } from 'kimi-theme/components/snackbar';
 import DialogActions from '@mui/material/DialogActions';
-
-import { uuidv4 } from 'src/utils/uuidv4';
-import { toast } from 'src/components/snackbar';
-import { fIsAfter } from 'src/utils/format-time';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { Form, Field } from 'src/components/hook-form';
-import { ColorPicker } from 'src/components/color-utils';
-import { createEvent, updateEvent, deleteEvent } from 'src/actions/calendar';
+import { fIsAfter } from 'kimi-theme/utils/format-time';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { Scrollbar } from 'kimi-theme/components/scrollbar';
+import { Form, Field } from 'kimi-theme/components/hook-form';
+import { ColorPicker } from 'kimi-theme/components/color-utils';
+import { createEvent, updateEvent, deleteEvent } from 'kimi-theme/actions/calendar';
 
 // ----------------------------------------------------------------------
 

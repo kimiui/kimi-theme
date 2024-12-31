@@ -4,8 +4,7 @@ import type { IconButtonProps } from '@mui/material/IconButton';
 
 import ButtonBase from '@mui/material/ButtonBase';
 import IconButton from '@mui/material/IconButton';
-
-import { bgBlur, varAlpha } from 'src/theme/styles';
+import { bgBlur, varAlpha } from 'kimi-theme/theme/styles';
 
 import { Iconify } from '../iconify';
 

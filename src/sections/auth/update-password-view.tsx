@@ -5,20 +5,19 @@ import { useBoolean } from 'ahooks';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import { useForm } from 'react-hook-form';
+import { paths } from 'kimi-theme/routes/paths';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
+import { SentIcon } from 'kimi-theme/assets/icons';
 import { memo, useEffect, useCallback } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useCountdownSeconds } from 'kimi-theme/hooks';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
+import { Form, Field } from 'kimi-theme/components/hook-form';
 import { useRouter, RouterLink, useSearchParams } from 'routes-react';
-
-import { paths } from 'src/routes/paths';
-import { SentIcon } from 'src/assets/icons';
-import { useCountdownSeconds } from 'src/hooks';
-import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
-import { resetPassword, updatePassword } from 'src/auth/context';
+import { resetPassword, updatePassword } from 'kimi-theme/auth/context';
 // ----------------------------------------------------------------------
 
 export type UpdatePasswordSchemaType = zod.infer<typeof UpdatePasswordSchema>;

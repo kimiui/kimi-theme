@@ -1,16 +1,15 @@
 'use client';
 
-import type { ITourItem } from 'src/types/tour';
+import type { ITourItem } from 'kimi-theme/types/tour';
 
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
+import { useTabs } from 'kimi-theme/hooks';
 import { useState, useCallback } from 'react';
-
-import { useTabs } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { Label } from 'src/components/label';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { TOUR_DETAILS_TABS, TOUR_PUBLISH_OPTIONS } from 'src/_mock';
+import { paths } from 'kimi-theme/routes/paths';
+import { Label } from 'kimi-theme/components/label';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { TOUR_DETAILS_TABS, TOUR_PUBLISH_OPTIONS } from 'kimi-theme/_mock';
 
 import { TourDetailsBookers } from '../tour-details-bookers';
 import { TourDetailsContent } from '../tour-details-content';

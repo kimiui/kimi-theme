@@ -3,10 +3,9 @@ import type { CardProps } from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { fShortenNumber } from 'kimi-theme/utils/format-number';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
-
-import { varAlpha } from 'src/theme/styles';
-import { fShortenNumber } from 'src/utils/format-number';
 
 // ----------------------------------------------------------------------
 

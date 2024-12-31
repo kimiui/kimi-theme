@@ -4,13 +4,12 @@ import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
+import { Label } from 'kimi-theme/components/label';
 import { useRouter, usePathname } from 'routes-react';
-
-import { paths } from 'src/routes/paths';
-import { Label } from 'src/components/label';
-import { useMockedUser } from 'src/auth/hooks';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { useMockedUser } from 'kimi-theme/auth/hooks';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 import { AccountButton } from './account-button';
 import { SignOutButton } from './sign-out-button';

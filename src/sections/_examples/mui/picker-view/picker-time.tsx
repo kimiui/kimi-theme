@@ -1,6 +1,6 @@
 'use client';
 
-import type { IDatePickerControl } from 'src/types/common';
+import type { IDatePickerControl } from 'kimi-theme/types/common';
 
 import dayjs from 'dayjs';
 import { useState } from 'react';

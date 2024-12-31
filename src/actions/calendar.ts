@@ -1,9 +1,8 @@
-import type { ICalendarEvent } from 'src/types/calendar';
+import type { ICalendarEvent } from 'kimi-theme/types/calendar';
 
 import { useMemo } from 'react';
 import useSWR, { mutate } from 'swr';
-
-import axios, { fetcher, endpoints } from 'src/utils/axios';
+import axios, { fetcher, endpoints } from 'kimi-theme/utils/axios';
 
 // ----------------------------------------------------------------------
 

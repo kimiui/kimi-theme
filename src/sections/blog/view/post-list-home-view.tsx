@@ -1,17 +1,16 @@
 'use client';
 
-import type { IPostItem } from 'src/types/blog';
+import type { IPostItem } from 'kimi-theme/types/blog';
 
 import Stack from '@mui/material/Stack';
 import { useState, useCallback } from 'react';
+import { useDebounce } from 'kimi-theme/hooks';
 import Container from '@mui/material/Container';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
-
-import { useDebounce } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { orderBy } from 'src/utils/helper';
-import { POST_SORT_OPTIONS } from 'src/_mock';
-import { useGetPosts } from 'src/actions/blog';
+import { orderBy } from 'kimi-theme/utils/helper';
+import { POST_SORT_OPTIONS } from 'kimi-theme/_mock';
+import { useGetPosts } from 'kimi-theme/actions/blog';
 
 import { PostList } from '../post-list';
 import { PostSort } from '../post-sort';

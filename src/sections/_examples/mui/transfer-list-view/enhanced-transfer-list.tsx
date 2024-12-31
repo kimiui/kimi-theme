@@ -10,9 +10,8 @@ import Checkbox from '@mui/material/Checkbox';
 import CardHeader from '@mui/material/CardHeader';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import { Iconify } from 'kimi-theme/components/iconify';
 import ListItemButton from '@mui/material/ListItemButton';
-
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

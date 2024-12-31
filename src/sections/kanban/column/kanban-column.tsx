@@ -1,14 +1,13 @@
 import type { Theme, SxProps } from '@mui/material/styles';
 import type { AnimateLayoutChanges } from '@dnd-kit/sortable';
-import type { IKanbanTask, IKanbanColumn } from 'src/types/kanban';
+import type { IKanbanTask, IKanbanColumn } from 'kimi-theme/types/kanban';
 
 import { useCallback } from 'react';
 import { useBoolean } from 'ahooks';
 import { CSS } from '@dnd-kit/utilities';
+import { toast } from 'kimi-theme/components/snackbar';
 import { useSortable, defaultAnimateLayoutChanges } from '@dnd-kit/sortable';
-
-import { toast } from 'src/components/snackbar';
-import { createTask, clearColumn, deleteColumn, updateColumn } from 'src/actions/kanban';
+import { createTask, clearColumn, deleteColumn, updateColumn } from 'kimi-theme/actions/kanban';
 
 import ColumnBase from './column-base';
 import { KanbanTaskAdd } from '../components/kanban-task-add';

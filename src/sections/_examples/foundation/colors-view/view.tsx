@@ -2,13 +2,12 @@
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
+import { paths } from 'kimi-theme/routes/paths';
 import Typography from '@mui/material/Typography';
+import { useCopyToClipboard } from 'kimi-theme/hooks';
+import { toast } from 'kimi-theme/components/snackbar';
 import { hexToRgb, useTheme } from '@mui/material/styles';
-
-import { paths } from 'src/routes/paths';
-import { useCopyToClipboard } from 'src/hooks';
-import { toast } from 'src/components/snackbar';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ScrollToViewTemplate } from '../../component-template';

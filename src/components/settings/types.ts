@@ -1,5 +1,5 @@
 import type { Theme, SxProps } from '@mui/material/styles';
-import type { ThemeDirection, ThemeColorScheme } from 'src/theme/types';
+import type { ThemeDirection, ThemeColorScheme } from 'kimi-theme/theme/types';
 
 // ----------------------------------------------------------------------
 
@@ -43,6 +43,6 @@ export type SettingsContextValue = SettingsState & {
 };
 
 export type SettingsProviderProps = {
-  settings: SettingsState;
+  settings?: SettingsState;
   children: React.ReactNode;
 };

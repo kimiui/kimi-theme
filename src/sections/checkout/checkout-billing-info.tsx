@@ -1,12 +1,11 @@
-import type { IAddressItem } from 'src/types/common';
+import type { IAddressItem } from 'kimi-theme/types/common';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import CardHeader from '@mui/material/CardHeader';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

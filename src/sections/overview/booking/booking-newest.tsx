@@ -1,16 +1,15 @@
 import type { BoxProps } from '@mui/material/Box';
-import type { IDateValue } from 'src/types/common';
+import type { IDateValue } from 'kimi-theme/types/common';
 
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import CardHeader from '@mui/material/CardHeader';
+import { Image } from 'kimi-theme/components/image';
+import { Label } from 'kimi-theme/components/label';
 import ListItemText from '@mui/material/ListItemText';
-
-import { Image } from 'src/components/image';
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { fDateTime } from 'src/utils/format-time';
-import { Carousel, useCarousel, CarouselArrowBasicButtons } from 'src/components/carousel';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { fDateTime } from 'kimi-theme/utils/format-time';
+import { Carousel, useCarousel, CarouselArrowBasicButtons } from 'kimi-theme/components/carousel';
 
 // ----------------------------------------------------------------------
 

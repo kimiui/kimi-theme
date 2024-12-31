@@ -1,4 +1,4 @@
-import type { IUserProfile, IUserProfilePost } from 'src/types/user';
+import type { IUserProfile, IUserProfilePost } from 'kimi-theme/types/user';
 
 import { useRef } from 'react';
 import Fab from '@mui/material/Fab';
@@ -9,13 +9,12 @@ import Grid from '@mui/material/Grid2';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
+import { _socials } from 'kimi-theme/_mock';
 import InputBase from '@mui/material/InputBase';
 import CardHeader from '@mui/material/CardHeader';
-
-import { _socials } from 'src/_mock';
-import { varAlpha } from 'src/theme/styles';
-import { fNumber } from 'src/utils/format-number';
-import { Iconify, SocialIcon } from 'src/components/iconify';
+import { varAlpha } from 'kimi-theme/theme/styles';
+import { fNumber } from 'kimi-theme/utils/format-number';
+import { Iconify, SocialIcon } from 'kimi-theme/components/iconify';
 
 import { ProfilePostItem } from './profile-post-item';
 

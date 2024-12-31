@@ -6,8 +6,7 @@ import Button from '@mui/material/Button';
 import { RouterLink } from 'routes-react';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from 'kimi-theme/components/iconify';
 
 // ----------------------------------------------------------------------
 

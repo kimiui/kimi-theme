@@ -3,12 +3,11 @@ import { useBoolean } from 'ahooks';
 import Paper from '@mui/material/Paper';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-
-import { Logo } from 'src/components/logo';
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { SvgColor } from 'src/components/svg-color';
-import { NavBasicMobile, NavBasicDesktop } from 'src/components/nav-basic';
+import { Logo } from 'kimi-theme/components/logo';
+import { Label } from 'kimi-theme/components/label';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { SvgColor } from 'kimi-theme/components/svg-color';
+import { NavBasicMobile, NavBasicDesktop } from 'kimi-theme/components/nav-basic';
 
 // ----------------------------------------------------------------------
 

@@ -1,5 +1,5 @@
-import type { IUserAccountBillingHistory } from 'src/types/user';
-import type { IPaymentCard, IAddressItem } from 'src/types/common';
+import type { IUserAccountBillingHistory } from 'kimi-theme/types/user';
+import type { IPaymentCard, IAddressItem } from 'kimi-theme/types/common';
 
 import Grid from '@mui/material/Grid2';
 

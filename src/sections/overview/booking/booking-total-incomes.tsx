@@ -1,14 +1,13 @@
 import type { CardProps } from '@mui/material/Card';
-import type { ChartOptions } from 'src/components/chart';
+import type { ChartOptions } from 'kimi-theme/components/chart';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { SvgColor } from 'kimi-theme/components/svg-color';
+import { Chart, useChart } from 'kimi-theme/components/chart';
 import { useTheme, alpha as hexAlpha } from '@mui/material/styles';
-
-import { Iconify } from 'src/components/iconify';
-import { SvgColor } from 'src/components/svg-color';
-import { Chart, useChart } from 'src/components/chart';
-import { fPercent, fCurrency } from 'src/utils/format-number';
+import { fPercent, fCurrency } from 'kimi-theme/utils/format-number';
 
 // ----------------------------------------------------------------------
 

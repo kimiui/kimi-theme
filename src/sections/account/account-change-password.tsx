@@ -8,11 +8,10 @@ import { useForm } from 'react-hook-form';
 import IconButton from '@mui/material/IconButton';
 import LoadingButton from '@mui/lab/LoadingButton';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { toast } from 'kimi-theme/components/snackbar';
+import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
+import { Form, Field } from 'kimi-theme/components/hook-form';
 
 // ----------------------------------------------------------------------
 

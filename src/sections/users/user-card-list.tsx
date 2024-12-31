@@ -1,6 +1,6 @@
 'use client';
 
-import type { IUserCard } from 'src/types/user';
+import type { IUserCard } from 'kimi-theme/types/user';
 
 import Box from '@mui/material/Box';
 import { useState, useCallback } from 'react';

@@ -6,10 +6,9 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
+import { fDate } from 'kimi-theme/utils/format-time';
 import { Link, Stack, useTheme } from '@mui/material';
-
-import { fDate } from 'src/utils/format-time';
-import { fCurrency } from 'src/utils/format-number';
+import { fCurrency } from 'kimi-theme/utils/format-number';
 
 type Props = BoxProps & {
   title?: string;

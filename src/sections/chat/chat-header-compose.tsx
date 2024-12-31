@@ -1,6 +1,6 @@
 'use client';
 
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from 'kimi-theme/types/chat';
 
 import Box from '@mui/material/Box';
 import Chip from '@mui/material/Chip';
@@ -9,11 +9,10 @@ import Avatar from '@mui/material/Avatar';
 import { useState, useCallback } from 'react';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import { varAlpha } from 'kimi-theme/theme/styles';
 import Autocomplete from '@mui/material/Autocomplete';
-
-import { varAlpha } from 'src/theme/styles';
-import { Iconify } from 'src/components/iconify';
-import { SearchNotFound } from 'src/components/search-not-found';
+import { Iconify } from 'kimi-theme/components/iconify';
+import { SearchNotFound } from 'kimi-theme/components/search-not-found';
 
 // ----------------------------------------------------------------------
 

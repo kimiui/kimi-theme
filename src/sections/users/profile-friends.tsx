@@ -1,21 +1,20 @@
-import type { IUserProfileFriend } from 'src/types/user';
+import type { IUserProfileFriend } from 'kimi-theme/types/user';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
+import { _socials } from 'kimi-theme/_mock';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { _socials } from 'src/_mock';
-import { Iconify, SocialIcon } from 'src/components/iconify';
-import { SearchNotFound } from 'src/components/search-not-found';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
+import { Iconify, SocialIcon } from 'kimi-theme/components/iconify';
+import { SearchNotFound } from 'kimi-theme/components/search-not-found';
+import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

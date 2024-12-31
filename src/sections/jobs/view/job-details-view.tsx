@@ -1,16 +1,15 @@
 'use client';
 
-import type { IJobItem } from 'src/types/job';
+import type { IJobItem } from 'kimi-theme/types/job';
 
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
+import { useTabs } from 'kimi-theme/hooks';
 import { useState, useCallback } from 'react';
-
-import { useTabs } from 'src/hooks';
-import { paths } from 'src/routes/paths';
-import { Label } from 'src/components/label';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { JOB_DETAILS_TABS, JOB_PUBLISH_OPTIONS } from 'src/_mock';
+import { paths } from 'kimi-theme/routes/paths';
+import { Label } from 'kimi-theme/components/label';
+import { DashboardContent } from 'kimi-theme/layouts/dashboard';
+import { JOB_DETAILS_TABS, JOB_PUBLISH_OPTIONS } from 'kimi-theme/_mock';
 
 import { JobDetailsContent } from '../job-details-content';
 import { JobDetailsToolbar } from '../job-details-toolbar';

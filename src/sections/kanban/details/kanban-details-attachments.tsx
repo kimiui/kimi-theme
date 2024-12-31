@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-
-import { UploadBox, MultiFilePreview } from 'src/components/upload';
+import { UploadBox, MultiFilePreview } from 'kimi-theme/components/upload';
 
 // ----------------------------------------------------------------------
 
