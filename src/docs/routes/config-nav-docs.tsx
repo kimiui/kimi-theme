@@ -201,10 +201,10 @@ export const navData = [
         title: 'Utilities',
         path: paths.docs.components.extra.utilities,
       },
-      {
-        title: 'Walktour',
-        path: paths.docs.components.extra.walktour,
-      },
+      // {
+      //   title: 'Walktour',
+      //   path: paths.docs.components.extra.walktour,
+      // },
     ],
   },
 ];

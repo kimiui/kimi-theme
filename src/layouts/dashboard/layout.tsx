@@ -49,6 +49,7 @@ export type DashboardLayoutProps = {
       toggleNav?: {
         display?: boolean;
       };
+      rootItem?: any;
     };
   };
 };
@@ -205,6 +206,7 @@ export function DashboardLayout({ sx, children, data, slotProps }: Readonly<Dash
                     </Box>
                   ),
                 bottom: 'bottom' in (data?.sidebar ?? {}) ? data?.sidebar?.bottom : <NavHelper />,
+                ...slotProps?.sidebar,
               }}
             />
           )

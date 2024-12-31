@@ -39,7 +39,12 @@ export function NavVertical({
       {slotProps?.top}
 
       <Scrollbar fillContent>
-        <NavSectionVertical data={data} sx={{ px: 2, flex: '1 1 auto' }} {...other} />
+        <NavSectionVertical
+          data={data}
+          sx={{ px: 2, flex: '1 1 auto' }}
+          slotProps={slotProps}
+          {...other}
+        />
       </Scrollbar>
 
       {slotProps?.bottom}

@@ -102,7 +102,18 @@ export function Router() {
           }}
           slotProps={{
             header: { slotsDisplay: { notifications: false, settings: false, account: false } },
-            sidebar: { toggleNav: { display: false } },
+            sidebar: {
+              toggleNav: { display: false },
+              rootItem: {
+                sx: {
+                  minHeight: 20,
+                  '&:hover': {
+                    bgcolor: 'transparent',
+                    color: 'var(--nav-item-root-active-color)',
+                  },
+                },
+              },
+            },
           }}
         >
           <Suspense fallback={<LoadingScreen />}>
