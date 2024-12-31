@@ -11,12 +11,9 @@ Welcome to the Kimi Theme repository! This theme is designed to provide a clean 
 
 ## Installation
 
-To install the Kimi Theme, follow these steps:
-
-1. Clone the repository:
-   ```sh
-   yarn add kimi-theme
-   ```
+```sh
+yarn add kimi-theme
+```
 
 ## Usage
 
@@ -24,7 +21,7 @@ To use the Kimi Theme in your project, follow the docs at https://docs.kimistore
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/kimiui/theme/blob/main/LICENSE) file for details.
 
 ## Contact
 

@@ -7,6 +7,10 @@
   "license": "MIT",
   "main": "src/index.ts",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimiui/theme.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
