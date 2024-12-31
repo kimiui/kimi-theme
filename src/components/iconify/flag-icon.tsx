@@ -1,8 +1,10 @@
-import type { Theme, SxProps } from "@mui/material/styles";
+import type { Theme, SxProps } from '@mui/material/styles';
 
-import { forwardRef } from "react";
-import Box from "@mui/material/Box";
-import NoSsr from "@mui/material/NoSsr";
+import { forwardRef } from 'react';
+import Box from '@mui/material/Box';
+import NoSsr from '@mui/material/NoSsr';
+
+import { Iconify } from './iconify';
 
 // ----------------------------------------------------------------------
 
@@ -17,15 +19,13 @@ export const FlagIcon = forwardRef<HTMLSpanElement, FlagIconProps>(
       width: 26,
       height: 20,
       flexShrink: 0,
-      overflow: "hidden",
-      borderRadius: "5px",
-      display: "inline-flex",
-      bgcolor: "background.neutral",
+      overflow: 'hidden',
+      borderRadius: '5px',
+      display: 'inline-flex',
+      bgcolor: 'background.neutral',
     };
 
-    const renderFallback = (
-      <Box component="span" sx={{ ...baseStyles, ...sx }} />
-    );
+    const renderFallback = <Box component="span" sx={{ ...baseStyles, ...sx }} />;
 
     if (!code) {
       return null;
@@ -33,18 +33,8 @@ export const FlagIcon = forwardRef<HTMLSpanElement, FlagIconProps>(
 
     return (
       <NoSsr fallback={renderFallback}>
-        <Box
-          ref={ref}
-          component="span"
-          sx={{ ...baseStyles, ...sx }}
-          {...other}
-        >
-          <Box
-            component="img"
-            alt={code}
-            src={`/assets/icons/flagpack/${code?.toLowerCase()}.webp`}
-            sx={{ width: 1, height: 1, objectFit: "cover" }}
-          />
+        <Box ref={ref} component="span" sx={{ ...baseStyles, ...sx }} {...other}>
+          <Iconify icon={`flag:${code?.toLowerCase()}-1x1`} sx={{ width: 26, height: 20 }} />
         </Box>
       </NoSsr>
     );

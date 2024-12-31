@@ -55,26 +55,26 @@ export function IconsView() {
 
         <ComponentBlock title="Local icon">
           <Tooltip title="SvgColor">
-            <SvgColor src="/assets/icons/navbar/ic-dashboard.svg" sx={{ width: 32, height: 32 }} />
+            <SvgColor src="/logo/logo-single.svg" sx={{ width: 32, height: 32 }} />
           </Tooltip>
           <SvgColor
-            src="/assets/icons/navbar/ic-dashboard.svg"
+            src="/logo/logo-single.svg"
             sx={{ color: 'action.active', width: 32, height: 32 }}
           />
           <SvgColor
-            src="/assets/icons/navbar/ic-dashboard.svg"
+            src="/logo/logo-single.svg"
             sx={{ color: 'action.disabled', width: 32, height: 32 }}
           />
           <SvgColor
-            src="/assets/icons/navbar/ic-dashboard.svg"
+            src="/logo/logo-single.svg"
             sx={{ color: 'primary.main', width: 32, height: 32 }}
           />
           <SvgColor
-            src="/assets/icons/navbar/ic-dashboard.svg"
+            src="/logo/logo-single.svg"
             sx={{ color: 'secondary.main', width: 32, height: 32 }}
           />
           <SvgColor
-            src="/assets/icons/navbar/ic-dashboard.svg"
+            src="/logo/logo-single.svg"
             sx={{ color: 'info.main', width: 32, height: 32 }}
           />
           <SvgColor
@@ -82,11 +82,11 @@ export function IconsView() {
             sx={{ color: 'success.main', width: 32, height: 32 }}
           />
           <SvgColor
-            src="/assets/icons/navbar/ic-dashboard.svg"
+            src="/logo/logo-single.svg"
             sx={{ color: 'warning.main', width: 32, height: 32 }}
           />
           <SvgColor
-            src="/assets/icons/navbar/ic-dashboard.svg"
+            src="/logo/logo-single.svg"
             sx={{ color: 'error.main', width: 32, height: 32 }}
           />
         </ComponentBlock>
