@@ -1,5 +1,6 @@
 import type { Theme } from '@mui/material/styles';
 import type { LabComponents } from '@mui/lab/themeAugmentation';
+
 // ----------------------------------------------------------------------
 
 const MuiTimelineDot: LabComponents['MuiTimelineDot'] = {
@@ -18,6 +19,5 @@ const MuiTimelineConnector: LabComponents['MuiTimelineConnector'] = {
   },
 };
 
-// ----------------------------------------------------------------------
-
-export const overrideTimeline = { MuiTimelineDot, MuiTimelineConnector };
+// ----------------------------------------------------------------------export the type
+export const timeline = { MuiTimelineDot, MuiTimelineConnector } as const;

@@ -29,6 +29,7 @@ import { skeleton } from './skeleton';
 import { backdrop } from './backdrop';
 import { progress } from './progress';
 import { checkbox } from './checkbox';
+import { timeline } from './timeline';
 import { accordion } from './accordion';
 import { textfield } from './textfield';
 import { typography } from './typography';
@@ -37,14 +38,13 @@ import { breadcrumbs } from './breadcrumbs';
 import { dataGrid } from './mui-x-data-grid';
 import { treeView } from './mui-x-tree-view';
 import { buttonGroup } from './button-group';
-import { overrideTimeline } from './timeline';
 import { autocomplete } from './autocomplete';
 import { toggleButton } from './button-toggle';
 import { datePicker } from './mui-x-date-picker';
 
 // ----------------------------------------------------------------------
 
-export const overrideComponents = {
+export const components = {
   ...fab,
   ...card,
   ...link,
@@ -72,7 +72,7 @@ export const overrideComponents = {
   ...popover,
   ...svgIcon,
   ...skeleton,
-  ...overrideTimeline,
+  ...timeline,
   ...backdrop,
   ...progress,
   ...switches,
@@ -88,4 +88,4 @@ export const overrideComponents = {
   ...buttonGroup,
   ...autocomplete,
   ...toggleButton,
-};
+} as const;

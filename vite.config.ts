@@ -3,23 +3,32 @@ import react from '@vitejs/plugin-react-swc';
 import checker from 'vite-plugin-checker';
 import dts from 'vite-plugin-dts';
 import path from 'path';
+
 //----------------------------------------------------------------------
 const PORT = 8080;
 // https://vite.dev/config/
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/index.ts',
-      formats: ['es'],
-      fileName: (format) => `index.${format}.js`,
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      formats: ['es', 'cjs'],
+      fileName: (format) => (format === 'cjs' ? 'index.cjs.js' : 'index.esm.js'),
     },
     rollupOptions: {
       output: {
-        // Disable code splitting
-        manualChunks: undefined,
+        assetFileNames: 'assets/[name][extname]',
+        entryFileNames: '[name].js',
       },
-      external: ['react', '@mui/material'],
+      external: [
+        'react',
+        'react/jsx-runtime',
+        '@mui/material',
+        '@mui/lab',
+        '@mui/system',
+        '@mui/styled-engine-sc',
+      ],
     },
+    emptyOutDir: true,
   },
   plugins: [
     react(),

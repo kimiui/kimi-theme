@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "TypeScript",
   "private": false,
   "license": "MIT",
@@ -14,17 +14,21 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc --p ./tsconfig-build.json && vite build",
     "watch": "tsc -w",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "fm:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
-    "fm:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+    "fm:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prepublishOnly": "npm run build"
   },
   "exports": {
-    "./core/palette": "./dist/core/palette.js",
-    "./*": "./dist/*"
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
     "@dnd-kit/sortable": "^8.0.0",

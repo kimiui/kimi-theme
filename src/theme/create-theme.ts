@@ -10,7 +10,7 @@ import { shadows } from './core/shadows';
 import { palette } from './core/palette';
 import { themeConfig } from './theme-config';
 import { typography } from './core/typography';
-import { overrideComponents } from './core/components';
+import { components } from './core/components';
 import { updateCoreWithSettings, updateComponentsWithSettings } from './with-settings/index';
 
 import type { ThemeOptions } from './types';
@@ -29,7 +29,7 @@ export const baseTheme: ThemeOptions = {
     },
   },
   mixins,
-  components: overrideComponents,
+  components,
   typography,
   shape: { borderRadius: 8 },
   direction: themeConfig.direction,
@@ -55,7 +55,7 @@ export function createTheme({
 
   // Update component settings
   const updatedComponents = settingsState
-    ? updateComponentsWithSettings(overrideComponents, settingsState)
+    ? updateComponentsWithSettings(components, settingsState)
     : {};
 
   // Create and return the final theme
