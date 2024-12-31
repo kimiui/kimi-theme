@@ -3,8 +3,8 @@
 import React, { useState, useCallback } from 'react';
 import { toast } from 'kimi-theme/components/snackbar';
 import { Iconify } from 'kimi-theme/components/iconify';
-import { Tab, Box, Tabs, Typography, IconButton } from '@mui/material';
 import { useCopyToClipboard } from 'kimi-theme/hooks/useCopyToClipboard';
+import { Tab, Box, Tabs, Divider, Typography, IconButton } from '@mui/material';
 // ----------------------------------------------------------------------
 interface CodeTabsProps {
   tabs: {
@@ -33,33 +33,35 @@ const CodeTabs: React.FC<CodeTabsProps> = ({ tabs, sx }) => {
   );
 
   return (
-    <Box sx={{ ml: 2, ...sx }}>
-      <Tabs
-        value={activeTab}
-        onChange={handleChange}
-        aria-label="code tabs"
-        variant="standard"
-        scrollButtons="auto"
-        textColor="primary"
-        indicatorColor="primary"
-      >
-        {Object.keys(tabs).map((tab) => (
-          <Tab key={tab} label={tab} value={tab} />
-        ))}
-      </Tabs>
+    <Box
+      sx={{
+        borderRadius: 1,
+        backgroundColor: (theme) => theme.vars.palette.background.neutral,
+        ...sx,
+      }}
+    >
+      <Box sx={{ pt: 1, px: 2 }}>
+        <Tabs
+          value={activeTab}
+          onChange={handleChange}
+          aria-label="code tabs"
+          variant="standard"
+          scrollButtons="auto"
+          textColor="primary"
+          indicatorColor="primary"
+        >
+          {Object.keys(tabs).map((tab) => (
+            <Tab key={tab} label={tab} value={tab} />
+          ))}
+        </Tabs>
+      </Box>
 
-      <Box
-        sx={{
-          p: 2,
-          backgroundColor: (theme) => theme.vars?.palette.grey[700],
-          borderRadius: 1,
-          mt: 2,
-          position: 'relative',
-        }}
-      >
+      <Divider />
+
+      <Box sx={{ mt: 2, p: 2, position: 'relative' }}>
         <IconButton
           onClick={() => onCopy(tabs[activeTab])}
-          sx={{ position: 'absolute', right: 5, top: 5 }}
+          sx={{ position: 'absolute', right: 5, top: 0 }}
         >
           <Iconify icon="eva:copy-fill" width={24} />
         </IconButton>
@@ -69,7 +71,7 @@ const CodeTabs: React.FC<CodeTabsProps> = ({ tabs, sx }) => {
           sx={{
             whiteSpace: 'pre-wrap',
             fontFamily: 'monospace',
-            color: 'white',
+            color: 'text.primary',
           }}
         >
           $ {tabs[activeTab]}

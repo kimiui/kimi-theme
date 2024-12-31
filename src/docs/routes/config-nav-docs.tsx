@@ -15,7 +15,7 @@ export const navData = [
       },
       {
         title: 'Getting Started',
-        path: paths.docs.root,
+        path: paths.docs.gettingStarted,
       },
     ],
   },

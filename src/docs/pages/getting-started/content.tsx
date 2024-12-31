@@ -4,11 +4,11 @@ import CodeTabs from 'kimi-theme/components/code-tabs';
 import CodeBlock from 'kimi-theme/components/code-block';
 
 const codeBlock = `import { ThemeProvider } from 'kimi-theme/theme/theme-provider';
-import { SettingsDrawer, defaultSettings, SettingsProvider } from 'kimi-theme/components/settings';
+import { SettingsDrawer, SettingsProvider } from 'kimi-theme/components/settings';
 
 export default function App() {
   return (
-    <SettingsProvider settings={defaultSettings}>
+    <SettingsProvider>
       <ThemeProvider>
         <SettingsDrawer />
         <Router />

@@ -25,31 +25,30 @@ const CodeBlock: React.FC<CodeTabsProps> = ({ text, sx }) => {
   );
 
   return (
-    <Box sx={{ ml: 2, ...sx }}>
-      <Box
+    <Box
+      sx={{
+        p: 2,
+        backgroundColor: (theme) => theme.vars.palette.background.neutral,
+        borderRadius: 1,
+        mt: 2,
+        position: 'relative',
+        ...sx,
+      }}
+    >
+      <IconButton onClick={() => onCopy(text)} sx={{ position: 'absolute', right: 5, top: 5 }}>
+        <Iconify icon="eva:copy-fill" width={24} />
+      </IconButton>
+
+      <Typography
+        component="pre"
         sx={{
-          p: 2,
-          backgroundColor: (theme) => theme.vars?.palette.grey[700],
-          borderRadius: 1,
-          mt: 2,
-          position: 'relative',
+          whiteSpace: 'pre-wrap',
+          fontFamily: 'monospace',
+          color: 'text.primary',
         }}
       >
-        <IconButton onClick={() => onCopy(text)} sx={{ position: 'absolute', right: 5, top: 5 }}>
-          <Iconify icon="eva:copy-fill" width={24} />
-        </IconButton>
-
-        <Typography
-          component="pre"
-          sx={{
-            whiteSpace: 'pre-wrap',
-            fontFamily: 'monospace',
-            color: 'white',
-          }}
-        >
-          {text}
-        </Typography>
-      </Box>
+        {text}
+      </Typography>
     </Box>
   );
 };
