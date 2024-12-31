@@ -20,4 +20,4 @@ const MuiTimelineConnector: LabComponents['MuiTimelineConnector'] = {
 
 // ----------------------------------------------------------------------
 
-export const timeline = { MuiTimelineDot, MuiTimelineConnector };
+export const overrideTimeline = { MuiTimelineDot, MuiTimelineConnector };

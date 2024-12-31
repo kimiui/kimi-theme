@@ -1,5 +1,6 @@
 import type { Theme, SxProps } from '@mui/material/styles';
-import type { ThemeDirection, ThemeColorScheme } from 'kimi-theme/theme/types';
+
+import type { ThemeDirection, ThemeColorScheme } from 'src/theme/types';
 
 // ----------------------------------------------------------------------
 

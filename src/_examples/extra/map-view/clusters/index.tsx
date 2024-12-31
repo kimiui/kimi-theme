@@ -1,10 +1,10 @@
 'use client';
 
-import type { MapRef, MapProps, LngLatLike, MapLayerMouseEvent } from 'react-map-gl';
-
 import { useRef } from 'react';
 import { Layer, Source } from 'react-map-gl';
-import { MapWrapper } from 'kimi-theme/components/map';
+import type { MapRef, MapProps, LngLatLike, MapLayerMouseEvent } from 'react-map-gl';
+
+import { MapWrapper } from 'src/components/map';
 
 import { clusterLayer, clusterCountLayer, unclusteredPointLayer } from './layers';
 

@@ -3,10 +3,10 @@
 import Alert from '@mui/material/Alert';
 import Button from '@mui/material/Button';
 import AlertTitle from '@mui/material/AlertTitle';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
+import { varAlpha } from 'src/theme/styles';
 import { paths } from 'src/docs/routes/paths';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

@@ -1,11 +1,11 @@
 'use client';
 
-import type { MapProps, LayerProps } from 'react-map-gl';
-
 import { useState, useEffect } from 'react';
 import { Layer, Source } from 'react-map-gl';
 import { useTheme } from '@mui/material/styles';
-import { MapWrapper, MapControl } from 'kimi-theme/components/map';
+import type { MapProps, LayerProps } from 'react-map-gl';
+
+import { MapWrapper, MapControl } from 'src/components/map';
 
 // ----------------------------------------------------------------------
 

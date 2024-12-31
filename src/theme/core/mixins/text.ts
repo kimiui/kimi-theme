@@ -1,7 +1,7 @@
+import { createTheme as getTheme } from '@mui/material/styles';
 import type { CSSObject, Breakpoint } from '@mui/material/styles';
 
-import { remToPx } from 'kimi-theme/theme/styles';
-import { createTheme as getTheme } from '@mui/material/styles';
+import { remToPx } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

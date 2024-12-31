@@ -1,8 +1,8 @@
 import type { TFunction } from 'i18next';
 
-import { Label } from 'kimi-theme/components/label';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { SvgColor } from 'kimi-theme/components/svg-color';
+import { Label } from 'src/components/label';
+import { Iconify } from 'src/components/iconify';
+import { SvgColor } from 'src/components/svg-color';
 
 // ----------------------------------------------------------------------
 

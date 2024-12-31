@@ -1,9 +1,9 @@
 'use client';
 
-import type { IDatePickerControl } from 'kimi-theme/types/common';
-
 import { useState, useCallback } from 'react';
-import { fIsAfter, fDateRangeShortLabel } from 'kimi-theme/utils/format-time';
+
+import type { IDatePickerControl } from 'src/types/common';
+import { fIsAfter, fDateRangeShortLabel } from 'src/utils/format-time';
 
 import type { UseDateRangePickerReturn } from './types';
 

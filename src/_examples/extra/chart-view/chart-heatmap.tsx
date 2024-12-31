@@ -1,7 +1,8 @@
 'use client';
 
 import { useTheme } from '@mui/material/styles';
-import { Chart, useChart } from 'kimi-theme/components/chart';
+
+import { Chart, useChart } from 'src/components/chart';
 
 // ----------------------------------------------------------------------
 

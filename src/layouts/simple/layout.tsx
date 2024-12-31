@@ -1,9 +1,8 @@
 'use client';
 
-import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
-
 import { useBoolean } from 'ahooks';
 import Alert from '@mui/material/Alert';
+import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
 
 import { Main, CompactContent } from './main';
 import { HeaderBase } from '../core/header-base';

@@ -1,7 +1,7 @@
 import type { Theme, SxProps } from '@mui/material/styles';
-import type { OrgChartBaseNode } from 'kimi-theme/components/organizational-chart';
 
-import { _mock } from 'kimi-theme/_mock';
+import { _mock } from 'src/_mock';
+import type { OrgChartBaseNode } from 'src/components/organizational-chart';
 
 // ----------------------------------------------------------------------
 

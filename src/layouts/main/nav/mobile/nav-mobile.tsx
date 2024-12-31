@@ -4,9 +4,10 @@ import { useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import { usePathname } from 'routes-react';
-import { Logo } from 'kimi-theme/components/logo';
-import { NavUl } from 'kimi-theme/components/nav-section';
-import { Scrollbar } from 'kimi-theme/components/scrollbar';
+
+import { Logo } from 'src/components/logo';
+import { NavUl } from 'src/components/nav-section';
+import { Scrollbar } from 'src/components/scrollbar';
 
 import { NavList } from './nav-mobile-list';
 import { SignInButton } from '../../../components/sign-in-button';

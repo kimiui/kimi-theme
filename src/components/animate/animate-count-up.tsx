@@ -1,10 +1,9 @@
 'use client';
 
-import type { UseInViewOptions } from 'framer-motion';
-import type { TypographyProps } from '@mui/material/Typography';
-
 import { useRef, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
+import type { UseInViewOptions } from 'framer-motion';
+import type { TypographyProps } from '@mui/material/Typography';
 import { m, animate, useInView, useTransform, useMotionValue } from 'framer-motion';
 
 // ----------------------------------------------------------------------

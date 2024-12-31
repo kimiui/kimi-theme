@@ -1,7 +1,6 @@
-import type { BoxProps } from '@mui/material/Box';
-
 import { memo } from 'react';
 import { useTheme } from '@mui/material/styles';
+import type { BoxProps } from '@mui/material/Box';
 
 import { BaseIcon } from './base';
 

@@ -2,8 +2,9 @@
 
 import { useBoolean } from 'ahooks';
 import Alert from '@mui/material/Alert';
-import { stylesMode } from 'kimi-theme/theme/styles';
 import { useTheme, type Theme, type SxProps, type Breakpoint } from '@mui/material/styles';
+
+import { stylesMode } from 'src/theme/styles';
 
 import { Main } from './main';
 import { HeaderBase } from '../core/header-base';

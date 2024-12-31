@@ -1,16 +1,16 @@
+import Chip from '@mui/material/Chip';
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
+import InputAdornment from '@mui/material/InputAdornment';
+import { filledInputClasses } from '@mui/material/FilledInput';
 import type {
   AutocompleteProps,
   AutocompleteRenderInputParams,
   AutocompleteRenderGetTagProps,
 } from '@mui/material/Autocomplete';
 
-import Chip from '@mui/material/Chip';
-import TextField from '@mui/material/TextField';
-import { countries } from 'kimi-theme/assets/data';
-import Autocomplete from '@mui/material/Autocomplete';
-import InputAdornment from '@mui/material/InputAdornment';
-import { filledInputClasses } from '@mui/material/FilledInput';
-import { FlagIcon, iconifyClasses } from 'kimi-theme/components/iconify';
+import { countries } from 'src/assets/data';
+import { FlagIcon, iconifyClasses } from 'src/components/iconify';
 
 import { getCountry, displayValueByCountryCode } from './utils';
 

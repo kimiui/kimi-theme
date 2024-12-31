@@ -1,12 +1,12 @@
 'use client';
 
-import type { BoxProps } from '@mui/material/Box';
-import type {} from '@mui/material/themeCssVarsAugmentation';
-
 import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-import { varAlpha } from 'kimi-theme/theme/styles';
+import type { BoxProps } from '@mui/material/Box';
+import type {} from '@mui/material/themeCssVarsAugmentation';
+
+import { varAlpha } from 'src/theme/styles';
 
 import { Logo } from '../logo';
 

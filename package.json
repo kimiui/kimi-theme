@@ -6,6 +6,8 @@
   "private": false,
   "license": "MIT",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kimiui/theme.git"
@@ -18,6 +20,10 @@
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
     "fm:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
     "fm:fix": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+  },
+  "exports": {
+    "./core/palette": "./dist/core/palette.js",
+    "./*": "./dist/*"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
@@ -103,6 +109,7 @@
     "swr": "^2.2.5",
     "turndown": "^7.2.0",
     "vite-plugin-checker": "^0.8.0",
+    "vite-plugin-dts": "^4.4.0",
     "yet-another-react-lightbox": "^3.20.0",
     "zod": "^3.23.8"
   },

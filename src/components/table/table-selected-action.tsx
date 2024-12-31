@@ -1,8 +1,7 @@
-import type { StackProps } from '@mui/material/Stack';
-
 import Stack from '@mui/material/Stack';
 import Checkbox from '@mui/material/Checkbox';
 import Typography from '@mui/material/Typography';
+import type { StackProps } from '@mui/material/Stack';
 
 // ----------------------------------------------------------------------
 

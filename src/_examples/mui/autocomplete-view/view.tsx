@@ -7,10 +7,10 @@ import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import Autocomplete from '@mui/material/Autocomplete';
-import { CountrySelect } from 'kimi-theme/components/country-select';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { paths } from 'src/docs/routes/paths';
+import { CountrySelect } from 'src/components/country-select';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

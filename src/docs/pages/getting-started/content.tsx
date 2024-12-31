@@ -1,10 +1,11 @@
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import CodeTabs from 'kimi-theme/components/code-tabs';
-import CodeBlock from 'kimi-theme/components/code-block';
 
-const codeBlock = `import { ThemeProvider } from 'kimi-theme/theme/theme-provider';
-import { SettingsDrawer, SettingsProvider } from 'kimi-theme/components/settings';
+import CodeTabs from 'src/components/code-tabs';
+import CodeBlock from 'src/components/code-block';
+
+const codeBlock = `import { ThemeProvider } from 'src/theme/theme-provider';
+import { SettingsDrawer, SettingsProvider } from 'src/components/settings';
 
 export default function App() {
   return (
@@ -35,8 +36,8 @@ export default function Content() {
 
       <CodeTabs
         tabs={{
-          yarn: `yarn add kimi-theme`,
-          npm: `npm install kimi-theme`,
+          yarn: `yarn add src`,
+          npm: `npm install src`,
         }}
       />
       <Typography variant="h4">Create Theme</Typography>

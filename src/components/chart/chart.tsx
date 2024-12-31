@@ -1,9 +1,8 @@
 'use client';
 
-import type { BoxProps } from '@mui/material/Box';
-
 import Box from '@mui/material/Box';
 import ApexChart from 'react-apexcharts';
+import type { BoxProps } from '@mui/material/Box';
 
 import type { ChartProps } from './types';
 

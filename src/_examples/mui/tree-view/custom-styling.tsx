@@ -1,11 +1,11 @@
 'use client';
 
-import type { TreeViewBaseItem } from '@mui/x-tree-view/models';
-
 import { styled } from '@mui/material/styles';
 import { RichTreeView } from '@mui/x-tree-view/RichTreeView';
-import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
+import type { TreeViewBaseItem } from '@mui/x-tree-view/models';
 import { TreeItem, treeItemClasses } from '@mui/x-tree-view/TreeItem';
+
+import { varAlpha, stylesMode } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

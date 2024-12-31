@@ -2,9 +2,10 @@
 
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
-import { _mock } from 'kimi-theme/_mock';
 import Avatar from '@mui/material/Avatar';
-import { Iconify } from 'kimi-theme/components/iconify';
+
+import { _mock } from 'src/_mock';
+import { Iconify } from 'src/components/iconify';
 
 import { ComponentBlock } from '../../component-block';
 

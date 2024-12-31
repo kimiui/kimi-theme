@@ -5,13 +5,13 @@ import Stack from '@mui/material/Stack';
 import Switch from '@mui/material/Switch';
 import { useState, useCallback } from 'react';
 import Typography from '@mui/material/Typography';
-import { fData } from 'kimi-theme/utils/format-number';
-import { Iconify } from 'kimi-theme/components/iconify';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
-import { Upload, UploadBox, UploadAvatar } from 'kimi-theme/components/upload';
 
 import { paths } from 'src/docs/routes/paths';
+import { fData } from 'src/utils/format-number';
+import { Iconify } from 'src/components/iconify';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { Upload, UploadBox, UploadAvatar } from 'src/components/upload';
 
 import { ComponentHero } from '../../component-hero';
 import { ScrollToViewTemplate } from '../../component-template';

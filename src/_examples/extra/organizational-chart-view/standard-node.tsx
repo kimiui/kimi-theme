@@ -4,9 +4,10 @@ import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { toast } from 'kimi-theme/components/snackbar';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
+
+import { toast } from 'src/components/snackbar';
+import { Iconify } from 'src/components/iconify';
+import { usePopover, CustomPopover } from 'src/components/custom-popover';
 
 import type { NodeProps } from './data';
 

@@ -1,9 +1,9 @@
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import type { BoxProps } from '@mui/material/Box';
 import type { ButtonProps } from '@mui/material/Button';
 
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import { Iconify } from 'kimi-theme/components/iconify';
+import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

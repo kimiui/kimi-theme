@@ -2,17 +2,13 @@
 
 import { useState } from 'react';
 import Box from '@mui/material/Box';
-import { _mock } from 'kimi-theme/_mock';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { Iconify } from 'kimi-theme/components/iconify';
-import {
-  AnimateLogo1,
-  AnimateLogo2,
-  AnimateBorder,
-  AnimateAvatar,
-} from 'kimi-theme/components/animate';
+
+import { _mock } from 'src/_mock';
+import { varAlpha } from 'src/theme/styles';
+import { Iconify } from 'src/components/iconify';
+import { AnimateLogo1, AnimateLogo2, AnimateBorder, AnimateAvatar } from 'src/components/animate';
 
 import { SvgPath } from './svg-path';
 import { AnimateButton } from './buttons';

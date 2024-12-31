@@ -3,8 +3,9 @@
 import { m } from 'framer-motion';
 import Stack from '@mui/material/Stack';
 import Fab, { fabClasses } from '@mui/material/Fab';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { varHover } from 'kimi-theme/components/animate';
+
+import { Iconify } from 'src/components/iconify';
+import { varHover } from 'src/components/animate';
 
 import { ComponentBlock } from '../../component-block';
 

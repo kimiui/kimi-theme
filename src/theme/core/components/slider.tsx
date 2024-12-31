@@ -1,6 +1,5 @@
-import type { Theme, Components } from '@mui/material/styles';
-
 import { sliderClasses } from '@mui/material/Slider';
+import type { Theme, Components } from '@mui/material/styles';
 
 import { varAlpha, stylesMode } from '../../styles';
 

@@ -4,8 +4,9 @@ import React from 'react';
 import i18next from 'i18next';
 import resourcesToBackend from 'i18next-resources-to-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import { localStorageGetItem } from 'kimi-theme/utils/storage-available';
-import { initReactI18next, I18nextProvider as Provider } from 'react-i18next';
+import { I18nextProvider, initReactI18next } from 'react-i18next';
+
+import { localStorageGetItem } from 'src/utils/storage-available';
 
 import { fallbackLng, i18nOptions } from './config-locales';
 
@@ -30,6 +31,8 @@ type Props = {
   children: React.ReactNode;
 };
 
-export function I18nProvider({ children }: Props) {
-  return <Provider i18n={i18next}>{children}</Provider>;
+export function I18nProvider({ children }: Readonly<Props>) {
+  console.log('i18n instance:', i18next);
+
+  return <I18nextProvider i18n={i18next}>{children}</I18nextProvider>;
 }

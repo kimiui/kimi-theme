@@ -4,12 +4,13 @@ import Stack from '@mui/material/Stack';
 import Drawer from '@mui/material/Drawer';
 import { usePathname } from 'routes-react';
 import Divider from '@mui/material/Divider';
-import { useActiveLink } from 'kimi-theme/hooks';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { isExternalLink } from 'kimi-theme/utils';
 import { useState, useEffect, useCallback } from 'react';
-import { Scrollbar } from 'kimi-theme/components/scrollbar';
+
+import { useActiveLink } from 'src/hooks';
+import { isExternalLink } from 'src/utils';
+import { Scrollbar } from 'src/components/scrollbar';
 
 import { NavItem } from './nav-item';
 import { Iconify } from '../../iconify';

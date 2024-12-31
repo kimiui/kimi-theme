@@ -1,15 +1,14 @@
-import './code-highlight-block.css';
-
-import type { Options } from 'react-markdown';
-
 import { useMemo } from 'react';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import Link from '@mui/material/Link';
+import type { Options } from 'react-markdown';
 import rehypeHighlight from 'rehype-highlight';
-import { isExternalLink } from 'kimi-theme/utils';
-import { Image } from 'kimi-theme/components/image';
 
+import { isExternalLink } from 'src/utils';
+import { Image } from 'src/components/image';
+
+import './code-highlight-block.css';
 import { StyledRoot } from './styles';
 import { markdownClasses } from './classes';
 import { htmlToMarkdown, isMarkdownContent } from './html-to-markdown';

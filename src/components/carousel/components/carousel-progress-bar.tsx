@@ -1,10 +1,10 @@
 'use client';
 
-import type { BoxProps } from '@mui/material/Box';
-
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
-import { varAlpha } from 'kimi-theme/theme/styles';
+import type { BoxProps } from '@mui/material/Box';
+
+import { varAlpha } from 'src/theme/styles';
 
 import { carouselClasses } from '../classes';
 

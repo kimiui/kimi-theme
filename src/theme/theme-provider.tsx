@@ -1,12 +1,12 @@
 'use client';
 
 import type { Theme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider as ThemeVarsProvider } from '@mui/material/styles';
 import type { ThemeProviderProps as MuiThemeProviderProps } from '@mui/material/styles/ThemeProvider';
 
-import { useTranslate } from 'kimi-theme/locales';
-import CssBaseline from '@mui/material/CssBaseline';
-import { useSettingsContext } from 'kimi-theme/components/settings';
-import { ThemeProvider as ThemeVarsProvider } from '@mui/material/styles';
+import { useTranslate } from 'src/locales';
+import { useSettingsContext } from 'src/components/settings';
 
 import { createTheme } from './create-theme';
 import { Rtl } from './with-settings/right-to-left';

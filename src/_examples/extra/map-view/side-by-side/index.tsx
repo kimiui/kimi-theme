@@ -1,7 +1,7 @@
+import { useMemo, useState, useCallback } from 'react';
 import type { MapProps, ViewStateChangeEvent } from 'react-map-gl';
 
-import { useMemo, useState, useCallback } from 'react';
-import { MapWrapper } from 'kimi-theme/components/map';
+import { MapWrapper } from 'src/components/map';
 
 import { ControlPanel } from './control-panel';
 

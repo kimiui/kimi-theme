@@ -1,9 +1,9 @@
 'use client';
 
+import { useState, useCallback } from 'react';
 import type { MapProps, MarkerDragEvent } from 'react-map-gl';
 
-import { useState, useCallback } from 'react';
-import { MapMarker, MapWrapper, MapControl } from 'kimi-theme/components/map';
+import { MapMarker, MapWrapper, MapControl } from 'src/components/map';
 
 import { ControlPanel } from './control-panel';
 

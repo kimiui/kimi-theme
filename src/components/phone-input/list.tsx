@@ -1,7 +1,5 @@
 'use client';
 
-import type { Country } from 'react-phone-number-input/input';
-
 import Box from '@mui/material/Box';
 import Popover from '@mui/material/Popover';
 import Divider from '@mui/material/Divider';
@@ -12,9 +10,11 @@ import TextField from '@mui/material/TextField';
 import ButtonBase from '@mui/material/ButtonBase';
 import ListItemText from '@mui/material/ListItemText';
 import InputAdornment from '@mui/material/InputAdornment';
-import { countries } from 'kimi-theme/assets/data/countries';
-import { Iconify, FlagIcon } from 'kimi-theme/components/iconify';
-import { SearchNotFound } from 'kimi-theme/components/search-not-found';
+import type { Country } from 'react-phone-number-input/input';
+
+import { countries } from 'src/assets/data/countries';
+import { Iconify, FlagIcon } from 'src/components/iconify';
+import { SearchNotFound } from 'src/components/search-not-found';
 
 import { usePopover } from '../custom-popover';
 import { getCountry, applyFilter } from './utils';

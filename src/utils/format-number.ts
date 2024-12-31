@@ -1,4 +1,4 @@
-import { formatNumberLocale } from 'kimi-theme/locales';
+import { formatNumberLocale } from 'src/locales';
 
 // ----------------------------------------------------------------------
 

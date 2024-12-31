@@ -1,8 +1,9 @@
 'use client';
 
-import { useSetState } from 'kimi-theme/hooks';
 import { useMemo, useEffect, useCallback } from 'react';
-import axios, { endpoints } from 'kimi-theme/utils/axios';
+
+import { useSetState } from 'src/hooks';
+import axios, { endpoints } from 'src/utils/axios';
 
 import { STORAGE_KEY } from './constant';
 import { AuthContext } from './auth-context';

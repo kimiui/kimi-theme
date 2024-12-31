@@ -1,7 +1,5 @@
 'use client';
 
-import type { TransitionProps } from '@mui/material/transitions';
-
 import { forwardRef } from 'react';
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
@@ -14,8 +12,10 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
-import { Iconify } from 'kimi-theme/components/iconify';
 import ListItemButton from '@mui/material/ListItemButton';
+import type { TransitionProps } from '@mui/material/transitions';
+
+import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

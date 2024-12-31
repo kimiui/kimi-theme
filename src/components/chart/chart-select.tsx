@@ -1,11 +1,11 @@
 import type { SxProps } from '@mui/system';
-import type { Theme } from '@mui/material/styles';
-
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
+import type { Theme } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { Iconify } from 'kimi-theme/components/iconify';
+
+import { varAlpha } from 'src/theme/styles';
+import { Iconify } from 'src/components/iconify';
 
 import { usePopover, CustomPopover } from '../custom-popover';
 

@@ -1,13 +1,13 @@
 'use client';
 
-import type { MapProps } from 'react-map-gl';
-
 import { useState } from 'react';
 import Box from '@mui/material/Box';
+import type { MapProps } from 'react-map-gl';
 import Typography from '@mui/material/Typography';
-import { Image } from 'kimi-theme/components/image';
-import { FlagIcon } from 'kimi-theme/components/iconify';
-import { MapPopup, MapMarker, MapWrapper, MapControl } from 'kimi-theme/components/map';
+
+import { Image } from 'src/components/image';
+import { FlagIcon } from 'src/components/iconify';
+import { MapPopup, MapMarker, MapWrapper, MapControl } from 'src/components/map';
 
 // ----------------------------------------------------------------------
 

@@ -1,9 +1,8 @@
 'use client';
 
-import type { BoxProps } from '@mui/material/Box';
-
 import { memo } from 'react';
 import { styled } from '@mui/material/styles';
+import type { BoxProps } from '@mui/material/Box';
 
 // ----------------------------------------------------------------------
 

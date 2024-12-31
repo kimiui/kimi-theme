@@ -1,8 +1,7 @@
 'use client';
 
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
-
 import { paths } from 'src/docs/routes/paths';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { DemoMegaMenuMobile } from './mobile';
 import { DemoMegaMenuVertical } from './vertical';

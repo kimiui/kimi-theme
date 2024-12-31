@@ -1,7 +1,5 @@
 'use client';
 
-import type { TransitionProps } from '@mui/material/transitions';
-
 import { forwardRef } from 'react';
 import { useBoolean } from 'ahooks';
 import Slide from '@mui/material/Slide';
@@ -10,6 +8,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
+import type { TransitionProps } from '@mui/material/transitions';
 
 // ----------------------------------------------------------------------
 

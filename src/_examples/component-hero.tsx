@@ -1,11 +1,11 @@
 'use client';
 
-import type { BoxProps } from '@mui/material/Box';
-
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
-import { varAlpha, bgGradient } from 'kimi-theme/theme/styles';
+import type { BoxProps } from '@mui/material/Box';
+
+import { varAlpha, bgGradient } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

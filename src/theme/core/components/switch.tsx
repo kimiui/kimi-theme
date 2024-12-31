@@ -1,6 +1,5 @@
-import type { Theme, Components } from '@mui/material/styles';
-
 import { switchClasses } from '@mui/material/Switch';
+import type { Theme, Components } from '@mui/material/styles';
 
 import { varAlpha, stylesMode } from '../../styles';
 

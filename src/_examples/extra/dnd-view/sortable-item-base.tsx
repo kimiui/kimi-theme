@@ -1,15 +1,15 @@
 'use client';
 
-import type { Transform } from '@dnd-kit/utilities';
-import type { StackProps } from '@mui/material/Stack';
-import type { UniqueIdentifier, DraggableSyntheticListeners } from '@dnd-kit/core';
-
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
+import type { Transform } from '@dnd-kit/utilities';
 import { memo, useEffect, forwardRef } from 'react';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
+import type { StackProps } from '@mui/material/Stack';
+import type { UniqueIdentifier, DraggableSyntheticListeners } from '@dnd-kit/core';
+
+import { Iconify } from 'src/components/iconify';
+import { varAlpha, stylesMode } from 'src/theme/styles';
 
 import { itemClasses } from './classes';
 

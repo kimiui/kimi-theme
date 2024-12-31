@@ -5,8 +5,9 @@ import TableRow from '@mui/material/TableRow';
 import TableHead from '@mui/material/TableHead';
 import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
-import { Scrollbar } from 'kimi-theme/components/scrollbar';
-import { useTable, TablePaginationCustom } from 'kimi-theme/components/table';
+
+import { Scrollbar } from 'src/components/scrollbar';
+import { useTable, TablePaginationCustom } from 'src/components/table';
 
 // ----------------------------------------------------------------------
 

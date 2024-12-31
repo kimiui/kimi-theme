@@ -1,7 +1,5 @@
 'use client';
 
-import type { PaletteColorKey } from 'kimi-theme/theme/core/palette';
-
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
@@ -11,11 +9,13 @@ import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import { Label } from 'kimi-theme/components/label';
-import { toast } from 'kimi-theme/components/snackbar';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
-import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
+
+import { Label } from 'src/components/label';
+import { toast } from 'src/components/snackbar';
+import { Iconify } from 'src/components/iconify';
+import { varAlpha, stylesMode } from 'src/theme/styles';
+import type { PaletteColorKey } from 'src/theme/core/palette';
+import { usePopover, CustomPopover } from 'src/components/custom-popover';
 
 import type { NodeProps } from './data';
 

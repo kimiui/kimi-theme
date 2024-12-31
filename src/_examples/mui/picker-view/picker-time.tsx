@@ -1,7 +1,5 @@
 'use client';
 
-import type { IDatePickerControl } from 'kimi-theme/types/common';
-
 import dayjs from 'dayjs';
 import { useState } from 'react';
 import Stack from '@mui/material/Stack';
@@ -9,6 +7,8 @@ import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import { MobileTimePicker } from '@mui/x-date-pickers/MobileTimePicker';
 import { StaticTimePicker } from '@mui/x-date-pickers/StaticTimePicker';
 import { DesktopTimePicker } from '@mui/x-date-pickers/DesktopTimePicker';
+
+import type { IDatePickerControl } from 'src/types/common';
 
 import { ComponentBlock } from '../../component-block';
 

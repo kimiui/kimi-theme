@@ -1,18 +1,17 @@
 'use client';
 
-import type { MediaFontSize } from 'kimi-theme/theme/styles';
-import type { Variant } from '@mui/material/styles/createTypography';
-
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
-import { useResponsive } from 'kimi-theme/hooks';
 import Typography from '@mui/material/Typography';
-import { remToPx } from 'kimi-theme/theme/styles';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import type { Variant } from '@mui/material/styles/createTypography';
 
+import { useResponsive } from 'src/hooks';
+import { remToPx } from 'src/theme/styles';
 import { paths } from 'src/docs/routes/paths';
+import type { MediaFontSize } from 'src/theme/styles';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ScrollToViewTemplate } from '../../component-template';

@@ -1,12 +1,11 @@
 'use client';
 
-import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
-
 import { useBoolean } from 'ahooks';
 import Alert from '@mui/material/Alert';
 import { usePathname } from 'routes-react';
 import { useTheme } from '@mui/material/styles';
 import { BrowserRouter } from 'react-router-dom';
+import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
 
 import { Main } from './main';
 import { NavMobile } from './nav/mobile';

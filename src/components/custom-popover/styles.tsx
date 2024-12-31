@@ -1,7 +1,8 @@
 'use client';
 
 import { styled } from '@mui/material/styles';
-import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
+
+import { varAlpha, stylesMode } from 'src/theme/styles';
 
 import type { PopoverArrow } from './types';
 

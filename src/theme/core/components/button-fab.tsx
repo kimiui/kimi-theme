@@ -1,6 +1,5 @@
-import type { Theme, Components, ComponentsVariants } from '@mui/material/styles';
-
 import { fabClasses } from '@mui/material/Fab';
+import type { Theme, Components, ComponentsVariants } from '@mui/material/styles';
 
 import { varAlpha, stylesMode } from '../../styles';
 

@@ -2,9 +2,10 @@
 
 import { Typography } from '@mui/material';
 import { usePathname } from 'routes-react';
-import { isExternalLink } from 'kimi-theme/utils';
 import { useState, useEffect, useCallback } from 'react';
-import { useActiveLink } from 'kimi-theme/hooks/useActiveLink';
+
+import { isExternalLink } from 'src/utils';
+import { useActiveLink } from 'src/hooks/useActiveLink';
 
 import { NavItem } from './nav-item';
 import { navSectionClasses } from '../classes';

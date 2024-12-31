@@ -1,7 +1,14 @@
 'use client';
 
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import Stack from '@mui/material/Stack';
+import Avatar from '@mui/material/Avatar';
+import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
 import type { RatingProps } from '@mui/material/Rating';
-import type { IDateValue } from 'kimi-theme/types/common';
+import LinearProgress from '@mui/material/LinearProgress';
+import { useRef, useMemo, useState, useImperativeHandle } from 'react';
 import type {
   GridSlots,
   GridColDef,
@@ -11,20 +18,6 @@ import type {
   GridColumnVisibilityModel,
   GridFilterInputValueProps,
 } from '@mui/x-data-grid';
-
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
-import Avatar from '@mui/material/Avatar';
-import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
-import { Label } from 'kimi-theme/components/label';
-import { Iconify } from 'kimi-theme/components/iconify';
-import LinearProgress from '@mui/material/LinearProgress';
-import { fPercent } from 'kimi-theme/utils/format-number';
-import { fDate, fTime } from 'kimi-theme/utils/format-time';
-import { EmptyContent } from 'kimi-theme/components/empty-content';
-import { useRef, useMemo, useState, useImperativeHandle } from 'react';
 import {
   DataGrid,
   gridClasses,
@@ -36,6 +29,13 @@ import {
   GridToolbarColumnsButton,
   GridToolbarDensitySelector,
 } from '@mui/x-data-grid';
+
+import { Label } from 'src/components/label';
+import { Iconify } from 'src/components/iconify';
+import type { IDateValue } from 'src/types/common';
+import { fPercent } from 'src/utils/format-number';
+import { fDate, fTime } from 'src/utils/format-time';
+import { EmptyContent } from 'src/components/empty-content';
 
 // ----------------------------------------------------------------------
 

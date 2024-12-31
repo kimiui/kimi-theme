@@ -1,9 +1,9 @@
-import 'kimi-theme/components/scrollbar/styles.css';
-
 import ReactDOM from 'react-dom/client';
 import { Suspense, StrictMode } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+
+import 'src/components/scrollbar/styles.css';
 
 import App from './app';
 

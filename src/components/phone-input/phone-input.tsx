@@ -1,11 +1,10 @@
 'use client';
 
-import type { TextFieldProps } from '@mui/material/TextField';
-import type { Country } from 'react-phone-number-input/input';
-
 import { useState, forwardRef } from 'react';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
+import type { TextFieldProps } from '@mui/material/TextField';
+import type { Country } from 'react-phone-number-input/input';
 import PhoneNumberInput from 'react-phone-number-input/input';
 
 import { getCountryCode } from './utils';

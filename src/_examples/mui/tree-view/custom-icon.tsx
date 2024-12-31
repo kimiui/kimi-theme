@@ -1,9 +1,8 @@
 'use client';
 
-import type { SvgIconProps } from '@mui/material/SvgIcon';
-
 import SvgIcon from '@mui/material/SvgIcon';
 import { TreeItem } from '@mui/x-tree-view/TreeItem';
+import type { SvgIconProps } from '@mui/material/SvgIcon';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 
 // ----------------------------------------------------------------------

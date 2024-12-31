@@ -2,7 +2,8 @@
 
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-import { varAlpha, bgGradient, textGradient } from 'kimi-theme/theme/styles';
+
+import { varAlpha, bgGradient, textGradient } from 'src/theme/styles';
 
 import { ComponentBlock, ComponentContainer } from '../../component-block';
 

@@ -1,8 +1,9 @@
 'use client';
 
-import { isEqual } from 'kimi-theme/utils/helper';
 import { useMemo, useState, useEffect, useCallback } from 'react';
-import { localStorageGetItem } from 'kimi-theme/utils/storage-available';
+
+import { isEqual } from 'src/utils/helper';
+import { localStorageGetItem } from 'src/utils/storage-available';
 
 // ----------------------------------------------------------------------
 

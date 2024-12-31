@@ -1,6 +1,5 @@
-import type { Theme, SxProps } from '@mui/material/styles';
-
 import Box from '@mui/material/Box';
+import type { Theme, SxProps } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
 

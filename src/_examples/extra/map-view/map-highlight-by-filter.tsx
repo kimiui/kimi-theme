@@ -1,12 +1,12 @@
 'use client';
 
-import type { MapProps, FillLayer, MapLayerMouseEvent } from 'react-map-gl';
-
 import { Layer, Source } from 'react-map-gl';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import { useMemo, useState, useCallback } from 'react';
-import { MapPopup, MapWrapper, MapControl } from 'kimi-theme/components/map';
+import type { MapProps, FillLayer, MapLayerMouseEvent } from 'react-map-gl';
+
+import { MapPopup, MapWrapper, MapControl } from 'src/components/map';
 
 // ----------------------------------------------------------------------
 

@@ -1,9 +1,10 @@
 import { useState, useCallback } from 'react';
 import Collapse from '@mui/material/Collapse';
-import { isExternalLink } from 'kimi-theme/utils';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { useActiveLink } from 'kimi-theme/hooks/useActiveLink';
-import { NavLi, navSectionClasses, NavSectionVertical } from 'kimi-theme/components/nav-section';
+
+import { isExternalLink } from 'src/utils';
+import { varAlpha } from 'src/theme/styles';
+import { useActiveLink } from 'src/hooks/useActiveLink';
+import { NavLi, navSectionClasses, NavSectionVertical } from 'src/components/nav-section';
 
 import { NavItem } from './nav-mobile-item';
 

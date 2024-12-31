@@ -4,15 +4,16 @@ import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { Image } from 'kimi-theme/components/image';
-import { Iconify } from 'kimi-theme/components/iconify';
+
+import { varAlpha } from 'src/theme/styles';
+import { Image } from 'src/components/image';
+import { Iconify } from 'src/components/iconify';
 import {
   Carousel,
   useCarousel,
   CarouselDotButtons,
   CarouselArrowFloatButtons,
-} from 'kimi-theme/components/carousel';
+} from 'src/components/carousel';
 
 import { IndexLabel } from './elements';
 

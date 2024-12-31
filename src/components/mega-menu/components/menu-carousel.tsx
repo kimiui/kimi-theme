@@ -3,8 +3,9 @@ import Stack from '@mui/material/Stack';
 import { RouterLink } from 'routes-react';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import { maxLine } from 'kimi-theme/theme/styles';
-import { Image } from 'kimi-theme/components/image';
+
+import { maxLine } from 'src/theme/styles';
+import { Image } from 'src/components/image';
 
 import {
   Carousel,

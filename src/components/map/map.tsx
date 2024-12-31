@@ -1,7 +1,6 @@
-import type { MapRef, MapProps } from "react-map-gl";
-
 import MapGL from "react-map-gl";
 import { forwardRef } from "react";
+import type { MapRef, MapProps } from "react-map-gl";
 
 // ----------------------------------------------------------------------
 

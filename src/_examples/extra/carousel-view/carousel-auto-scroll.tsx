@@ -1,7 +1,8 @@
 import Box from '@mui/material/Box';
 import AutoScroll from 'embla-carousel-auto-scroll';
-import { Image } from 'kimi-theme/components/image';
-import { Carousel, useCarousel, CarouselProgressBar } from 'kimi-theme/components/carousel';
+
+import { Image } from 'src/components/image';
+import { Carousel, useCarousel, CarouselProgressBar } from 'src/components/carousel';
 
 import { IndexLabel, PlayButton } from './elements';
 

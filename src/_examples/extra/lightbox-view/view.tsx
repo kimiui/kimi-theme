@@ -1,21 +1,20 @@
 'use client';
 
-import type { Slide, SlideImage, SlideVideo } from 'yet-another-react-lightbox';
-
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
-import { _mock } from 'kimi-theme/_mock';
 import Switch from '@mui/material/Switch';
 import FormLabel from '@mui/material/FormLabel';
 import FormControl from '@mui/material/FormControl';
-import { Image } from 'kimi-theme/components/image';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import { Lightbox, useLightBox } from 'kimi-theme/components/lightbox';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import type { Slide, SlideImage, SlideVideo } from 'yet-another-react-lightbox';
 
+import { _mock } from 'src/_mock';
+import { Image } from 'src/components/image';
 import { paths } from 'src/docs/routes/paths';
+import { Lightbox, useLightBox } from 'src/components/lightbox';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentContainer } from '../../component-block';

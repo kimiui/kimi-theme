@@ -1,11 +1,11 @@
-import type { StackProps } from '@mui/material/Stack';
-
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Switch from '@mui/material/Switch';
 import IconButton from '@mui/material/IconButton';
-import { Iconify } from 'kimi-theme/components/iconify';
+import type { StackProps } from '@mui/material/Stack';
 import FormControlLabel from '@mui/material/FormControlLabel';
+
+import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

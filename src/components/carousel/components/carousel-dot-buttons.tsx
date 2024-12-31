@@ -1,9 +1,9 @@
-import type { Theme } from '@mui/material/styles';
-
 import Box from '@mui/material/Box';
 import NoSsr from '@mui/material/NoSsr';
+import type { Theme } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
-import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
+
+import { varAlpha, stylesMode } from 'src/theme/styles';
 
 import { carouselClasses } from '../classes';
 

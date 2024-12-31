@@ -1,6 +1,5 @@
-import type { Theme, Components, ComponentsVariants } from '@mui/material/styles';
-
 import { paginationItemClasses } from '@mui/material/PaginationItem';
+import type { Theme, Components, ComponentsVariants } from '@mui/material/styles';
 
 import { varAlpha, stylesMode } from '../../styles';
 

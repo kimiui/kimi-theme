@@ -1,8 +1,8 @@
-import type { IconButtonProps } from '@mui/material/IconButton';
-
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
-import { varAlpha } from 'kimi-theme/theme/styles';
+import type { IconButtonProps } from '@mui/material/IconButton';
+
+import { varAlpha } from 'src/theme/styles';
 
 import { Iconify } from '../../iconify';
 

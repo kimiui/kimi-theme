@@ -4,11 +4,12 @@ import { m } from 'framer-motion';
 import Paper from '@mui/material/Paper';
 import { RouterLink } from 'routes-react';
 import Typography from '@mui/material/Typography';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { Image } from 'kimi-theme/components/image';
-import { Label } from 'kimi-theme/components/label';
 import CardActionArea from '@mui/material/CardActionArea';
-import { varHover, varTranHover } from 'kimi-theme/components/animate';
+
+import { varAlpha } from 'src/theme/styles';
+import { Image } from 'src/components/image';
+import { Label } from 'src/components/label';
+import { varHover, varTranHover } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 

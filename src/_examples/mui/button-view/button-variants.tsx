@@ -1,7 +1,8 @@
 import Stack from '@mui/material/Stack';
 import LoadingButton from '@mui/lab/LoadingButton';
-import { Iconify } from 'kimi-theme/components/iconify';
 import Button, { buttonClasses } from '@mui/material/Button';
+
+import { Iconify } from 'src/components/iconify';
 
 import { ComponentBlock } from '../../component-block';
 

@@ -1,13 +1,12 @@
 'use client';
 
-import type { PaperProps } from '@mui/material/Paper';
-
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import { useTheme } from '@mui/material/styles';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
+import type { PaperProps } from '@mui/material/Paper';
 
 import { paths } from 'src/docs/routes/paths';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ScrollToViewTemplate } from '../../component-template';

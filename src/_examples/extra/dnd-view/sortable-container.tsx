@@ -1,13 +1,12 @@
 'use client';
 
-import type { DropAnimation, UniqueIdentifier } from '@dnd-kit/core';
-import type { NewIndexGetter, AnimateLayoutChanges } from '@dnd-kit/sortable';
-
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Portal from '@mui/material/Portal';
 import Button from '@mui/material/Button';
 import { useRef, useState, useEffect } from 'react';
+import type { DropAnimation, UniqueIdentifier } from '@dnd-kit/core';
+import type { NewIndexGetter, AnimateLayoutChanges } from '@dnd-kit/sortable';
 import {
   arraySwap,
   arrayMove,

@@ -1,15 +1,15 @@
-import type { LanguageValue } from 'kimi-theme/locales';
-import type { IconButtonProps } from '@mui/material/IconButton';
-
 import { m } from 'framer-motion';
 import { useCallback } from 'react';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
-import { useTranslate } from 'kimi-theme/locales';
-import { varHover } from 'kimi-theme/components/animate';
-import { FlagIcon } from 'kimi-theme/components/iconify';
-import { usePopover, CustomPopover } from 'kimi-theme/components/custom-popover';
+import type { IconButtonProps } from '@mui/material/IconButton';
+
+import { useTranslate } from 'src/locales';
+import type { LanguageValue } from 'src/locales';
+import { varHover } from 'src/components/animate';
+import { FlagIcon } from 'src/components/iconify';
+import { usePopover, CustomPopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

@@ -10,13 +10,14 @@ import { useState, useCallback } from 'react';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import { isEqual } from 'kimi-theme/utils/helper';
 import ToggleButton from '@mui/material/ToggleButton';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { SvgColor } from 'kimi-theme/components/svg-color';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import { NavSectionVertical, NavSectionVerticalItem } from 'kimi-theme/components/nav-section';
+
+import { isEqual } from 'src/utils/helper';
+import { Iconify } from 'src/components/iconify';
+import { SvgColor } from 'src/components/svg-color';
+import { NavSectionVertical, NavSectionVerticalItem } from 'src/components/nav-section';
 
 import { NAV_ITEMS } from './data';
 

@@ -1,6 +1,5 @@
-import type { Theme, Components } from '@mui/material/styles';
-
 import { badgeClasses } from '@mui/material/Badge';
+import type { Theme, Components } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
 

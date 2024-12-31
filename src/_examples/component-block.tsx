@@ -1,12 +1,12 @@
 'use client';
 
-import type { StackProps } from '@mui/material/Stack';
-import type { ContainerProps } from '@mui/material/Container';
-
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
-import { varAlpha } from 'kimi-theme/theme/styles';
+import type { StackProps } from '@mui/material/Stack';
+import type { ContainerProps } from '@mui/material/Container';
+
+import { varAlpha } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

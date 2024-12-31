@@ -1,6 +1,7 @@
 import Stack from '@mui/material/Stack';
 import IconButton from '@mui/material/IconButton';
-import { Iconify } from 'kimi-theme/components/iconify';
+
+import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

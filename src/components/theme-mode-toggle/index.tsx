@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
-import { Iconify } from 'kimi-theme/components/iconify';
 import { IconButton, useColorScheme } from '@mui/material';
-import { useSettingsContext } from 'kimi-theme/components/settings';
+
+import { Iconify } from 'src/components/iconify';
+import { useSettingsContext } from 'src/components/settings';
 
 // ----------------------------------------------------------------------
 

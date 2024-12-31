@@ -1,5 +1,5 @@
-import { paramCase } from 'kimi-theme/utils/change-case';
-import { _id, _postTitles } from 'kimi-theme/_mock/assets';
+import { paramCase } from 'src/utils/change-case';
+import { _id, _postTitles } from 'src/_mock/assets';
 
 // ----------------------------------------------------------------------
 

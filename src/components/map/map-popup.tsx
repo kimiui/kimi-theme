@@ -1,8 +1,7 @@
-import type { PopupProps } from 'react-map-gl';
-import type { BoxProps } from '@mui/material/Box';
-
 import Box from '@mui/material/Box';
 import { Popup } from 'react-map-gl';
+import type { PopupProps } from 'react-map-gl';
+import type { BoxProps } from '@mui/material/Box';
 
 // ----------------------------------------------------------------------
 

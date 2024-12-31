@@ -1,6 +1,5 @@
-import type { ReactNode } from 'react';
-
 import { cloneElement } from 'react';
+import type { ReactNode } from 'react';
 import { RouterLink } from 'routes-react';
 
 import type { NavItemProps } from './types';

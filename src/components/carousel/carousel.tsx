@@ -1,10 +1,9 @@
 'use client';
 
-import type { Theme } from '@mui/material/styles';
-
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import { Children, isValidElement } from 'react';
+import type { Theme } from '@mui/material/styles';
 
 import { carouselClasses } from './classes';
 import { CarouselSlide } from './components/carousel-slide';

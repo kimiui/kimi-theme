@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import { useDropzone } from 'react-dropzone';
-import { varAlpha } from 'kimi-theme/theme/styles';
+
+import { varAlpha } from 'src/theme/styles';
 
 import { Iconify } from '../iconify';
 

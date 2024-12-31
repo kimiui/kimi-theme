@@ -1,7 +1,5 @@
 'use client';
 
-import type { TooltipProps } from '@mui/material/Tooltip';
-
 import { m } from 'framer-motion';
 import Fab from '@mui/material/Fab';
 import Zoom from '@mui/material/Zoom';
@@ -9,12 +7,13 @@ import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { varHover } from 'kimi-theme/components/animate';
+import type { TooltipProps } from '@mui/material/Tooltip';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { paths } from 'src/docs/routes/paths';
+import { Iconify } from 'src/components/iconify';
+import { varHover } from 'src/components/animate';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

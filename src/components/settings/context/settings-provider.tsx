@@ -1,7 +1,8 @@
 'use client';
 
-import { useLocalStorage } from 'kimi-theme/hooks';
 import { useMemo, useState, useCallback, createContext } from 'react';
+
+import { useLocalStorage } from 'src/hooks';
 
 import { STORAGE_KEY, defaultSettings } from '../config-settings';
 

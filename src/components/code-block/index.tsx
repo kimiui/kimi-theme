@@ -1,10 +1,11 @@
 'use client';
 
 import React, { useCallback } from 'react';
-import { toast } from 'kimi-theme/components/snackbar';
-import { Iconify } from 'kimi-theme/components/iconify';
 import { Box, Typography, IconButton } from '@mui/material';
-import { useCopyToClipboard } from 'kimi-theme/hooks/useCopyToClipboard';
+
+import { toast } from 'src/components/snackbar';
+import { Iconify } from 'src/components/iconify';
+import { useCopyToClipboard } from 'src/hooks/useCopyToClipboard';
 // ----------------------------------------------------------------------
 interface CodeTabsProps {
   text: string;

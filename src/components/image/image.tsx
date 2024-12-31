@@ -1,9 +1,9 @@
+import { useInView } from 'framer-motion';
 import type { UseInViewOptions } from 'framer-motion';
 import type { Breakpoint } from '@mui/material/styles';
-
-import { useInView } from 'framer-motion';
-import { mergeRefs, mergeClasses } from 'kimi-theme/utils/merge-classes';
 import { useRef, useState, forwardRef, useCallback, startTransition } from 'react';
+
+import { mergeRefs, mergeClasses } from 'src/utils/merge-classes';
 
 import { imageClasses } from './classes';
 import { ImageImg, ImageRoot, ImageOverlay, ImagePlaceholder } from './styles';

@@ -1,8 +1,8 @@
-import type { BoxProps } from '@mui/material/Box';
-
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import { UploadIllustration } from 'kimi-theme/assets/illustrations';
+import type { BoxProps } from '@mui/material/Box';
+
+import { UploadIllustration } from 'src/assets/illustrations';
 
 // ----------------------------------------------------------------------
 

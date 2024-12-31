@@ -1,8 +1,9 @@
 'use client';
 
 import { useTheme } from '@mui/material/styles';
-import { fPercent } from 'kimi-theme/utils/format-number';
-import { Chart, useChart } from 'kimi-theme/components/chart';
+
+import { fPercent } from 'src/utils/format-number';
+import { Chart, useChart } from 'src/components/chart';
 
 // ----------------------------------------------------------------------
 

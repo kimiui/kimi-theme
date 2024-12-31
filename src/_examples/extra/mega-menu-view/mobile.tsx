@@ -1,9 +1,10 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
-import { Logo } from 'kimi-theme/components/logo';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { MegaMenuMobile } from 'kimi-theme/components/mega-menu';
+
+import { Logo } from 'src/components/logo';
+import { Iconify } from 'src/components/iconify';
+import { MegaMenuMobile } from 'src/components/mega-menu';
 
 import { navItems1 } from './data';
 

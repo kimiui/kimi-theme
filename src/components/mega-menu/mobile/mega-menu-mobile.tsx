@@ -6,8 +6,9 @@ import { usePathname } from 'routes-react';
 import SvgIcon from '@mui/material/SvgIcon';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
-import { Scrollbar } from 'kimi-theme/components/scrollbar';
 import { useState, useEffect, useCallback, cloneElement } from 'react';
+
+import { Scrollbar } from 'src/components/scrollbar';
 
 import { NavList } from './nav-list';
 import { NavUl } from '../../nav-section';

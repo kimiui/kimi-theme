@@ -3,12 +3,12 @@
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { Iconify } from 'kimi-theme/components/iconify';
 import Slider, { sliderClasses } from '@mui/material/Slider';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
+import { varAlpha } from 'src/theme/styles';
 import { paths } from 'src/docs/routes/paths';
+import { Iconify } from 'src/components/iconify';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

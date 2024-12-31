@@ -1,4 +1,3 @@
-import type { SettingsState } from 'kimi-theme/components/settings';
 import type {
   Theme,
   CSSObject,
@@ -6,6 +5,8 @@ import type {
   ComponentsOverrides,
   ComponentsPropsList,
 } from '@mui/material/styles';
+
+import type { SettingsState } from 'src/components/settings';
 
 import type { ThemeOptions } from '../types';
 

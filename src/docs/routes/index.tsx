@@ -1,10 +1,11 @@
 import { lazy, Suspense } from 'react';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { Logo } from 'kimi-theme/components/logo';
 import { Outlet, useRoutes } from 'react-router-dom';
-import { LoadingScreen } from 'kimi-theme/components';
-import { DashboardLayout } from 'kimi-theme/layouts/dashboard';
+
+import { Logo } from 'src/components/logo';
+import { LoadingScreen } from 'src/components';
+import { DashboardLayout } from 'src/layouts/dashboard';
 
 import { navData as docsNavData } from './config-nav-docs';
 

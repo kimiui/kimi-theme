@@ -2,8 +2,9 @@ import { forwardRef } from 'react';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { removeLastSlash } from 'kimi-theme/utils';
 import { RouterLink, usePathname } from 'routes-react';
+
+import { removeLastSlash } from 'src/utils';
 
 import { NavLi, NavUl } from '../../nav-section';
 

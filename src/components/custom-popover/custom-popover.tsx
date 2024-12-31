@@ -1,7 +1,6 @@
-import type { PaperProps } from '@mui/material/Paper';
-
 import Popover from '@mui/material/Popover';
 import { listClasses } from '@mui/material/List';
+import type { PaperProps } from '@mui/material/Paper';
 import { menuItemClasses } from '@mui/material/MenuItem';
 
 import { StyledArrow } from './styles';

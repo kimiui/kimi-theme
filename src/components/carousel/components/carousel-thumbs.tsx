@@ -1,12 +1,12 @@
-import type { BoxProps } from '@mui/material/Box';
-import type { Theme, CSSObject } from '@mui/material/styles';
-import type { ButtonBaseProps } from '@mui/material/ButtonBase';
-
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
+import type { BoxProps } from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
-import { varAlpha } from 'kimi-theme/theme/styles';
+import type { Theme, CSSObject } from '@mui/material/styles';
 import { Children, forwardRef, isValidElement } from 'react';
+import type { ButtonBaseProps } from '@mui/material/ButtonBase';
+
+import { varAlpha } from 'src/theme/styles';
 
 import { carouselClasses } from '../classes';
 import { CarouselSlide } from './carousel-slide';

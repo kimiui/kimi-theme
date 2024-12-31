@@ -1,8 +1,7 @@
 'use client';
 
-import type { Slide, SlideImage, SlideVideo } from 'yet-another-react-lightbox';
-
 import { useState, useCallback } from 'react';
+import type { Slide, SlideImage, SlideVideo } from 'yet-another-react-lightbox';
 
 import type { UseLightBoxReturn } from './types';
 

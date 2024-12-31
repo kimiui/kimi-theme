@@ -1,5 +1,6 @@
 import { faker } from '@faker-js/faker';
-import { today } from 'kimi-theme/utils/format-time';
+
+import { today } from 'src/utils/format-time';
 
 import { _mock } from './_mock';
 

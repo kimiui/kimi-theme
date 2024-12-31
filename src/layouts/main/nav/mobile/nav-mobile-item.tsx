@@ -4,9 +4,10 @@ import { forwardRef } from 'react';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { useNavItem } from 'kimi-theme/components/nav-section/hooks';
+
+import { varAlpha } from 'src/theme/styles';
+import { Iconify } from 'src/components/iconify';
+import { useNavItem } from 'src/components/nav-section/hooks';
 
 import type { NavItemProps, NavItemStateProps } from '../types';
 

@@ -1,10 +1,9 @@
 'use client';
 
-import { _mock } from 'kimi-theme/_mock';
-import { Markdown } from 'kimi-theme/components/markdown';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
-
+import { _mock } from 'src/_mock';
 import { paths } from 'src/docs/routes/paths';
+import { Markdown } from 'src/components/markdown';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock, ComponentContainer } from '../../component-block';

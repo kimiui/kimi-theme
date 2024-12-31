@@ -4,10 +4,11 @@ import Paper from '@mui/material/Paper';
 import { usePathname } from 'routes-react';
 import Popover from '@mui/material/Popover';
 import { useTheme } from '@mui/material/styles';
-import { paper } from 'kimi-theme/theme/styles';
-import { isExternalLink } from 'kimi-theme/utils';
-import { useActiveLink } from 'kimi-theme/hooks/useActiveLink';
 import { useRef, useState, useEffect, useCallback } from 'react';
+
+import { paper } from 'src/theme/styles';
+import { isExternalLink } from 'src/utils';
+import { useActiveLink } from 'src/hooks/useActiveLink';
 
 import { NavItem } from './nav-item';
 import { NavUl, NavLi } from '../styles';

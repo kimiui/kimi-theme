@@ -1,7 +1,5 @@
 'use client';
 
-import type { SelectChangeEvent } from '@mui/material/Select';
-
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
@@ -10,8 +8,10 @@ import { useState, useCallback } from 'react';
 import MenuItem from '@mui/material/MenuItem';
 import Pagination from '@mui/material/Pagination';
 import InputLabel from '@mui/material/InputLabel';
-import { varAlpha } from 'kimi-theme/theme/styles';
 import FormControl from '@mui/material/FormControl';
+import type { SelectChangeEvent } from '@mui/material/Select';
+
+import { varAlpha } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

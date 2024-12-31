@@ -1,6 +1,5 @@
-import type { Theme, Components } from '@mui/material/styles';
-
 import { tooltipClasses } from '@mui/material/Tooltip';
+import type { Theme, Components } from '@mui/material/styles';
 
 import { stylesMode } from '../../styles';
 

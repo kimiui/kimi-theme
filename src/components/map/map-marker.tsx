@@ -1,7 +1,6 @@
-import type { MarkerProps } from 'react-map-gl';
-
 import Box from '@mui/material/Box';
 import { Marker } from 'react-map-gl';
+import type { MarkerProps } from 'react-map-gl';
 
 // ----------------------------------------------------------------------
 

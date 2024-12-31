@@ -1,9 +1,8 @@
 'use client';
 
-import type { BoxProps } from '@mui/material/Box';
-
 import Box from '@mui/material/Box';
 import Portal from '@mui/material/Portal';
+import type { BoxProps } from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 
 // ----------------------------------------------------------------------

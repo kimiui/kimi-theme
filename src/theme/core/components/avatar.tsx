@@ -1,6 +1,5 @@
-import type { Theme, Components, ComponentsVariants } from '@mui/material/styles';
-
 import { avatarGroupClasses } from '@mui/material/AvatarGroup';
+import type { Theme, Components, ComponentsVariants } from '@mui/material/styles';
 
 import { varAlpha } from '../../styles';
 

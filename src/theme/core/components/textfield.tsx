@@ -1,6 +1,5 @@
-import type { Theme, Components } from '@mui/material/styles';
-
 import { inputBaseClasses } from '@mui/material/InputBase';
+import type { Theme, Components } from '@mui/material/styles';
 import { filledInputClasses } from '@mui/material/FilledInput';
 import { outlinedInputClasses } from '@mui/material/OutlinedInput';
 

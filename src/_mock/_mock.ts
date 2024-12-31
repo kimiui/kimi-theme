@@ -1,4 +1,4 @@
-import { fSub } from 'kimi-theme/utils/format-time';
+import { fSub } from 'src/utils/format-time';
 
 import {
   _id,

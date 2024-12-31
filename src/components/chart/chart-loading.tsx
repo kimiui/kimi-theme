@@ -1,7 +1,6 @@
-import type { BoxProps } from '@mui/material/Box';
-
 import Box from '@mui/material/Box';
 import Skeleton from '@mui/material/Skeleton';
+import type { BoxProps } from '@mui/material/Box';
 
 import type { ChartBaseProps } from './types';
 

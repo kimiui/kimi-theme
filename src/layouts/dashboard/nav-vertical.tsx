@@ -1,11 +1,11 @@
-import type { Breakpoint } from '@mui/material/styles';
-import type { NavSectionProps } from 'kimi-theme/components/nav-section';
-
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-import { Scrollbar } from 'kimi-theme/components/scrollbar';
-import { varAlpha, hideScrollY } from 'kimi-theme/theme/styles';
-import { NavSectionMini, NavSectionVertical } from 'kimi-theme/components/nav-section';
+import type { Breakpoint } from '@mui/material/styles';
+
+import { Scrollbar } from 'src/components/scrollbar';
+import { varAlpha, hideScrollY } from 'src/theme/styles';
+import type { NavSectionProps } from 'src/components/nav-section';
+import { NavSectionMini, NavSectionVertical } from 'src/components/nav-section';
 
 import { NavToggleButton } from '../components/nav-toggle-button';
 

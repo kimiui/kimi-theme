@@ -3,9 +3,9 @@
 import { useState, useCallback } from 'react';
 import Pagination from '@mui/material/Pagination';
 import TablePagination from '@mui/material/TablePagination';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
 import { paths } from 'src/docs/routes/paths';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { PaginationItems } from './pagination-items';
 import { ComponentHero } from '../../component-hero';

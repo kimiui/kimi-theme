@@ -1,7 +1,5 @@
 'use client';
 
-import type { StackProps } from '@mui/material/Stack';
-
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
 import Stack from '@mui/material/Stack';
@@ -12,12 +10,14 @@ import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
-import { today } from 'kimi-theme/utils/format-time';
+import type { StackProps } from '@mui/material/Stack';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
 import CircularProgress from '@mui/material/CircularProgress';
-import { Form, Field } from 'kimi-theme/components/hook-form';
+
+import { today } from 'src/utils/format-time';
+import { Iconify } from 'src/components/iconify';
+import { Form, Field } from 'src/components/hook-form';
 
 import { FormSchema } from './schema';
 import { ValuesPreview } from './values-preview';

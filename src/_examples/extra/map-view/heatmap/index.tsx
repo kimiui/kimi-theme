@@ -1,8 +1,8 @@
 import type { MapProps } from 'react-map-gl';
-
 import { Layer, Source } from 'react-map-gl';
 import { useMemo, useState, useEffect } from 'react';
-import { MapWrapper } from 'kimi-theme/components/map';
+
+import { MapWrapper } from 'src/components/map';
 
 import { heatmapLayer } from './map-style';
 import { ControlPanel } from './control-panel';

@@ -1,8 +1,5 @@
 'use client';
 
-import type { FieldValues } from 'react-hook-form';
-import type { Theme, SxProps } from '@mui/material/styles';
-
 import { useState } from 'react';
 import Stack from '@mui/material/Stack';
 import Portal from '@mui/material/Portal';
@@ -10,9 +7,12 @@ import Collapse from '@mui/material/Collapse';
 import { useTheme } from '@mui/material/styles';
 import { useFormContext } from 'react-hook-form';
 import ButtonBase from '@mui/material/ButtonBase';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { bgBlur, varAlpha } from 'kimi-theme/theme/styles';
-import { fileData } from 'kimi-theme/components/file-thumbnail';
+import type { FieldValues } from 'react-hook-form';
+import type { Theme, SxProps } from '@mui/material/styles';
+
+import { Iconify } from 'src/components/iconify';
+import { bgBlur, varAlpha } from 'src/theme/styles';
+import { fileData } from 'src/components/file-thumbnail';
 
 // ----------------------------------------------------------------------
 

@@ -1,14 +1,14 @@
 'use client';
 
-import type { NavSectionProps } from 'kimi-theme/components/nav-section';
-
 import { useEffect } from 'react';
 import Box from '@mui/material/Box';
 import { usePathname } from 'routes-react';
-import { Logo } from 'kimi-theme/components/logo';
-import { Scrollbar } from 'kimi-theme/components/scrollbar';
 import Drawer, { drawerClasses } from '@mui/material/Drawer';
-import { NavSectionVertical } from 'kimi-theme/components/nav-section';
+
+import { Logo } from 'src/components/logo';
+import { Scrollbar } from 'src/components/scrollbar';
+import { NavSectionVertical } from 'src/components/nav-section';
+import type { NavSectionProps } from 'src/components/nav-section';
 
 import { NavHelper } from '../components/nav-helper';
 

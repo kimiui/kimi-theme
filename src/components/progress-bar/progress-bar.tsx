@@ -1,10 +1,10 @@
 'use client';
 
-import './styles.css';
-
 import NProgress from 'nprogress';
 import { usePathname } from 'routes-react';
 import { useState, useEffect } from 'react';
+
+import './styles.css';
 
 // ----------------------------------------------------------------------
 

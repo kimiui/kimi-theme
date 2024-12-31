@@ -1,12 +1,12 @@
-import type { ButtonProps } from '@mui/material/Button';
-import type { Theme, SxProps } from '@mui/material/styles';
-
 import { useCallback } from 'react';
 import { useRouter } from 'routes-react';
 import Button from '@mui/material/Button';
-import { useAuthContext } from 'kimi-theme/auth/hooks';
-import { toast } from 'kimi-theme/components/snackbar';
-import { signOut } from 'kimi-theme/auth/context/action';
+import type { ButtonProps } from '@mui/material/Button';
+import type { Theme, SxProps } from '@mui/material/styles';
+
+import { useAuthContext } from 'src/auth/hooks';
+import { toast } from 'src/components/snackbar';
+import { signOut } from 'src/auth/context/action';
 
 // ----------------------------------------------------------------------
 

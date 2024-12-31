@@ -1,8 +1,9 @@
 'use client';
 
 import { useTheme } from '@mui/material/styles';
-import { fData } from 'kimi-theme/utils/format-number';
-import { Chart, useChart } from 'kimi-theme/components/chart';
+
+import { fData } from 'src/utils/format-number';
+import { Chart, useChart } from 'src/components/chart';
 
 // ----------------------------------------------------------------------
 

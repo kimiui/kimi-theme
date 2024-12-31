@@ -1,7 +1,8 @@
 'use client';
 
-import { Chart, useChart } from 'kimi-theme/components/chart';
 import { useTheme, alpha as hexAlpha } from '@mui/material/styles';
+
+import { Chart, useChart } from 'src/components/chart';
 
 // ----------------------------------------------------------------------
 

@@ -1,6 +1,5 @@
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
-
 import { paths } from 'src/docs/routes/paths';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { CustomIcons } from './custom-icon';
 import { CustomStyling } from './custom-styling';

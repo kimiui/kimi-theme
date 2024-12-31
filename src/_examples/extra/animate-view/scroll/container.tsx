@@ -1,13 +1,13 @@
 'use client';
 
-import type { StackProps } from '@mui/material/Stack';
-
 import { useRef } from 'react';
 import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { varContainer, MotionViewport } from 'kimi-theme/components/animate';
+import type { StackProps } from '@mui/material/Stack';
+
+import { varContainer, MotionViewport } from 'src/components/animate';
 
 import { getVariant } from '../get-variant';
 

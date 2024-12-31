@@ -10,8 +10,9 @@ import { DialogContent } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import DialogTitle from '@mui/material/DialogTitle';
 import ListItemText from '@mui/material/ListItemText';
-import { Iconify } from 'kimi-theme/components/iconify';
 import ListItemButton from '@mui/material/ListItemButton';
+
+import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

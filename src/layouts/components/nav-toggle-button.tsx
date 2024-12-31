@@ -1,8 +1,8 @@
-import type { IconButtonProps } from '@mui/material/IconButton';
-
 import SvgIcon from '@mui/material/SvgIcon';
 import IconButton from '@mui/material/IconButton';
-import { varAlpha } from 'kimi-theme/theme/styles';
+import type { IconButtonProps } from '@mui/material/IconButton';
+
+import { varAlpha } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

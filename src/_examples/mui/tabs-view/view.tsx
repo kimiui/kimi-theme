@@ -4,12 +4,12 @@ import { Fragment } from 'react';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import Paper from '@mui/material/Paper';
-import { useTabs } from 'kimi-theme/hooks';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { CustomTabs } from 'kimi-theme/components/custom-tabs';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
+import { useTabs } from 'src/hooks';
 import { paths } from 'src/docs/routes/paths';
+import { Iconify } from 'src/components/iconify';
+import { CustomTabs } from 'src/components/custom-tabs';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

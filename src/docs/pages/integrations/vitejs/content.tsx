@@ -24,7 +24,7 @@ export default function Content() {
             color: 'white',
           }}
         >
-          {`          import { createTheme } from "kimi-theme/theme/create-theme";
+          {`          import { createTheme } from "src/theme/create-theme";
           import { CssBaseline, ThemeProvider } from "@mui/material";
           
           export default function App() {

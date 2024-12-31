@@ -1,4 +1,4 @@
-import { countries } from 'kimi-theme/assets/data';
+import { countries } from 'src/assets/data';
 
 // ----------------------------------------------------------------------
 

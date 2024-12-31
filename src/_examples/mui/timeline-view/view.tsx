@@ -5,15 +5,15 @@ import Timeline from '@mui/lab/Timeline';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineItem from '@mui/lab/TimelineItem';
 import Typography from '@mui/material/Typography';
-import { varAlpha } from 'kimi-theme/theme/styles';
 import TimelineContent from '@mui/lab/TimelineContent';
-import { Iconify } from 'kimi-theme/components/iconify';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import { CustomBreadcrumbs } from 'kimi-theme/components/custom-breadcrumbs';
 
+import { varAlpha } from 'src/theme/styles';
 import { paths } from 'src/docs/routes/paths';
+import { Iconify } from 'src/components/iconify';
+import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
 import { ComponentHero } from '../../component-hero';
 import { ComponentBlock } from '../../component-block';

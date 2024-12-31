@@ -1,5 +1,4 @@
 import type { LngLat } from 'react-map-gl';
-
 import Typography from '@mui/material/Typography';
 
 import { StyledControlPanel } from '../styles';

@@ -6,12 +6,13 @@ import Stack from '@mui/material/Stack';
 import Portal from '@mui/material/Portal';
 import { usePathname } from 'routes-react';
 import { useTheme } from '@mui/material/styles';
-import { paper } from 'kimi-theme/theme/styles';
 import ListSubheader from '@mui/material/ListSubheader';
-import { useActiveLink } from 'kimi-theme/hooks/useActiveLink';
 import { useRef, useState, useEffect, useCallback } from 'react';
-import { NavLi, NavUl } from 'kimi-theme/components/nav-section';
-import { isExternalLink, removeLastSlash } from 'kimi-theme/utils';
+
+import { paper } from 'src/theme/styles';
+import { useActiveLink } from 'src/hooks/useActiveLink';
+import { NavLi, NavUl } from 'src/components/nav-section';
+import { isExternalLink, removeLastSlash } from 'src/utils';
 
 import { NavItem, NavItemDashboard } from './nav-desktop-item';
 

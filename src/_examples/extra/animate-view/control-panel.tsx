@@ -1,10 +1,9 @@
-import type { StackProps } from '@mui/material/Stack';
-
 import Box from '@mui/material/Box';
 import Radio from '@mui/material/Radio';
 import Stack from '@mui/material/Stack';
 import RadioGroup from '@mui/material/RadioGroup';
 import Typography from '@mui/material/Typography';
+import type { StackProps } from '@mui/material/Stack';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
 // ----------------------------------------------------------------------

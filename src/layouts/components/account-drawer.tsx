@@ -1,10 +1,7 @@
 'use client';
 
-import type { IconButtonProps } from '@mui/material/IconButton';
-
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import { _mock } from 'kimi-theme/_mock';
 import Avatar from '@mui/material/Avatar';
 import Drawer from '@mui/material/Drawer';
 import Tooltip from '@mui/material/Tooltip';
@@ -13,15 +10,17 @@ import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { Label } from 'kimi-theme/components/label';
 import { useRouter, usePathname } from 'routes-react';
-import { useMockedUser } from 'kimi-theme/auth/hooks';
-import { Iconify } from 'kimi-theme/components/iconify';
-import { Scrollbar } from 'kimi-theme/components/scrollbar';
-import { AnimateAvatar } from 'kimi-theme/components/animate';
+import type { IconButtonProps } from '@mui/material/IconButton';
 
+import { _mock } from 'src/_mock';
+import { varAlpha } from 'src/theme/styles';
+import { Label } from 'src/components/label';
 import { paths } from 'src/docs/routes/paths';
+import { useMockedUser } from 'src/auth/hooks';
+import { Iconify } from 'src/components/iconify';
+import { Scrollbar } from 'src/components/scrollbar';
+import { AnimateAvatar } from 'src/components/animate';
 
 import { UpgradeBlock } from './nav-helper';
 import { AccountButton } from './account-button';

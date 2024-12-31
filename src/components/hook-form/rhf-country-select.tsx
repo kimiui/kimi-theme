@@ -1,7 +1,7 @@
-import type { CountrySelectProps } from 'kimi-theme/components/country-select';
-
 import { Controller, useFormContext } from 'react-hook-form';
-import { CountrySelect } from 'kimi-theme/components/country-select';
+
+import { CountrySelect } from 'src/components/country-select';
+import type { CountrySelectProps } from 'src/components/country-select';
 
 // ----------------------------------------------------------------------
 

@@ -1,21 +1,21 @@
 'use client';
 
-import type { SettingsState } from 'kimi-theme/components/settings';
-import type { NavSectionProps } from 'kimi-theme/components/nav-section';
-import type { Theme, SxProps, CSSObject, Breakpoint } from '@mui/material/styles';
-
 import { useMemo } from 'react';
 import { useBoolean } from 'ahooks';
 import Alert from '@mui/material/Alert';
-import { allLangs } from 'kimi-theme/locales';
 import { useTheme } from '@mui/material/styles';
-import { Logo } from 'kimi-theme/components/logo';
 import { Box, Stack, Typography } from '@mui/material';
 import { iconButtonClasses } from '@mui/material/IconButton';
-import { _contacts, _notifications } from 'kimi-theme/_mock';
-import { varAlpha, stylesMode } from 'kimi-theme/theme/styles';
-import { bulletColor } from 'kimi-theme/components/nav-section';
-import { useSettingsContext } from 'kimi-theme/components/settings';
+import type { Theme, SxProps, CSSObject, Breakpoint } from '@mui/material/styles';
+
+import { allLangs } from 'src/locales';
+import { Logo } from 'src/components/logo';
+import { _contacts, _notifications } from 'src/_mock';
+import { varAlpha, stylesMode } from 'src/theme/styles';
+import { bulletColor } from 'src/components/nav-section';
+import type { SettingsState } from 'src/components/settings';
+import { useSettingsContext } from 'src/components/settings';
+import type { NavSectionProps } from 'src/components/nav-section';
 
 import { Main } from './main';
 import { NavMobile } from './nav-mobile';

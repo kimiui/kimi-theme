@@ -1,7 +1,6 @@
-import type { Theme, Components, ComponentsVariants } from '@mui/material/styles';
-
 import { buttonClasses } from '@mui/material/Button';
 import { loadingButtonClasses } from '@mui/lab/LoadingButton';
+import type { Theme, Components, ComponentsVariants } from '@mui/material/styles';
 
 import { varAlpha, stylesMode } from '../../styles';
 

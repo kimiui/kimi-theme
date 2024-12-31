@@ -1,12 +1,12 @@
-import type { BoxProps } from '@mui/material/Box';
-
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
+import type { BoxProps } from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { orderBy } from 'kimi-theme/utils/helper';
+
+import { orderBy } from 'src/utils/helper';
 
 import { ComponentCard } from './component-card';
 import { muiNav, extraNav, foundationNav } from './config-nav';

@@ -1,4 +1,4 @@
-import { defaultFont } from 'kimi-theme/theme/core/typography';
+import { defaultFont } from 'src/theme/core/typography';
 
 import type { SettingsState } from './types';
 

@@ -1,7 +1,6 @@
+import { buttonGroupClasses } from '@mui/material/ButtonGroup';
 import type { ButtonGroupProps } from '@mui/material/ButtonGroup';
 import type { Theme, CSSObject, Components, ComponentsVariants } from '@mui/material/styles';
-
-import { buttonGroupClasses } from '@mui/material/ButtonGroup';
 
 import { varAlpha, stylesMode } from '../../styles';
 

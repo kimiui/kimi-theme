@@ -1,8 +1,5 @@
 'use client';
 
-import type { BoxProps } from '@mui/material/Box';
-import type { NavSectionProps } from 'kimi-theme/components/nav-section';
-
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
 import { useRouter } from 'routes-react';
@@ -12,16 +9,19 @@ import match from 'autosuggest-highlight/match';
 import parse from 'autosuggest-highlight/parse';
 import InputBase from '@mui/material/InputBase';
 import { useTheme } from '@mui/material/styles';
+import type { BoxProps } from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
-import { isExternalLink } from 'kimi-theme/utils';
-import { varAlpha } from 'kimi-theme/theme/styles';
-import { useEventListener } from 'kimi-theme/hooks';
-import { Label } from 'kimi-theme/components/label';
-import { Iconify } from 'kimi-theme/components/iconify';
 import InputAdornment from '@mui/material/InputAdornment';
-import { Scrollbar } from 'kimi-theme/components/scrollbar';
 import Dialog, { dialogClasses } from '@mui/material/Dialog';
-import { SearchNotFound } from 'kimi-theme/components/search-not-found';
+
+import { isExternalLink } from 'src/utils';
+import { varAlpha } from 'src/theme/styles';
+import { useEventListener } from 'src/hooks';
+import { Label } from 'src/components/label';
+import { Iconify } from 'src/components/iconify';
+import { Scrollbar } from 'src/components/scrollbar';
+import { SearchNotFound } from 'src/components/search-not-found';
+import type { NavSectionProps } from 'src/components/nav-section';
 
 import { ResultItem } from './result-item';
 import { groupItems, applyFilter, getAllItems } from './utils';

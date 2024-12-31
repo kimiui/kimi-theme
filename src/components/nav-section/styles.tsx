@@ -1,13 +1,13 @@
 'use client';
 
+import Collapse from '@mui/material/Collapse';
+import { styled } from '@mui/material/styles';
 import type { BoxProps } from '@mui/material/Box';
+import ListSubheader from '@mui/material/ListSubheader';
 import type { CollapseProps } from '@mui/material/Collapse';
 import type { ListSubheaderProps } from '@mui/material/ListSubheader';
 
-import Collapse from '@mui/material/Collapse';
-import { styled } from '@mui/material/styles';
-import { stylesMode } from 'kimi-theme/theme/styles';
-import ListSubheader from '@mui/material/ListSubheader';
+import { stylesMode } from 'src/theme/styles';
 
 import { navSectionClasses } from './classes';
 import { svgColorClasses } from '../svg-color';
