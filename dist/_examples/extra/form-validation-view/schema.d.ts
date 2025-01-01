@@ -54,8 +54,8 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     phoneNumber?: string;
     rating?: number;
     editor?: string;
-    endDate?: string | number | Date;
     startDate?: string | number | Date;
+    endDate?: string | number | Date;
     fullName?: string;
     age?: number;
     confirmPassword?: string;
@@ -82,8 +82,8 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     phoneNumber?: string;
     rating?: number;
     editor?: string;
-    endDate?: Date;
     startDate?: Date;
+    endDate?: Date;
     fullName?: string;
     age?: number;
     confirmPassword?: string;
@@ -110,8 +110,8 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     phoneNumber?: string;
     rating?: number;
     editor?: string;
-    endDate?: string | number | Date;
     startDate?: string | number | Date;
+    endDate?: string | number | Date;
     fullName?: string;
     age?: number;
     confirmPassword?: string;
@@ -138,8 +138,8 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     phoneNumber?: string;
     rating?: number;
     editor?: string;
-    endDate?: Date;
     startDate?: Date;
+    endDate?: Date;
     fullName?: string;
     age?: number;
     confirmPassword?: string;
@@ -166,8 +166,8 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     phoneNumber?: string;
     rating?: number;
     editor?: string;
-    endDate?: string | number | Date;
     startDate?: string | number | Date;
+    endDate?: string | number | Date;
     fullName?: string;
     age?: number;
     confirmPassword?: string;
@@ -194,8 +194,8 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     phoneNumber?: string;
     rating?: number;
     editor?: string;
-    endDate?: Date;
     startDate?: Date;
+    endDate?: Date;
     fullName?: string;
     age?: number;
     confirmPassword?: string;

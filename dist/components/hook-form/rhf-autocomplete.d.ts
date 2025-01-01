@@ -1,6 +1,5 @@
 import type { AutocompleteProps } from '@mui/material/Autocomplete';
-export type AutocompleteBaseProps = Omit<AutocompleteProps<any, boolean, boolean, boolean>, 'renderInput'>;
-export type RHFAutocompleteProps = AutocompleteBaseProps & {
+export type RHFAutocompleteProps = Omit<AutocompleteProps<any, boolean, boolean, boolean>, 'renderInput'> & {
     name: string;
     label?: string;
     placeholder?: string;

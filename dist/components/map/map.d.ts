@@ -7,8 +7,6 @@ export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
     hash?: boolean | string;
     accessToken?: string;
     zoom?: number;
-    language?: string;
-    keyboard?: boolean;
     scrollZoom?: boolean | {
         around?: "center";
     };
@@ -20,6 +18,7 @@ export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
         deceleration?: number;
         maxSpeed?: number;
     };
+    keyboard?: boolean;
     doubleClickZoom?: boolean;
     touchZoomRotate?: boolean | {
         around?: "center";
@@ -68,6 +67,7 @@ export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
         "ScrollZoomBlocker.CmdMessage": string;
         "TouchPanBlocker.Message": string;
     }>;
+    language?: string;
     worldview?: string;
     crossSourceCollisions?: boolean;
     collectResourceTiming?: boolean;
