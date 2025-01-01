@@ -5,12 +5,10 @@ import type { AutocompleteProps } from '@mui/material/Autocomplete';
 
 // ----------------------------------------------------------------------
 
-export type AutocompleteBaseProps = Omit<
+export type RHFAutocompleteProps = Omit<
   AutocompleteProps<any, boolean, boolean, boolean>,
   'renderInput'
->;
-
-export type RHFAutocompleteProps = AutocompleteBaseProps & {
+> & {
   name: string;
   label?: string;
   placeholder?: string;

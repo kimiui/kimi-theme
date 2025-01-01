@@ -7,8 +7,8 @@ export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
     hash?: boolean | string;
     accessToken?: string;
     zoom?: number;
-    keyboard?: boolean;
     language?: string;
+    keyboard?: boolean;
     scrollZoom?: boolean | {
         around?: "center";
     };
