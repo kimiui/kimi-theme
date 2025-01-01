@@ -1,0 +1,42 @@
+export declare const _mock: {
+    id: (index: number) => string;
+    time: (index: number) => string;
+    boolean: (index: number) => boolean;
+    role: (index: number) => string;
+    courseNames: (index: number) => string;
+    fileNames: (index: number) => string;
+    eventNames: (index: number) => string;
+    taskNames: (index: number) => string;
+    postTitle: (index: number) => string;
+    jobTitle: (index: number) => string;
+    tourName: (index: number) => string;
+    productName: (index: number) => string;
+    sentence: (index: number) => string;
+    description: (index: number) => string;
+    email: (index: number) => string;
+    phoneNumber: (index: number) => string;
+    fullAddress: (index: number) => string;
+    firstName: (index: number) => string;
+    lastName: (index: number) => string;
+    fullName: (index: number) => string;
+    companyNames: (index: number) => string;
+    countryNames: (index: number) => string;
+    number: {
+        percent: (index: number) => number;
+        rating: (index: number) => number;
+        age: (index: number) => number;
+        price: (index: number) => number;
+        nativeS: (index: number) => number;
+        nativeM: (index: number) => number;
+        nativeL: (index: number) => number;
+    };
+    image: {
+        cover: (index: number) => string;
+        avatar: (index: number) => string;
+        travel: (index: number) => string;
+        course: (index: number) => string;
+        company: (index: number) => string;
+        product: (index: number) => string;
+        portrait: (index: number) => string;
+    };
+};

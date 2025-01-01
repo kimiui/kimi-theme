@@ -1,0 +1,31 @@
+export declare const defaultValues: {
+    age: number;
+    email: string;
+    fullName: string;
+    phoneNumber: string;
+    editor: string;
+    autocomplete: any;
+    password: string;
+    confirmPassword: string;
+    startDate: string;
+    endDate: any;
+    singleUpload: string;
+    multiUpload: any[];
+    singleSelect: string;
+    multiSelect: any[];
+    singleCountry: string;
+    multiCountry: any[];
+    rating: number;
+    radioGroup: string;
+    switch: boolean;
+    multiSwitch: any[];
+    checkbox: boolean;
+    multiCheckbox: any[];
+    slider: number;
+    sliderRange: number[];
+};
+type Props = {
+    debug: boolean;
+};
+export declare function ReactHookForm({ debug }: Readonly<Props>): import("react/jsx-runtime").JSX.Element;
+export {};

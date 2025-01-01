@@ -1,0 +1,205 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.paths = void 0;
+var change_case_1 = require("lib/utils/change-case");
+var assets_1 = require("lib/_mock/assets");
+// ----------------------------------------------------------------------
+var MOCK_ID = assets_1._id[1];
+var MOCK_TITLE = assets_1._postTitles[2];
+var ROOTS = {
+    AUTH: '/auth',
+    AUTH_DEMO: '/auth-demo',
+    DASHBOARD: '/dashboard',
+};
+// ----------------------------------------------------------------------
+exports.paths = {
+    comingSoon: '/coming-soon',
+    maintenance: '/maintenance',
+    pricing: '/pricing',
+    payment: '/payment',
+    page403: '/403',
+    page404: '/404',
+    page500: '/500',
+    changelog: 'https://docs.kimistores.com/changelog',
+    product: {
+        root: "/product",
+        checkout: "/products/checkout",
+        details: function (id) { return "/products/".concat(id); },
+        demo: { details: "/products/".concat(MOCK_ID) },
+    },
+    posts: {
+        root: "/posts",
+        details: function (title) { return "/posts/".concat((0, change_case_1.paramCase)(title)); },
+        demo: { details: "/post/".concat((0, change_case_1.paramCase)(MOCK_TITLE)) },
+    },
+    // AUTH
+    auth: {
+        signIn: "".concat(ROOTS.AUTH, "/sign-in"),
+        verify: "".concat(ROOTS.AUTH, "/verify"),
+        signUp: "".concat(ROOTS.AUTH, "/sign-up"),
+        updatePassword: "".concat(ROOTS.AUTH, "/update-password"),
+        resetPassword: "".concat(ROOTS.AUTH, "/reset-password"),
+    },
+    // DASHBOARD
+    dashboard: {
+        root: ROOTS.DASHBOARD,
+        mail: "".concat(ROOTS.DASHBOARD, "/mail"),
+        chat: "".concat(ROOTS.DASHBOARD, "/chat"),
+        kanban: "".concat(ROOTS.DASHBOARD, "/kanban"),
+        calendar: "".concat(ROOTS.DASHBOARD, "/calendar"),
+        fileManager: "".concat(ROOTS.DASHBOARD, "/file-manager"),
+        general: {
+            app: "".concat(ROOTS.DASHBOARD, "/app"),
+            ecommerce: "".concat(ROOTS.DASHBOARD, "/ecommerce"),
+            analytics: "".concat(ROOTS.DASHBOARD, "/analytics"),
+            banking: "".concat(ROOTS.DASHBOARD, "/banking"),
+            booking: "".concat(ROOTS.DASHBOARD, "/booking"),
+            file: "".concat(ROOTS.DASHBOARD, "/file"),
+            course: "".concat(ROOTS.DASHBOARD, "/course"),
+        },
+        users: {
+            root: "".concat(ROOTS.DASHBOARD, "/users"),
+            new: "".concat(ROOTS.DASHBOARD, "/users/new"),
+            cards: "".concat(ROOTS.DASHBOARD, "/user/cards"),
+            profile: "".concat(ROOTS.DASHBOARD, "/users/profile"),
+            account: "".concat(ROOTS.DASHBOARD, "/users/account"),
+            edit: function (id) { return "".concat(ROOTS.DASHBOARD, "/users/").concat(id, "/edit"); },
+            demo: {
+                edit: "".concat(ROOTS.DASHBOARD, "/users/").concat(MOCK_ID, "/edit"),
+            },
+        },
+        products: {
+            root: "".concat(ROOTS.DASHBOARD, "/products"),
+            new: "".concat(ROOTS.DASHBOARD, "/products/new"),
+            details: function (id) { return "".concat(ROOTS.DASHBOARD, "/products/").concat(id); },
+            edit: function (id) { return "".concat(ROOTS.DASHBOARD, "/products/").concat(id, "/edit"); },
+            demo: {
+                details: "".concat(ROOTS.DASHBOARD, "/products/").concat(MOCK_ID),
+                edit: "".concat(ROOTS.DASHBOARD, "/products/").concat(MOCK_ID, "/edit"),
+            },
+        },
+        invoices: {
+            root: "".concat(ROOTS.DASHBOARD, "/invoices"),
+            new: "".concat(ROOTS.DASHBOARD, "/invoices/new"),
+            details: function (id) { return "".concat(ROOTS.DASHBOARD, "/invoices/").concat(id); },
+            edit: function (id) { return "".concat(ROOTS.DASHBOARD, "/invoices/").concat(id, "/edit"); },
+            demo: {
+                details: "".concat(ROOTS.DASHBOARD, "/invoices/").concat(MOCK_ID),
+                edit: "".concat(ROOTS.DASHBOARD, "/invoices/").concat(MOCK_ID, "/edit"),
+            },
+        },
+        posts: {
+            root: "".concat(ROOTS.DASHBOARD, "/posts"),
+            new: "".concat(ROOTS.DASHBOARD, "/posts/new"),
+            details: function (title) { return "".concat(ROOTS.DASHBOARD, "/posts/").concat((0, change_case_1.paramCase)(title)); },
+            edit: function (title) { return "".concat(ROOTS.DASHBOARD, "/posts/").concat((0, change_case_1.paramCase)(title), "/edit"); },
+            demo: {
+                details: "".concat(ROOTS.DASHBOARD, "/posts/").concat((0, change_case_1.paramCase)(MOCK_TITLE)),
+                edit: "".concat(ROOTS.DASHBOARD, "/posts/").concat((0, change_case_1.paramCase)(MOCK_TITLE), "/edit"),
+            },
+        },
+        orders: {
+            root: "".concat(ROOTS.DASHBOARD, "/orders"),
+            details: function (id) { return "".concat(ROOTS.DASHBOARD, "/order/").concat(id); },
+            demo: {
+                details: "".concat(ROOTS.DASHBOARD, "/order/").concat(MOCK_ID),
+            },
+        },
+        jobs: {
+            root: "".concat(ROOTS.DASHBOARD, "/jobs"),
+            new: "".concat(ROOTS.DASHBOARD, "/job/new"),
+            details: function (id) { return "".concat(ROOTS.DASHBOARD, "/job/").concat(id); },
+            edit: function (id) { return "".concat(ROOTS.DASHBOARD, "/job/").concat(id, "/edit"); },
+            demo: {
+                details: "".concat(ROOTS.DASHBOARD, "/job/").concat(MOCK_ID),
+                edit: "".concat(ROOTS.DASHBOARD, "/job/").concat(MOCK_ID, "/edit"),
+            },
+        },
+        tours: {
+            root: "".concat(ROOTS.DASHBOARD, "/tours"),
+            new: "".concat(ROOTS.DASHBOARD, "/tour/new"),
+            details: function (id) { return "".concat(ROOTS.DASHBOARD, "/tour/").concat(id); },
+            edit: function (id) { return "".concat(ROOTS.DASHBOARD, "/tour/").concat(id, "/edit"); },
+            demo: {
+                details: "".concat(ROOTS.DASHBOARD, "/tour/").concat(MOCK_ID),
+                edit: "".concat(ROOTS.DASHBOARD, "/tour/").concat(MOCK_ID, "/edit"),
+            },
+        },
+        charts: {
+            root: "".concat(ROOTS.DASHBOARD, "/charts"),
+        },
+    },
+    docs: {
+        root: "/",
+        gettingStarted: "/getting-started",
+        introduction: "/introduction",
+        foundation: {
+            root: "/foundation",
+            colors: "/foundation/colors",
+            typography: "/foundation/typography",
+            shadows: "/foundation/shadows",
+            grid: "/foundation/grid",
+            icons: "/foundation/icons",
+        },
+        components: {
+            root: "/components",
+            mui: {
+                root: "/components/mui",
+                accordion: "/components/mui/accordion",
+                alert: "/components/mui/alert",
+                autocomplete: "/components/mui/autocomplete",
+                avatar: "/components/mui/avatar",
+                badge: "/components/mui/badge",
+                breadcrumbs: "/components/mui/breadcrumbs",
+                buttons: "/components/mui/buttons",
+                checkbox: "/components/mui/checkbox",
+                chip: "/components/mui/chip",
+                dataGrid: "/components/mui/data-grid",
+                dialog: "/components/mui/dialog",
+                list: "/components/mui/list",
+                menu: "/components/mui/menu",
+                pagination: "/components/mui/pagination",
+                pickers: "/components/mui/pickers",
+                popover: "/components/mui/popover",
+                progress: "/components/mui/progress",
+                radioButton: "/components/mui/radio-button",
+                rating: "/components/mui/rating",
+                slider: "/components/mui/slider",
+                stepper: "/components/mui/stepper",
+                switch: "/components/mui/switch",
+                table: "/components/mui/table",
+                tabs: "/components/mui/tabs",
+                textField: "/components/mui/textfield",
+                timeline: "/components/mui/timeline",
+                tooltip: "/components/mui/tooltip",
+                transferList: "/components/mui/transfer-list",
+                treeView: "/components/mui/tree-view",
+            },
+            extra: {
+                root: "/components/extra",
+                animate: "/components/extra/animate",
+                carousel: "/components/extra/carousel",
+                chart: "/components/extra/chart",
+                dnd: "/components/extra/dnd",
+                editor: "/components/extra/editor",
+                formValidation: "/components/extra/form-validation",
+                formWizard: "/components/extra/form-wizard",
+                image: "/components/extra/image",
+                label: "/components/extra/label",
+                lightbox: "/components/extra/lightbox",
+                map: "/components/extra/map",
+                markdown: "/components/extra/markdown",
+                megaMenu: "/components/extra/mega-menu",
+                mutipleLanguage: "/components/extra/mutiple-language",
+                navigationBar: "/components/extra/navigation-bar",
+                organizationChart: "/components/extra/organization-chart",
+                scroll: "/components/extra/scroll",
+                scrollProgress: "/components/extra/scroll-progress",
+                snackbar: "/components/extra/snackbar",
+                upload: "/components/extra/upload",
+                utilities: "/components/extra/utilities",
+                walktour: "/components/extra/walktour",
+            },
+        },
+    },
+};

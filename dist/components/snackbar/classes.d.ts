@@ -1,0 +1,21 @@
+export declare const toasterClasses: {
+    root: string;
+    toast: string;
+    title: string;
+    icon: string;
+    iconSvg: string;
+    content: string;
+    description: string;
+    actionButton: string;
+    cancelButton: string;
+    closeButton: string;
+    loadingIcon: string;
+    default: string;
+    error: string;
+    success: string;
+    warning: string;
+    info: string;
+    loader: string;
+    loaderVisible: string;
+    closeBtnVisible: string;
+};
