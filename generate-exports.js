@@ -21,7 +21,7 @@ function generateExports(dir, basePath = '.') {
         !key.includes('_mock') &&
         !key.includes('assets')
       ) {
-        exports[key] = `./${exportPath}`;
+        exports[key] = `./dist/${exportPath}`;
       }
     }
   });
