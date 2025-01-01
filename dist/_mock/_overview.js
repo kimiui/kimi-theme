@@ -11,7 +11,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._ecommerceProductPerformance = exports._coursesReminder = exports._coursesFeatured = exports._coursesContinue = exports._bookingNew = exports._bookingReview = exports._bookingsOverview = exports._bookings = exports._bankingRecentTransitions = exports._bankingCreditCard = exports._bankingContacts = exports._ecommerceNewProducts = exports._ecommerceLatestProducts = exports._ecommerceBestSalesman = exports._ecommerceSalesOverview = exports._analyticTraffic = exports._analyticOrderTimeline = exports._analyticPosts = exports._analyticTasks = exports._appFeatured = exports._appInvoices = exports._appAuthors = exports._appInstalled = exports._topSales = void 0;
 var faker_1 = require("@faker-js/faker");
-var format_time_1 = require("lib/utils/format-time");
+var format_time_1 = require("../utils/format-time");
 var _mock_1 = require("./_mock");
 // APP
 // ----------------------------------------------------------------------

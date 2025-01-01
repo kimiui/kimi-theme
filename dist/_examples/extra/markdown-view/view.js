@@ -3,10 +3,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MarkdownView = MarkdownView;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var _mock_1 = require("lib/_mock");
-var paths_1 = require("lib/routes/paths");
-var markdown_1 = require("lib/components/markdown");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var _mock_1 = require("../../../_mock");
+var paths_1 = require("../../../routes/paths");
+var markdown_1 = require("../../../components/markdown");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------

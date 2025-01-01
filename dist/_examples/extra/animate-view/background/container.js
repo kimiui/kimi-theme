@@ -31,7 +31,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var framer_motion_1 = require("framer-motion");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
-var _mock_1 = require("lib/_mock");
+var _mock_1 = require("../../../../_mock");
 var get_variant_1 = require("../get-variant");
 function ContainerView(_a) {
     var selectVariant = _a.selectVariant, sx = _a.sx, other = __rest(_a, ["selectVariant", "sx"]);

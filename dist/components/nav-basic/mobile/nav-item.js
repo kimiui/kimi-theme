@@ -32,7 +32,7 @@ var Box_1 = __importDefault(require("@mui/material/Box"));
 var Tooltip_1 = __importDefault(require("@mui/material/Tooltip"));
 var styles_1 = require("@mui/material/styles");
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../../theme/styles");
 var iconify_1 = require("../../iconify");
 var nav_section_1 = require("../../nav-section");
 // ----------------------------------------------------------------------

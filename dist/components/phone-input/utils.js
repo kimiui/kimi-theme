@@ -4,7 +4,7 @@ exports.getCountryCode = getCountryCode;
 exports.getCountry = getCountry;
 exports.applyFilter = applyFilter;
 var react_phone_number_input_1 = require("react-phone-number-input");
-var countries_1 = require("lib/assets/data/countries");
+var countries_1 = require("../../assets/data/countries");
 // ----------------------------------------------------------------------
 function getCountryCode(inputValue, countryCode) {
     if (inputValue) {

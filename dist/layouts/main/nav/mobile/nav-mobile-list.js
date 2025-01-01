@@ -7,10 +7,10 @@ exports.NavList = NavList;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var Collapse_1 = __importDefault(require("@mui/material/Collapse"));
-var utils_1 = require("lib/utils");
-var styles_1 = require("lib/theme/styles");
-var useActiveLink_1 = require("lib/hooks/useActiveLink");
-var nav_section_1 = require("lib/components/nav-section");
+var utils_1 = require("../../../../utils");
+var styles_1 = require("../../../../theme/styles");
+var useActiveLink_1 = require("../../../../hooks/useActiveLink");
+var nav_section_1 = require("../../../../components/nav-section");
 var nav_mobile_item_1 = require("./nav-mobile-item");
 // ----------------------------------------------------------------------
 function NavList(_a) {

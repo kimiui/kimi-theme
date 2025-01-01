@@ -54,7 +54,7 @@ var i18next_1 = __importDefault(require("i18next"));
 var i18next_resources_to_backend_1 = __importDefault(require("i18next-resources-to-backend"));
 var i18next_browser_languagedetector_1 = __importDefault(require("i18next-browser-languagedetector"));
 var react_i18next_1 = require("react-i18next");
-var storage_available_1 = require("lib/utils/storage-available");
+var storage_available_1 = require("../utils/storage-available");
 var config_locales_1 = require("./config-locales");
 // ----------------------------------------------------------------------
 /**

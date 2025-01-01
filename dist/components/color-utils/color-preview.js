@@ -29,7 +29,7 @@ exports.ColorPreview = void 0;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var Box_1 = __importDefault(require("@mui/material/Box"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 // ----------------------------------------------------------------------
 exports.ColorPreview = (0, react_1.forwardRef)(function (_a, ref) {
     var colors = _a.colors, _b = _a.limit, limit = _b === void 0 ? 3 : _b, sx = _a.sx, other = __rest(_a, ["colors", "limit", "sx"]);

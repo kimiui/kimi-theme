@@ -20,7 +20,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var framer_motion_1 = require("framer-motion");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var styles_1 = require("@mui/material/styles");
-var animate_1 = require("lib/components/animate");
+var animate_1 = require("../../../../components/animate");
 // ----------------------------------------------------------------------
 function SvgPath() {
     var theme = (0, styles_1.useTheme)();

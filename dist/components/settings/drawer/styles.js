@@ -18,8 +18,8 @@ exports.Block = Block;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Tooltip_1 = __importDefault(require("@mui/material/Tooltip"));
-var iconify_1 = require("lib/components/iconify");
-var styles_1 = require("lib/theme/styles");
+var iconify_1 = require("../../../components/iconify");
+var styles_1 = require("../../../theme/styles");
 function Block(_a) {
     var _b;
     var title = _a.title, tooltip = _a.tooltip, children = _a.children, sx = _a.sx;

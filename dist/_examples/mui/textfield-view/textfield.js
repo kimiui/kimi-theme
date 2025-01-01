@@ -23,7 +23,7 @@ var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var TextField_1 = __importDefault(require("@mui/material/TextField"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var InputAdornment_1 = __importDefault(require("@mui/material/InputAdornment"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------
 var CURRENCIES = [

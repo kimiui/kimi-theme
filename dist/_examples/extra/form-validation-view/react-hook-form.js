@@ -79,9 +79,9 @@ var LoadingButton_1 = __importDefault(require("@mui/lab/LoadingButton"));
 var zod_1 = require("@hookform/resolvers/zod");
 var InputAdornment_1 = __importDefault(require("@mui/material/InputAdornment"));
 var CircularProgress_1 = __importDefault(require("@mui/material/CircularProgress"));
-var format_time_1 = require("lib/utils/format-time");
-var iconify_1 = require("lib/components/iconify");
-var hook_form_1 = require("lib/components/hook-form");
+var format_time_1 = require("../../../utils/format-time");
+var iconify_1 = require("../../../components/iconify");
+var hook_form_1 = require("../../../components/hook-form");
 var schema_1 = require("./schema");
 var values_preview_1 = require("./values-preview");
 // ----------------------------------------------------------------------

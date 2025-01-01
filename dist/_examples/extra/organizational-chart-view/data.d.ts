@@ -1,5 +1,5 @@
 import type { Theme, SxProps } from '@mui/material/styles';
-import type { OrgChartBaseNode } from 'lib/components/organizational-chart';
+import type { OrgChartBaseNode } from '../../../components/organizational-chart';
 export type NodeProps = OrgChartBaseNode & {
     id?: string;
     name: string;

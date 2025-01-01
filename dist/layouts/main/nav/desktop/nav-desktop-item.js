@@ -37,8 +37,8 @@ var routes_react_1 = require("routes-react");
 var styles_1 = require("@mui/material/styles");
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
 var CardActionArea_1 = __importDefault(require("@mui/material/CardActionArea"));
-var iconify_1 = require("lib/components/iconify");
-var hooks_1 = require("lib/components/nav-section/hooks");
+var iconify_1 = require("../../../../components/iconify");
+var hooks_1 = require("../../../../components/nav-section/hooks");
 // ----------------------------------------------------------------------
 exports.NavItem = (0, react_1.forwardRef)(function (_a, ref) {
     var title = _a.title, path = _a.path, open = _a.open, active = _a.active, hasChild = _a.hasChild, externalLink = _a.externalLink, subItem = _a.subItem, other = __rest(_a, ["title", "path", "open", "active", "hasChild", "externalLink", "subItem"]);

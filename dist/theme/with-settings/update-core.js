@@ -12,7 +12,7 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateCoreWithSettings = updateCoreWithSettings;
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 // ----------------------------------------------------------------------
 /**
  * Update the core theme with the settings state.

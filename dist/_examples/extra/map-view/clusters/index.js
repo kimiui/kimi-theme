@@ -27,7 +27,7 @@ exports.MapClusters = MapClusters;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var react_map_gl_1 = require("react-map-gl");
-var map_1 = require("lib/components/map");
+var map_1 = require("../../../../components/map");
 var layers_1 = require("./layers");
 // ----------------------------------------------------------------------
 function MapClusters(_a) {

@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.FormSchema = void 0;
 var zod_1 = require("zod");
 var input_1 = require("react-phone-number-input/input");
-var format_time_1 = require("lib/utils/format-time");
-var hook_form_1 = require("lib/components/hook-form");
+var format_time_1 = require("../../../utils/format-time");
+var hook_form_1 = require("../../../components/hook-form");
 exports.FormSchema = zod_1.z
     .object({
     fullName: zod_1.z

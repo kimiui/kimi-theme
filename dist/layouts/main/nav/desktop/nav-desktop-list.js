@@ -36,10 +36,10 @@ var routes_react_1 = require("routes-react");
 var styles_1 = require("@mui/material/styles");
 var ListSubheader_1 = __importDefault(require("@mui/material/ListSubheader"));
 var react_1 = require("react");
-var styles_2 = require("lib/theme/styles");
-var useActiveLink_1 = require("lib/hooks/useActiveLink");
-var nav_section_1 = require("lib/components/nav-section");
-var utils_1 = require("lib/utils");
+var styles_2 = require("../../../../theme/styles");
+var useActiveLink_1 = require("../../../../hooks/useActiveLink");
+var nav_section_1 = require("../../../../components/nav-section");
+var utils_1 = require("../../../../utils");
 var nav_desktop_item_1 = require("./nav-desktop-item");
 // ----------------------------------------------------------------------
 function NavList(_a) {

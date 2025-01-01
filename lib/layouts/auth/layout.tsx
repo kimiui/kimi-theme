@@ -4,9 +4,8 @@ import { useBoolean } from 'ahooks';
 import Alert from '@mui/material/Alert';
 import { useTheme, type Theme, type SxProps, type Breakpoint } from '@mui/material/styles';
 
-import { stylesMode } from 'lib/theme/styles';
-
 import { AuthMain } from './main';
+import { stylesMode } from '../../theme/styles';
 import { HeaderBase } from '../core/header-base';
 import { LayoutSection } from '../core/layout-section';
 

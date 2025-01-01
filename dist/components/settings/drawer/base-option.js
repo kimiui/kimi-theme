@@ -31,8 +31,8 @@ var Box_1 = __importDefault(require("@mui/material/Box"));
 var Switch_1 = __importDefault(require("@mui/material/Switch"));
 var Tooltip_1 = __importDefault(require("@mui/material/Tooltip"));
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
-var styles_1 = require("lib/theme/styles");
-var iconify_1 = require("lib/components/iconify");
+var styles_1 = require("../../../theme/styles");
+var iconify_1 = require("../../../components/iconify");
 var svg_color_1 = require("../../svg-color");
 function BaseOption(_a) {
     var icon = _a.icon, label = _a.label, tooltip = _a.tooltip, selected = _a.selected, other = __rest(_a, ["icon", "label", "tooltip", "selected"]);

@@ -10,8 +10,8 @@ var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Paper_1 = __importDefault(require("@mui/material/Paper"));
 var Divider_1 = __importDefault(require("@mui/material/Divider"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var styles_1 = require("lib/theme/styles");
-var mega_menu_1 = require("lib/components/mega-menu");
+var styles_1 = require("../../../theme/styles");
+var mega_menu_1 = require("../../../components/mega-menu");
 var data_1 = require("./data");
 // ----------------------------------------------------------------------
 function DemoMegaMenuVertical() {

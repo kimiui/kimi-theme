@@ -8,8 +8,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var ListItemText_1 = __importDefault(require("@mui/material/ListItemText"));
 var ListItemButton_1 = __importDefault(require("@mui/material/ListItemButton"));
-var styles_1 = require("lib/theme/styles");
-var label_1 = require("lib/components/label");
+var styles_1 = require("../../../theme/styles");
+var label_1 = require("../../../components/label");
 function ResultItem(_a) {
     var title = _a.title, path = _a.path, groupLabel = _a.groupLabel, onClickItem = _a.onClickItem;
     return ((0, jsx_runtime_1.jsxs)(ListItemButton_1.default, { onClick: onClickItem, sx: {

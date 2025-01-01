@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FormWizardView = FormWizardView;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var paths_1 = require("lib/routes/paths");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var form_wizard_1 = require("./form-wizard");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");

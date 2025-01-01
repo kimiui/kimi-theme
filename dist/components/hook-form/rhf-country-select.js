@@ -25,7 +25,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RHFCountrySelect = RHFCountrySelect;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_hook_form_1 = require("react-hook-form");
-var country_select_1 = require("lib/components/country-select");
+var country_select_1 = require("../../components/country-select");
 // ----------------------------------------------------------------------
 function RHFCountrySelect(_a) {
     var name = _a.name, helperText = _a.helperText, other = __rest(_a, ["name", "helperText"]);

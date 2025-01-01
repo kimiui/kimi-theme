@@ -41,8 +41,8 @@ exports.AuthGuard = AuthGuard;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var routes_react_1 = require("routes-react");
-var paths_1 = require("lib/routes/paths");
-var loading_screen_1 = require("lib/components/loading-screen");
+var paths_1 = require("../../routes/paths");
+var loading_screen_1 = require("../../components/loading-screen");
 var hooks_1 = require("../hooks");
 function AuthGuard(_a) {
     var _this = this;

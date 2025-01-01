@@ -26,11 +26,11 @@ var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var LinearProgress_1 = __importDefault(require("@mui/material/LinearProgress"));
 var react_1 = require("react");
 var x_data_grid_1 = require("@mui/x-data-grid");
-var label_1 = require("lib/components/label");
-var iconify_1 = require("lib/components/iconify");
-var format_number_1 = require("lib/utils/format-number");
-var format_time_1 = require("lib/utils/format-time");
-var empty_content_1 = require("lib/components/empty-content");
+var label_1 = require("../../../components/label");
+var iconify_1 = require("../../../components/iconify");
+var format_number_1 = require("../../../utils/format-number");
+var format_time_1 = require("../../../utils/format-time");
+var empty_content_1 = require("../../../components/empty-content");
 // ----------------------------------------------------------------------
 var baseColumns = [
     { field: 'id', headerName: 'Id', filterable: false },

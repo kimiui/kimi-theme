@@ -20,8 +20,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Paper_1 = __importDefault(require("@mui/material/Paper"));
 var styles_1 = require("@mui/material/styles");
-var paths_1 = require("lib/routes/paths");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var component_hero_1 = require("../../component-hero");
 var component_template_1 = require("../../component-template");
 // ----------------------------------------------------------------------

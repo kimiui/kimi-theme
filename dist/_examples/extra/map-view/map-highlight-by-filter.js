@@ -32,7 +32,7 @@ var react_map_gl_1 = require("react-map-gl");
 var styles_1 = require("@mui/material/styles");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var react_1 = require("react");
-var map_1 = require("lib/components/map");
+var map_1 = require("../../../components/map");
 // ----------------------------------------------------------------------
 function MapHighlightByFilter(_a) {
     var other = __rest(_a, []);

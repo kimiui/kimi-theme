@@ -33,7 +33,7 @@ var Box_1 = __importDefault(require("@mui/material/Box"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var styles_1 = require("@mui/material/styles");
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../../theme/styles");
 var styles_3 = require("./styles");
 var svg_color_1 = require("../../svg-color");
 function NavOptions(_a) {

@@ -18,10 +18,10 @@ var swr_1 = __importDefault(require("swr"));
 var react_1 = require("react");
 var Paper_1 = __importDefault(require("@mui/material/Paper"));
 var Skeleton_1 = __importDefault(require("@mui/material/Skeleton"));
-var axios_1 = require("lib/utils/axios");
-var label_1 = require("lib/components/label");
-var svg_color_1 = require("lib/components/svg-color");
-var nav_section_1 = require("lib/components/nav-section");
+var axios_1 = require("../../../utils/axios");
+var label_1 = require("../../../components/label");
+var svg_color_1 = require("../../../components/svg-color");
+var nav_section_1 = require("../../../components/nav-section");
 // ----------------------------------------------------------------------
 function useGetNavItems() {
     var URL = '/api/navbar';

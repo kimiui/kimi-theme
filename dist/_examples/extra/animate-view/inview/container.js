@@ -31,8 +31,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var framer_motion_1 = require("framer-motion");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
-var _mock_1 = require("lib/_mock");
-var animate_1 = require("lib/components/animate");
+var _mock_1 = require("../../../../_mock");
+var animate_1 = require("../../../../components/animate");
 var get_variant_1 = require("../get-variant");
 // ----------------------------------------------------------------------
 var TEXT = 'Kimi Admin';

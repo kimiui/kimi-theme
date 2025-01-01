@@ -33,7 +33,7 @@ var Link_1 = __importDefault(require("@mui/material/Link"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var routes_react_1 = require("routes-react");
-var utils_1 = require("lib/utils");
+var utils_1 = require("../../../utils");
 var nav_section_1 = require("../../nav-section");
 // ----------------------------------------------------------------------
 function NavSubList(_a) {

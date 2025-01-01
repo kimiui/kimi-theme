@@ -26,11 +26,11 @@ var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var styles_1 = require("@mui/material/styles");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var label_1 = require("lib/components/label");
-var snackbar_1 = require("lib/components/snackbar");
-var iconify_1 = require("lib/components/iconify");
-var styles_2 = require("lib/theme/styles");
-var custom_popover_1 = require("lib/components/custom-popover");
+var label_1 = require("../../../components/label");
+var snackbar_1 = require("../../../components/snackbar");
+var iconify_1 = require("../../../components/iconify");
+var styles_2 = require("../../../theme/styles");
+var custom_popover_1 = require("../../../components/custom-popover");
 // ----------------------------------------------------------------------
 function GroupNode(_a) {
     var sx = _a.sx, name = _a.name, role = _a.role, depth = _a.depth, group = _a.group, avatarUrl = _a.avatarUrl, totalChildren = _a.totalChildren;

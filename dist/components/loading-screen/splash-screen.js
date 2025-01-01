@@ -30,7 +30,7 @@ exports.SplashScreen = SplashScreen;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Portal_1 = __importDefault(require("@mui/material/Portal"));
-var animate_1 = require("lib/components/animate");
+var animate_1 = require("../../components/animate");
 function SplashScreen(_a) {
     var _b = _a.portal, portal = _b === void 0 ? true : _b, sx = _a.sx, other = __rest(_a, ["portal", "sx"]);
     var content = ((0, jsx_runtime_1.jsx)(Box_1.default, { sx: { overflow: 'hidden' }, children: (0, jsx_runtime_1.jsx)(Box_1.default, __assign({ sx: __assign({ right: 0, width: 1, bottom: 0, height: 1, zIndex: 9998, display: 'flex', position: 'fixed', alignItems: 'center', justifyContent: 'center', bgcolor: 'background.default' }, sx) }, other, { children: (0, jsx_runtime_1.jsx)(animate_1.AnimateLogo1, {}) })) }));

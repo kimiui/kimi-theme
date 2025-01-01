@@ -1,4 +1,4 @@
-import type { NavSectionProps } from 'lib/components/nav-section';
+import type { NavSectionProps } from '../../components/nav-section';
 import type { HeaderSectionProps } from './header-section';
 import type { AccountDrawerProps } from '../components/account-drawer';
 import type { ContactsPopoverProps } from '../components/contacts-popover';

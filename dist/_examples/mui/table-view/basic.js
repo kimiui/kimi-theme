@@ -9,8 +9,8 @@ var Table_1 = __importDefault(require("@mui/material/Table"));
 var TableRow_1 = __importDefault(require("@mui/material/TableRow"));
 var TableCell_1 = __importDefault(require("@mui/material/TableCell"));
 var TableBody_1 = __importDefault(require("@mui/material/TableBody"));
-var scrollbar_1 = require("lib/components/scrollbar");
-var table_1 = require("lib/components/table");
+var scrollbar_1 = require("../../../components/scrollbar");
+var table_1 = require("../../../components/table");
 // ----------------------------------------------------------------------
 function createData(name, calories, fat, carbs, protein) {
     return {

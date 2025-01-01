@@ -6,7 +6,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var styles_1 = require("@mui/material/styles");
 var RichTreeView_1 = require("@mui/x-tree-view/RichTreeView");
 var TreeItem_1 = require("@mui/x-tree-view/TreeItem");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../../theme/styles");
 // ----------------------------------------------------------------------
 var ITEMS = [
     {

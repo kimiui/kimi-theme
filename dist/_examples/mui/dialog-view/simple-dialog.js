@@ -17,7 +17,7 @@ var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var DialogTitle_1 = __importDefault(require("@mui/material/DialogTitle"));
 var ListItemText_1 = __importDefault(require("@mui/material/ListItemText"));
 var ListItemButton_1 = __importDefault(require("@mui/material/ListItemButton"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 // ----------------------------------------------------------------------
 var emails = ['username@gmail.com', 'user02@gmail.com'];
 function SimpleDialog() {

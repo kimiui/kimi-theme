@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.defaultSettings = exports.STORAGE_KEY = void 0;
-var typography_1 = require("lib/theme/core/typography");
+var typography_1 = require("../../theme/core/typography");
 // ----------------------------------------------------------------------
 exports.STORAGE_KEY = 'app-settings';
 exports.defaultSettings = {

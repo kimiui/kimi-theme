@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UtilitiesView = UtilitiesView;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var paths_1 = require("lib/routes/paths");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var gradient_1 = require("./gradient");
 var text_max_line_1 = require("./text-max-line");
 var component_hero_1 = require("../../component-hero");

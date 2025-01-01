@@ -8,9 +8,9 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Button_1 = __importDefault(require("@mui/material/Button"));
 var Divider_1 = __importDefault(require("@mui/material/Divider"));
-var logo_1 = require("lib/components/logo");
-var iconify_1 = require("lib/components/iconify");
-var mega_menu_1 = require("lib/components/mega-menu");
+var logo_1 = require("../../../components/logo");
+var iconify_1 = require("../../../components/iconify");
+var mega_menu_1 = require("../../../components/mega-menu");
 var data_1 = require("./data");
 // ----------------------------------------------------------------------
 function DemoMegaMenuMobile() {

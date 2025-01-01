@@ -30,7 +30,7 @@ var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var react_1 = require("react");
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../theme/styles");
 var iconify_1 = require("../iconify");
 // ----------------------------------------------------------------------
 var StyledUl = (0, styles_1.styled)('ul')(function (_a) {

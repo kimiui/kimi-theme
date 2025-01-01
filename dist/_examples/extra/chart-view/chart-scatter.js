@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChartScatter = ChartScatter;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var chart_1 = require("lib/components/chart");
+var chart_1 = require("../../../components/chart");
 function ChartScatter(_a) {
     var chart = _a.chart;
     var chartOptions = (0, chart_1.useChart)({

@@ -28,7 +28,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var react_map_gl_1 = require("react-map-gl");
 var styles_1 = require("@mui/material/styles");
-var map_1 = require("lib/components/map");
+var map_1 = require("../../../components/map");
 // ----------------------------------------------------------------------
 function MapGeoJSONAnimation(_a) {
     var other = __rest(_a, []);

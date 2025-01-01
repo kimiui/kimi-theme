@@ -19,8 +19,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var framer_motion_1 = require("framer-motion");
 var Container_1 = __importDefault(require("@mui/material/Container"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var illustrations_1 = require("lib/assets/illustrations");
-var animate_1 = require("lib/components/animate");
+var illustrations_1 = require("../../assets/illustrations");
+var animate_1 = require("../../components/animate");
 function RoleBasedGuard(_a) {
     var sx = _a.sx, children = _a.children, hasContent = _a.hasContent, currentRole = _a.currentRole, acceptRoles = _a.acceptRoles;
     if (typeof acceptRoles !== 'undefined' && !acceptRoles.includes(currentRole)) {

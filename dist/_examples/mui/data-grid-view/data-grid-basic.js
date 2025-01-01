@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DataGridBasic = DataGridBasic;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var x_data_grid_1 = require("@mui/x-data-grid");
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 // ----------------------------------------------------------------------
 var columns = [
     { field: 'id', headerName: 'ID', width: 120 },

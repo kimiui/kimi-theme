@@ -14,7 +14,7 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.StyledControlPanel = void 0;
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../../theme/styles");
 // ----------------------------------------------------------------------
 exports.StyledControlPanel = (0, styles_1.styled)('div')(function (_a) {
     var theme = _a.theme;

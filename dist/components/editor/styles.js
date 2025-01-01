@@ -18,7 +18,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.StyledRoot = void 0;
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../theme/styles");
 var classes_1 = require("./classes");
 // ----------------------------------------------------------------------
 var MARGIN = '0.75em';

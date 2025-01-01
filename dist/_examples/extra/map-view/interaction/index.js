@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MapInteraction = MapInteraction;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
-var map_1 = require("lib/components/map");
+var map_1 = require("../../../../components/map");
 var control_panel_1 = require("./control-panel");
 // ----------------------------------------------------------------------
 function MapInteraction(_a) {

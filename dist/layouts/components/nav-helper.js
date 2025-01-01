@@ -34,7 +34,7 @@ var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Button_1 = __importDefault(require("@mui/material/Button"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../theme/styles");
 // ----------------------------------------------------------------------
 function NavHelper(_a) {
     var sx = _a.sx, other = __rest(_a, ["sx"]);

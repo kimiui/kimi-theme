@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChartBoxPlot = ChartBoxPlot;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var styles_1 = require("@mui/material/styles");
-var chart_1 = require("lib/components/chart");
+var chart_1 = require("../../../components/chart");
 function ChartBoxPlot(_a) {
     var _b;
     var chart = _a.chart;

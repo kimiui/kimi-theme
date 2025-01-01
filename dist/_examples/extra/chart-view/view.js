@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChartView = ChartView;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var paths_1 = require("lib/routes/paths");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var chart_pie_1 = require("./chart-pie");
 var chart_bar_1 = require("./chart-bar");
 var chart_line_1 = require("./chart-line");

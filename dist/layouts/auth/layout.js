@@ -20,8 +20,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var ahooks_1 = require("ahooks");
 var Alert_1 = __importDefault(require("@mui/material/Alert"));
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
 var main_1 = require("./main");
+var styles_2 = require("../../theme/styles");
 var header_base_1 = require("../core/header-base");
 var layout_section_1 = require("../core/layout-section");
 function AuthLayout(_a) {

@@ -8,7 +8,7 @@ exports.FiltersResult = FiltersResult;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Button_1 = __importDefault(require("@mui/material/Button"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../components/iconify");
 // ----------------------------------------------------------------------
 exports.chipProps = {
     size: 'small',

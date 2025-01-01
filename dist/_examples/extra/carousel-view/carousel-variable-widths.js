@@ -17,8 +17,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CarouselVariableWidths = CarouselVariableWidths;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
-var image_1 = require("lib/components/image");
-var carousel_1 = require("lib/components/carousel");
+var image_1 = require("../../../components/image");
+var carousel_1 = require("../../../components/carousel");
 var elements_1 = require("./elements");
 function CarouselVariableWidths(_a) {
     var data = _a.data;

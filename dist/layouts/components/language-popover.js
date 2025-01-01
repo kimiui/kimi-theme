@@ -32,10 +32,10 @@ var react_1 = require("react");
 var MenuList_1 = __importDefault(require("@mui/material/MenuList"));
 var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var locales_1 = require("lib/locales");
-var animate_1 = require("lib/components/animate");
-var iconify_1 = require("lib/components/iconify");
-var custom_popover_1 = require("lib/components/custom-popover");
+var locales_1 = require("../../locales");
+var animate_1 = require("../../components/animate");
+var iconify_1 = require("../../components/iconify");
+var custom_popover_1 = require("../../components/custom-popover");
 function LanguagePopover(_a) {
     var _b = _a.data, data = _b === void 0 ? [] : _b, sx = _a.sx, other = __rest(_a, ["data", "sx"]);
     var popover = (0, custom_popover_1.usePopover)();

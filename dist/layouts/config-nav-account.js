@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports._account = void 0;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var SvgIcon_1 = __importDefault(require("@mui/material/SvgIcon"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../components/iconify");
 // ----------------------------------------------------------------------
 exports._account = [
     {

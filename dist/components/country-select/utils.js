@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getCountry = getCountry;
 exports.displayValueByCountryCode = displayValueByCountryCode;
-var data_1 = require("lib/assets/data");
+var data_1 = require("../../assets/data");
 // ----------------------------------------------------------------------
 function getCountry(inputValue) {
     var option = data_1.countries.filter(function (country) { return country.label === inputValue || country.code === inputValue; })[0];

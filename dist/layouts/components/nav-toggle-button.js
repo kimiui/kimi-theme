@@ -29,7 +29,7 @@ exports.NavToggleButton = NavToggleButton;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var SvgIcon_1 = __importDefault(require("@mui/material/SvgIcon"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 function NavToggleButton(_a) {
     var isNavMini = _a.isNavMini, sx = _a.sx, other = __rest(_a, ["isNavMini", "sx"]);
     return ((0, jsx_runtime_1.jsx)(IconButton_1.default, __assign({ size: "small", sx: __assign({ p: 0.5, top: 24, position: 'fixed', color: 'action.active', bgcolor: 'background.default', transform: 'translateX(-50%)', zIndex: 'var(--layout-nav-zIndex)', left: isNavMini ? 'var(--layout-nav-mini-width)' : 'var(--layout-nav-vertical-width)', border: function (theme) { return "1px solid ".concat((0, styles_1.varAlpha)(theme.vars.palette.grey['500Channel'], 0.12)); }, transition: function (theme) {

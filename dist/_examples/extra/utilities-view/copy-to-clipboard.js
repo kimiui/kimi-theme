@@ -12,9 +12,9 @@ var TextField_1 = __importDefault(require("@mui/material/TextField"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var InputAdornment_1 = __importDefault(require("@mui/material/InputAdornment"));
-var snackbar_1 = require("lib/components/snackbar");
-var iconify_1 = require("lib/components/iconify");
-var hooks_1 = require("lib/hooks");
+var snackbar_1 = require("../../../components/snackbar");
+var iconify_1 = require("../../../components/iconify");
+var hooks_1 = require("../../../hooks");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------
 function CopyToClipboard() {

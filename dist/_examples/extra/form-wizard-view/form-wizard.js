@@ -50,8 +50,8 @@ var Button_1 = __importDefault(require("@mui/material/Button"));
 var react_1 = require("react");
 var LoadingButton_1 = __importDefault(require("@mui/lab/LoadingButton"));
 var zod_2 = require("@hookform/resolvers/zod");
-var snackbar_1 = require("lib/components/snackbar");
-var hook_form_1 = require("lib/components/hook-form");
+var snackbar_1 = require("../../../components/snackbar");
+var hook_form_1 = require("../../../components/hook-form");
 var form_steps_1 = require("./form-steps");
 // ----------------------------------------------------------------------
 var steps = ['Step one', 'Step two', 'Step three'];

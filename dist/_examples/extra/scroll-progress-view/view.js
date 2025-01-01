@@ -19,11 +19,11 @@ var Box_1 = __importDefault(require("@mui/material/Box"));
 var Paper_1 = __importDefault(require("@mui/material/Paper"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var CardContent_1 = __importDefault(require("@mui/material/CardContent"));
-var paths_1 = require("lib/routes/paths");
-var styles_1 = require("lib/theme/styles");
-var scrollbar_1 = require("lib/components/scrollbar");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
-var scroll_progress_1 = require("lib/components/animate/scroll-progress");
+var paths_1 = require("../../../routes/paths");
+var styles_1 = require("../../../theme/styles");
+var scrollbar_1 = require("../../../components/scrollbar");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
+var scroll_progress_1 = require("../../../components/animate/scroll-progress");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------

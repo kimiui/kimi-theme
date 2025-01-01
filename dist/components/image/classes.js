@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.imageClasses = void 0;
-var create_classes_1 = require("lib/theme/create-classes");
+var create_classes_1 = require("../../theme/create-classes");
 // ----------------------------------------------------------------------
 exports.imageClasses = {
     root: (0, create_classes_1.createClasses)('image__root'),

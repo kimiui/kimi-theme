@@ -27,9 +27,9 @@ var styles_1 = require("@mui/material/styles");
 var Container_1 = __importDefault(require("@mui/material/Container"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var _mock_1 = require("lib/_mock");
-var logo_1 = require("lib/components/logo");
-var iconify_1 = require("lib/components/iconify");
+var _mock_1 = require("../../_mock");
+var logo_1 = require("../../components/logo");
+var iconify_1 = require("../../components/iconify");
 // ----------------------------------------------------------------------
 var LINKS = [
     {

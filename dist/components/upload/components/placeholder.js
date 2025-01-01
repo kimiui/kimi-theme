@@ -29,7 +29,7 @@ exports.UploadPlaceholder = UploadPlaceholder;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
-var illustrations_1 = require("lib/assets/illustrations");
+var illustrations_1 = require("../../../assets/illustrations");
 // ----------------------------------------------------------------------
 function UploadPlaceholder(_a) {
     var other = __rest(_a, []);

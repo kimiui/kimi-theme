@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getVariant = getVariant;
-var animate_1 = require("lib/components/animate");
+var animate_1 = require("../../../components/animate");
 // ----------------------------------------------------------------------
 function getVariant(variant, distance) {
     if (variant === void 0) { variant = 'slideInUp'; }

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useActiveLink = useActiveLink;
 var routes_react_1 = require("routes-react");
-var helper_1 = require("lib/utils/helper");
+var helper_1 = require("../utils/helper");
 // ----------------------------------------------------------------------
 function useActiveLink(itemPath, deep) {
     if (deep === void 0) { deep = true; }

@@ -4,9 +4,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChartRadialBar = ChartRadialBar;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
-var format_number_1 = require("lib/utils/format-number");
-var chart_1 = require("lib/components/chart");
+var styles_2 = require("../../../theme/styles");
+var format_number_1 = require("../../../utils/format-number");
+var chart_1 = require("../../../components/chart");
 function ChartRadialBar(_a) {
     var _b;
     var chart = _a.chart;

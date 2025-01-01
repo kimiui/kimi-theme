@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.megaMenuCssVars = void 0;
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 // ----------------------------------------------------------------------
 function verticalVars(theme) {
     var spacing = theme.spacing, palette = theme.vars.palette;

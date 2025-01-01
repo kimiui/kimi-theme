@@ -9,9 +9,9 @@ var AppBar_1 = __importDefault(require("@mui/material/AppBar"));
 var Toolbar_1 = __importDefault(require("@mui/material/Toolbar"));
 var Container_1 = __importDefault(require("@mui/material/Container"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var label_1 = require("lib/components/label");
-var iconify_1 = require("lib/components/iconify");
-var mega_menu_1 = require("lib/components/mega-menu");
+var label_1 = require("../../../components/label");
+var iconify_1 = require("../../../components/iconify");
+var mega_menu_1 = require("../../../components/mega-menu");
 var data_1 = require("./data");
 // ----------------------------------------------------------------------
 function DemoMegaMenuHorizontal() {

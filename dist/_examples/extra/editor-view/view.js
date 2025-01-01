@@ -12,10 +12,10 @@ var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Switch_1 = __importDefault(require("@mui/material/Switch"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
-var paths_1 = require("lib/routes/paths");
-var editor_1 = require("lib/components/editor");
-var markdown_1 = require("lib/components/markdown");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var editor_1 = require("../../../components/editor");
+var markdown_1 = require("../../../components/markdown");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------

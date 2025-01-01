@@ -4,8 +4,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChartColumnNegative = ChartColumnNegative;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var styles_1 = require("@mui/material/styles");
-var format_number_1 = require("lib/utils/format-number");
-var chart_1 = require("lib/components/chart");
+var format_number_1 = require("../../../utils/format-number");
+var chart_1 = require("../../../components/chart");
 function ChartColumnNegative(_a) {
     var _b;
     var chart = _a.chart;

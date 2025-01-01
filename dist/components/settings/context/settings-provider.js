@@ -16,7 +16,7 @@ exports.SettingsConsumer = exports.SettingsContext = void 0;
 exports.SettingsProvider = SettingsProvider;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
-var hooks_1 = require("lib/hooks");
+var hooks_1 = require("../../../hooks");
 var config_settings_1 = require("../config-settings");
 // ----------------------------------------------------------------------
 exports.SettingsContext = (0, react_1.createContext)(undefined);

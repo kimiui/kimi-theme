@@ -29,8 +29,8 @@ exports.NavHorizontal = NavHorizontal;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Divider_1 = __importDefault(require("@mui/material/Divider"));
-var styles_1 = require("lib/theme/styles");
-var nav_section_1 = require("lib/components/nav-section");
+var styles_1 = require("../../theme/styles");
+var nav_section_1 = require("../../components/nav-section");
 function NavHorizontal(_a) {
     var _b;
     var data = _a.data, layoutQuery = _a.layoutQuery, sx = _a.sx, other = __rest(_a, ["data", "layoutQuery", "sx"]);

@@ -1,4 +1,4 @@
-import type { IDateValue } from 'lib/types/common';
+import type { IDateValue } from '../../../types/common';
 type Props = {
     data: {
         id: string;

@@ -12,7 +12,7 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.GROUP_DATA = exports.SIMPLE_DATA = void 0;
-var _mock_1 = require("lib/_mock");
+var _mock_1 = require("../../../_mock");
 var rootNode = {
     group: 'root',
     role: 'ceo, co-founder',

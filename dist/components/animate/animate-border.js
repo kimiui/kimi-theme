@@ -20,7 +20,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var framer_motion_1 = require("framer-motion");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var react_1 = require("react");
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 function AnimateBorder(_a) {
     var _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
     var animate = _a.animate, sx = _a.sx;

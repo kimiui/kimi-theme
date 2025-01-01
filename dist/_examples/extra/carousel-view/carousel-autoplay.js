@@ -7,8 +7,8 @@ exports.CarouselAutoplay = CarouselAutoplay;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var embla_carousel_autoplay_1 = __importDefault(require("embla-carousel-autoplay"));
-var image_1 = require("lib/components/image");
-var carousel_1 = require("lib/components/carousel");
+var image_1 = require("../../../components/image");
+var carousel_1 = require("../../../components/carousel");
 var elements_1 = require("./elements");
 function CarouselAutoplay(_a) {
     var data = _a.data;

@@ -32,8 +32,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var styles_1 = require("@mui/material/styles");
 var Container_1 = __importDefault(require("@mui/material/Container"));
-var classes_1 = require("lib/layouts/classes");
-var settings_1 = require("lib/components/settings");
+var classes_1 = require("../../layouts/classes");
+var settings_1 = require("../../components/settings");
 function Main(_a) {
     var children = _a.children, isNavHorizontal = _a.isNavHorizontal, sx = _a.sx, other = __rest(_a, ["children", "isNavHorizontal", "sx"]);
     return ((0, jsx_runtime_1.jsx)(Box_1.default, __assign({ component: "main", className: classes_1.layoutClasses.main, sx: __assign(__assign({ display: 'flex', flex: '1 1 auto', flexDirection: 'column' }, (isNavHorizontal && {

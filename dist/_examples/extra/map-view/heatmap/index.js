@@ -26,7 +26,7 @@ exports.MapHeatmap = MapHeatmap;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_map_gl_1 = require("react-map-gl");
 var react_1 = require("react");
-var map_1 = require("lib/components/map");
+var map_1 = require("../../../../components/map");
 var map_style_1 = require("./map-style");
 var control_panel_1 = require("./control-panel");
 // ----------------------------------------------------------------------

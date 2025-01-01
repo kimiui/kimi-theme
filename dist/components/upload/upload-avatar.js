@@ -32,8 +32,8 @@ var Box_1 = __importDefault(require("@mui/material/Box"));
 var react_1 = require("react");
 var react_dropzone_1 = require("react-dropzone");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var styles_1 = require("lib/theme/styles");
-var image_1 = require("lib/components/image");
+var styles_1 = require("../../theme/styles");
+var image_1 = require("../../components/image");
 var iconify_1 = require("../iconify");
 var rejection_files_1 = require("./components/rejection-files");
 // ----------------------------------------------------------------------

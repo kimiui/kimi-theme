@@ -34,9 +34,9 @@ var react_1 = require("react");
 var MenuList_1 = __importDefault(require("@mui/material/MenuList"));
 var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
-var label_1 = require("lib/components/label");
-var iconify_1 = require("lib/components/iconify");
-var custom_popover_1 = require("lib/components/custom-popover");
+var label_1 = require("../../components/label");
+var iconify_1 = require("../../components/iconify");
+var custom_popover_1 = require("../../components/custom-popover");
 function WorkspacesPopover(_a) {
     var _b, _c, _d;
     var _e = _a.data, data = _e === void 0 ? [] : _e, sx = _a.sx, other = __rest(_a, ["data", "sx"]);

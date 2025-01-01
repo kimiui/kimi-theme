@@ -32,7 +32,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Container_1 = __importDefault(require("@mui/material/Container"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../theme/styles");
 function ComponentBlock(_a) {
     var title = _a.title, sx = _a.sx, children = _a.children, other = __rest(_a, ["title", "sx", "children"]);
     return ((0, jsx_runtime_1.jsxs)(Stack_1.default, __assign({ sx: __assign({ px: 3, py: 6, gap: 2, width: 1, flexWrap: 'wrap', borderRadius: 1.5, position: 'relative', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', bgcolor: function (theme) { return (0, styles_1.varAlpha)(theme.vars.palette.grey['500Channel'], 0.04); }, boxShadow: function (theme) { return "0 0 0 1px ".concat((0, styles_1.varAlpha)(theme.vars.palette.grey['500Channel'], 0.16)); } }, sx) }, other, { children: [title && ((0, jsx_runtime_1.jsx)(Box_1.default, { component: "span", sx: {

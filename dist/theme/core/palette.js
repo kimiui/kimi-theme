@@ -12,7 +12,7 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.palette = exports.basePalette = exports.action = exports.baseAction = exports.background = exports.text = exports.grey = exports.common = exports.error = exports.warning = exports.success = exports.info = exports.secondary = exports.primary = void 0;
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 var theme_config_1 = require("../theme-config");
 // ----------------------------------------------------------------------
 // Primary color

@@ -14,7 +14,7 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useSetState = useSetState;
 var react_1 = require("react");
-var helper_1 = require("lib/utils/helper");
+var helper_1 = require("../utils/helper");
 function useSetState(initialState) {
     var _a = (0, react_1.useState)(initialState), state = _a[0], set = _a[1];
     var canReset = !(0, helper_1.isEqual)(state, initialState);

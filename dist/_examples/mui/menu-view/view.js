@@ -13,9 +13,9 @@ var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var ListItemText_1 = __importDefault(require("@mui/material/ListItemText"));
 var ListItemButton_1 = __importDefault(require("@mui/material/ListItemButton"));
-var paths_1 = require("lib/routes/paths");
-var iconify_1 = require("lib/components/iconify");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var iconify_1 = require("../../../components/iconify");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------

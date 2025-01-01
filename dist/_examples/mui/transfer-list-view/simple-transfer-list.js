@@ -24,7 +24,7 @@ var Checkbox_1 = __importDefault(require("@mui/material/Checkbox"));
 var ListItemIcon_1 = __importDefault(require("@mui/material/ListItemIcon"));
 var ListItemText_1 = __importDefault(require("@mui/material/ListItemText"));
 var ListItemButton_1 = __importDefault(require("@mui/material/ListItemButton"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 // ----------------------------------------------------------------------
 function not(a, b) {
     return a.filter(function (value) { return b.indexOf(value) === -1; });

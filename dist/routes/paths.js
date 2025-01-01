@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.paths = void 0;
-var change_case_1 = require("lib/utils/change-case");
-var assets_1 = require("lib/_mock/assets");
+var change_case_1 = require("../utils/change-case");
+var assets_1 = require("../_mock/assets");
 // ----------------------------------------------------------------------
 var MOCK_ID = assets_1._id[1];
 var MOCK_TITLE = assets_1._postTitles[2];

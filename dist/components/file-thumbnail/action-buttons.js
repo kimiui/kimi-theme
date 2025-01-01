@@ -30,7 +30,7 @@ exports.RemoveButton = RemoveButton;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 var iconify_1 = require("../iconify");
 // ----------------------------------------------------------------------
 function DownloadButton(_a) {

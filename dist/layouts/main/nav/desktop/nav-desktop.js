@@ -17,7 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.NavDesktop = NavDesktop;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
-var nav_section_1 = require("lib/components/nav-section");
+var nav_section_1 = require("../../../../components/nav-section");
 var nav_desktop_list_1 = require("./nav-desktop-list");
 // ----------------------------------------------------------------------
 function NavDesktop(_a) {

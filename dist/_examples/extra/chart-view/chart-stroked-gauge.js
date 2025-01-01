@@ -4,8 +4,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChartStrokedGauge = ChartStrokedGauge;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
-var chart_1 = require("lib/components/chart");
+var styles_2 = require("../../../theme/styles");
+var chart_1 = require("../../../components/chart");
 function ChartStrokedGauge(_a) {
     var _b;
     var chart = _a.chart;

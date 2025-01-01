@@ -27,8 +27,8 @@ var TableCell_1 = __importDefault(require("@mui/material/TableCell"));
 var TableHead_1 = __importDefault(require("@mui/material/TableHead"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var iconify_1 = require("lib/components/iconify");
-var scrollbar_1 = require("lib/components/scrollbar");
+var iconify_1 = require("../../../components/iconify");
+var scrollbar_1 = require("../../../components/scrollbar");
 var utils_1 = require("./utils");
 // ----------------------------------------------------------------------
 var TABLE_DATA = [

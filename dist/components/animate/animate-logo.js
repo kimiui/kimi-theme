@@ -32,7 +32,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var framer_motion_1 = require("framer-motion");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../theme/styles");
 var logo_1 = require("../logo");
 function AnimateLogo1(_a) {
     var logo = _a.logo, sx = _a.sx, other = __rest(_a, ["logo", "sx"]);

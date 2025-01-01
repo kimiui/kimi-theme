@@ -1,4 +1,4 @@
-import type { NavSectionProps, NavItemBaseProps } from 'lib/components/nav-section';
+import type { NavSectionProps, NavItemBaseProps } from '../../../components/nav-section';
 type ItemProps = {
     group: string;
     title: string;

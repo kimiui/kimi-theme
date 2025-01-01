@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MegaMenuView = MegaMenuView;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var paths_1 = require("lib/routes/paths");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var mobile_1 = require("./mobile");
 var vertical_1 = require("./vertical");
 var component_hero_1 = require("../../component-hero");

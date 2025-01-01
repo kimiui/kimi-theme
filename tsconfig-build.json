@@ -10,7 +10,7 @@
     "lib": [ "dom", "dom.iterable","esnext"],
     "paths": {
       "lib/*": ["./lib/*"]
-    }
+    },
   },
   "include": ["lib"],
   "exclude": ["node_modules"]

@@ -31,7 +31,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var Fab_1 = __importDefault(require("@mui/material/Fab"));
 var framer_motion_1 = require("framer-motion");
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 function BackToTop(_a) {
     var _b = _a.value, value = _b === void 0 ? 90 : _b, sx = _a.sx, other = __rest(_a, ["value", "sx"]);
     var scrollYProgress = (0, framer_motion_1.useScroll)().scrollYProgress;

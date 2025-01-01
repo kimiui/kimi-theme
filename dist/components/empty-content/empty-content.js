@@ -30,7 +30,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 function EmptyContent(_a) {
     var sx = _a.sx, imgUrl = _a.imgUrl, action = _a.action, filled = _a.filled, slotProps = _a.slotProps, description = _a.description, _b = _a.title, title = _b === void 0 ? 'No data' : _b, other = __rest(_a, ["sx", "imgUrl", "action", "filled", "slotProps", "description", "title"]);
     return ((0, jsx_runtime_1.jsxs)(Stack_1.default, __assign({ flexGrow: 1, alignItems: "center", justifyContent: "center", sx: __assign(__assign({ px: 3, height: 1 }, (filled && {

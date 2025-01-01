@@ -20,8 +20,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var routes_react_1 = require("routes-react");
 var Collapse_1 = __importDefault(require("@mui/material/Collapse"));
 var react_1 = require("react");
-var utils_1 = require("lib/utils");
-var useActiveLink_1 = require("lib/hooks/useActiveLink");
+var utils_1 = require("../../../utils");
+var useActiveLink_1 = require("../../../hooks/useActiveLink");
 var nav_item_1 = require("./nav-item");
 var nav_section_1 = require("../../nav-section");
 // ----------------------------------------------------------------------

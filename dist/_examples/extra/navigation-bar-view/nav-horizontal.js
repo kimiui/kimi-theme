@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.NavHorizontal = NavHorizontal;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Paper_1 = __importDefault(require("@mui/material/Paper"));
-var nav_section_1 = require("lib/components/nav-section");
+var nav_section_1 = require("../../../components/nav-section");
 var data_1 = require("./data");
 // ----------------------------------------------------------------------
 function NavHorizontal() {

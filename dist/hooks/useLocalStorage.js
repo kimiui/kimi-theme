@@ -17,8 +17,8 @@ exports.getStorage = getStorage;
 exports.setStorage = setStorage;
 exports.removeStorage = removeStorage;
 var react_1 = require("react");
-var helper_1 = require("lib/utils/helper");
-var storage_available_1 = require("lib/utils/storage-available");
+var helper_1 = require("../utils/helper");
+var storage_available_1 = require("../utils/storage-available");
 function useLocalStorage(key, initialState) {
     var _a = (0, react_1.useState)(initialState), state = _a[0], set = _a[1];
     var multiValue = initialState && typeof initialState === 'object';

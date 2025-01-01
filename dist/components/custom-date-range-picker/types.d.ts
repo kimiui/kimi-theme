@@ -1,4 +1,4 @@
-import type { IDatePickerControl } from 'lib/types/common';
+import type { IDatePickerControl } from '../../types/common';
 export type UseDateRangePickerReturn = {
     startDate: IDatePickerControl;
     endDate: IDatePickerControl;

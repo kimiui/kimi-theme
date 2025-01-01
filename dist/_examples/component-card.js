@@ -11,10 +11,10 @@ var Paper_1 = __importDefault(require("@mui/material/Paper"));
 var routes_react_1 = require("routes-react");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var CardActionArea_1 = __importDefault(require("@mui/material/CardActionArea"));
-var styles_1 = require("lib/theme/styles");
-var image_1 = require("lib/components/image");
-var label_1 = require("lib/components/label");
-var animate_1 = require("lib/components/animate");
+var styles_1 = require("../theme/styles");
+var image_1 = require("../components/image");
+var label_1 = require("../components/label");
+var animate_1 = require("../components/animate");
 function ComponentCard(_a) {
     var item = _a.item;
     return ((0, jsx_runtime_1.jsxs)(Paper_1.default, { component: routes_react_1.RouterLink, href: item.href, variant: "outlined", sx: {

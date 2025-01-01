@@ -20,10 +20,10 @@ var Paper_1 = __importDefault(require("@mui/material/Paper"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var styles_1 = require("@mui/material/styles");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var paths_1 = require("lib/routes/paths");
-var hooks_1 = require("lib/hooks");
-var styles_2 = require("lib/theme/styles");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var hooks_1 = require("../../../hooks");
+var styles_2 = require("../../../theme/styles");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var component_hero_1 = require("../../component-hero");
 var component_template_1 = require("../../component-template");
 // ----------------------------------------------------------------------

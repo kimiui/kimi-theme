@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.shadows = void 0;
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 var palette_1 = require("./palette");
 // ----------------------------------------------------------------------
 function createShadows(colorChannel) {

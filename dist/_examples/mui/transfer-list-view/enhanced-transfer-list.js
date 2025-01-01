@@ -26,7 +26,7 @@ var CardHeader_1 = __importDefault(require("@mui/material/CardHeader"));
 var ListItemText_1 = __importDefault(require("@mui/material/ListItemText"));
 var ListItemIcon_1 = __importDefault(require("@mui/material/ListItemIcon"));
 var ListItemButton_1 = __importDefault(require("@mui/material/ListItemButton"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 // ----------------------------------------------------------------------
 function not(a, b) {
     return a.filter(function (value) { return b.indexOf(value) === -1; });

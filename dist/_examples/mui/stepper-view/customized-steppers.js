@@ -60,8 +60,8 @@ var styles_1 = require("@mui/material/styles");
 var StepLabel_1 = __importDefault(require("@mui/material/StepLabel"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var StepConnector_1 = __importStar(require("@mui/material/StepConnector"));
-var iconify_1 = require("lib/components/iconify");
-var styles_2 = require("lib/theme/styles");
+var iconify_1 = require("../../../components/iconify");
+var styles_2 = require("../../../theme/styles");
 // ----------------------------------------------------------------------
 var STEPS = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 var QontoConnector = (0, styles_1.styled)(StepConnector_1.default)(function (_a) {

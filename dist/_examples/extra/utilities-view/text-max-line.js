@@ -21,7 +21,7 @@ var Link_1 = __importDefault(require("@mui/material/Link"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var styles_1 = require("@mui/material/styles");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../../theme/styles");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------
 var content = "\nDonec posuere vulputate arcu. Fusce vulputate eleifend sapien. Phasellus magna. Proin\nsapien ipsum, porta a, auctor quis, euismod ut, mi. Suspendisse faucibus, nunc et\npellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor.\n";

@@ -9,7 +9,7 @@ var Box_1 = __importDefault(require("@mui/material/Box"));
 var Slider_1 = __importDefault(require("@mui/material/Slider"));
 var Switch_1 = __importDefault(require("@mui/material/Switch"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var format_time_1 = require("lib/utils/format-time");
+var format_time_1 = require("../../../../utils/format-time");
 var styles_1 = require("../styles");
 function ControlPanel(_a) {
     var startTime = _a.startTime, endTime = _a.endTime, allDays = _a.allDays, selectedTime = _a.selectedTime, onChangeTime = _a.onChangeTime, onChangeAllDays = _a.onChangeAllDays;

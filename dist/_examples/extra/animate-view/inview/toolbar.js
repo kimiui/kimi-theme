@@ -32,7 +32,7 @@ var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Switch_1 = __importDefault(require("@mui/material/Switch"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../../components/iconify");
 function Toolbar(_a) {
     var isText = _a.isText, isMulti = _a.isMulti, onChangeText = _a.onChangeText, onChangeMulti = _a.onChangeMulti, onRefresh = _a.onRefresh, other = __rest(_a, ["isText", "isMulti", "onChangeText", "onChangeMulti", "onRefresh"]);
     return ((0, jsx_runtime_1.jsxs)(Stack_1.default, __assign({ direction: "row", alignItems: "center" }, other, { children: [(0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { control: (0, jsx_runtime_1.jsx)(Switch_1.default, { checked: isText, onChange: onChangeText }), label: "Text object" }), (0, jsx_runtime_1.jsx)(Box_1.default, { sx: { flexGrow: 1 } }), !isText && ((0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { control: (0, jsx_runtime_1.jsx)(Switch_1.default, { checked: isMulti, onChange: onChangeMulti }), label: "Multiitem" })), (0, jsx_runtime_1.jsx)(IconButton_1.default, { onClick: onRefresh, children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "eva:refresh-fill" }) })] })));

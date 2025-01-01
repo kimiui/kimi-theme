@@ -15,7 +15,7 @@ var Stepper_1 = __importDefault(require("@mui/material/Stepper"));
 var StepLabel_1 = __importDefault(require("@mui/material/StepLabel"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var StepContent_1 = __importDefault(require("@mui/material/StepContent"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../../theme/styles");
 // ----------------------------------------------------------------------
 var steps = [
     {

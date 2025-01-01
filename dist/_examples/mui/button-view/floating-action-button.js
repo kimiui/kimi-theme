@@ -42,8 +42,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var framer_motion_1 = require("framer-motion");
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Fab_1 = __importStar(require("@mui/material/Fab"));
-var iconify_1 = require("lib/components/iconify");
-var animate_1 = require("lib/components/animate");
+var iconify_1 = require("../../../components/iconify");
+var animate_1 = require("../../../components/animate");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------
 var COLORS = [

@@ -35,10 +35,10 @@ var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var ListItemText_1 = __importDefault(require("@mui/material/ListItemText"));
-var format_time_1 = require("lib/utils/format-time");
-var animate_1 = require("lib/components/animate");
-var scrollbar_1 = require("lib/components/scrollbar");
-var custom_popover_1 = require("lib/components/custom-popover");
+var format_time_1 = require("../../utils/format-time");
+var animate_1 = require("../../components/animate");
+var scrollbar_1 = require("../../components/scrollbar");
+var custom_popover_1 = require("../../components/custom-popover");
 function ContactsPopover(_a) {
     var _b = _a.data, data = _b === void 0 ? [] : _b, sx = _a.sx, other = __rest(_a, ["data", "sx"]);
     var popover = (0, custom_popover_1.usePopover)();

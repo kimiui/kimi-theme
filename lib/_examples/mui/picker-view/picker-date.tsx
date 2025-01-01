@@ -9,9 +9,9 @@ import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 
-import type { IDatePickerControl } from 'lib/types/common';
-
 import { ComponentBlock } from '../../component-block';
+
+import type { IDatePickerControl } from '../../../types/common';
 
 // ----------------------------------------------------------------------
 

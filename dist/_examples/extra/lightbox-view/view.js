@@ -34,11 +34,11 @@ var Switch_1 = __importDefault(require("@mui/material/Switch"));
 var FormLabel_1 = __importDefault(require("@mui/material/FormLabel"));
 var FormControl_1 = __importDefault(require("@mui/material/FormControl"));
 var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
-var _mock_1 = require("lib/_mock");
-var paths_1 = require("lib/routes/paths");
-var image_1 = require("lib/components/image");
-var lightbox_1 = require("lib/components/lightbox");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var _mock_1 = require("../../../_mock");
+var paths_1 = require("../../../routes/paths");
+var image_1 = require("../../../components/image");
+var lightbox_1 = require("../../../components/lightbox");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------

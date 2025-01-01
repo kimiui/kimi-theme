@@ -30,7 +30,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var framer_motion_1 = require("framer-motion");
 var react_1 = require("react");
 var Box_1 = __importDefault(require("@mui/material/Box"));
-var hooks_1 = require("lib/hooks");
+var hooks_1 = require("../../hooks");
 var variants_1 = require("./variants");
 exports.MotionViewport = (0, react_1.forwardRef)(function (_a, ref) {
     var children = _a.children, _b = _a.disableAnimate, disableAnimate = _b === void 0 ? true : _b, other = __rest(_a, ["children", "disableAnimate"]);

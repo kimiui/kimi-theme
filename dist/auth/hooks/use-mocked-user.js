@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useMockedUser = useMockedUser;
-var _mock_1 = require("lib/_mock");
+var _mock_1 = require("../../_mock");
 // To get the user from the <AuthContext/>, you can use
 // Change:
-// import { useMockedUser } from 'lib/auth/hooks';
+// import { useMockedUser } from '../../auth/hooks';
 // const { user } = useMockedUser();
 // To:
-// import { useAuthContext } from 'lib/auth/hooks';
+// import { useAuthContext } from '../../auth/hooks';
 // const { user } = useAuthContext();
 // ----------------------------------------------------------------------
 function useMockedUser() {

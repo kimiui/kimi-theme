@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TreeView = TreeView;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var paths_1 = require("lib/routes/paths");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var custom_icon_1 = require("./custom-icon");
 var custom_styling_1 = require("./custom-styling");
 var component_hero_1 = require("../../component-hero");

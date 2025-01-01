@@ -10,7 +10,7 @@ var Switch_1 = __importDefault(require("@mui/material/Switch"));
 var styles_1 = require("@mui/material/styles");
 var InputBase_1 = __importDefault(require("@mui/material/InputBase"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../../../theme/styles");
 var styles_3 = require("../styles");
 // ----------------------------------------------------------------------
 var StyledRow = (0, styles_1.styled)('div')(function (_a) {

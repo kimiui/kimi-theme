@@ -25,9 +25,9 @@ var Checkbox_1 = __importDefault(require("@mui/material/Checkbox"));
 var TextField_1 = __importDefault(require("@mui/material/TextField"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var Autocomplete_1 = __importDefault(require("@mui/material/Autocomplete"));
-var paths_1 = require("lib/routes/paths");
-var country_select_1 = require("lib/components/country-select");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var country_select_1 = require("../../../components/country-select");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------

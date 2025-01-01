@@ -30,7 +30,7 @@ exports.DeleteButton = DeleteButton;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../../theme/styles");
 var iconify_1 = require("../../iconify");
 // ----------------------------------------------------------------------
 function SingleFilePreview(_a) {

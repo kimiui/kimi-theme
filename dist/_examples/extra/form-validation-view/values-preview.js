@@ -24,9 +24,9 @@ var Collapse_1 = __importDefault(require("@mui/material/Collapse"));
 var styles_1 = require("@mui/material/styles");
 var react_hook_form_1 = require("react-hook-form");
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
-var iconify_1 = require("lib/components/iconify");
-var styles_2 = require("lib/theme/styles");
-var file_thumbnail_1 = require("lib/components/file-thumbnail");
+var iconify_1 = require("../../../components/iconify");
+var styles_2 = require("../../../theme/styles");
+var file_thumbnail_1 = require("../../../components/file-thumbnail");
 // ----------------------------------------------------------------------
 var classes = { item: 'item', key: 'item__key', value: 'item__value' };
 function ValuesPreview(_a) {

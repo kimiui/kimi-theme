@@ -1,4 +1,4 @@
-import type { SettingsState } from 'lib/components/settings';
+import type { SettingsState } from '../../components/settings';
 import type { ThemeOptions } from '../types';
 /**
  * Update the core theme with the settings state.

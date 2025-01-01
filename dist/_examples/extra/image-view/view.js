@@ -9,10 +9,10 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var _mock_1 = require("lib/_mock");
-var paths_1 = require("lib/routes/paths");
-var image_1 = require("lib/components/image");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var _mock_1 = require("../../../_mock");
+var paths_1 = require("../../../routes/paths");
+var image_1 = require("../../../components/image");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var component_hero_1 = require("../../component-hero");
 var component_template_1 = require("../../component-template");
 // ----------------------------------------------------------------------

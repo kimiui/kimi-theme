@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.navBasicCssVars = void 0;
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 // ----------------------------------------------------------------------
 function desktopVars(theme) {
     var shape = theme.shape, spacing = theme.spacing, palette = theme.vars.palette;

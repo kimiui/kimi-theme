@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.extraNav = exports.muiNav = exports.foundationNav = void 0;
-var change_case_1 = require("lib/utils/change-case");
+var change_case_1 = require("../utils/change-case");
 // ----------------------------------------------------------------------
 var getHref = function (category, name) { return "/components/".concat(category, "/").concat((0, change_case_1.paramCase)(name)); };
 exports.foundationNav = ['Colors', 'Typography', 'Shadows', 'Grid', 'Icons'].map(function (name) { return ({

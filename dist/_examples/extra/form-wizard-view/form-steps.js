@@ -26,8 +26,8 @@ var Button_1 = __importDefault(require("@mui/material/Button"));
 var Stepper_1 = __importDefault(require("@mui/material/Stepper"));
 var StepLabel_1 = __importDefault(require("@mui/material/StepLabel"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var iconify_1 = require("lib/components/iconify");
-var hook_form_1 = require("lib/components/hook-form");
+var iconify_1 = require("../../../components/iconify");
+var hook_form_1 = require("../../../components/hook-form");
 function Stepper(_a) {
     var steps = _a.steps, activeStep = _a.activeStep;
     return ((0, jsx_runtime_1.jsx)(Stepper_1.default, { activeStep: activeStep, alternativeLabel: true, sx: { mb: 5 }, children: steps.map(function (label, index) { return ((0, jsx_runtime_1.jsx)(Step_1.default, { children: (0, jsx_runtime_1.jsx)(StepLabel_1.default, { StepIconComponent: function (_a) {

@@ -11,7 +11,7 @@ var Box_1 = __importDefault(require("@mui/material/Box"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var ToggleButton_1 = __importDefault(require("@mui/material/ToggleButton"));
 var ToggleButtonGroup_1 = __importDefault(require("@mui/material/ToggleButtonGroup"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------
 var COLORS = ['standard', 'primary', 'secondary', 'info', 'success', 'warning', 'error'];

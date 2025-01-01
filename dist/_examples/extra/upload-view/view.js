@@ -21,11 +21,11 @@ var Switch_1 = __importDefault(require("@mui/material/Switch"));
 var react_1 = require("react");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
-var paths_1 = require("lib/routes/paths");
-var format_number_1 = require("lib/utils/format-number");
-var iconify_1 = require("lib/components/iconify");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
-var upload_1 = require("lib/components/upload");
+var paths_1 = require("../../../routes/paths");
+var format_number_1 = require("../../../utils/format-number");
+var iconify_1 = require("../../../components/iconify");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
+var upload_1 = require("../../../components/upload");
 var component_hero_1 = require("../../component-hero");
 var component_template_1 = require("../../component-template");
 // ----------------------------------------------------------------------

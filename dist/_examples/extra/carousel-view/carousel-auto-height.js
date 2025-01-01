@@ -18,8 +18,8 @@ exports.CarouselAutoHeight = CarouselAutoHeight;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var embla_carousel_auto_height_1 = __importDefault(require("embla-carousel-auto-height"));
-var image_1 = require("lib/components/image");
-var carousel_1 = require("lib/components/carousel");
+var image_1 = require("../../../components/image");
+var carousel_1 = require("../../../components/carousel");
 var elements_1 = require("./elements");
 function CarouselAutoHeight(_a) {
     var data = _a.data;

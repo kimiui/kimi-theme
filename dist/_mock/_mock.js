@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports._mock = void 0;
-var format_time_1 = require("lib/utils/format-time");
+var format_time_1 = require("../utils/format-time");
 var assets_1 = require("./assets");
 // ----------------------------------------------------------------------
 exports._mock = {

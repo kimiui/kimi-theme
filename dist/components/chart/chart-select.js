@@ -30,8 +30,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var MenuList_1 = __importDefault(require("@mui/material/MenuList"));
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
-var styles_1 = require("lib/theme/styles");
-var iconify_1 = require("lib/components/iconify");
+var styles_1 = require("../../theme/styles");
+var iconify_1 = require("../../components/iconify");
 var custom_popover_1 = require("../custom-popover");
 function ChartSelect(_a) {
     var options = _a.options, value = _a.value, onChange = _a.onChange, slotProps = _a.slotProps, other = __rest(_a, ["options", "value", "onChange", "slotProps"]);

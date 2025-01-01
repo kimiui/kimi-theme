@@ -14,7 +14,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.textGradient = textGradient;
 exports.maxLine = maxLine;
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../../theme/styles");
 // ----------------------------------------------------------------------
 /**
  * The original theme has not been customized.

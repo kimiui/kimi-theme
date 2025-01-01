@@ -14,7 +14,7 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LabelIcon = exports.LabelRoot = void 0;
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../theme/styles");
 // ----------------------------------------------------------------------
 exports.LabelRoot = (0, styles_1.styled)('span', {
     shouldForwardProp: function (prop) { return !['color', 'variant', 'disabled', 'sx'].includes(prop); },

@@ -11,9 +11,9 @@ var Paper_1 = __importDefault(require("@mui/material/Paper"));
 var Alert_1 = __importDefault(require("@mui/material/Alert"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var paths_1 = require("lib/routes/paths");
-var scrollbar_1 = require("lib/components/scrollbar");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var paths_1 = require("../../../routes/paths");
+var scrollbar_1 = require("../../../components/scrollbar");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------

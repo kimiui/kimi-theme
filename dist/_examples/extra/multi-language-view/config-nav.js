@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.navData = navData;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var label_1 = require("lib/components/label");
-var iconify_1 = require("lib/components/iconify");
-var svg_color_1 = require("lib/components/svg-color");
+var label_1 = require("../../../components/label");
+var iconify_1 = require("../../../components/iconify");
+var svg_color_1 = require("../../../components/svg-color");
 // ----------------------------------------------------------------------
 function navData(t) {
     return [

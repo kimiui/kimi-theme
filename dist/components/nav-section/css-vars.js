@@ -12,7 +12,7 @@ var __assign = (this && this.__assign) || function () {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.navSectionCssVars = exports.bulletColor = void 0;
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 // ----------------------------------------------------------------------
 exports.bulletColor = {
     dark: '#282F37',

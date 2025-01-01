@@ -18,7 +18,7 @@ var Divider_1 = require("@mui/material/Divider");
 var Checkbox_1 = require("@mui/material/Checkbox");
 var MenuItem_1 = require("@mui/material/MenuItem");
 var Autocomplete_1 = require("@mui/material/Autocomplete");
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../../theme/styles");
 // ----------------------------------------------------------------------
 /**
  * Generates styles for menu items.

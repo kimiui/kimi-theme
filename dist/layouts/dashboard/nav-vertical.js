@@ -29,9 +29,9 @@ exports.NavVertical = NavVertical;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var styles_1 = require("@mui/material/styles");
-var scrollbar_1 = require("lib/components/scrollbar");
-var styles_2 = require("lib/theme/styles");
-var nav_section_1 = require("lib/components/nav-section");
+var scrollbar_1 = require("../../components/scrollbar");
+var styles_2 = require("../../theme/styles");
+var nav_section_1 = require("../../components/nav-section");
 var nav_toggle_button_1 = require("../components/nav-toggle-button");
 function NavVertical(_a) {
     var _b, _c;

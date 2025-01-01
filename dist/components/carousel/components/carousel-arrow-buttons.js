@@ -67,7 +67,7 @@ var Box_1 = __importDefault(require("@mui/material/Box"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var SvgIcon_1 = __importDefault(require("@mui/material/SvgIcon"));
 var ButtonBase_1 = __importStar(require("@mui/material/ButtonBase"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../../theme/styles");
 var classes_1 = require("../classes");
 // ----------------------------------------------------------------------
 function CarouselArrowBasicButtons(_a) {

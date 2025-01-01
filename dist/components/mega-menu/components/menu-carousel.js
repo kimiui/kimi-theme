@@ -21,8 +21,8 @@ var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var routes_react_1 = require("routes-react");
 var styles_1 = require("@mui/material/styles");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var styles_2 = require("lib/theme/styles");
-var image_1 = require("lib/components/image");
+var styles_2 = require("../../../theme/styles");
+var image_1 = require("../../../components/image");
 var carousel_1 = require("../../carousel");
 // ----------------------------------------------------------------------
 function MenuCarousel(_a) {

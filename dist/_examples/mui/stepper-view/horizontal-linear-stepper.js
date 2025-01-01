@@ -26,7 +26,7 @@ var Button_1 = __importDefault(require("@mui/material/Button"));
 var Stepper_1 = __importDefault(require("@mui/material/Stepper"));
 var StepLabel_1 = __importDefault(require("@mui/material/StepLabel"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../../theme/styles");
 // ----------------------------------------------------------------------
 var steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 // ----------------------------------------------------------------------

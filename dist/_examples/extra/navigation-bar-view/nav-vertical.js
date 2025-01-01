@@ -30,10 +30,10 @@ var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var ToggleButton_1 = __importDefault(require("@mui/material/ToggleButton"));
 var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
 var ToggleButtonGroup_1 = __importDefault(require("@mui/material/ToggleButtonGroup"));
-var helper_1 = require("lib/utils/helper");
-var iconify_1 = require("lib/components/iconify");
-var svg_color_1 = require("lib/components/svg-color");
-var nav_section_1 = require("lib/components/nav-section");
+var helper_1 = require("../../../utils/helper");
+var iconify_1 = require("../../../components/iconify");
+var svg_color_1 = require("../../../components/svg-color");
+var nav_section_1 = require("../../../components/nav-section");
 var data_1 = require("./data");
 // ----------------------------------------------------------------------
 var defaultConfig = {

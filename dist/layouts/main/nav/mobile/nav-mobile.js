@@ -21,9 +21,9 @@ var react_1 = require("react");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Drawer_1 = __importDefault(require("@mui/material/Drawer"));
 var routes_react_1 = require("routes-react");
-var logo_1 = require("lib/components/logo");
-var nav_section_1 = require("lib/components/nav-section");
-var scrollbar_1 = require("lib/components/scrollbar");
+var logo_1 = require("../../../../components/logo");
+var nav_section_1 = require("../../../../components/nav-section");
+var scrollbar_1 = require("../../../../components/scrollbar");
 var nav_mobile_list_1 = require("./nav-mobile-list");
 var sign_in_button_1 = require("../../../components/sign-in-button");
 function NavMobile(_a) {

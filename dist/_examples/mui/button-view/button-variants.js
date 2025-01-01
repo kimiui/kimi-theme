@@ -41,7 +41,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var LoadingButton_1 = __importDefault(require("@mui/lab/LoadingButton"));
 var Button_1 = __importStar(require("@mui/material/Button"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------
 var COLORS = ['inherit', 'primary', 'secondary', 'info', 'success', 'warning', 'error'];

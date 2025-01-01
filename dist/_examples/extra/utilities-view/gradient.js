@@ -19,7 +19,7 @@ exports.Gradient = Gradient;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../../theme/styles");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------
 function Gradient() {

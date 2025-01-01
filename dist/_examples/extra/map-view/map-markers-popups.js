@@ -31,9 +31,9 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var image_1 = require("lib/components/image");
-var iconify_1 = require("lib/components/iconify");
-var map_1 = require("lib/components/map");
+var image_1 = require("../../../components/image");
+var iconify_1 = require("../../../components/iconify");
+var map_1 = require("../../../components/map");
 function MapMarkersPopups(_a) {
     var data = _a.data, other = __rest(_a, ["data"]);
     var _b = (0, react_1.useState)(null), popupInfo = _b[0], setPopupInfo = _b[1];

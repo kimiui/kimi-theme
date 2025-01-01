@@ -30,7 +30,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var NoSsr_1 = __importDefault(require("@mui/material/NoSsr"));
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../../theme/styles");
 var classes_1 = require("../classes");
 // ----------------------------------------------------------------------
 function CarouselDotButtons(_a) {

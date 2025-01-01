@@ -33,7 +33,7 @@ var Avatar_1 = __importDefault(require("@mui/material/Avatar"));
 var SvgIcon_1 = __importDefault(require("@mui/material/SvgIcon"));
 var styles_1 = require("@mui/material/styles");
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var animate_1 = require("lib/components/animate");
+var animate_1 = require("../../components/animate");
 function AccountButton(_a) {
     var open = _a.open, photoURL = _a.photoURL, displayName = _a.displayName, sx = _a.sx, other = __rest(_a, ["open", "photoURL", "displayName", "sx"]);
     var theme = (0, styles_1.useTheme)();

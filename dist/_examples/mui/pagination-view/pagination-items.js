@@ -24,7 +24,7 @@ var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var Pagination_1 = __importDefault(require("@mui/material/Pagination"));
 var InputLabel_1 = __importDefault(require("@mui/material/InputLabel"));
 var FormControl_1 = __importDefault(require("@mui/material/FormControl"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../../theme/styles");
 // ----------------------------------------------------------------------
 var items = __spreadArray([], Array(100), true).map(function (_, index) { return index + 1; });
 function PaginationItems() {

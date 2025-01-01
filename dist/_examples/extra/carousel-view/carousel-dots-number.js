@@ -22,10 +22,10 @@ var Link_1 = __importDefault(require("@mui/material/Link"));
 var styles_1 = require("@mui/material/styles");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var CardContent_1 = __importDefault(require("@mui/material/CardContent"));
-var image_1 = require("lib/components/image");
-var iconify_1 = require("lib/components/iconify");
-var styles_2 = require("lib/theme/styles");
-var carousel_1 = require("lib/components/carousel");
+var image_1 = require("../../../components/image");
+var iconify_1 = require("../../../components/iconify");
+var styles_2 = require("../../../theme/styles");
+var carousel_1 = require("../../../components/carousel");
 var elements_1 = require("./elements");
 function CarouselDotsNumber(_a) {
     var data = _a.data;

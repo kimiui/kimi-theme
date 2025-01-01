@@ -41,7 +41,7 @@ exports.GuestGuard = GuestGuard;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var routes_react_1 = require("routes-react");
-var loading_screen_1 = require("lib/components/loading-screen");
+var loading_screen_1 = require("../../components/loading-screen");
 var hooks_1 = require("../hooks");
 function GuestGuard(_a) {
     var _this = this;

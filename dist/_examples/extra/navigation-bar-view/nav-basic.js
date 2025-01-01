@@ -11,11 +11,11 @@ var ahooks_1 = require("ahooks");
 var Paper_1 = __importDefault(require("@mui/material/Paper"));
 var Drawer_1 = __importDefault(require("@mui/material/Drawer"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var logo_1 = require("lib/components/logo");
-var label_1 = require("lib/components/label");
-var iconify_1 = require("lib/components/iconify");
-var svg_color_1 = require("lib/components/svg-color");
-var nav_basic_1 = require("lib/components/nav-basic");
+var logo_1 = require("../../../components/logo");
+var label_1 = require("../../../components/label");
+var iconify_1 = require("../../../components/iconify");
+var svg_color_1 = require("../../../components/svg-color");
+var nav_basic_1 = require("../../../components/nav-basic");
 // ----------------------------------------------------------------------
 function NavBasic() {
     var _a = (0, ahooks_1.useBoolean)(), mobileOpen = _a[0], mobileOpenActions = _a[1];

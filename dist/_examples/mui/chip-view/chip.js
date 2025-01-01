@@ -9,8 +9,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Chip_1 = __importDefault(require("@mui/material/Chip"));
 var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Avatar_1 = __importDefault(require("@mui/material/Avatar"));
-var _mock_1 = require("lib/_mock");
-var iconify_1 = require("lib/components/iconify");
+var _mock_1 = require("../../../_mock");
+var iconify_1 = require("../../../components/iconify");
 var component_block_1 = require("../../component-block");
 function Chips(_a) {
     var _b = _a.variant, variant = _b === void 0 ? 'filled' : _b;

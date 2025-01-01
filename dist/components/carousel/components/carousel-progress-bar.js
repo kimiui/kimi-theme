@@ -30,7 +30,7 @@ exports.CarouselProgressBar = CarouselProgressBar;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../../theme/styles");
 var classes_1 = require("../classes");
 // ----------------------------------------------------------------------
 var StyledRoot = (0, styles_1.styled)(Box_1.default)(function (_a) {

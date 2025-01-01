@@ -63,7 +63,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var NoSsr_1 = __importDefault(require("@mui/material/NoSsr"));
 var Tab_1 = require("@mui/material/Tab");
 var Tabs_1 = __importStar(require("@mui/material/Tabs"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 function CustomTabs(_a) {
     var _b, _c, _d;
     var children = _a.children, slotProps = _a.slotProps, sx = _a.sx, other = __rest(_a, ["children", "slotProps", "sx"]);

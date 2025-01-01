@@ -19,8 +19,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var ListItemText_1 = __importDefault(require("@mui/material/ListItemText"));
-var styles_1 = require("lib/theme/styles");
-var format_number_1 = require("lib/utils/format-number");
+var styles_1 = require("../../../theme/styles");
+var format_number_1 = require("../../../utils/format-number");
 var iconify_1 = require("../../iconify");
 var file_thumbnail_1 = require("../../file-thumbnail");
 // ----------------------------------------------------------------------

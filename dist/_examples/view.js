@@ -11,7 +11,7 @@ var Stack_1 = __importDefault(require("@mui/material/Stack"));
 var Divider_1 = __importDefault(require("@mui/material/Divider"));
 var Container_1 = __importDefault(require("@mui/material/Container"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var helper_1 = require("lib/utils/helper");
+var helper_1 = require("../utils/helper");
 var component_card_1 = require("./component-card");
 var config_nav_1 = require("./config-nav");
 // ----------------------------------------------------------------------

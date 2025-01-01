@@ -32,7 +32,7 @@ var dayjs_1 = __importDefault(require("dayjs"));
 var DatePicker_1 = require("@mui/x-date-pickers/DatePicker");
 var react_hook_form_1 = require("react-hook-form");
 var MobileDateTimePicker_1 = require("@mui/x-date-pickers/MobileDateTimePicker");
-var format_time_1 = require("lib/utils/format-time");
+var format_time_1 = require("../../utils/format-time");
 function RHFDatePicker(_a) {
     var name = _a.name, slotProps = _a.slotProps, other = __rest(_a, ["name", "slotProps"]);
     var control = (0, react_hook_form_1.useFormContext)().control;

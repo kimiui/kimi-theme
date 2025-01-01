@@ -30,8 +30,8 @@ exports.ThemeProvider = ThemeProvider;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var CssBaseline_1 = __importDefault(require("@mui/material/CssBaseline"));
 var styles_1 = require("@mui/material/styles");
-var locales_1 = require("lib/locales");
-var settings_1 = require("lib/components/settings");
+var locales_1 = require("../locales");
+var settings_1 = require("../components/settings");
 var create_theme_1 = require("./create-theme");
 var right_to_left_1 = require("./with-settings/right-to-left");
 function ThemeProvider(_a) {

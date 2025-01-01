@@ -28,7 +28,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var styles_1 = require("@mui/material/styles");
 var react_organizational_chart_1 = require("react-organizational-chart");
-var helper_1 = require("lib/utils/helper");
+var helper_1 = require("../../utils/helper");
 // ----------------------------------------------------------------------
 function OrganizationalChart(_a) {
     var data = _a.data, nodeItem = _a.nodeItem, other = __rest(_a, ["data", "nodeItem"]);

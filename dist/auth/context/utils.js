@@ -41,7 +41,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isValidToken = isValidToken;
 exports.setSession = setSession;
-var axios_1 = __importDefault(require("lib/utils/axios"));
+var axios_1 = __importDefault(require("../../utils/axios"));
 var constant_1 = require("./constant");
 // ----------------------------------------------------------------------
 function isValidToken(accessToken) {

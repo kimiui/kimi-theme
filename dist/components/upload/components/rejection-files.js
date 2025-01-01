@@ -8,8 +8,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Paper_1 = __importDefault(require("@mui/material/Paper"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var styles_1 = require("lib/theme/styles");
-var format_number_1 = require("lib/utils/format-number");
+var styles_1 = require("../../../theme/styles");
+var format_number_1 = require("../../../utils/format-number");
 var file_thumbnail_1 = require("../../file-thumbnail");
 function RejectionFiles(_a) {
     var files = _a.files;

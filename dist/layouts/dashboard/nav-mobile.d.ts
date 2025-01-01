@@ -1,4 +1,4 @@
-import type { NavSectionProps } from 'lib/components/nav-section';
+import type { NavSectionProps } from '../../components/nav-section';
 type NavMobileProps = NavSectionProps & {
     open: boolean;
     onClose: () => void;

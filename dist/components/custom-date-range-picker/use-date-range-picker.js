@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useDateRangePicker = useDateRangePicker;
 var react_1 = require("react");
-var format_time_1 = require("lib/utils/format-time");
+var format_time_1 = require("../../utils/format-time");
 // ----------------------------------------------------------------------
 function useDateRangePicker(start, end) {
     var _a = (0, react_1.useState)(false), open = _a[0], setOpen = _a[1];

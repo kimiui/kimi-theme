@@ -32,9 +32,9 @@ var react_1 = require("react");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var styles_1 = require("@mui/material/styles");
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
-var styles_2 = require("lib/theme/styles");
-var iconify_1 = require("lib/components/iconify");
-var hooks_1 = require("lib/components/nav-section/hooks");
+var styles_2 = require("../../../../theme/styles");
+var iconify_1 = require("../../../../components/iconify");
+var hooks_1 = require("../../../../components/nav-section/hooks");
 // ----------------------------------------------------------------------
 exports.NavItem = (0, react_1.forwardRef)(function (_a, ref) {
     var title = _a.title, path = _a.path, icon = _a.icon, open = _a.open, active = _a.active, hasChild = _a.hasChild, externalLink = _a.externalLink, other = __rest(_a, ["title", "path", "icon", "open", "active", "hasChild", "externalLink"]);

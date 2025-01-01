@@ -30,7 +30,7 @@ exports.IndexLabel = IndexLabel;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Button_1 = __importDefault(require("@mui/material/Button"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 // ----------------------------------------------------------------------
 function PlayButton(_a) {
     var sx = _a.sx, isPlaying = _a.isPlaying, other = __rest(_a, ["sx", "isPlaying"]);

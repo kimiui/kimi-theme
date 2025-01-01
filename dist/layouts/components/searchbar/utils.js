@@ -16,7 +16,7 @@ exports.applyFilter = applyFilter;
 exports.splitPath = splitPath;
 exports.handleLoop = handleLoop;
 exports.groupItems = groupItems;
-var helper_1 = require("lib/utils/helper");
+var helper_1 = require("../../../utils/helper");
 function getAllItems(_a) {
     var data = _a.data;
     var reduceItems = data.map(function (list) { return handleLoop(list.items, list.subheader); }).flat();

@@ -22,10 +22,10 @@ var Box_1 = __importDefault(require("@mui/material/Box"));
 var Button_1 = __importDefault(require("@mui/material/Button"));
 var styles_1 = require("@mui/material/styles");
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var image_1 = require("lib/components/image");
-var styles_2 = require("lib/theme/styles");
-var animate_1 = require("lib/components/animate");
-var carousel_1 = require("lib/components/carousel");
+var image_1 = require("../../../components/image");
+var styles_2 = require("../../../theme/styles");
+var animate_1 = require("../../../components/animate");
+var carousel_1 = require("../../../components/carousel");
 var elements_1 = require("./elements");
 function CarouselAnimation(_a) {
     var data = _a.data;

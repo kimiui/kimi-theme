@@ -30,8 +30,8 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var Badge_1 = __importDefault(require("@mui/material/Badge"));
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var iconify_1 = require("lib/components/iconify");
-var context_1 = require("lib/components/settings/context");
+var iconify_1 = require("../../components/iconify");
+var context_1 = require("../../components/settings/context");
 exports.SettingsButton = (0, react_1.memo)(function (_a) {
     var sx = _a.sx, other = __rest(_a, ["sx"]);
     var settings = (0, context_1.useSettingsContext)();

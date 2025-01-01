@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.StyledToaster = void 0;
 var sonner_1 = require("sonner");
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../../theme/styles");
 var classes_1 = require("./classes");
 // ----------------------------------------------------------------------
 exports.StyledToaster = (0, styles_1.styled)(sonner_1.Toaster)(function (_a) {

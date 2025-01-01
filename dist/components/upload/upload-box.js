@@ -29,7 +29,7 @@ exports.UploadBox = UploadBox;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var react_dropzone_1 = require("react-dropzone");
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../theme/styles");
 var iconify_1 = require("../iconify");
 // ----------------------------------------------------------------------
 function UploadBox(_a) {

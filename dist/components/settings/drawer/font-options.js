@@ -18,7 +18,7 @@ exports.FontOptions = FontOptions;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var ButtonBase_1 = __importDefault(require("@mui/material/ButtonBase"));
-var styles_1 = require("lib/theme/styles");
+var styles_1 = require("../../../theme/styles");
 var styles_2 = require("./styles");
 var svg_color_1 = require("../../svg-color");
 function FontOptions(_a) {

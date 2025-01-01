@@ -34,8 +34,8 @@ var AppBar_1 = __importDefault(require("@mui/material/AppBar"));
 var Toolbar_1 = __importDefault(require("@mui/material/Toolbar"));
 var Container_1 = __importDefault(require("@mui/material/Container"));
 var styles_1 = require("@mui/material/styles");
-var hooks_1 = require("lib/hooks");
-var styles_2 = require("lib/theme/styles");
+var hooks_1 = require("../../hooks");
+var styles_2 = require("../../theme/styles");
 var classes_1 = require("../classes");
 // ----------------------------------------------------------------------
 var StyledElevation = (0, styles_1.styled)('span')(function (_a) {

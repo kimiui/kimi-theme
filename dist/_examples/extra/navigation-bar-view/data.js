@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NAV_ITEMS = void 0;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var label_1 = require("lib/components/label");
-var svg_color_1 = require("lib/components/svg-color");
+var label_1 = require("../../../components/label");
+var svg_color_1 = require("../../../components/svg-color");
 // ----------------------------------------------------------------------
 exports.NAV_ITEMS = [
     {

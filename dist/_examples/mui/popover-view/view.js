@@ -27,10 +27,10 @@ var RadioGroup_1 = __importDefault(require("@mui/material/RadioGroup"));
 var FormControl_1 = __importDefault(require("@mui/material/FormControl"));
 var react_1 = require("react");
 var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
-var paths_1 = require("lib/routes/paths");
-var iconify_1 = require("lib/components/iconify");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
-var custom_popover_1 = require("lib/components/custom-popover");
+var paths_1 = require("../../../routes/paths");
+var iconify_1 = require("../../../components/iconify");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
+var custom_popover_1 = require("../../../components/custom-popover");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------

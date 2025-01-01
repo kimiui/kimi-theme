@@ -41,11 +41,11 @@ var Tooltip_1 = __importDefault(require("@mui/material/Tooltip"));
 var react_1 = require("react");
 var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var label_1 = require("lib/components/label");
-var iconify_1 = require("lib/components/iconify");
-var animate_1 = require("lib/components/animate");
-var scrollbar_1 = require("lib/components/scrollbar");
-var custom_tabs_1 = require("lib/components/custom-tabs");
+var label_1 = require("../../../components/label");
+var iconify_1 = require("../../../components/iconify");
+var animate_1 = require("../../../components/animate");
+var scrollbar_1 = require("../../../components/scrollbar");
+var custom_tabs_1 = require("../../../components/custom-tabs");
 var notification_item_1 = require("./notification-item");
 // ----------------------------------------------------------------------
 var TABS = [

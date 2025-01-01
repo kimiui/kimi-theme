@@ -8,11 +8,11 @@ exports.IconsView = IconsView;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var Link_1 = __importDefault(require("@mui/material/Link"));
 var Tooltip_1 = __importDefault(require("@mui/material/Tooltip"));
-var paths_1 = require("lib/routes/paths");
-var data_1 = require("lib/assets/data");
-var svg_color_1 = require("lib/components/svg-color");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
-var iconify_1 = require("lib/components/iconify");
+var paths_1 = require("../../../routes/paths");
+var data_1 = require("../../../assets/data");
+var svg_color_1 = require("../../../components/svg-color");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
+var iconify_1 = require("../../../components/iconify");
 var component_hero_1 = require("../../component-hero");
 var component_block_1 = require("../../component-block");
 // ----------------------------------------------------------------------

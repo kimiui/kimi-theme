@@ -15,8 +15,8 @@ exports.ThemeModeToggle = ThemeModeToggle;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var material_1 = require("@mui/material");
-var iconify_1 = require("lib/components/iconify");
-var settings_1 = require("lib/components/settings");
+var iconify_1 = require("../../components/iconify");
+var settings_1 = require("../../components/settings");
 // ----------------------------------------------------------------------
 function ThemeModeToggle() {
     var settings = (0, settings_1.useSettingsContext)();

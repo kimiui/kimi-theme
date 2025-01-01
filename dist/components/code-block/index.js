@@ -15,9 +15,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var material_1 = require("@mui/material");
-var snackbar_1 = require("lib/components/snackbar");
-var iconify_1 = require("lib/components/iconify");
-var useCopyToClipboard_1 = require("lib/hooks/useCopyToClipboard");
+var snackbar_1 = require("../../components/snackbar");
+var iconify_1 = require("../../components/iconify");
+var useCopyToClipboard_1 = require("../../hooks/useCopyToClipboard");
 var CodeBlock = function (_a) {
     var text = _a.text, sx = _a.sx;
     var copy = (0, useCopyToClipboard_1.useCopyToClipboard)().copy;

@@ -1,5 +1,5 @@
 import type { Breakpoint } from '@mui/material/styles';
-import type { NavSectionProps } from 'lib/components/nav-section';
+import type { NavSectionProps } from '../../components/nav-section';
 export type NavVerticalProps = NavSectionProps & {
     isNavMini: boolean;
     layoutQuery: Breakpoint;

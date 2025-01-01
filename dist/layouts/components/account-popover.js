@@ -33,10 +33,10 @@ var MenuList_1 = __importDefault(require("@mui/material/MenuList"));
 var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var routes_react_1 = require("routes-react");
-var paths_1 = require("lib/routes/paths");
-var label_1 = require("lib/components/label");
-var hooks_1 = require("lib/auth/hooks");
-var custom_popover_1 = require("lib/components/custom-popover");
+var paths_1 = require("../../routes/paths");
+var label_1 = require("../../components/label");
+var hooks_1 = require("../../auth/hooks");
+var custom_popover_1 = require("../../components/custom-popover");
 var account_button_1 = require("./account-button");
 var sign_out_button_1 = require("./sign-out-button");
 function AccountPopover(_a) {

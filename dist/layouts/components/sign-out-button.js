@@ -66,9 +66,9 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var routes_react_1 = require("routes-react");
 var Button_1 = __importDefault(require("@mui/material/Button"));
-var hooks_1 = require("lib/auth/hooks");
-var snackbar_1 = require("lib/components/snackbar");
-var action_1 = require("lib/auth/context/action");
+var hooks_1 = require("../../auth/hooks");
+var snackbar_1 = require("../../components/snackbar");
+var action_1 = require("../../auth/context/action");
 function SignOutButton(_a) {
     var _this = this;
     var onClose = _a.onClose, other = __rest(_a, ["onClose"]);

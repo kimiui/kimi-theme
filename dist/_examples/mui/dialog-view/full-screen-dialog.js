@@ -30,7 +30,7 @@ var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var ListItemText_1 = __importDefault(require("@mui/material/ListItemText"));
 var ListItemButton_1 = __importDefault(require("@mui/material/ListItemButton"));
-var iconify_1 = require("lib/components/iconify");
+var iconify_1 = require("../../../components/iconify");
 // ----------------------------------------------------------------------
 var Transition = (0, react_1.forwardRef)(function (props, ref) { return (0, jsx_runtime_1.jsx)(Slide_1.default, __assign({ direction: "up", ref: ref }, props)); });
 function FullScreenDialog() {

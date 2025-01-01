@@ -12,9 +12,9 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CarouselView = CarouselView;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var _mock_1 = require("lib/_mock");
-var paths_1 = require("lib/routes/paths");
-var custom_breadcrumbs_1 = require("lib/components/custom-breadcrumbs");
+var _mock_1 = require("../../../_mock");
+var paths_1 = require("../../../routes/paths");
+var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
 var carousel_yaxis_1 = require("./carousel-yaxis");
 var carousel_align_1 = require("./carousel-align");
 var carousel_scale_1 = require("./carousel-scale");

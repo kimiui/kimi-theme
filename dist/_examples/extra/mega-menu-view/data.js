@@ -11,9 +11,9 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.navItems2 = exports.navItems1 = void 0;
 var jsx_runtime_1 = require("react/jsx-runtime");
-var _mock_1 = require("lib/_mock");
-var label_1 = require("lib/components/label");
-var iconify_1 = require("lib/components/iconify");
+var _mock_1 = require("../../../_mock");
+var label_1 = require("../../../components/label");
+var iconify_1 = require("../../../components/iconify");
 // ----------------------------------------------------------------------
 var arr_1 = [
     { title: 'Metallic processing machinery', path: '#' },

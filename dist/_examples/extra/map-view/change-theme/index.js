@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MapChangeTheme = MapChangeTheme;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
-var map_1 = require("lib/components/map");
+var map_1 = require("../../../../components/map");
 var control_panel_1 = require("./control-panel");
 function MapChangeTheme(_a) {
     var themes = _a.themes, other = __rest(_a, ["themes"]);

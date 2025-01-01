@@ -31,7 +31,7 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var Box_1 = __importDefault(require("@mui/material/Box"));
 var Container_1 = __importDefault(require("@mui/material/Container"));
 var styles_1 = require("@mui/material/styles");
-var styles_2 = require("lib/theme/styles");
+var styles_2 = require("../theme/styles");
 // ----------------------------------------------------------------------
 function ComponentHero(_a) {
     var children = _a.children, sx = _a.sx, other = __rest(_a, ["children", "sx"]);

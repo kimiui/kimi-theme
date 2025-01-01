@@ -13,9 +13,9 @@ var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var ListItemText_1 = __importDefault(require("@mui/material/ListItemText"));
 var ListItemAvatar_1 = __importDefault(require("@mui/material/ListItemAvatar"));
 var ListItemButton_1 = __importDefault(require("@mui/material/ListItemButton"));
-var label_1 = require("lib/components/label");
-var format_time_1 = require("lib/utils/format-time");
-var file_thumbnail_1 = require("lib/components/file-thumbnail");
+var label_1 = require("../../../components/label");
+var format_time_1 = require("../../../utils/format-time");
+var file_thumbnail_1 = require("../../../components/file-thumbnail");
 function NotificationItem(_a) {
     var notification = _a.notification;
     var renderAvatar = ((0, jsx_runtime_1.jsx)(ListItemAvatar_1.default, { children: notification.avatarUrl ? ((0, jsx_runtime_1.jsx)(Avatar_1.default, { src: notification.avatarUrl, sx: { bgcolor: 'background.neutral' } })) : ((0, jsx_runtime_1.jsx)(Stack_1.default, { alignItems: "center", justifyContent: "center", sx: {
