@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "TypeScript",
   "private": false,
   "license": "MIT",
@@ -30,12 +30,13 @@
     "prepublishOnly": "npm run build"
   },
   "exports": {
-    "./locales": "./dist/locales/index.js",
+    "./auth": "./dist/auth/index.js",
     "./components": "./dist/components/index.js",
     "./hooks": "./dist/hooks/index.js",
-    "./utils": "./dist/utils/index.js",
+    "./layouts": "./dist/layouts/index.js",
+    "./locales": "./dist/locales/index.js",
     "./theme": "./dist/theme/index.js",
-    "./layouts": "./dist/layouts/index.js"
+    "./utils": "./dist/utils/index.js"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
