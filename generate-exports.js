@@ -14,8 +14,13 @@ function generateExports(dir, basePath = '.') {
       Object.assign(exports, subExports);
     } else if (entry.isFile() && entry.name === 'index.js') {
       const exportPath = join(basePath, entry.name).replace(/\\/g, '/');
-      const key = basePath.replace(/\\/g, '/');
-      if (!['.'].includes(key) && !key.includes('_examples') && !key.includes('_mock')) {
+      const key = `./${basePath.replace(/\\/g, '/')}`;
+      if (
+        !['.'].includes(key) &&
+        !key.includes('_examples') &&
+        !key.includes('_mock') &&
+        !key.includes('assets')
+      ) {
         exports[key] = `./${exportPath}`;
       }
     }
