@@ -6,7 +6,7 @@ import { useTheme, type Theme, type SxProps, type Breakpoint } from '@mui/materi
 
 import { stylesMode } from 'lib/theme/styles';
 
-import { Main } from './main';
+import { AuthMain } from './main';
 import { HeaderBase } from '../core/header-base';
 import { LayoutSection } from '../core/layout-section';
 
@@ -17,7 +17,7 @@ export type AuthLayoutProps = {
   children: React.ReactNode;
 };
 
-export function AuthLayout({ sx, children }: Readonly<AuthLayoutProps>) {
+export default function AuthLayout({ sx, children }: Readonly<AuthLayoutProps>) {
   const theme = useTheme();
 
   const [, mobileNavOpenActions] = useBoolean();
@@ -83,7 +83,7 @@ export function AuthLayout({ sx, children }: Readonly<AuthLayoutProps>) {
         ...sx,
       }}
     >
-      <Main layoutQuery={layoutQuery}>{children}</Main>
+      <AuthMain layoutQuery={layoutQuery}>{children}</AuthMain>
     </LayoutSection>
   );
 }

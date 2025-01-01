@@ -9,7 +9,7 @@ type MainProps = BoxProps & {
   layoutQuery: Breakpoint;
 };
 
-export function Main({ sx, children, layoutQuery, ...other }: MainProps) {
+export function AuthMain({ sx, children, layoutQuery, ...other }: MainProps) {
   const theme = useTheme();
 
   return (

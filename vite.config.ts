@@ -6,6 +6,7 @@ import { extname, relative, resolve } from 'path';
 import { fileURLToPath } from 'node:url';
 import { glob } from 'glob';
 import preserveDirectives from 'rollup-preserve-directives';
+import { libInjectCss } from 'vite-plugin-lib-inject-css';
 //----------------------------------------------------------------------
 
 const PORT = 8080;
@@ -41,6 +42,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    libInjectCss(),
     dts({ include: 'lib' }),
     checker({
       typescript: true,

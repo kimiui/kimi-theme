@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "TypeScript",
   "private": false,
   "license": "MIT",
@@ -15,9 +15,13 @@
     "type": "git",
     "url": "git+https://github.com/kimiui/theme.git"
   },
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc --p ./tsconfig-build.json && vite build",
+    "build": "tsc --p ./tsconfig-build.json && yarn copy-css",
+    "copy-css": "cpx 'lib/**/*.css' dist/",
     "watch": "tsc -w",
     "lint": "eslint \"./**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
@@ -30,7 +34,8 @@
     "./components": "./dist/components/index.js",
     "./hooks": "./dist/hooks/index.js",
     "./utils": "./dist/utils/index.js",
-    "./theme": "./dist/theme/index.js"
+    "./theme": "./dist/theme/index.js",
+    "./layouts": "./dist/layouts/index.js"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
@@ -133,6 +138,7 @@
     "@typescript-eslint/eslint-plugin": "^7.13.0",
     "@typescript-eslint/parser": "^7.13.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "cpx": "^1.5.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
@@ -149,7 +155,8 @@
     "rollup-preserve-directives": "^1.1.3",
     "styled-components": "^6.1.13",
     "typescript": "^5.7.2",
-    "vite": "^6.0.6"
+    "vite": "^6.0.6",
+    "vite-plugin-lib-inject-css": "^2.2.0"
   },
   "resolutions": {
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
