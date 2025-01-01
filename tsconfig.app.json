@@ -26,5 +26,6 @@
       "lib/*": ["./lib/*"]
     }
   },
-  "include": ["src", "lib"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "lib/**/*.ts", "lib/**/*.tsx"],
+  "exclude": ["node_modules", "src/**/*.js", "src/**/*.d.ts", "lib/**/*.js", "lib/**/*.d.ts"]
 }

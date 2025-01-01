@@ -32,7 +32,5 @@ type Props = {
 };
 
 export function I18nProvider({ children }: Readonly<Props>) {
-  console.log('i18n instance:', i18next);
-
   return <I18nextProvider i18n={i18next}>{children}</I18nextProvider>;
 }

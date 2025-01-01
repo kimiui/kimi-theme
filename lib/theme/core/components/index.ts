@@ -29,7 +29,6 @@ import { skeleton } from './skeleton';
 import { backdrop } from './backdrop';
 import { progress } from './progress';
 import { checkbox } from './checkbox';
-import { timeline } from './timeline';
 import { accordion } from './accordion';
 import { textfield } from './textfield';
 import { typography } from './typography';
@@ -72,7 +71,6 @@ export const components = {
   ...popover,
   ...svgIcon,
   ...skeleton,
-  ...timeline,
   ...backdrop,
   ...progress,
   ...switches,

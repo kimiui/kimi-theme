@@ -1,17 +1,13 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
     "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "rootDir": "./lib",
-    "composite": true,
+    "outDir": "./dist",
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "skipLibCheck": true,
-    
-
+    "types": ["node", "react"],
+    "lib": [ "dom", "dom.iterable","esnext"],
     "paths": {
       "lib/*": ["./lib/*"]
     }

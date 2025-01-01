@@ -1,4 +1,4 @@
-import { formatNumberLocale } from 'lib/locales';
+import { formatNumberLocale } from './number-format-locale';
 
 // ----------------------------------------------------------------------
 

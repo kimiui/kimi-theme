@@ -34,3 +34,5 @@ public/*
 
 # misc
 **/jsconfig.json
+
+lib/**/*.d.ts
