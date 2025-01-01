@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Kimi UI Theme",
   "private": false,
   "license": "MIT",
@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p ./tsconfig-build.json && tsc-alias -p ./tsconfig-build.json && yarn copy-css && node generate-exports.js",
+    "build": "rm -rf dist && tsc -p ./tsconfig-build.json && tsc-alias -p ./tsconfig-build.json && yarn copy-css && node generate-exports.js",
     "copy-css": "cpx 'lib/**/*.css' dist/",
     "watch": "tsc -w",
     "lint": "eslint \"./**/*.{js,jsx,ts,tsx}\"",
@@ -30,10 +30,6 @@
     "prepublishOnly": "npm run build"
   },
   "exports": {
-    "./auth/context": "./dist/auth/context/index.js",
-    "./auth/guard": "./dist/auth/guard/index.js",
-    "./auth/hooks": "./dist/auth/hooks/index.js",
-    "./auth": "./dist/auth/index.js",
     "./components/animate/back-to-top": "./dist/components/animate/back-to-top/index.js",
     "./components/animate": "./dist/components/animate/index.js",
     "./components/animate/scroll-progress": "./dist/components/animate/scroll-progress/index.js",

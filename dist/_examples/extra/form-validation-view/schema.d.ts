@@ -44,12 +44,12 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     singleUpload: zod.ZodEffects<zod.ZodType<string | File, zod.ZodTypeDef, string | File>, string | File, string | File>;
     multiUpload: zod.ZodEffects<zod.ZodArray<zod.ZodType<string | File, zod.ZodTypeDef, string | File>, "many">, (string | File)[], (string | File)[]>;
 }, "strip", zod.ZodTypeAny, {
+    switch?: boolean;
+    checkbox?: boolean;
+    radioGroup?: string;
+    slider?: number;
     email?: string;
     password?: string;
-    radioGroup?: string;
-    checkbox?: boolean;
-    slider?: number;
-    switch?: boolean;
     multiSelect?: string[];
     phoneNumber?: string;
     rating?: number;
@@ -72,12 +72,12 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     singleUpload?: string | File;
     multiUpload?: (string | File)[];
 }, {
+    switch?: boolean;
+    checkbox?: boolean;
+    radioGroup?: string;
+    slider?: number;
     email?: string;
     password?: string;
-    radioGroup?: string;
-    checkbox?: boolean;
-    slider?: number;
-    switch?: boolean;
     multiSelect?: string[];
     phoneNumber?: string;
     rating?: number;
@@ -100,12 +100,12 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     singleUpload?: string | File;
     multiUpload?: (string | File)[];
 }>, {
+    switch?: boolean;
+    checkbox?: boolean;
+    radioGroup?: string;
+    slider?: number;
     email?: string;
     password?: string;
-    radioGroup?: string;
-    checkbox?: boolean;
-    slider?: number;
-    switch?: boolean;
     multiSelect?: string[];
     phoneNumber?: string;
     rating?: number;
@@ -128,12 +128,12 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     singleUpload?: string | File;
     multiUpload?: (string | File)[];
 }, {
+    switch?: boolean;
+    checkbox?: boolean;
+    radioGroup?: string;
+    slider?: number;
     email?: string;
     password?: string;
-    radioGroup?: string;
-    checkbox?: boolean;
-    slider?: number;
-    switch?: boolean;
     multiSelect?: string[];
     phoneNumber?: string;
     rating?: number;
@@ -156,12 +156,12 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     singleUpload?: string | File;
     multiUpload?: (string | File)[];
 }>, {
+    switch?: boolean;
+    checkbox?: boolean;
+    radioGroup?: string;
+    slider?: number;
     email?: string;
     password?: string;
-    radioGroup?: string;
-    checkbox?: boolean;
-    slider?: number;
-    switch?: boolean;
     multiSelect?: string[];
     phoneNumber?: string;
     rating?: number;
@@ -184,12 +184,12 @@ export declare const FormSchema: zod.ZodEffects<zod.ZodEffects<zod.ZodObject<{
     singleUpload?: string | File;
     multiUpload?: (string | File)[];
 }, {
+    switch?: boolean;
+    checkbox?: boolean;
+    radioGroup?: string;
+    slider?: number;
     email?: string;
     password?: string;
-    radioGroup?: string;
-    checkbox?: boolean;
-    slider?: number;
-    switch?: boolean;
     multiSelect?: string[];
     phoneNumber?: string;
     rating?: number;

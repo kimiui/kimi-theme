@@ -39,4 +39,19 @@ export declare const _mock: {
         product: (index: number) => string;
         portrait: (index: number) => string;
     };
+    user: {
+        id: string;
+        displayName: string;
+        email: string;
+        photoURL: string;
+        phoneNumber: string;
+        country: string;
+        address: string;
+        state: string;
+        city: string;
+        zipCode: string;
+        about: string;
+        role: string;
+        isPublic: boolean;
+    };
 };

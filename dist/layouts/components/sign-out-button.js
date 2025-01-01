@@ -66,37 +66,24 @@ var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var routes_react_1 = require("routes-react");
 var Button_1 = __importDefault(require("@mui/material/Button"));
-var hooks_1 = require("../../auth/hooks");
 var snackbar_1 = require("../../components/snackbar");
-var action_1 = require("../../auth/context/action");
 function SignOutButton(_a) {
     var _this = this;
-    var onClose = _a.onClose, other = __rest(_a, ["onClose"]);
+    var onClose = _a.onClose, onSignOut = _a.onSignOut, other = __rest(_a, ["onClose", "onSignOut"]);
     var router = (0, routes_react_1.useRouter)();
-    var checkUserSession = (0, hooks_1.useAuthContext)().checkUserSession;
     var handleLogout = (0, react_1.useCallback)(function () { return __awaiter(_this, void 0, void 0, function () {
-        var error_1;
         return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    _a.trys.push([0, 3, , 4]);
-                    return [4 /*yield*/, (0, action_1.signOut)()];
-                case 1:
-                    _a.sent();
-                    return [4 /*yield*/, (checkUserSession === null || checkUserSession === void 0 ? void 0 : checkUserSession())];
-                case 2:
-                    _a.sent();
-                    onClose === null || onClose === void 0 ? void 0 : onClose();
-                    router.refresh();
-                    return [3 /*break*/, 4];
-                case 3:
-                    error_1 = _a.sent();
-                    console.error(error_1);
-                    snackbar_1.toast.error('Unable to logout!');
-                    return [3 /*break*/, 4];
-                case 4: return [2 /*return*/];
+            try {
+                onSignOut === null || onSignOut === void 0 ? void 0 : onSignOut();
+                onClose === null || onClose === void 0 ? void 0 : onClose();
+                router.refresh();
             }
+            catch (error) {
+                console.error(error);
+                snackbar_1.toast.error('Unable to logout!');
+            }
+            return [2 /*return*/];
         });
-    }); }, [checkUserSession, onClose, router]);
+    }); }, [onClose, onSignOut, router]);
     return ((0, jsx_runtime_1.jsx)(Button_1.default, __assign({ fullWidth: true, variant: "soft", size: "large", color: "error", onClick: handleLogout }, other, { children: "Logout" })));
 }

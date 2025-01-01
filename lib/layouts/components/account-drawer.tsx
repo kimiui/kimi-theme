@@ -17,7 +17,6 @@ import { _mock } from 'lib/_mock';
 import { paths } from 'lib/routes/paths';
 import { varAlpha } from 'lib/theme/styles';
 import { Label } from 'lib/components/label';
-import { useMockedUser } from 'lib/auth/hooks';
 import { Iconify } from 'lib/components/iconify';
 import { Scrollbar } from 'lib/components/scrollbar';
 import { AnimateAvatar } from 'lib/components/animate';
@@ -44,7 +43,7 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
 
   const pathname = usePathname();
 
-  const { user } = useMockedUser();
+  const { user } = _mock;
 
   const [open, setOpen] = useState(false);
 

@@ -33,18 +33,18 @@ var MenuList_1 = __importDefault(require("@mui/material/MenuList"));
 var MenuItem_1 = __importDefault(require("@mui/material/MenuItem"));
 var Typography_1 = __importDefault(require("@mui/material/Typography"));
 var routes_react_1 = require("routes-react");
+var _mock_1 = require("../../_mock");
 var paths_1 = require("../../routes/paths");
 var label_1 = require("../../components/label");
-var hooks_1 = require("../../auth/hooks");
 var custom_popover_1 = require("../../components/custom-popover");
 var account_button_1 = require("./account-button");
 var sign_out_button_1 = require("./sign-out-button");
 function AccountPopover(_a) {
-    var _b = _a.data, data = _b === void 0 ? [] : _b, sx = _a.sx, other = __rest(_a, ["data", "sx"]);
+    var _b = _a.data, data = _b === void 0 ? [] : _b, onSignOut = _a.onSignOut, sx = _a.sx, other = __rest(_a, ["data", "onSignOut", "sx"]);
     var router = (0, routes_react_1.useRouter)();
     var popover = (0, custom_popover_1.usePopover)();
     var pathname = (0, routes_react_1.usePathname)();
-    var user = (0, hooks_1.useMockedUser)().user;
+    var user = _mock_1._mock.user;
     var handleClickItem = function (path) {
         popover.onClose();
         router.push(path);
@@ -61,5 +61,5 @@ function AccountPopover(_a) {
                                     '& svg': { width: 24, height: 24 },
                                     '&:hover': { color: 'text.primary' },
                                 }, children: [option.icon, (0, jsx_runtime_1.jsx)(Box_1.default, { component: "span", children: option.label === 'Home' ? rootLabel : option.label }), option.info && ((0, jsx_runtime_1.jsx)(label_1.Label, { color: "error", sx: { ml: 1 }, children: option.info }))] }, option.label));
-                        }) }), (0, jsx_runtime_1.jsx)(Divider_1.default, { sx: { borderStyle: 'dashed' } }), (0, jsx_runtime_1.jsx)(Box_1.default, { sx: { p: 1 }, children: (0, jsx_runtime_1.jsx)(sign_out_button_1.SignOutButton, { size: "medium", variant: "text", onClose: popover.onClose, sx: { display: 'block', textAlign: 'left' } }) })] })] }));
+                        }) }), onSignOut && ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(Divider_1.default, { sx: { borderStyle: 'dashed' } }), (0, jsx_runtime_1.jsx)(Box_1.default, { sx: { p: 1 }, children: (0, jsx_runtime_1.jsx)(sign_out_button_1.SignOutButton, { size: "medium", variant: "text", onClose: popover.onClose, sx: { display: 'block', textAlign: 'left' }, onSignOut: onSignOut }) })] }))] })] }));
 }

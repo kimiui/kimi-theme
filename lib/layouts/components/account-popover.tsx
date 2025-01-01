@@ -6,9 +6,9 @@ import Typography from '@mui/material/Typography';
 import { useRouter, usePathname } from 'routes-react';
 import type { IconButtonProps } from '@mui/material/IconButton';
 
+import { _mock } from 'lib/_mock';
 import { paths } from 'lib/routes/paths';
 import { Label } from 'lib/components/label';
-import { useMockedUser } from 'lib/auth/hooks';
 import { usePopover, CustomPopover } from 'lib/components/custom-popover';
 
 import { AccountButton } from './account-button';
@@ -23,16 +23,17 @@ export type AccountPopoverProps = IconButtonProps & {
     icon?: React.ReactNode;
     info?: React.ReactNode;
   }[];
+  onSignOut?: VoidFunction;
 };
 
-export function AccountPopover({ data = [], sx, ...other }: AccountPopoverProps) {
+export function AccountPopover({ data = [], onSignOut, sx, ...other }: AccountPopoverProps) {
   const router = useRouter();
 
   const popover = usePopover();
 
   const pathname = usePathname();
 
-  const { user } = useMockedUser();
+  const { user } = _mock;
 
   const handleClickItem = (path: string) => {
     popover.onClose();
@@ -102,16 +103,21 @@ export function AccountPopover({ data = [], sx, ...other }: AccountPopoverProps)
           })}
         </MenuList>
 
-        <Divider sx={{ borderStyle: 'dashed' }} />
+        {onSignOut && (
+          <>
+            <Divider sx={{ borderStyle: 'dashed' }} />
 
-        <Box sx={{ p: 1 }}>
-          <SignOutButton
-            size="medium"
-            variant="text"
-            onClose={popover.onClose}
-            sx={{ display: 'block', textAlign: 'left' }}
-          />
-        </Box>
+            <Box sx={{ p: 1 }}>
+              <SignOutButton
+                size="medium"
+                variant="text"
+                onClose={popover.onClose}
+                sx={{ display: 'block', textAlign: 'left' }}
+                onSignOut={onSignOut}
+              />
+            </Box>
+          </>
+        )}
       </CustomPopover>
     </>
   );

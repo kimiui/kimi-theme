@@ -52,7 +52,6 @@ var _mock_1 = require("../../_mock");
 var paths_1 = require("../../routes/paths");
 var styles_2 = require("../../theme/styles");
 var label_1 = require("../../components/label");
-var hooks_1 = require("../../auth/hooks");
 var iconify_1 = require("../../components/iconify");
 var scrollbar_1 = require("../../components/scrollbar");
 var animate_1 = require("../../components/animate");
@@ -65,7 +64,7 @@ function AccountDrawer(_a) {
     var theme = (0, styles_1.useTheme)();
     var router = (0, routes_react_1.useRouter)();
     var pathname = (0, routes_react_1.usePathname)();
-    var user = (0, hooks_1.useMockedUser)().user;
+    var user = _mock_1._mock.user;
     var _d = (0, react_1.useState)(false), open = _d[0], setOpen = _d[1];
     var handleOpenDrawer = (0, react_1.useCallback)(function () {
         setOpen(true);

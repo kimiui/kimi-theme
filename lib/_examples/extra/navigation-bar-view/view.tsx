@@ -3,7 +3,6 @@
 import { paths } from 'lib/routes/paths';
 import { CustomBreadcrumbs } from 'lib/components/custom-breadcrumbs';
 
-import { NavAPI } from './nav-api';
 import { NavMini } from './nav-mini';
 import { NavBasic } from './nav-basic';
 import { NavVertical } from './nav-vertical';
@@ -18,7 +17,6 @@ const DEMO = [
   { name: 'Vertical', component: <NavVertical /> },
   { name: 'Mini', component: <NavMini /> },
   { name: 'Horizontal', component: <NavHorizontal /> },
-  { name: 'Data from API', component: <NavAPI /> },
 ];
 
 // ----------------------------------------------------------------------

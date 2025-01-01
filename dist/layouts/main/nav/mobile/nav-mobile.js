@@ -25,9 +25,8 @@ var logo_1 = require("../../../../components/logo");
 var nav_section_1 = require("../../../../components/nav-section");
 var scrollbar_1 = require("../../../../components/scrollbar");
 var nav_mobile_list_1 = require("./nav-mobile-list");
-var sign_in_button_1 = require("../../../components/sign-in-button");
 function NavMobile(_a) {
-    var _b, _c;
+    var _b;
     var data = _a.data, open = _a.open, onClose = _a.onClose, slots = _a.slots, sx = _a.sx;
     var pathname = (0, routes_react_1.usePathname)();
     (0, react_1.useEffect)(function () {
@@ -38,5 +37,5 @@ function NavMobile(_a) {
     }, [pathname]);
     return ((0, jsx_runtime_1.jsxs)(Drawer_1.default, { open: open, onClose: onClose, PaperProps: {
             sx: __assign({ display: 'flex', flexDirection: 'column', width: 'var(--layout-nav-mobile-width)' }, sx),
-        }, children: [(_b = slots === null || slots === void 0 ? void 0 : slots.topArea) !== null && _b !== void 0 ? _b : ((0, jsx_runtime_1.jsx)(Box_1.default, { display: "flex", sx: { pt: 3, pb: 2, pl: 2.5 }, children: (0, jsx_runtime_1.jsx)(logo_1.Logo, {}) })), (0, jsx_runtime_1.jsx)(scrollbar_1.Scrollbar, { fillContent: true, children: (0, jsx_runtime_1.jsx)(Box_1.default, { component: "nav", display: "flex", flexDirection: "column", flex: "1 1 auto", sx: { pb: 3 }, children: (0, jsx_runtime_1.jsx)(nav_section_1.NavUl, { children: data.map(function (list) { return ((0, jsx_runtime_1.jsx)(nav_mobile_list_1.NavList, { data: list }, list.title)); }) }) }) }), (_c = slots === null || slots === void 0 ? void 0 : slots.bottomArea) !== null && _c !== void 0 ? _c : ((0, jsx_runtime_1.jsx)(Box_1.default, { gap: 1.5, display: "flex", sx: { px: 2.5, py: 3 }, children: (0, jsx_runtime_1.jsx)(sign_in_button_1.SignInButton, { fullWidth: true }) }))] }));
+        }, children: [(_b = slots === null || slots === void 0 ? void 0 : slots.topArea) !== null && _b !== void 0 ? _b : ((0, jsx_runtime_1.jsx)(Box_1.default, { display: "flex", sx: { pt: 3, pb: 2, pl: 2.5 }, children: (0, jsx_runtime_1.jsx)(logo_1.Logo, {}) })), (0, jsx_runtime_1.jsx)(scrollbar_1.Scrollbar, { fillContent: true, children: (0, jsx_runtime_1.jsx)(Box_1.default, { component: "nav", display: "flex", flexDirection: "column", flex: "1 1 auto", sx: { pb: 3 }, children: (0, jsx_runtime_1.jsx)(nav_section_1.NavUl, { children: data.map(function (list) { return ((0, jsx_runtime_1.jsx)(nav_mobile_list_1.NavList, { data: list }, list.title)); }) }) }) }), slots === null || slots === void 0 ? void 0 : slots.bottomArea] }));
 }

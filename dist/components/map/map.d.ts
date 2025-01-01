@@ -1,12 +1,7 @@
 import type { MapRef } from "react-map-gl";
 export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
-    transformRequest?: import("mapbox-gl").RequestTransformFunction;
-    config?: {
-        [key: string]: import("mapbox-gl").ConfigSpecification;
-    };
-    hash?: boolean | string;
-    accessToken?: string;
     zoom?: number;
+    hash?: boolean | string;
     scrollZoom?: boolean | {
         around?: "center";
     };
@@ -27,6 +22,9 @@ export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
         around?: "center";
     };
     repaint?: boolean;
+    config?: {
+        [key: string]: import("mapbox-gl").ConfigSpecification;
+    };
     interactive?: boolean;
     bearingSnap?: number;
     clickTolerance?: number;
@@ -51,6 +49,8 @@ export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
     renderWorldCopies?: boolean;
     minTileCacheSize?: number;
     maxTileCacheSize?: number;
+    transformRequest?: import("mapbox-gl").RequestTransformFunction;
+    accessToken?: string;
     testMode?: boolean;
     locale?: Partial<{
         "AttributionControl.ToggleAttribution": string;

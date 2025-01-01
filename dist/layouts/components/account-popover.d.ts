@@ -6,5 +6,6 @@ export type AccountPopoverProps = IconButtonProps & {
         icon?: React.ReactNode;
         info?: React.ReactNode;
     }[];
+    onSignOut?: VoidFunction;
 };
-export declare function AccountPopover({ data, sx, ...other }: AccountPopoverProps): import("react/jsx-runtime").JSX.Element;
+export declare function AccountPopover({ data, onSignOut, sx, ...other }: AccountPopoverProps): import("react/jsx-runtime").JSX.Element;
