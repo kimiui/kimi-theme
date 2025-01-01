@@ -16,7 +16,7 @@ function generateExports(dir, basePath = '.') {
       const exportPath = join(basePath, entry.name).replace(/\\/g, '/');
       const key = `./${basePath.replace(/\\/g, '/')}`;
       if (
-        !['.'].includes(key) &&
+        !['./.'].includes(key) &&
         !key.includes('_examples') &&
         !key.includes('_mock') &&
         !key.includes('assets')

@@ -1,8 +1,8 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.18",
-  "description": "TypeScript",
+  "version": "0.0.19",
+  "description": "Kimi UI Theme",
   "private": false,
   "license": "MIT",
   "type": "module",
@@ -88,7 +88,6 @@
     "./components/theme-mode-toggle": "./dist/components/theme-mode-toggle/index.js",
     "./components/upload": "./dist/components/upload/index.js",
     "./hooks": "./dist/hooks/index.js",
-    "./.": "./dist/index.js",
     "./layouts/auth": "./dist/layouts/auth/index.js",
     "./layouts/components/notifications-drawer": "./dist/layouts/components/notifications-drawer/index.js",
     "./layouts/components/searchbar": "./dist/layouts/components/searchbar/index.js",
