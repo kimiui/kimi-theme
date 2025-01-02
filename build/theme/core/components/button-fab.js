@@ -12,7 +12,7 @@ const filledVariant = {
         props: ({ ownerState }) => !ownerState.disabled &&
             FILLED_VARIANT.includes(ownerState.variant) &&
             ownerState.color === color,
-        style: ({ theme }) => ({
+        style: () => ({
             '&:hover': { boxShadow: 'none' },
         }),
     })),
