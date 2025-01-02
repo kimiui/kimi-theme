@@ -5,22 +5,22 @@ import type {} from '@mui/x-data-grid/themeAugmentation';
 import type {} from '@mui/x-date-pickers/themeAugmentation';
 import type {} from '@mui/material/themeCssVarsAugmentation';
 
-import type { FontStyleExtend } from './core/typography';
-import type { ChipExtendVariant } from './core/components/chip';
-import type { BadgeExtendVariant } from './core/components/badge';
-import type { SliderExtendColor } from './core/components/slider';
-import type { ButtonExtendVariant } from './core/components/button';
-import type { FabExtendVariant } from './core/components/button-fab';
-import type { AvatarGroupExtendVariant } from './core/components/avatar';
-import type { ButtonGroupExtendVariant } from './core/components/button-group';
-import type { PaginationExtendColor, PaginationExtendVariant } from './core/components/pagination';
+import type { FontStyleExtend } from '../core/typography';
+import type { ChipExtendVariant } from '../core/components/chip';
+import type { BadgeExtendVariant } from '../core/components/badge';
+import type { SliderExtendColor } from '../core/components/slider';
+import type { ButtonExtendVariant } from '../core/components/button';
+import type { FabExtendVariant } from '../core/components/button-fab';
+import type { AvatarGroupExtendVariant } from '../core/components/avatar';
+import type { ButtonGroupExtendVariant } from '../core/components/button-group';
+import type { PaginationExtendColor, PaginationExtendVariant } from '../core/components/pagination';
 import type {
   GreyExtend,
   TypeTextExtend,
   CommonColorsExtend,
   PaletteColorExtend,
   TypeBackgroundExtend,
-} from './core/palette';
+} from '../core/palette';
 import type {
   BgBlurMixin,
   MaxLineMixin,
@@ -29,7 +29,7 @@ import type {
   TextGradientMixin,
   MenuItemStylesMixin,
   BorderGradientProps,
-} from './core/mixins';
+} from '../core/mixins';
 
 // ----------------------------------------------------------------------
 
@@ -173,3 +173,5 @@ declare module '@mui/material/styles/createMixins' {
     paperStyles?: PaperStylesMixin;
   }
 }
+
+export {};

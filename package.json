@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.27",
+  "version": "0.0.29",
   "description": "Kimi UI Theme",
   "private": false,
   "license": "MIT",
@@ -36,10 +36,6 @@
     "prepublishOnly": "npm run build"
   },
   "exports": {
-    ".": {
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.js"
-    },
     "./components/animate/back-to-top": "./dist/components/animate/back-to-top/index.js",
     "./components/animate": "./dist/components/animate/index.js",
     "./components/animate/scroll-progress": "./dist/components/animate/scroll-progress/index.js",
@@ -107,6 +103,7 @@
     "./theme/core/components": "./dist/theme/core/components/index.js",
     "./theme/core": "./dist/theme/core/index.js",
     "./theme/core/mixins": "./dist/theme/core/mixins/index.js",
+    "./theme/extend-theme-types": "./dist/theme/extend-theme-types/index.d.ts",
     "./theme": "./dist/theme/index.js",
     "./theme/styles": "./dist/theme/styles/index.js",
     "./theme/with-settings": "./dist/theme/with-settings/index.js",
