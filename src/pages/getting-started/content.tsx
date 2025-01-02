@@ -6,11 +6,13 @@ import CodeBlock from 'lib/components/code-block';
 
 const codeBlock = `import { ThemeProvider } from 'lib/theme/theme-provider';
 import { SettingsDrawer, SettingsProvider } from 'lib/components/settings';
+import CssBaseline from '@mui/material/CssBaseline';
 
 export default function App() {
   return (
     <SettingsProvider>
       <ThemeProvider>
+        <CssBaseline />
         <SettingsDrawer />
         <Router />
       </ThemeProvider>
