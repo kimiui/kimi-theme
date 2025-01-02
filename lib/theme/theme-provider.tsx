@@ -11,7 +11,6 @@ import { useSettingsContext } from 'lib/components/settings';
 import { createTheme } from './create-theme';
 import { Rtl } from './with-settings/right-to-left';
 
-import type {} from './extend-theme-types';
 import type { ThemeOptions } from './types';
 // ----------------------------------------------------------------------
 
