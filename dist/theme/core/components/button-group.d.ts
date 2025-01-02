@@ -1,5 +1,8 @@
 import type { ButtonGroupProps } from '@mui/material/ButtonGroup';
 import type { Theme } from '@mui/material/styles';
+export type ButtonGroupExtendVariant = {
+    soft: true;
+};
 declare module '@mui/material/ButtonGroup' {
     interface ButtonGroupPropsVariantOverrides {
         soft: true;

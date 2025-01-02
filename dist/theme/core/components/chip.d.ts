@@ -1,6 +1,9 @@
 import type { ChipProps } from '@mui/material/Chip';
 import type { SvgIconProps } from '@mui/material/SvgIcon';
 import type { Theme } from '@mui/material/styles';
+export type ChipExtendVariant = {
+    soft: true;
+};
 /**
  * Icons
  * https://icon-sets.iconify.design/solar/close-circle-bold

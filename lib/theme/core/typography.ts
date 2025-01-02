@@ -1,4 +1,4 @@
-import type { Theme } from '@mui/material/styles';
+import type { Theme, CSSObject } from '@mui/material/styles';
 import type { TypographyOptions } from '@mui/material/styles/createTypography';
 
 import { setFont, pxToRem, responsiveFontSizes } from '../styles/utils';
@@ -28,6 +28,10 @@ export const primaryFont = setFont(defaultFont);
 export const secondaryFont = setFont('Barlow');
 
 // ----------------------------------------------------------------------
+export type FontStyleExtend = {
+  fontWeightSemiBold: CSSObject['fontWeight'];
+  fontSecondaryFamily: CSSObject['fontFamily'];
+};
 
 export const typography: TypographyOptions = {
   fontFamily: primaryFont,

@@ -4,7 +4,12 @@ import type { Theme, Components, ComponentsVariants } from '@mui/material/styles
 import { varAlpha, stylesMode } from '../../styles';
 
 // ----------------------------------------------------------------------
-
+export type FabExtendVariant = {
+  outlined: true;
+  outlinedExtended: true;
+  soft: true;
+  softExtended: true;
+};
 // NEW VARIANT
 declare module '@mui/material/Fab' {
   interface FabPropsVariantOverrides {
@@ -31,7 +36,7 @@ const filledVariant: Record<string, ComponentsVariants<Theme>['MuiFab']> = {
       !ownerState.disabled &&
       FILLED_VARIANT.includes(ownerState.variant!) &&
       ownerState.color === color,
-    style: ({ theme }) => ({
+    style: () => ({
       '&:hover': { boxShadow: 'none' },
     }),
   })),

@@ -2,6 +2,13 @@ import { badgeClasses } from '@mui/material/Badge';
 import type { Theme, Components } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
+export type BadgeExtendVariant = {
+  always: true;
+  busy: true;
+  online: true;
+  offline: true;
+  invisible: true;
+};
 
 // NEW VARIANT
 declare module '@mui/material/Badge' {

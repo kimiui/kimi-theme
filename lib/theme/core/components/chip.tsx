@@ -6,6 +6,9 @@ import type { Theme, CSSObject, Components, ComponentsVariants } from '@mui/mate
 
 import { varAlpha, stylesMode } from '../../styles';
 
+export type ChipExtendVariant = {
+  soft: true;
+};
 // ----------------------------------------------------------------------
 
 /**

@@ -1,4 +1,10 @@
 import type { Theme } from '@mui/material/styles';
+export type FabExtendVariant = {
+    outlined: true;
+    outlinedExtended: true;
+    soft: true;
+    softExtended: true;
+};
 declare module '@mui/material/Fab' {
     interface FabPropsVariantOverrides {
         outlined: true;

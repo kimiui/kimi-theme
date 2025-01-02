@@ -1,4 +1,7 @@
 import type { Theme } from '@mui/material/styles';
+export type SliderExtendColor = {
+    inherit: true;
+};
 declare module '@mui/material/Slider' {
     interface SliderPropsColorOverrides {
         inherit: true;

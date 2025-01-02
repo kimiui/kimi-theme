@@ -1,4 +1,7 @@
 import type { Theme } from '@mui/material/styles';
+export type ButtonExtendVariant = {
+    soft: true;
+};
 declare module '@mui/material/Button' {
     interface ButtonPropsVariantOverrides {
         soft: true;

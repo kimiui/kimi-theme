@@ -5,7 +5,9 @@ import type { Theme, Components, ComponentsVariants } from '@mui/material/styles
 import { varAlpha, stylesMode } from '../../styles';
 
 // ----------------------------------------------------------------------
-
+export type ButtonExtendVariant = {
+  soft: true;
+};
 // NEW VARIANT
 declare module '@mui/material/Button' {
   interface ButtonPropsVariantOverrides {

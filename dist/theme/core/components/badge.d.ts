@@ -1,4 +1,11 @@
 import type { Theme } from '@mui/material/styles';
+export type BadgeExtendVariant = {
+    always: true;
+    busy: true;
+    online: true;
+    offline: true;
+    invisible: true;
+};
 declare module '@mui/material/Badge' {
     interface BadgePropsVariantOverrides {
         alway: true;

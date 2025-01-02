@@ -4,7 +4,16 @@ import type { Theme, Components, ComponentsVariants } from '@mui/material/styles
 import { varAlpha, stylesMode } from '../../styles';
 
 // ----------------------------------------------------------------------
+export type PaginationExtendVariant = {
+  soft: true;
+};
 
+export type PaginationExtendColor = {
+  info: true;
+  success: true;
+  warning: true;
+  error: true;
+};
 // NEW VARIANT
 declare module '@mui/material/Pagination' {
   interface PaginationPropsVariantOverrides {

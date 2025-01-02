@@ -1,4 +1,7 @@
 import type { Theme } from '@mui/material/styles';
+export type AvatarGroupExtendVariant = {
+    compact: true;
+};
 declare module '@mui/material/AvatarGroup' {
     interface AvatarGroupPropsVariantOverrides {
         compact: true;

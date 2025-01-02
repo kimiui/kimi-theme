@@ -4,6 +4,9 @@ import type { Theme, Components, ComponentsVariants } from '@mui/material/styles
 import { varAlpha } from '../../styles';
 
 // ----------------------------------------------------------------------
+export type AvatarGroupExtendVariant = {
+  compact: true;
+};
 
 // NEW VARIANT
 declare module '@mui/material/AvatarGroup' {

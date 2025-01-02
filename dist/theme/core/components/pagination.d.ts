@@ -1,4 +1,13 @@
 import type { Theme } from '@mui/material/styles';
+export type PaginationExtendVariant = {
+    soft: true;
+};
+export type PaginationExtendColor = {
+    info: true;
+    success: true;
+    warning: true;
+    error: true;
+};
 declare module '@mui/material/Pagination' {
     interface PaginationPropsVariantOverrides {
         soft: true;
