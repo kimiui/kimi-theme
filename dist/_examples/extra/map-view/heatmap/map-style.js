@@ -1,9 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.heatmapLayer = void 0;
 // ----------------------------------------------------------------------
-var MAX_ZOOM_LEVEL = 9;
-exports.heatmapLayer = {
+const MAX_ZOOM_LEVEL = 9;
+export const heatmapLayer = {
     id: 'heatmap',
     maxzoom: MAX_ZOOM_LEVEL,
     type: 'heatmap',

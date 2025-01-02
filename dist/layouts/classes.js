@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.layoutClasses = void 0;
-exports.layoutClasses = {
+export const layoutClasses = {
     root: 'layout__root',
     main: 'layout__main',
     header: 'layout__header',

@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.navBasicClasses = void 0;
-exports.navBasicClasses = {
+export const navBasicClasses = {
     desktop: {
         root: 'nav__basic__desktop',
     },

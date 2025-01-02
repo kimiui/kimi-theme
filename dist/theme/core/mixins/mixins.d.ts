@@ -19,17 +19,17 @@ export type BorderGradientProps = typeof borderGradient;
  */
 export declare const mixins: {
     hideScrollX: {
-        msOverflowStyle: string;
-        scrollbarWidth: string;
-        overflowX: string;
+        msOverflowStyle: any;
+        scrollbarWidth: any;
+        overflowX: any;
         '&::-webkit-scrollbar': {
             display: string;
         };
     };
     hideScrollY: {
-        msOverflowStyle: string;
-        scrollbarWidth: string;
-        overflowY: string;
+        msOverflowStyle: any;
+        scrollbarWidth: any;
+        overflowY: any;
         '&::-webkit-scrollbar': {
             display: string;
         };

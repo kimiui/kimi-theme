@@ -1,41 +1,35 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.SwitchView = SwitchView;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var Switch_1 = __importDefault(require("@mui/material/Switch"));
-var FormGroup_1 = __importDefault(require("@mui/material/FormGroup"));
-var FormControl_1 = __importDefault(require("@mui/material/FormControl"));
-var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
-var paths_1 = require("../../../routes/paths");
-var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
-var component_hero_1 = require("../../component-hero");
-var component_block_1 = require("../../component-block");
-var component_template_1 = require("../../component-template");
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import Switch from '@mui/material/Switch';
+import FormGroup from '@mui/material/FormGroup';
+import FormControl from '@mui/material/FormControl';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import { paths } from '../../../routes/paths';
+import { CustomBreadcrumbs } from '../../../components/custom-breadcrumbs';
+import { ComponentHero } from '../../component-hero';
+import { ComponentBlock } from '../../component-block';
+import { ScrollToViewTemplate } from '../../component-template';
 // ----------------------------------------------------------------------
-var COLORS = ['default', 'primary', 'secondary', 'info', 'success', 'warning', 'error'];
-var PLACEMENTS = ['top', 'start', 'bottom', 'end'];
+const COLORS = ['default', 'primary', 'secondary', 'info', 'success', 'warning', 'error'];
+const PLACEMENTS = ['top', 'start', 'bottom', 'end'];
 // ----------------------------------------------------------------------
-function SwitchView() {
-    var DEMO = [
+export function SwitchView() {
+    const DEMO = [
         {
             name: 'Basic',
-            component: ((0, jsx_runtime_1.jsxs)(component_block_1.ComponentBlock, { children: [(0, jsx_runtime_1.jsx)(Switch_1.default, { name: "basic-1", defaultChecked: true }), (0, jsx_runtime_1.jsx)(Switch_1.default, { name: "basic-2" }), (0, jsx_runtime_1.jsx)(Switch_1.default, { name: "basic-3", disabled: true }), (0, jsx_runtime_1.jsx)(Switch_1.default, { name: "basic-4", disabled: true, checked: true }), (0, jsx_runtime_1.jsx)(Switch_1.default, { name: "basic-5", defaultChecked: true, color: "default" })] })),
+            component: (_jsxs(ComponentBlock, { children: [_jsx(Switch, { name: "basic-1", defaultChecked: true }), _jsx(Switch, { name: "basic-2" }), _jsx(Switch, { name: "basic-3", disabled: true }), _jsx(Switch, { name: "basic-4", disabled: true, checked: true }), _jsx(Switch, { name: "basic-5", defaultChecked: true, color: "default" })] })),
         },
         {
             name: 'Sizes',
-            component: ((0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { children: (0, jsx_runtime_1.jsxs)(FormGroup_1.default, { row: true, children: [(0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { control: (0, jsx_runtime_1.jsx)(Switch_1.default, { name: "small", size: "small" }), label: "Small" }), (0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { control: (0, jsx_runtime_1.jsx)(Switch_1.default, { name: "normal" }), label: "Normal" })] }) })),
+            component: (_jsx(ComponentBlock, { children: _jsxs(FormGroup, { row: true, children: [_jsx(FormControlLabel, { control: _jsx(Switch, { name: "small", size: "small" }), label: "Small" }), _jsx(FormControlLabel, { control: _jsx(Switch, { name: "normal" }), label: "Normal" })] }) })),
         },
         {
             name: 'Placement',
-            component: ((0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { children: (0, jsx_runtime_1.jsx)(FormGroup_1.default, { row: true, children: PLACEMENTS.map(function (placement) { return ((0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { value: placement, label: placement, labelPlacement: placement, control: (0, jsx_runtime_1.jsx)(Switch_1.default, { name: placement }), sx: { textTransform: 'capitalize' } }, placement)); }) }) })),
+            component: (_jsx(ComponentBlock, { children: _jsx(FormGroup, { row: true, children: PLACEMENTS.map((placement) => (_jsx(FormControlLabel, { value: placement, label: placement, labelPlacement: placement, control: _jsx(Switch, { name: placement }), sx: { textTransform: 'capitalize' } }, placement))) }) })),
         },
         {
             name: 'Colors',
-            component: ((0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { children: (0, jsx_runtime_1.jsx)(FormControl_1.default, { component: "fieldset", children: (0, jsx_runtime_1.jsxs)(FormGroup_1.default, { children: [COLORS.map(function (color) { return ((0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { control: (0, jsx_runtime_1.jsx)(Switch_1.default, { defaultChecked: true, name: color, color: color }), label: color, sx: { textTransform: 'capitalize' } }, color)); }), (0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { disabled: true, control: (0, jsx_runtime_1.jsx)(Switch_1.default, { name: "error-disabled", color: "error" }), label: "Disabled" })] }) }) })),
+            component: (_jsx(ComponentBlock, { children: _jsx(FormControl, { component: "fieldset", children: _jsxs(FormGroup, { children: [COLORS.map((color) => (_jsx(FormControlLabel, { control: _jsx(Switch, { defaultChecked: true, name: color, color: color }), label: color, sx: { textTransform: 'capitalize' } }, color))), _jsx(FormControlLabel, { disabled: true, control: _jsx(Switch, { name: "error-disabled", color: "error" }), label: "Disabled" })] }) }) })),
         },
     ];
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(component_hero_1.ComponentHero, { children: (0, jsx_runtime_1.jsx)(custom_breadcrumbs_1.CustomBreadcrumbs, { heading: "Switch", links: [{ name: 'Components', href: paths_1.paths.docs.components.root }, { name: 'Switch' }], moreLink: ['https://mui.com/components/switches'] }) }), (0, jsx_runtime_1.jsx)(component_template_1.ScrollToViewTemplate, { data: DEMO })] }));
+    return (_jsxs(_Fragment, { children: [_jsx(ComponentHero, { children: _jsx(CustomBreadcrumbs, { heading: "Switch", links: [{ name: 'Components', href: paths.docs.components.root }, { name: 'Switch' }], moreLink: ['https://mui.com/components/switches'] }) }), _jsx(ScrollToViewTemplate, { data: DEMO })] }));
 }

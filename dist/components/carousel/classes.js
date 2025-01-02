@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.carouselClasses = void 0;
-exports.carouselClasses = {
+export const carouselClasses = {
     root: 'mnl__carousel__root',
     container: 'mnl__carousel__container',
     // dot

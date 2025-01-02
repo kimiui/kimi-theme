@@ -1,35 +1,32 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ChartView = ChartView;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var paths_1 = require("../../../routes/paths");
-var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
-var chart_pie_1 = require("./chart-pie");
-var chart_bar_1 = require("./chart-bar");
-var chart_line_1 = require("./chart-line");
-var chart_area_1 = require("./chart-area");
-var chart_mixed_1 = require("./chart-mixed");
-var chart_donut_1 = require("./chart-donut");
-var chart_scatter_1 = require("./chart-scatter");
-var chart_treemap_1 = require("./chart-treemap");
-var chart_heatmap_1 = require("./chart-heatmap");
-var chart_box_plot_1 = require("./chart-box-plot");
-var chart_radar_bar_1 = require("./chart-radar-bar");
-var chart_radial_bar_1 = require("./chart-radial-bar");
-var component_hero_1 = require("../../component-hero");
-var chart_stroked_gauge_1 = require("./chart-stroked-gauge");
-var chart_column_single_1 = require("./chart-column-single");
-var chart_column_stacked_1 = require("./chart-column-stacked");
-var chart_column_negative_1 = require("./chart-column-negative");
-var chart_column_multiple_1 = require("./chart-column-multiple");
-var component_template_1 = require("../../component-template");
-var chart_semi_circle_gauge_1 = require("./chart-semi-circle-gauge");
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { paths } from '../../../routes/paths';
+import { CustomBreadcrumbs } from '../../../components/custom-breadcrumbs';
+import { ChartPie } from './chart-pie';
+import { ChartBar } from './chart-bar';
+import { ChartLine } from './chart-line';
+import { ChartArea } from './chart-area';
+import { ChartMixed } from './chart-mixed';
+import { ChartDonut } from './chart-donut';
+import { ChartScatter } from './chart-scatter';
+import { ChartTreemap } from './chart-treemap';
+import { ChartHeatmap } from './chart-heatmap';
+import { ChartBoxPlot } from './chart-box-plot';
+import { ChartRadarBar } from './chart-radar-bar';
+import { ChartRadialBar } from './chart-radial-bar';
+import { ComponentHero } from '../../component-hero';
+import { ChartStrokedGauge } from './chart-stroked-gauge';
+import { ChartColumnSingle } from './chart-column-single';
+import { ChartColumnStacked } from './chart-column-stacked';
+import { ChartColumnNegative } from './chart-column-negative';
+import { ChartColumnMultiple } from './chart-column-multiple';
+import { ScrollToViewTemplate } from '../../component-template';
+import { ChartSemiCircleGauge } from './chart-semi-circle-gauge';
 // ----------------------------------------------------------------------
-var DEMO = [
+const DEMO = [
     {
         name: 'Line',
-        component: ((0, jsx_runtime_1.jsx)(chart_line_1.ChartLine, { chart: {
+        component: (_jsx(ChartLine, { chart: {
                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
                 series: [
                     { name: 'Series A', data: [32, 40, 28, 42, 64, 72, 56, 80, 100] },
@@ -39,7 +36,7 @@ var DEMO = [
     },
     {
         name: 'Area',
-        component: ((0, jsx_runtime_1.jsx)(chart_area_1.ChartArea, { chart: {
+        component: (_jsx(ChartArea, { chart: {
                 categories: [
                     '2023-09-19T00:00:00.000Z',
                     '2023-09-19T01:30:00.000Z',
@@ -59,14 +56,14 @@ var DEMO = [
     },
     {
         name: 'Column single',
-        component: ((0, jsx_runtime_1.jsx)(chart_column_single_1.ChartColumnSingle, { chart: {
+        component: (_jsx(ChartColumnSingle, { chart: {
                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
                 series: [{ data: [32, 40, 28, 42, 64, 72, 56, 80, 100] }],
             } })),
     },
     {
         name: 'Column multiple',
-        component: ((0, jsx_runtime_1.jsx)(chart_column_multiple_1.ChartColumnMultiple, { chart: {
+        component: (_jsx(ChartColumnMultiple, { chart: {
                 categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
                 series: [
                     { name: 'Series A', data: [32, 40, 28, 42, 64, 72, 56, 80, 100] },
@@ -76,7 +73,7 @@ var DEMO = [
     },
     {
         name: 'Column stacked',
-        component: ((0, jsx_runtime_1.jsx)(chart_column_stacked_1.ChartColumnStacked, { chart: {
+        component: (_jsx(ChartColumnStacked, { chart: {
                 categories: [
                     '01/01/2011 GMT',
                     '01/02/2011 GMT',
@@ -95,7 +92,7 @@ var DEMO = [
     },
     {
         name: 'Column negative',
-        component: ((0, jsx_runtime_1.jsx)(chart_column_negative_1.ChartColumnNegative, { chart: {
+        component: (_jsx(ChartColumnNegative, { chart: {
                 categories: [
                     '2011-01-01',
                     '2011-02-01',
@@ -144,7 +141,7 @@ var DEMO = [
     },
     {
         name: 'Bar',
-        component: ((0, jsx_runtime_1.jsx)(chart_bar_1.ChartBar, { chart: {
+        component: (_jsx(ChartBar, { chart: {
                 categories: [
                     'Italy',
                     'Japan',
@@ -162,7 +159,7 @@ var DEMO = [
     },
     {
         name: 'Mixed',
-        component: ((0, jsx_runtime_1.jsx)(chart_mixed_1.ChartMixed, { chart: {
+        component: (_jsx(ChartMixed, { chart: {
                 categories: [
                     '01/01/2023',
                     '02/01/2023',
@@ -197,7 +194,7 @@ var DEMO = [
     },
     {
         name: 'Scatter',
-        component: ((0, jsx_runtime_1.jsx)(chart_scatter_1.ChartScatter, { chart: {
+        component: (_jsx(ChartScatter, { chart: {
                 series: [
                     {
                         name: 'Series A',
@@ -279,25 +276,25 @@ var DEMO = [
     },
     {
         name: 'Pie',
-        component: ((0, jsx_runtime_1.jsx)(chart_pie_1.ChartPie, { chart: {
+        component: (_jsx(ChartPie, { chart: {
                 categories: ['Series A', 'Series B', 'Series C', 'Series D'],
                 series: [44, 55, 13, 43],
             } })),
     },
     {
         name: 'Donut',
-        component: ((0, jsx_runtime_1.jsx)(chart_donut_1.ChartDonut, { chart: {
+        component: (_jsx(ChartDonut, { chart: {
                 categories: ['Series A', 'Series B', 'Series C', 'Series D'],
                 series: [44, 55, 13, 43],
             } })),
     },
     {
         name: 'Radial bar',
-        component: (0, jsx_runtime_1.jsx)(chart_radial_bar_1.ChartRadialBar, { chart: { categories: ['Apples', 'Oranges'], series: [24, 50] } }),
+        component: _jsx(ChartRadialBar, { chart: { categories: ['Apples', 'Oranges'], series: [24, 50] } }),
     },
     {
         name: 'Radar bar',
-        component: ((0, jsx_runtime_1.jsx)(chart_radar_bar_1.ChartRadarBar, { chart: {
+        component: (_jsx(ChartRadarBar, { chart: {
                 categories: ['2011', '2012', '2013', '2014', '2015', '2016'],
                 series: [
                     { name: 'Series A', data: [80, 50, 30, 40, 100, 20] },
@@ -308,15 +305,15 @@ var DEMO = [
     },
     {
         name: 'Semi circle gauge',
-        component: (0, jsx_runtime_1.jsx)(chart_semi_circle_gauge_1.ChartSemiCircleGauge, { chart: { series: [75] } }),
+        component: _jsx(ChartSemiCircleGauge, { chart: { series: [75] } }),
     },
     {
         name: 'Stroked gauge',
-        component: (0, jsx_runtime_1.jsx)(chart_stroked_gauge_1.ChartStrokedGauge, { chart: { series: [75] } }),
+        component: _jsx(ChartStrokedGauge, { chart: { series: [75] } }),
     },
     {
         name: 'BoxPlot',
-        component: ((0, jsx_runtime_1.jsx)(chart_box_plot_1.ChartBoxPlot, { chart: {
+        component: (_jsx(ChartBoxPlot, { chart: {
                 series: [
                     {
                         data: [
@@ -334,7 +331,7 @@ var DEMO = [
     },
     {
         name: 'Heatmap',
-        component: ((0, jsx_runtime_1.jsx)(chart_heatmap_1.ChartHeatmap, { chart: {
+        component: (_jsx(ChartHeatmap, { chart: {
                 categories: ['10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '01:00'],
                 series: [
                     {
@@ -366,7 +363,7 @@ var DEMO = [
     },
     {
         name: 'Treemap',
-        component: ((0, jsx_runtime_1.jsx)(chart_treemap_1.ChartTreemap, { chart: {
+        component: (_jsx(ChartTreemap, { chart: {
                 series: [
                     {
                         name: 'Desktops',
@@ -391,6 +388,6 @@ var DEMO = [
             } })),
     },
 ];
-function ChartView() {
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(component_hero_1.ComponentHero, { children: (0, jsx_runtime_1.jsx)(custom_breadcrumbs_1.CustomBreadcrumbs, { heading: "Chart", links: [{ name: 'Components', href: paths_1.paths.docs.components.root }, { name: 'Chart' }], moreLink: ['https://apexcharts.com'] }) }), (0, jsx_runtime_1.jsx)(component_template_1.ScrollToViewTemplate, { data: DEMO })] }));
+export function ChartView() {
+    return (_jsxs(_Fragment, { children: [_jsx(ComponentHero, { children: _jsx(CustomBreadcrumbs, { heading: "Chart", links: [{ name: 'Components', href: paths.docs.components.root }, { name: 'Chart' }], moreLink: ['https://apexcharts.com'] }) }), _jsx(ScrollToViewTemplate, { data: DEMO })] }));
 }

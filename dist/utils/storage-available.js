@@ -1,11 +1,7 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.localStorageAvailable = localStorageAvailable;
-exports.localStorageGetItem = localStorageGetItem;
-function localStorageAvailable() {
+export function localStorageAvailable() {
     try {
-        var key = '__some_random_key_you_are_not_going_to_use__';
+        const key = '__some_random_key_you_are_not_going_to_use__';
         window.localStorage.setItem(key, key);
         window.localStorage.removeItem(key);
         return true;
@@ -14,10 +10,9 @@ function localStorageAvailable() {
         return false;
     }
 }
-function localStorageGetItem(key, defaultValue) {
-    if (defaultValue === void 0) { defaultValue = ''; }
-    var storageAvailable = localStorageAvailable();
-    var value;
+export function localStorageGetItem(key, defaultValue = '') {
+    const storageAvailable = localStorageAvailable();
+    let value;
     if (storageAvailable) {
         value = localStorage.getItem(key) || defaultValue;
     }

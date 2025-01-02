@@ -1,37 +1,31 @@
 'use client';
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProgressBar = ProgressBar;
-var nprogress_1 = __importDefault(require("nprogress"));
-var routes_react_1 = require("routes-react");
-var react_1 = require("react");
-require("./styles.css");
+import NProgress from 'nprogress';
+import { usePathname } from 'routes-react';
+import { useState, useEffect } from 'react';
+import './styles.css';
 // ----------------------------------------------------------------------
-function ProgressBar() {
-    var pathname = (0, routes_react_1.usePathname)();
-    var _a = (0, react_1.useState)(false), mounted = _a[0], setMounted = _a[1];
-    var _b = (0, react_1.useState)(false), visible = _b[0], setVisible = _b[1];
-    (0, react_1.useEffect)(function () {
+export function ProgressBar() {
+    const pathname = usePathname();
+    const [mounted, setMounted] = useState(false);
+    const [visible, setVisible] = useState(false);
+    useEffect(() => {
         setMounted(true);
     }, []);
-    (0, react_1.useEffect)(function () {
+    useEffect(() => {
         if (!visible) {
-            nprogress_1.default.start();
+            NProgress.start();
             setVisible(true);
         }
         if (visible) {
-            nprogress_1.default.done();
+            NProgress.done();
             setVisible(false);
         }
         if (!visible && mounted) {
             setVisible(false);
-            nprogress_1.default.done();
+            NProgress.done();
         }
-        return function () {
-            nprogress_1.default.done();
+        return () => {
+            NProgress.done();
         };
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pathname, mounted]);

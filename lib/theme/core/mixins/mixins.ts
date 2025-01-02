@@ -25,15 +25,15 @@ export type BorderGradientProps = typeof borderGradient;
 
 export const mixins = {
   hideScrollX: {
-    msOverflowStyle: 'none',
-    scrollbarWidth: 'none',
-    overflowX: 'auto',
+    msOverflowStyle: 'none' as any,
+    scrollbarWidth: 'none' as any,
+    overflowX: 'auto' as any,
     '&::-webkit-scrollbar': { display: 'none' },
   },
   hideScrollY: {
-    msOverflowStyle: 'none',
-    scrollbarWidth: 'none',
-    overflowY: 'auto',
+    msOverflowStyle: 'none' as any,
+    scrollbarWidth: 'none' as any,
+    overflowY: 'auto' as any,
     '&::-webkit-scrollbar': { display: 'none' },
   },
   borderGradient,

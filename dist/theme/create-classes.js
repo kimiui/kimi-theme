@@ -1,7 +1,4 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createClasses = createClasses;
-function createClasses(className) {
-    return "kimi__".concat(className);
+export function createClasses(className) {
+    return `kimi__${className}`;
 }

@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.link = void 0;
 // ----------------------------------------------------------------------
-var MuiLink = {
+const MuiLink = {
     /** **************************************
      * DEFAULT PROPS
      *************************************** */
@@ -13,4 +10,4 @@ var MuiLink = {
     styleOverrides: {},
 };
 // ----------------------------------------------------------------------
-exports.link = { MuiLink: MuiLink };
+export const link = { MuiLink };

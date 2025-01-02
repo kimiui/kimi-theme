@@ -1,14 +1,10 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.BasicRichTree = BasicRichTree;
-exports.BasicSimpleTree = BasicSimpleTree;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var TreeItem_1 = require("@mui/x-tree-view/TreeItem");
-var RichTreeView_1 = require("@mui/x-tree-view/RichTreeView");
-var SimpleTreeView_1 = require("@mui/x-tree-view/SimpleTreeView");
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { TreeItem } from '@mui/x-tree-view/TreeItem';
+import { RichTreeView } from '@mui/x-tree-view/RichTreeView';
+import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 // ----------------------------------------------------------------------
-var MUI_X_PRODUCTS = [
+const MUI_X_PRODUCTS = [
     {
         id: 'grid',
         label: 'Data Grid',
@@ -27,9 +23,9 @@ var MUI_X_PRODUCTS = [
         ],
     },
 ];
-function BasicRichTree() {
-    return ((0, jsx_runtime_1.jsx)(RichTreeView_1.RichTreeView, { items: MUI_X_PRODUCTS, sx: { overflowX: 'hidden', minHeight: 240, width: 1 } }));
+export function BasicRichTree() {
+    return (_jsx(RichTreeView, { items: MUI_X_PRODUCTS, sx: { overflowX: 'hidden', minHeight: 240, width: 1 } }));
 }
-function BasicSimpleTree() {
-    return ((0, jsx_runtime_1.jsxs)(SimpleTreeView_1.SimpleTreeView, { sx: { overflowX: 'hidden', minHeight: 240, width: 1 }, children: [(0, jsx_runtime_1.jsxs)(TreeItem_1.TreeItem, { itemId: "grid", label: "Data Grid", children: [(0, jsx_runtime_1.jsx)(TreeItem_1.TreeItem, { itemId: "grid-community", label: "@mui/x-data-grid" }), (0, jsx_runtime_1.jsx)(TreeItem_1.TreeItem, { itemId: "grid-pro", label: "@mui/x-data-grid-pro" }), (0, jsx_runtime_1.jsx)(TreeItem_1.TreeItem, { itemId: "grid-premium", label: "@mui/x-data-grid-premium" })] }), (0, jsx_runtime_1.jsxs)(TreeItem_1.TreeItem, { itemId: "pickers", label: "Date and Time Pickers", children: [(0, jsx_runtime_1.jsx)(TreeItem_1.TreeItem, { itemId: "pickers-community", label: "@mui/x-date-pickers" }), (0, jsx_runtime_1.jsx)(TreeItem_1.TreeItem, { itemId: "pickers-pro", label: "@mui/x-date-pickers-pro" })] })] }));
+export function BasicSimpleTree() {
+    return (_jsxs(SimpleTreeView, { sx: { overflowX: 'hidden', minHeight: 240, width: 1 }, children: [_jsxs(TreeItem, { itemId: "grid", label: "Data Grid", children: [_jsx(TreeItem, { itemId: "grid-community", label: "@mui/x-data-grid" }), _jsx(TreeItem, { itemId: "grid-pro", label: "@mui/x-data-grid-pro" }), _jsx(TreeItem, { itemId: "grid-premium", label: "@mui/x-data-grid-premium" })] }), _jsxs(TreeItem, { itemId: "pickers", label: "Date and Time Pickers", children: [_jsx(TreeItem, { itemId: "pickers-community", label: "@mui/x-date-pickers" }), _jsx(TreeItem, { itemId: "pickers-pro", label: "@mui/x-date-pickers-pro" })] })] }));
 }

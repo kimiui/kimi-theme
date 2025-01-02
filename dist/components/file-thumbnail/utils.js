@@ -1,28 +1,21 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.fileFormat = fileFormat;
-exports.fileThumb = fileThumb;
-exports.fileTypeByUrl = fileTypeByUrl;
-exports.fileNameByUrl = fileNameByUrl;
-exports.fileData = fileData;
 // ----------------------------------------------------------------------
 // Define more types here
-var FORMAT_PDF = ["pdf"];
-var FORMAT_TEXT = ["txt"];
-var FORMAT_PHOTOSHOP = ["psd"];
-var FORMAT_WORD = ["doc", "docx"];
-var FORMAT_EXCEL = ["xls", "xlsx"];
-var FORMAT_ZIP = ["zip", "rar", "iso"];
-var FORMAT_ILLUSTRATOR = ["ai", "esp"];
-var FORMAT_POWERPOINT = ["ppt", "pptx"];
-var FORMAT_AUDIO = ["wav", "aif", "mp3", "aac"];
-var FORMAT_IMG = ["jpg", "jpeg", "gif", "bmp", "png", "svg", "webp"];
-var FORMAT_VIDEO = ["m4v", "avi", "mpg", "mp4", "webm"];
-var iconUrl = function (icon) { return "/assets/icons/files/".concat(icon, ".svg"); };
+const FORMAT_PDF = ["pdf"];
+const FORMAT_TEXT = ["txt"];
+const FORMAT_PHOTOSHOP = ["psd"];
+const FORMAT_WORD = ["doc", "docx"];
+const FORMAT_EXCEL = ["xls", "xlsx"];
+const FORMAT_ZIP = ["zip", "rar", "iso"];
+const FORMAT_ILLUSTRATOR = ["ai", "esp"];
+const FORMAT_POWERPOINT = ["ppt", "pptx"];
+const FORMAT_AUDIO = ["wav", "aif", "mp3", "aac"];
+const FORMAT_IMG = ["jpg", "jpeg", "gif", "bmp", "png", "svg", "webp"];
+const FORMAT_VIDEO = ["m4v", "avi", "mpg", "mp4", "webm"];
+const iconUrl = (icon) => `/assets/icons/files/${icon}.svg`;
 // ----------------------------------------------------------------------
-function fileFormat(fileUrl) {
-    var format;
-    var fileByUrl = fileTypeByUrl(fileUrl);
+export function fileFormat(fileUrl) {
+    let format;
+    const fileByUrl = fileTypeByUrl(fileUrl);
     switch (fileUrl.includes(fileByUrl)) {
         case FORMAT_TEXT.includes(fileByUrl):
             format = "txt";
@@ -63,8 +56,8 @@ function fileFormat(fileUrl) {
     return format;
 }
 // ----------------------------------------------------------------------
-function fileThumb(fileUrl) {
-    var thumb;
+export function fileThumb(fileUrl) {
+    let thumb;
     switch (fileFormat(fileUrl)) {
         case "folder":
             thumb = iconUrl("ic-folder");
@@ -108,15 +101,15 @@ function fileThumb(fileUrl) {
     return thumb;
 }
 // ----------------------------------------------------------------------
-function fileTypeByUrl(fileUrl) {
+export function fileTypeByUrl(fileUrl) {
     return (fileUrl && fileUrl.split(".").pop()) || "";
 }
 // ----------------------------------------------------------------------
-function fileNameByUrl(fileUrl) {
+export function fileNameByUrl(fileUrl) {
     return fileUrl.split("/").pop();
 }
 // ----------------------------------------------------------------------
-function fileData(file) {
+export function fileData(file) {
     // From url
     if (typeof file === "string") {
         return {

@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.fileThumbnailClasses = void 0;
-exports.fileThumbnailClasses = {
+export const fileThumbnailClasses = {
     root: 'mnl__file__thumbnail__root',
     img: 'mnl__file__thumbnail__img',
     icon: 'mnl__file__thumbnail__icon',

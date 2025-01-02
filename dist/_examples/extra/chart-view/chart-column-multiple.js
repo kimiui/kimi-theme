@@ -1,19 +1,14 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ChartColumnMultiple = ChartColumnMultiple;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var styles_1 = require("@mui/material/styles");
-var chart_1 = require("../../../components/chart");
-function ChartColumnMultiple(_a) {
-    var _b;
-    var chart = _a.chart;
-    var theme = (0, styles_1.useTheme)();
-    var chartColors = (_b = chart.colors) !== null && _b !== void 0 ? _b : [
-        (0, styles_1.alpha)(theme.palette.primary.dark, 0.8),
+import { jsx as _jsx } from "react/jsx-runtime";
+import { useTheme, alpha as hexAlpha } from '@mui/material/styles';
+import { Chart, useChart } from '../../../components/chart';
+export function ChartColumnMultiple({ chart }) {
+    const theme = useTheme();
+    const chartColors = chart.colors ?? [
+        hexAlpha(theme.palette.primary.dark, 0.8),
         theme.palette.warning.main,
     ];
-    var chartOptions = (0, chart_1.useChart)({
+    const chartOptions = useChart({
         colors: chartColors,
         legend: { show: true },
         xaxis: { categories: chart.categories },
@@ -22,7 +17,7 @@ function ChartColumnMultiple(_a) {
             width: 2,
             colors: ['transparent'],
         },
-        tooltip: { y: { formatter: function (value) { return "$ ".concat(value, " thousands"); } } },
+        tooltip: { y: { formatter: (value) => `$ ${value} thousands` } },
     });
-    return (0, jsx_runtime_1.jsx)(chart_1.Chart, { type: "bar", series: chart.series, options: chartOptions, height: 320 });
+    return _jsx(Chart, { type: "bar", series: chart.series, options: chartOptions, height: 320 });
 }

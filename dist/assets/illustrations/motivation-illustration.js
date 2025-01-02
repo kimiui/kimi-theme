@@ -1,49 +1,21 @@
 'use client';
-"use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-var __rest = (this && this.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var jsx_runtime_1 = require("react/jsx-runtime");
-var react_1 = require("react");
-var styles_1 = require("@mui/material/styles");
-var background_shape_1 = require("./background-shape");
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { memo } from 'react';
+import { styled, useTheme } from '@mui/material/styles';
+import { BackgroundShape } from './background-shape';
 // ----------------------------------------------------------------------
-var ViewBox = (0, styles_1.styled)('svg')(function (_a) {
-    var theme = _a.theme;
-    return ({
-        width: '100%',
-        height: '100%',
-        fill: 'none',
-        viewBox: '0 0 480 360',
-        xmlns: 'http://www.w3.org/2000/svg',
-    });
-});
-function MotivationIllustration(_a) {
-    var hideBackground = _a.hideBackground, sx = _a.sx, other = __rest(_a, ["hideBackground", "sx"]);
-    var theme = (0, styles_1.useTheme)();
-    var PRIMARY_LIGHTER = theme.vars.palette.primary.lighter;
-    var PRIMARY_DARK = theme.vars.palette.primary.dark;
-    var PRIMARY_DARKER = theme.vars.palette.primary.darker;
-    return ((0, jsx_runtime_1.jsxs)(ViewBox, { sx: __assign({ width: 320, maxWidth: 1, flexShrink: 0, height: 'auto' }, sx), children: [!hideBackground && (0, jsx_runtime_1.jsx)(background_shape_1.BackgroundShape, {}), (0, jsx_runtime_1.jsx)("image", { href: "/assets/illustrations/characters/character-2.webp", height: "300", x: "322", y: "30" }), (0, jsx_runtime_1.jsx)("path", { fill: "url(#paint0_linear_1_43)", d: "M216.3 138v108.3c0 2.2-1.8 4-4 4H195c-2.2 0-4-1.8-4-4V138c0-2.2 1.8-4 4-4h17.3c2.2 0 4 1.8 4 4zm-55-68H144c-2.2 0-4 1.8-4 4v176.3c0 2.2 1.8 4 4 4h17.3c2.2 0 4-1.8 4-4V74c0-2.2-1.8-4-4-4zm102 93H246c-2.2 0-4 1.8-4 4v75.7c0 2.2 1.8 4 4 4h17.3c2.2 0 4-1.8 4-4V167c0-2.2-1.8-4-4-4z" }), (0, jsx_runtime_1.jsx)("path", { fill: PRIMARY_DARKER, d: "M359.2 253.4c-1.1 3.1-2.3 6.3-3.7 9.7-5.1.1-10.1.3-15.2.4-3.3.1-6.9.2-9.6 2.1-5.2 3.6-.7 6.1-1.3 9.6-.7 4.2-4.9 5.1-9 5.1-14.1.1-27.7 4.6-41.5 7.3s-28.9 3.5-41.2-3.4c-.8-.5-1.7-1-2-2-.6-1.6.9-3.2 2.3-4.2 3.2-2.2 6.7-3.7 10.5-4.5 2.2-.5 4.5-.8 6.5-2 1.9-1.2 3.3-3.7 2.3-5.8-32.1 2-64.1 4.8-96 8.4-41.1 4.8-81.8 12.9-123 15.9h-.4c-2.9-2.9-5.5-6-7.9-9.3.2-.2.4-.5.6-.7 2-2.2 5-3.2 7.8-4.1 15.9-4.9 32.4-7.4 48.8-9.9 81.6-12.3 164.2-21.1 246.8-15.3 8.4.6 16.8 1.5 25.2 2.7z", opacity: "0.24" }), (0, jsx_runtime_1.jsx)("path", { fill: "#DFE3E8", d: "M81.7 204.2l74 11v60.7h8.5v3.6h-19.5v-2.3h8.7v-50.3l-70-13.5v49h9.7v1.7H73.6V262h8.2v-57.8h-.1z" }), (0, jsx_runtime_1.jsx)("path", { fill: "#C4CDD5", d: "M80.6 204.2l74 11v60.7h8.5v3.6h-19.5v-2.3h8.7v-50.3l-70-13.5v49H92v1.7H72.4V262h8.2v-57.8z" }), (0, jsx_runtime_1.jsx)("defs", { children: (0, jsx_runtime_1.jsxs)("linearGradient", { id: "paint0_linear_1_43", x1: "140", x2: "276.5", y1: "98", y2: "312.5", gradientUnits: "userSpaceOnUse", children: [(0, jsx_runtime_1.jsx)("stop", { stopColor: PRIMARY_LIGHTER }), (0, jsx_runtime_1.jsx)("stop", { offset: "1", stopColor: PRIMARY_DARK })] }) })] }));
+const ViewBox = styled('svg')(({ theme }) => ({
+    width: '100%',
+    height: '100%',
+    fill: 'none',
+    viewBox: '0 0 480 360',
+    xmlns: 'http://www.w3.org/2000/svg',
+}));
+function MotivationIllustration({ hideBackground, sx, ...other }) {
+    const theme = useTheme();
+    const PRIMARY_LIGHTER = theme.vars.palette.primary.lighter;
+    const PRIMARY_DARK = theme.vars.palette.primary.dark;
+    const PRIMARY_DARKER = theme.vars.palette.primary.darker;
+    return (_jsxs(ViewBox, { sx: { width: 320, maxWidth: 1, flexShrink: 0, height: 'auto', ...sx }, children: [!hideBackground && _jsx(BackgroundShape, {}), _jsx("image", { href: "/assets/illustrations/characters/character-2.webp", height: "300", x: "322", y: "30" }), _jsx("path", { fill: "url(#paint0_linear_1_43)", d: "M216.3 138v108.3c0 2.2-1.8 4-4 4H195c-2.2 0-4-1.8-4-4V138c0-2.2 1.8-4 4-4h17.3c2.2 0 4 1.8 4 4zm-55-68H144c-2.2 0-4 1.8-4 4v176.3c0 2.2 1.8 4 4 4h17.3c2.2 0 4-1.8 4-4V74c0-2.2-1.8-4-4-4zm102 93H246c-2.2 0-4 1.8-4 4v75.7c0 2.2 1.8 4 4 4h17.3c2.2 0 4-1.8 4-4V167c0-2.2-1.8-4-4-4z" }), _jsx("path", { fill: PRIMARY_DARKER, d: "M359.2 253.4c-1.1 3.1-2.3 6.3-3.7 9.7-5.1.1-10.1.3-15.2.4-3.3.1-6.9.2-9.6 2.1-5.2 3.6-.7 6.1-1.3 9.6-.7 4.2-4.9 5.1-9 5.1-14.1.1-27.7 4.6-41.5 7.3s-28.9 3.5-41.2-3.4c-.8-.5-1.7-1-2-2-.6-1.6.9-3.2 2.3-4.2 3.2-2.2 6.7-3.7 10.5-4.5 2.2-.5 4.5-.8 6.5-2 1.9-1.2 3.3-3.7 2.3-5.8-32.1 2-64.1 4.8-96 8.4-41.1 4.8-81.8 12.9-123 15.9h-.4c-2.9-2.9-5.5-6-7.9-9.3.2-.2.4-.5.6-.7 2-2.2 5-3.2 7.8-4.1 15.9-4.9 32.4-7.4 48.8-9.9 81.6-12.3 164.2-21.1 246.8-15.3 8.4.6 16.8 1.5 25.2 2.7z", opacity: "0.24" }), _jsx("path", { fill: "#DFE3E8", d: "M81.7 204.2l74 11v60.7h8.5v3.6h-19.5v-2.3h8.7v-50.3l-70-13.5v49h9.7v1.7H73.6V262h8.2v-57.8h-.1z" }), _jsx("path", { fill: "#C4CDD5", d: "M80.6 204.2l74 11v60.7h8.5v3.6h-19.5v-2.3h8.7v-50.3l-70-13.5v49H92v1.7H72.4V262h8.2v-57.8z" }), _jsx("defs", { children: _jsxs("linearGradient", { id: "paint0_linear_1_43", x1: "140", x2: "276.5", y1: "98", y2: "312.5", gradientUnits: "userSpaceOnUse", children: [_jsx("stop", { stopColor: PRIMARY_LIGHTER }), _jsx("stop", { offset: "1", stopColor: PRIMARY_DARK })] }) })] }));
 }
-exports.default = (0, react_1.memo)(MotivationIllustration);
+export default memo(MotivationIllustration);

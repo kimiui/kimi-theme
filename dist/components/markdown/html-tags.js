@@ -1,10 +1,7 @@
-"use strict";
 /** All html tags
  * https://github.com/harrysolovay/all-html-tags
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.htmlTags = void 0;
-exports.htmlTags = [
+export const htmlTags = [
     'a',
     'abbr',
     'acronym',

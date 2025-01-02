@@ -1,88 +1,73 @@
 'use client';
-"use strict";
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.UploadView = UploadView;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var ahooks_1 = require("ahooks");
-var Stack_1 = __importDefault(require("@mui/material/Stack"));
-var Switch_1 = __importDefault(require("@mui/material/Switch"));
-var react_1 = require("react");
-var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
-var paths_1 = require("../../../routes/paths");
-var format_number_1 = require("../../../utils/format-number");
-var iconify_1 = require("../../../components/iconify");
-var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
-var upload_1 = require("../../../components/upload");
-var component_hero_1 = require("../../component-hero");
-var component_template_1 = require("../../component-template");
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { useBoolean } from 'ahooks';
+import Stack from '@mui/material/Stack';
+import Switch from '@mui/material/Switch';
+import { useState, useCallback } from 'react';
+import Typography from '@mui/material/Typography';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import { paths } from '../../../routes/paths';
+import { fData } from '../../../utils/format-number';
+import { Iconify } from '../../../components/iconify';
+import { CustomBreadcrumbs } from '../../../components/custom-breadcrumbs';
+import { Upload, UploadBox, UploadAvatar } from '../../../components/upload';
+import { ComponentHero } from '../../component-hero';
+import { ScrollToViewTemplate } from '../../component-template';
 // ----------------------------------------------------------------------
-function UploadView() {
-    var _a = (0, ahooks_1.useBoolean)(), preview = _a[0], previewActions = _a[1];
-    var _b = (0, react_1.useState)([]), files = _b[0], setFiles = _b[1];
-    var _c = (0, react_1.useState)(null), file = _c[0], setFile = _c[1];
-    var _d = (0, react_1.useState)(null), avatarUrl = _d[0], setAvatarUrl = _d[1];
-    var handleDropSingleFile = (0, react_1.useCallback)(function (acceptedFiles) {
-        var newFile = acceptedFiles[0];
+export function UploadView() {
+    const [preview, previewActions] = useBoolean();
+    const [files, setFiles] = useState([]);
+    const [file, setFile] = useState(null);
+    const [avatarUrl, setAvatarUrl] = useState(null);
+    const handleDropSingleFile = useCallback((acceptedFiles) => {
+        const newFile = acceptedFiles[0];
         setFile(newFile);
     }, []);
-    var handleDropAvatar = (0, react_1.useCallback)(function (acceptedFiles) {
-        var newFile = acceptedFiles[0];
+    const handleDropAvatar = useCallback((acceptedFiles) => {
+        const newFile = acceptedFiles[0];
         setAvatarUrl(newFile);
     }, []);
-    var handleDropMultiFile = (0, react_1.useCallback)(function (acceptedFiles) {
-        setFiles(__spreadArray(__spreadArray([], files, true), acceptedFiles, true));
+    const handleDropMultiFile = useCallback((acceptedFiles) => {
+        setFiles([...files, ...acceptedFiles]);
     }, [files]);
-    var handleRemoveFile = function (inputFile) {
-        var filesFiltered = files.filter(function (fileFiltered) { return fileFiltered !== inputFile; });
+    const handleRemoveFile = (inputFile) => {
+        const filesFiltered = files.filter((fileFiltered) => fileFiltered !== inputFile);
         setFiles(filesFiltered);
     };
-    var handleRemoveAllFiles = function () {
+    const handleRemoveAllFiles = () => {
         setFiles([]);
     };
-    var DEMO = [
+    const DEMO = [
         {
             name: 'Upload multi file',
-            component: ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { control: (0, jsx_runtime_1.jsx)(Switch_1.default, { checked: preview, onClick: previewActions.toggle }), label: "Show Thumbnail", sx: { mb: 3, width: 1, justifyContent: 'flex-end' } }), (0, jsx_runtime_1.jsx)(upload_1.Upload, { multiple: true, thumbnail: preview, value: files, onDrop: handleDropMultiFile, onRemove: handleRemoveFile, onRemoveAll: handleRemoveAllFiles, onUpload: function () { return console.info('ON UPLOAD'); } })] })),
+            component: (_jsxs(_Fragment, { children: [_jsx(FormControlLabel, { control: _jsx(Switch, { checked: preview, onClick: previewActions.toggle }), label: "Show Thumbnail", sx: { mb: 3, width: 1, justifyContent: 'flex-end' } }), _jsx(Upload, { multiple: true, thumbnail: preview, value: files, onDrop: handleDropMultiFile, onRemove: handleRemoveFile, onRemoveAll: handleRemoveAllFiles, onUpload: () => console.info('ON UPLOAD') })] })),
         },
         {
             name: 'Upload single file',
-            component: ((0, jsx_runtime_1.jsx)(upload_1.Upload, { value: file, onDrop: handleDropSingleFile, onDelete: function () { return setFile(null); } })),
+            component: (_jsx(Upload, { value: file, onDrop: handleDropSingleFile, onDelete: () => setFile(null) })),
         },
         {
             name: 'Upload avatar',
-            component: ((0, jsx_runtime_1.jsx)(upload_1.UploadAvatar, { value: avatarUrl, onDrop: handleDropAvatar, validator: function (fileData) {
+            component: (_jsx(UploadAvatar, { value: avatarUrl, onDrop: handleDropAvatar, validator: (fileData) => {
                     if (fileData.size > 1000000) {
                         return {
                             code: 'file-too-large',
-                            message: "File is larger than ".concat((0, format_number_1.fData)(1000000)),
+                            message: `File is larger than ${fData(1000000)}`,
                         };
                     }
                     return null;
-                }, helperText: (0, jsx_runtime_1.jsxs)(Typography_1.default, { variant: "caption", sx: {
+                }, helperText: _jsxs(Typography, { variant: "caption", sx: {
                         mt: 3,
                         mx: 'auto',
                         display: 'block',
                         textAlign: 'center',
                         color: 'text.disabled',
-                    }, children: ["Allowed *.jpeg, *.jpg, *.png, *.gif", (0, jsx_runtime_1.jsx)("br", {}), " max size of ", (0, format_number_1.fData)(3145728)] }) })),
+                    }, children: ["Allowed *.jpeg, *.jpg, *.png, *.gif", _jsx("br", {}), " max size of ", fData(3145728)] }) })),
         },
         {
             name: 'Upload box',
-            component: ((0, jsx_runtime_1.jsxs)(Stack_1.default, { direction: "row", spacing: 2, children: [(0, jsx_runtime_1.jsx)(upload_1.UploadBox, {}), (0, jsx_runtime_1.jsx)(upload_1.UploadBox, { placeholder: (0, jsx_runtime_1.jsxs)(Stack_1.default, { spacing: 0.5, alignItems: "center", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "eva:cloud-upload-fill", width: 40 }), (0, jsx_runtime_1.jsx)(Typography_1.default, { variant: "body2", children: "Upload file" })] }), sx: { mb: 3, py: 2.5, flexGrow: 1, height: 'auto' } })] })),
+            component: (_jsxs(Stack, { direction: "row", spacing: 2, children: [_jsx(UploadBox, {}), _jsx(UploadBox, { placeholder: _jsxs(Stack, { spacing: 0.5, alignItems: "center", children: [_jsx(Iconify, { icon: "eva:cloud-upload-fill", width: 40 }), _jsx(Typography, { variant: "body2", children: "Upload file" })] }), sx: { mb: 3, py: 2.5, flexGrow: 1, height: 'auto' } })] })),
         },
     ];
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(component_hero_1.ComponentHero, { children: (0, jsx_runtime_1.jsx)(custom_breadcrumbs_1.CustomBreadcrumbs, { heading: "Upload", links: [{ name: 'Components', href: paths_1.paths.docs.components.root }, { name: 'Upload' }], moreLink: ['https://react-dropzone.js.org/#section-basic-example'] }) }), (0, jsx_runtime_1.jsx)(component_template_1.ScrollToViewTemplate, { data: DEMO })] }));
+    return (_jsxs(_Fragment, { children: [_jsx(ComponentHero, { children: _jsx(CustomBreadcrumbs, { heading: "Upload", links: [{ name: 'Components', href: paths.docs.components.root }, { name: 'Upload' }], moreLink: ['https://react-dropzone.js.org/#section-basic-example'] }) }), _jsx(ScrollToViewTemplate, { data: DEMO })] }));
 }

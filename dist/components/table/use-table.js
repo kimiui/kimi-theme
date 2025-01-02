@@ -1,58 +1,46 @@
 'use client';
-"use strict";
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useTable = useTable;
-var react_1 = require("react");
-function useTable(props) {
-    var _a = (0, react_1.useState)(!!(props === null || props === void 0 ? void 0 : props.defaultDense)), dense = _a[0], setDense = _a[1];
-    var _b = (0, react_1.useState)((props === null || props === void 0 ? void 0 : props.defaultCurrentPage) || 0), page = _b[0], setPage = _b[1];
-    var _c = (0, react_1.useState)((props === null || props === void 0 ? void 0 : props.defaultOrderBy) || 'name'), orderBy = _c[0], setOrderBy = _c[1];
-    var _d = (0, react_1.useState)((props === null || props === void 0 ? void 0 : props.defaultRowsPerPage) || 5), rowsPerPage = _d[0], setRowsPerPage = _d[1];
-    var _e = (0, react_1.useState)((props === null || props === void 0 ? void 0 : props.defaultOrder) || 'asc'), order = _e[0], setOrder = _e[1];
-    var _f = (0, react_1.useState)((props === null || props === void 0 ? void 0 : props.defaultSelected) || []), selected = _f[0], setSelected = _f[1];
-    var onSort = (0, react_1.useCallback)(function (id) {
-        var isAsc = orderBy === id && order === 'asc';
+import { useState, useCallback } from 'react';
+export function useTable(props) {
+    const [dense, setDense] = useState(!!props?.defaultDense);
+    const [page, setPage] = useState(props?.defaultCurrentPage || 0);
+    const [orderBy, setOrderBy] = useState(props?.defaultOrderBy || 'name');
+    const [rowsPerPage, setRowsPerPage] = useState(props?.defaultRowsPerPage || 5);
+    const [order, setOrder] = useState(props?.defaultOrder || 'asc');
+    const [selected, setSelected] = useState(props?.defaultSelected || []);
+    const onSort = useCallback((id) => {
+        const isAsc = orderBy === id && order === 'asc';
         if (id !== '') {
             setOrder(isAsc ? 'desc' : 'asc');
             setOrderBy(id);
         }
     }, [order, orderBy]);
-    var onSelectRow = (0, react_1.useCallback)(function (inputValue) {
-        var newSelected = selected.includes(inputValue)
-            ? selected.filter(function (value) { return value !== inputValue; })
-            : __spreadArray(__spreadArray([], selected, true), [inputValue], false);
+    const onSelectRow = useCallback((inputValue) => {
+        const newSelected = selected.includes(inputValue)
+            ? selected.filter((value) => value !== inputValue)
+            : [...selected, inputValue];
         setSelected(newSelected);
     }, [selected]);
-    var onChangeRowsPerPage = (0, react_1.useCallback)(function (event) {
+    const onChangeRowsPerPage = useCallback((event) => {
         setPage(0);
         setRowsPerPage(parseInt(event.target.value, 10));
     }, []);
-    var onChangeDense = (0, react_1.useCallback)(function (event) {
+    const onChangeDense = useCallback((event) => {
         setDense(event.target.checked);
     }, []);
-    var onSelectAllRows = (0, react_1.useCallback)(function (checked, inputValue) {
+    const onSelectAllRows = useCallback((checked, inputValue) => {
         if (checked) {
             setSelected(inputValue);
             return;
         }
         setSelected([]);
     }, []);
-    var onChangePage = (0, react_1.useCallback)(function (event, newPage) {
+    const onChangePage = useCallback((event, newPage) => {
         setPage(newPage);
     }, []);
-    var onResetPage = (0, react_1.useCallback)(function () {
+    const onResetPage = useCallback(() => {
         setPage(0);
     }, []);
-    var onUpdatePageDeleteRow = (0, react_1.useCallback)(function (totalRowsInPage) {
+    const onUpdatePageDeleteRow = useCallback((totalRowsInPage) => {
         setSelected([]);
         if (page) {
             if (totalRowsInPage < 2) {
@@ -60,9 +48,8 @@ function useTable(props) {
             }
         }
     }, [page]);
-    var onUpdatePageDeleteRows = (0, react_1.useCallback)(function (_a) {
-        var totalRowsInPage = _a.totalRowsInPage, totalRowsFiltered = _a.totalRowsFiltered;
-        var totalSelected = selected.length;
+    const onUpdatePageDeleteRows = useCallback(({ totalRowsInPage, totalRowsFiltered, }) => {
+        const totalSelected = selected.length;
         setSelected([]);
         if (page) {
             if (totalSelected === totalRowsInPage) {
@@ -72,35 +59,35 @@ function useTable(props) {
                 setPage(0);
             }
             else if (totalSelected > totalRowsInPage) {
-                var newPage = Math.ceil((totalRowsFiltered - totalSelected) / rowsPerPage) - 1;
+                const newPage = Math.ceil((totalRowsFiltered - totalSelected) / rowsPerPage) - 1;
                 setPage(newPage);
             }
         }
     }, [page, rowsPerPage, selected.length]);
     return {
-        dense: dense,
-        order: order,
-        page: page,
-        orderBy: orderBy,
-        rowsPerPage: rowsPerPage,
+        dense,
+        order,
+        page,
+        orderBy,
+        rowsPerPage,
         //
-        selected: selected,
-        onSelectRow: onSelectRow,
-        onSelectAllRows: onSelectAllRows,
+        selected,
+        onSelectRow,
+        onSelectAllRows,
         //
-        onSort: onSort,
-        onChangePage: onChangePage,
-        onChangeDense: onChangeDense,
-        onResetPage: onResetPage,
-        onChangeRowsPerPage: onChangeRowsPerPage,
-        onUpdatePageDeleteRow: onUpdatePageDeleteRow,
-        onUpdatePageDeleteRows: onUpdatePageDeleteRows,
+        onSort,
+        onChangePage,
+        onChangeDense,
+        onResetPage,
+        onChangeRowsPerPage,
+        onUpdatePageDeleteRow,
+        onUpdatePageDeleteRows,
         //
-        setPage: setPage,
-        setDense: setDense,
-        setOrder: setOrder,
-        setOrderBy: setOrderBy,
-        setSelected: setSelected,
-        setRowsPerPage: setRowsPerPage,
+        setPage,
+        setDense,
+        setOrder,
+        setOrderBy,
+        setSelected,
+        setRowsPerPage,
     };
 }

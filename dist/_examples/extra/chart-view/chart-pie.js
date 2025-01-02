@@ -1,20 +1,15 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ChartPie = ChartPie;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var styles_1 = require("@mui/material/styles");
-var chart_1 = require("../../../components/chart");
-function ChartPie(_a) {
-    var _b;
-    var chart = _a.chart;
-    var theme = (0, styles_1.useTheme)();
-    var chartColors = (_b = chart.colors) !== null && _b !== void 0 ? _b : [
-        (0, styles_1.alpha)(theme.palette.primary.dark, 0.8),
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { useTheme, alpha as hexAlpha } from '@mui/material/styles';
+import { Chart, useChart, ChartLegends } from '../../../components/chart';
+export function ChartPie({ chart }) {
+    const theme = useTheme();
+    const chartColors = chart.colors ?? [
+        hexAlpha(theme.palette.primary.dark, 0.8),
         theme.palette.warning.main,
         theme.palette.info.dark,
         theme.palette.error.main,
     ];
-    var chartOptions = (0, chart_1.useChart)({
+    const chartOptions = useChart({
         chart: { sparkline: { enabled: true } },
         colors: chartColors,
         labels: chart.categories,
@@ -25,10 +20,10 @@ function ChartPie(_a) {
         },
         plotOptions: { pie: { donut: { labels: { show: false } } } },
     });
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(chart_1.ChartLegends, { labels: chartOptions === null || chartOptions === void 0 ? void 0 : chartOptions.labels, colors: chartOptions === null || chartOptions === void 0 ? void 0 : chartOptions.colors, sx: {
+    return (_jsxs(_Fragment, { children: [_jsx(ChartLegends, { labels: chartOptions?.labels, colors: chartOptions?.colors, sx: {
                     p: 3,
                     justifyContent: 'center',
-                } }), (0, jsx_runtime_1.jsx)(chart_1.Chart, { type: "pie", series: chart.series, options: chartOptions, width: 240, height: 240, sx: {
+                } }), _jsx(Chart, { type: "pie", series: chart.series, options: chartOptions, width: 240, height: 240, sx: {
                     my: 3,
                     mx: 'auto',
                 } })] }));

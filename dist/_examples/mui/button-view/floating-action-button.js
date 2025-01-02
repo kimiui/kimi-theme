@@ -1,52 +1,13 @@
 'use client';
-"use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || (function () {
-    var ownKeys = function(o) {
-        ownKeys = Object.getOwnPropertyNames || function (o) {
-            var ar = [];
-            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
-            return ar;
-        };
-        return ownKeys(o);
-    };
-    return function (mod) {
-        if (mod && mod.__esModule) return mod;
-        var result = {};
-        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
-        __setModuleDefault(result, mod);
-        return result;
-    };
-})();
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.FloatingActionButton = FloatingActionButton;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var framer_motion_1 = require("framer-motion");
-var Stack_1 = __importDefault(require("@mui/material/Stack"));
-var Fab_1 = __importStar(require("@mui/material/Fab"));
-var iconify_1 = require("../../../components/iconify");
-var animate_1 = require("../../../components/animate");
-var component_block_1 = require("../../component-block");
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { m } from 'framer-motion';
+import Stack from '@mui/material/Stack';
+import Fab, { fabClasses } from '@mui/material/Fab';
+import { Iconify } from '../../../components/iconify';
+import { varHover } from '../../../components/animate';
+import { ComponentBlock } from '../../component-block';
 // ----------------------------------------------------------------------
-var COLORS = [
+const COLORS = [
     'default',
     'inherit',
     'primary',
@@ -56,11 +17,10 @@ var COLORS = [
     'warning',
     'error',
 ];
-var SIZES = ['small', 'medium', 'large'];
+const SIZES = ['small', 'medium', 'large'];
 // ----------------------------------------------------------------------
-function FloatingActionButton() {
-    var _a;
-    return ((0, jsx_runtime_1.jsxs)(Stack_1.default, { rowGap: 5, columnGap: 2.5, display: "grid", gridTemplateColumns: { xs: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)' }, sx: (_a = {}, _a["& .".concat(Fab_1.fabClasses.root)] = { textTransform: 'capitalize' }, _a), children: [(0, jsx_runtime_1.jsxs)(component_block_1.ComponentBlock, { title: "Default", children: [COLORS.map(function (color) { return ((0, jsx_runtime_1.jsx)(Fab_1.default, { color: color, children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, color)); }), COLORS.map(function (color) { return ((0, jsx_runtime_1.jsxs)(Fab_1.default, { color: color, variant: "extended", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), color] }, color)); }), (0, jsx_runtime_1.jsx)(Fab_1.default, { color: "info", disabled: true, children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }) }), (0, jsx_runtime_1.jsxs)(Fab_1.default, { color: "info", disabled: true, variant: "extended", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), "disabled"] })] }), (0, jsx_runtime_1.jsxs)(component_block_1.ComponentBlock, { title: "Outlined", children: [COLORS.map(function (color) { return ((0, jsx_runtime_1.jsx)(Fab_1.default, { color: color, variant: "outlined", children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, color)); }), COLORS.map(function (color) { return ((0, jsx_runtime_1.jsxs)(Fab_1.default, { color: color, variant: "outlinedExtended", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), color] }, color)); }), (0, jsx_runtime_1.jsx)(Fab_1.default, { color: "info", disabled: true, variant: "outlined", children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }) }), (0, jsx_runtime_1.jsxs)(Fab_1.default, { color: "info", disabled: true, variant: "outlinedExtended", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), "disabled"] })] }), (0, jsx_runtime_1.jsxs)(component_block_1.ComponentBlock, { title: "Soft", children: [COLORS.map(function (color) { return ((0, jsx_runtime_1.jsx)(Fab_1.default, { color: color, variant: "soft", children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, color)); }), COLORS.map(function (color) { return ((0, jsx_runtime_1.jsxs)(Fab_1.default, { color: color, variant: "softExtended", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), color] }, color)); }), (0, jsx_runtime_1.jsx)(Fab_1.default, { color: "info", disabled: true, variant: "soft", children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }) }), (0, jsx_runtime_1.jsxs)(Fab_1.default, { color: "info", disabled: true, variant: "softExtended", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), "disabled"] })] }), (0, jsx_runtime_1.jsxs)(component_block_1.ComponentBlock, { title: "Sizes", children: [SIZES.map(function (size) { return ((0, jsx_runtime_1.jsx)(Fab_1.default, { size: size, color: "info", children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, size)); }), SIZES.map(function (size) { return ((0, jsx_runtime_1.jsxs)(Fab_1.default, { size: size, color: "info", variant: "extended", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), size] }, size)); }), SIZES.map(function (size) { return ((0, jsx_runtime_1.jsx)(Fab_1.default, { size: size, color: "info", variant: "soft", children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, size)); }), SIZES.map(function (size) { return ((0, jsx_runtime_1.jsxs)(Fab_1.default, { size: size, color: "info", variant: "softExtended", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), size] }, size)); }), SIZES.map(function (size) { return ((0, jsx_runtime_1.jsx)(Fab_1.default, { size: size, color: "info", variant: "outlined", children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, size)); }), SIZES.map(function (size) { return ((0, jsx_runtime_1.jsxs)(Fab_1.default, { size: size, color: "info", variant: "outlinedExtended", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), size] }, size)); })] }), (0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { title: "With Animate", children: SIZES.map(function (size) { return ((0, jsx_runtime_1.jsxs)(Fab_1.default, { component: framer_motion_1.m.button, whileTap: "tap", whileHover: "hover", variants: (size === 'small' && (0, animate_1.varHover)(1.1, 0.95)) ||
-                        (size === 'large' && (0, animate_1.varHover)(1.08, 0.99)) ||
-                        (0, animate_1.varHover)(), variant: "extended", size: size, color: "info", children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-access-alarm", width: 24 }), size] }, size)); }) })] }));
+export function FloatingActionButton() {
+    return (_jsxs(Stack, { rowGap: 5, columnGap: 2.5, display: "grid", gridTemplateColumns: { xs: 'repeat(1, 1fr)', lg: 'repeat(2, 1fr)' }, sx: { [`& .${fabClasses.root}`]: { textTransform: 'capitalize' } }, children: [_jsxs(ComponentBlock, { title: "Default", children: [COLORS.map((color) => (_jsx(Fab, { color: color, children: _jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, color))), COLORS.map((color) => (_jsxs(Fab, { color: color, variant: "extended", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), color] }, color))), _jsx(Fab, { color: "info", disabled: true, children: _jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }) }), _jsxs(Fab, { color: "info", disabled: true, variant: "extended", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), "disabled"] })] }), _jsxs(ComponentBlock, { title: "Outlined", children: [COLORS.map((color) => (_jsx(Fab, { color: color, variant: "outlined", children: _jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, color))), COLORS.map((color) => (_jsxs(Fab, { color: color, variant: "outlinedExtended", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), color] }, color))), _jsx(Fab, { color: "info", disabled: true, variant: "outlined", children: _jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }) }), _jsxs(Fab, { color: "info", disabled: true, variant: "outlinedExtended", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), "disabled"] })] }), _jsxs(ComponentBlock, { title: "Soft", children: [COLORS.map((color) => (_jsx(Fab, { color: color, variant: "soft", children: _jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, color))), COLORS.map((color) => (_jsxs(Fab, { color: color, variant: "softExtended", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), color] }, color))), _jsx(Fab, { color: "info", disabled: true, variant: "soft", children: _jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }) }), _jsxs(Fab, { color: "info", disabled: true, variant: "softExtended", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), "disabled"] })] }), _jsxs(ComponentBlock, { title: "Sizes", children: [SIZES.map((size) => (_jsx(Fab, { size: size, color: "info", children: _jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, size))), SIZES.map((size) => (_jsxs(Fab, { size: size, color: "info", variant: "extended", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), size] }, size))), SIZES.map((size) => (_jsx(Fab, { size: size, color: "info", variant: "soft", children: _jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, size))), SIZES.map((size) => (_jsxs(Fab, { size: size, color: "info", variant: "softExtended", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), size] }, size))), SIZES.map((size) => (_jsx(Fab, { size: size, color: "info", variant: "outlined", children: _jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }) }, size))), SIZES.map((size) => (_jsxs(Fab, { size: size, color: "info", variant: "outlinedExtended", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), size] }, size)))] }), _jsx(ComponentBlock, { title: "With Animate", children: SIZES.map((size) => (_jsxs(Fab, { component: m.button, whileTap: "tap", whileHover: "hover", variants: (size === 'small' && varHover(1.1, 0.95)) ||
+                        (size === 'large' && varHover(1.08, 0.99)) ||
+                        varHover(), variant: "extended", size: size, color: "info", children: [_jsx(Iconify, { icon: "ic:round-access-alarm", width: 24 }), size] }, size))) })] }));
 }

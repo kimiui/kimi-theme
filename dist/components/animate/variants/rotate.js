@@ -1,25 +1,21 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.varRotate = void 0;
-var transition_1 = require("./transition");
+import { varTranExit, varTranEnter } from './transition';
 // ----------------------------------------------------------------------
-var varRotate = function (props) {
-    var durationIn = props === null || props === void 0 ? void 0 : props.durationIn;
-    var durationOut = props === null || props === void 0 ? void 0 : props.durationOut;
-    var easeIn = props === null || props === void 0 ? void 0 : props.easeIn;
-    var easeOut = props === null || props === void 0 ? void 0 : props.easeOut;
+export const varRotate = (props) => {
+    const durationIn = props?.durationIn;
+    const durationOut = props?.durationOut;
+    const easeIn = props?.easeIn;
+    const easeOut = props?.easeOut;
     return {
         // IN
         in: {
             initial: { opacity: 0, rotate: -360 },
-            animate: { opacity: 1, rotate: 0, transition: (0, transition_1.varTranEnter)({ durationIn: durationIn, easeIn: easeIn }) },
-            exit: { opacity: 0, rotate: -360, transition: (0, transition_1.varTranExit)({ durationOut: durationOut, easeOut: easeOut }) },
+            animate: { opacity: 1, rotate: 0, transition: varTranEnter({ durationIn, easeIn }) },
+            exit: { opacity: 0, rotate: -360, transition: varTranExit({ durationOut, easeOut }) },
         },
         // OUT
         out: {
             initial: { opacity: 1, rotate: 0 },
-            animate: { opacity: 0, rotate: -360, transition: (0, transition_1.varTranExit)({ durationOut: durationOut, easeOut: easeOut }) },
+            animate: { opacity: 0, rotate: -360, transition: varTranExit({ durationOut, easeOut }) },
         },
     };
 };
-exports.varRotate = varRotate;

@@ -1,25 +1,22 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.DndView = DndView;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var paths_1 = require("../../../routes/paths");
-var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
-var component_hero_1 = require("../../component-hero");
-var sortable_container_1 = require("./sortable-container");
-var component_template_1 = require("../../component-template");
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { paths } from '../../../routes/paths';
+import { CustomBreadcrumbs } from '../../../components/custom-breadcrumbs';
+import { ComponentHero } from '../../component-hero';
+import { SortableContainer } from './sortable-container';
+import { ScrollToViewTemplate } from '../../component-template';
 // ----------------------------------------------------------------------
-function DndView() {
-    var DEMO = [
-        { name: 'Grid', component: (0, jsx_runtime_1.jsx)(sortable_container_1.SortableContainer, { swap: true }) },
+export function DndView() {
+    const DEMO = [
+        { name: 'Grid', component: _jsx(SortableContainer, { swap: true }) },
         {
             name: 'Vertical',
-            component: (0, jsx_runtime_1.jsx)(sortable_container_1.SortableContainer, { layout: "vertical", itemCount: 4 }),
+            component: _jsx(SortableContainer, { layout: "vertical", itemCount: 4 }),
         },
         {
             name: 'Horizontal',
-            component: (0, jsx_runtime_1.jsx)(sortable_container_1.SortableContainer, { layout: "horizontal", itemCount: 3 }),
+            component: _jsx(SortableContainer, { layout: "horizontal", itemCount: 3 }),
         },
     ];
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(component_hero_1.ComponentHero, { children: (0, jsx_runtime_1.jsx)(custom_breadcrumbs_1.CustomBreadcrumbs, { heading: "Dnd", links: [{ name: 'Components', href: paths_1.paths.docs.components.root }, { name: 'Dnd' }], moreLink: ['https://docs.dndkit.com/'] }) }), (0, jsx_runtime_1.jsx)(component_template_1.ScrollToViewTemplate, { data: DEMO })] }));
+    return (_jsxs(_Fragment, { children: [_jsx(ComponentHero, { children: _jsx(CustomBreadcrumbs, { heading: "Dnd", links: [{ name: 'Components', href: paths.docs.components.root }, { name: 'Dnd' }], moreLink: ['https://docs.dndkit.com/'] }) }), _jsx(ScrollToViewTemplate, { data: DEMO })] }));
 }

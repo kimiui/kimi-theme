@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.unclusteredPointLayer = exports.clusterCountLayer = exports.clusterLayer = void 0;
 // ----------------------------------------------------------------------
-exports.clusterLayer = {
+export const clusterLayer = {
     id: 'clusters',
     type: 'circle',
     source: 'earthquakes',
@@ -12,7 +9,7 @@ exports.clusterLayer = {
         'circle-radius': ['step', ['get', 'point_count'], 20, 100, 30, 750, 40],
     },
 };
-exports.clusterCountLayer = {
+export const clusterCountLayer = {
     id: 'cluster-count',
     type: 'symbol',
     source: 'earthquakes',
@@ -23,7 +20,7 @@ exports.clusterCountLayer = {
         'text-size': 12,
     },
 };
-exports.unclusteredPointLayer = {
+export const unclusteredPointLayer = {
     id: 'unclustered-point',
     type: 'circle',
     source: 'earthquakes',

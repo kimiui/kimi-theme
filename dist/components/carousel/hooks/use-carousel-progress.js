@@ -1,16 +1,13 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useCarouselProgress = useCarouselProgress;
-var react_1 = require("react");
+import { useState, useEffect, useCallback } from 'react';
 // ----------------------------------------------------------------------
-function useCarouselProgress(mainApi) {
-    var _a = (0, react_1.useState)(0), scrollProgress = _a[0], setScrollProgress = _a[1];
-    var onScroll = (0, react_1.useCallback)(function (_mainApi) {
-        var progress = Math.max(0, Math.min(1, _mainApi.scrollProgress()));
+export function useCarouselProgress(mainApi) {
+    const [scrollProgress, setScrollProgress] = useState(0);
+    const onScroll = useCallback((_mainApi) => {
+        const progress = Math.max(0, Math.min(1, _mainApi.scrollProgress()));
         setScrollProgress(progress * 100);
     }, []);
-    (0, react_1.useEffect)(function () {
+    useEffect(() => {
         if (!mainApi)
             return;
         onScroll(mainApi);

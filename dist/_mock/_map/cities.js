@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.cities = void 0;
-exports.cities = [
+export const cities = [
     {
         city: 'New York',
         population: '8,175,133',

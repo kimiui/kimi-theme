@@ -1,21 +1,17 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useDoubleClick = useDoubleClick;
-var react_1 = require("react");
-function useDoubleClick(_a) {
-    var click = _a.click, doubleClick = _a.doubleClick, _b = _a.timeout, timeout = _b === void 0 ? 250 : _b;
-    var clickTimeout = (0, react_1.useRef)(null);
-    var clearClickTimeout = (0, react_1.useCallback)(function () {
+import { useRef, useMemo, useCallback } from 'react';
+export function useDoubleClick({ click, doubleClick, timeout = 250, }) {
+    const clickTimeout = useRef(null);
+    const clearClickTimeout = useCallback(() => {
         if (clickTimeout.current) {
             clearTimeout(clickTimeout.current);
             clickTimeout.current = null;
         }
     }, []);
-    var handleEvent = (0, react_1.useCallback)(function (event) {
+    const handleEvent = useCallback((event) => {
         clearClickTimeout();
         if (click && event.detail === 1) {
-            clickTimeout.current = setTimeout(function () {
+            clickTimeout.current = setTimeout(() => {
                 click(event);
             }, timeout);
         }
@@ -23,6 +19,6 @@ function useDoubleClick(_a) {
             doubleClick(event);
         }
     }, [click, doubleClick, timeout, clearClickTimeout]);
-    var memoizedValue = (0, react_1.useMemo)(function () { return handleEvent; }, [handleEvent]);
+    const memoizedValue = useMemo(() => handleEvent, [handleEvent]);
     return memoizedValue;
 }

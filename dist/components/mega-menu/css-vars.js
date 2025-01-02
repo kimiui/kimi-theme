@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.megaMenuCssVars = void 0;
-var styles_1 = require("../../theme/styles");
+import { varAlpha } from '../../theme/styles';
 // ----------------------------------------------------------------------
 function verticalVars(theme) {
-    var spacing = theme.spacing, palette = theme.vars.palette;
+    const { spacing, vars: { palette }, } = theme;
     return {
         '--nav-item-gap': theme.spacing(0.5),
         '--nav-item-radius': '0',
@@ -14,8 +11,8 @@ function verticalVars(theme) {
         '--nav-item-hover-bg': palette.action.hover,
         // active
         '--nav-item-active-color': palette.primary.main,
-        '--nav-item-active-bg': (0, styles_1.varAlpha)(palette.primary.mainChannel, 0.08),
-        '--nav-item-active-hover-bg': (0, styles_1.varAlpha)(palette.primary.mainChannel, 0.16),
+        '--nav-item-active-bg': varAlpha(palette.primary.mainChannel, 0.08),
+        '--nav-item-active-hover-bg': varAlpha(palette.primary.mainChannel, 0.16),
         // open
         '--nav-item-open-color': palette.text.primary,
         '--nav-item-open-bg': palette.action.hover,
@@ -26,10 +23,10 @@ function verticalVars(theme) {
 }
 // ----------------------------------------------------------------------
 function horizontalVars(theme) {
-    var shape = theme.shape, spacing = theme.spacing, palette = theme.vars.palette;
+    const { shape, spacing, vars: { palette }, } = theme;
     return {
         '--nav-item-gap': theme.spacing(2.5),
-        '--nav-item-radius': "".concat(shape.borderRadius, "px"),
+        '--nav-item-radius': `${shape.borderRadius}px`,
         '--nav-item-height': '32px',
         '--nav-item-padding': spacing(0.5, 1),
         // hover
@@ -45,7 +42,7 @@ function horizontalVars(theme) {
 }
 // ----------------------------------------------------------------------
 function mobileVars(theme) {
-    var spacing = theme.spacing, palette = theme.vars.palette;
+    const { spacing, vars: { palette }, } = theme;
     return {
         '--nav-width': '280px',
         '--nav-item-gap': theme.spacing(0.5),
@@ -56,8 +53,8 @@ function mobileVars(theme) {
         '--nav-item-hover-color': palette.action.hover,
         // active
         '--nav-item-active-color': palette.primary.main,
-        '--nav-item-active-bg': (0, styles_1.varAlpha)(palette.primary.mainChannel, 0.08),
-        '--nav-item-active-hover-bg': (0, styles_1.varAlpha)(palette.primary.mainChannel, 0.16),
+        '--nav-item-active-bg': varAlpha(palette.primary.mainChannel, 0.08),
+        '--nav-item-active-hover-bg': varAlpha(palette.primary.mainChannel, 0.16),
         // open
         '--nav-item-open-color': palette.text.primary,
         '--nav-item-open-bg': palette.action.hover,
@@ -67,7 +64,7 @@ function mobileVars(theme) {
     };
 }
 // ----------------------------------------------------------------------
-exports.megaMenuCssVars = {
+export const megaMenuCssVars = {
     vertical: verticalVars,
     horizontal: horizontalVars,
     mobile: mobileVars,

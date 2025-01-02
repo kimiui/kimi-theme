@@ -1,15 +1,12 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.extraNav = exports.muiNav = exports.foundationNav = void 0;
-var change_case_1 = require("../utils/change-case");
+import { paramCase } from '../utils/change-case';
 // ----------------------------------------------------------------------
-var getHref = function (category, name) { return "/components/".concat(category, "/").concat((0, change_case_1.paramCase)(name)); };
-exports.foundationNav = ['Colors', 'Typography', 'Shadows', 'Grid', 'Icons'].map(function (name) { return ({
-    name: name,
+const getHref = (category, name) => `/components/${category}/${paramCase(name)}`;
+export const foundationNav = ['Colors', 'Typography', 'Shadows', 'Grid', 'Icons'].map((name) => ({
+    name,
     href: getHref('foundation', name),
-    icon: "/assets/icons/components/ic-".concat((0, change_case_1.paramCase)(name), ".svg"),
-}); });
-exports.muiNav = [
+    icon: `/assets/icons/components/ic-${paramCase(name)}.svg`,
+}));
+export const muiNav = [
     'Chip',
     'List',
     'Menu',
@@ -39,13 +36,13 @@ exports.muiNav = [
     'Autocomplete',
     'Radio button',
     'Transfer list',
-].map(function (name) { return ({
-    name: name,
+].map((name) => ({
+    name,
     href: getHref('mui', name),
-    icon: "/assets/icons/components/ic-".concat((0, change_case_1.paramCase)(name), ".svg"),
+    icon: `/assets/icons/components/ic-${paramCase(name)}.svg`,
     category: (['Data grid', 'Pickers', 'Tree view'].includes(name) && 'MUI X') || '',
-}); });
-exports.extraNav = [
+}));
+export const extraNav = [
     'Map',
     'Dnd',
     'Chart',
@@ -67,10 +64,10 @@ exports.extraNav = [
     'Form wizard',
     'Scroll progress',
     'Organization chart',
-].map(function (name) { return ({
-    name: name,
+].map((name) => ({
+    name,
     href: getHref('extra', name),
-    icon: "/assets/icons/components/ic-extra-".concat((0, change_case_1.paramCase)(name), ".svg"),
+    icon: `/assets/icons/components/ic-extra-${paramCase(name)}.svg`,
     category: ([
         'Chart',
         'Map',
@@ -91,4 +88,4 @@ exports.extraNav = [
     ].includes(name) &&
         '3rd Party') ||
         '',
-}); });
+}));

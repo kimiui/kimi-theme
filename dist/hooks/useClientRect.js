@@ -1,13 +1,10 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useClientRect = useClientRect;
-var react_1 = require("react");
-var useEventListener_1 = require("./useEventListener");
-function useClientRect(inputRef) {
-    var initialRef = (0, react_1.useRef)(null);
-    var elementRef = inputRef || initialRef;
-    var _a = (0, react_1.useState)({
+import { useRef, useState, useEffect, useCallback } from 'react';
+import { useEventListener } from './useEventListener';
+export function useClientRect(inputRef) {
+    const initialRef = useRef(null);
+    const elementRef = inputRef || initialRef;
+    const [state, setState] = useState({
         elementRef: elementRef,
         top: 0,
         right: 0,
@@ -19,10 +16,10 @@ function useClientRect(inputRef) {
         height: 0,
         scrollWidth: 0,
         scrollHeight: 0,
-    }), state = _a[0], setState = _a[1];
-    var handleResize = (0, react_1.useCallback)(function () {
-        if (elementRef === null || elementRef === void 0 ? void 0 : elementRef.current) {
-            var clientRect = elementRef.current.getBoundingClientRect();
+    });
+    const handleResize = useCallback(() => {
+        if (elementRef?.current) {
+            const clientRect = elementRef.current.getBoundingClientRect();
             setState({
                 elementRef: elementRef,
                 top: clientRect.top,
@@ -38,8 +35,8 @@ function useClientRect(inputRef) {
             });
         }
     }, [elementRef]);
-    (0, useEventListener_1.useEventListener)('resize', handleResize);
-    (0, react_1.useEffect)(function () {
+    useEventListener('resize', handleResize);
+    useEffect(() => {
         handleResize();
     }, [handleResize]);
     return state;

@@ -1,14 +1,11 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.CustomStyling = CustomStyling;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var styles_1 = require("@mui/material/styles");
-var RichTreeView_1 = require("@mui/x-tree-view/RichTreeView");
-var TreeItem_1 = require("@mui/x-tree-view/TreeItem");
-var styles_2 = require("../../../theme/styles");
+import { jsx as _jsx } from "react/jsx-runtime";
+import { styled } from '@mui/material/styles';
+import { RichTreeView } from '@mui/x-tree-view/RichTreeView';
+import { TreeItem, treeItemClasses } from '@mui/x-tree-view/TreeItem';
+import { varAlpha, stylesMode } from '../../../theme/styles';
 // ----------------------------------------------------------------------
-var ITEMS = [
+const ITEMS = [
     {
         id: '1',
         label: 'Main',
@@ -36,37 +33,30 @@ var ITEMS = [
         ],
     },
 ];
-var StyledTreeItem = (0, styles_1.styled)(TreeItem_1.TreeItem)(function (_a) {
-    var _b, _c, _d;
-    var theme = _a.theme;
-    return (_b = {
-            color: theme.vars.palette.grey[800]
+const StyledTreeItem = styled(TreeItem)(({ theme }) => ({
+    color: theme.vars.palette.grey[800],
+    [stylesMode.dark]: { color: theme.vars.palette.grey[200] },
+    [`& .${treeItemClasses.content}`]: {
+        borderRadius: theme.spacing(0.5),
+        padding: theme.spacing(0.5, 1),
+        margin: theme.spacing(0.2, 0),
+        [`& .${treeItemClasses.label}`]: { fontSize: '0.8rem', fontWeight: 500 },
+    },
+    [`& .${treeItemClasses.iconContainer}`]: {
+        borderRadius: '50%',
+        backgroundColor: varAlpha(theme.vars.palette.primary.mainChannel, 0.25),
+        [stylesMode.dark]: {
+            color: theme.vars.palette.primary.contrastText,
+            backgroundColor: theme.vars.palette.primary.dark,
         },
-        _b[styles_2.stylesMode.dark] = { color: theme.vars.palette.grey[200] },
-        _b["& .".concat(TreeItem_1.treeItemClasses.content)] = (_c = {
-                borderRadius: theme.spacing(0.5),
-                padding: theme.spacing(0.5, 1),
-                margin: theme.spacing(0.2, 0)
-            },
-            _c["& .".concat(TreeItem_1.treeItemClasses.label)] = { fontSize: '0.8rem', fontWeight: 500 },
-            _c),
-        _b["& .".concat(TreeItem_1.treeItemClasses.iconContainer)] = (_d = {
-                borderRadius: '50%',
-                backgroundColor: (0, styles_2.varAlpha)(theme.vars.palette.primary.mainChannel, 0.25)
-            },
-            _d[styles_2.stylesMode.dark] = {
-                color: theme.vars.palette.primary.contrastText,
-                backgroundColor: theme.vars.palette.primary.dark,
-            },
-            _d),
-        _b["& .".concat(TreeItem_1.treeItemClasses.groupTransition)] = {
-            marginLeft: 15,
-            paddingLeft: 18,
-            borderLeft: "1px dashed ".concat((0, styles_2.varAlpha)(theme.vars.palette.text.primaryChannel, 0.4)),
-        },
-        _b);
-});
+    },
+    [`& .${treeItemClasses.groupTransition}`]: {
+        marginLeft: 15,
+        paddingLeft: 18,
+        borderLeft: `1px dashed ${varAlpha(theme.vars.palette.text.primaryChannel, 0.4)}`,
+    },
+}));
 // ----------------------------------------------------------------------
-function CustomStyling() {
-    return ((0, jsx_runtime_1.jsx)(RichTreeView_1.RichTreeView, { "aria-label": "customized", defaultExpandedItems: ['1'], sx: { overflowX: 'hidden', minHeight: 240, width: 1 }, slots: { item: StyledTreeItem }, items: ITEMS }));
+export function CustomStyling() {
+    return (_jsx(RichTreeView, { "aria-label": "customized", defaultExpandedItems: ['1'], sx: { overflowX: 'hidden', minHeight: 240, width: 1 }, slots: { item: StyledTreeItem }, items: ITEMS }));
 }

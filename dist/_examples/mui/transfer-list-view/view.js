@@ -1,28 +1,25 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.TransferListView = TransferListView;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var paths_1 = require("../../../routes/paths");
-var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
-var component_hero_1 = require("../../component-hero");
-var component_block_1 = require("../../component-block");
-var simple_transfer_list_1 = require("./simple-transfer-list");
-var component_template_1 = require("../../component-template");
-var enhanced_transfer_list_1 = require("./enhanced-transfer-list");
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { paths } from '../../../routes/paths';
+import { CustomBreadcrumbs } from '../../../components/custom-breadcrumbs';
+import { ComponentHero } from '../../component-hero';
+import { ComponentBlock } from '../../component-block';
+import { SimpleTransferList } from './simple-transfer-list';
+import { ScrollToViewTemplate } from '../../component-template';
+import { EnhancedTransferList } from './enhanced-transfer-list';
 // ----------------------------------------------------------------------
-function TransferListView() {
-    var DEMO = [
+export function TransferListView() {
+    const DEMO = [
         {
             name: 'Simple',
-            component: ((0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { children: (0, jsx_runtime_1.jsx)(simple_transfer_list_1.SimpleTransferList, {}) })),
+            component: (_jsx(ComponentBlock, { children: _jsx(SimpleTransferList, {}) })),
         },
         {
             name: 'Enhanced',
-            component: ((0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { children: (0, jsx_runtime_1.jsx)(enhanced_transfer_list_1.EnhancedTransferList, {}) })),
+            component: (_jsx(ComponentBlock, { children: _jsx(EnhancedTransferList, {}) })),
         },
     ];
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(component_hero_1.ComponentHero, { children: (0, jsx_runtime_1.jsx)(custom_breadcrumbs_1.CustomBreadcrumbs, { heading: "Transfer List", links: [
-                        { name: 'Components', href: paths_1.paths.docs.components.root },
+    return (_jsxs(_Fragment, { children: [_jsx(ComponentHero, { children: _jsx(CustomBreadcrumbs, { heading: "Transfer List", links: [
+                        { name: 'Components', href: paths.docs.components.root },
                         { name: 'Transfer List' },
-                    ], moreLink: ['https://mui.com/components/transfer-list'] }) }), (0, jsx_runtime_1.jsx)(component_template_1.ScrollToViewTemplate, { data: DEMO })] }));
+                    ], moreLink: ['https://mui.com/components/transfer-list'] }) }), _jsx(ScrollToViewTemplate, { data: DEMO })] }));
 }

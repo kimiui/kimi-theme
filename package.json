@@ -1,12 +1,13 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "Kimi UI Theme",
   "private": false,
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
@@ -20,7 +21,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && tsc -p ./tsconfig-build.json && tsc-alias -p ./tsconfig-build.json && yarn copy-css && node generate-exports.js",
+    "build": "rm -rf dist && tsc -p ./tsconfig-build.json && tsc-alias -p ./tsconfig-build.json && yarn copy-css",
     "copy-css": "cpx 'lib/**/*.css' dist/",
     "watch": "tsc -w",
     "lint": "eslint \"./**/*.{js,jsx,ts,tsx}\"",
@@ -30,6 +31,10 @@
     "prepublishOnly": "npm run build"
   },
   "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    },
     "./components/animate/back-to-top": "./dist/components/animate/back-to-top/index.js",
     "./components/animate": "./dist/components/animate/index.js",
     "./components/animate/scroll-progress": "./dist/components/animate/scroll-progress/index.js",

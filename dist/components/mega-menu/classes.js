@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.megaMenuClasses = void 0;
-exports.megaMenuClasses = {
+export const megaMenuClasses = {
     horizontal: {
         root: 'mega__menu__desktop__horizontal',
     },

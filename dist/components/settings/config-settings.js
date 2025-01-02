@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.defaultSettings = exports.STORAGE_KEY = void 0;
-var typography_1 = require("../../theme/core/typography");
+import { defaultFont } from '../../theme/core/typography';
 // ----------------------------------------------------------------------
-exports.STORAGE_KEY = 'app-settings';
-exports.defaultSettings = {
+export const STORAGE_KEY = 'app-settings';
+export const defaultSettings = {
     colorScheme: 'dark',
     direction: 'ltr',
     contrast: 'default',
@@ -12,6 +9,6 @@ exports.defaultSettings = {
     primaryColor: 'default',
     navColor: 'integrate',
     compactLayout: true,
-    fontFamily: typography_1.defaultFont,
+    fontFamily: defaultFont,
     fontSize: 'normal',
 };

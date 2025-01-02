@@ -1,9 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.paper = void 0;
-var styles_1 = require("../../styles");
+import { varAlpha } from '../../styles';
 // ----------------------------------------------------------------------
-var MuiPaper = {
+const MuiPaper = {
     /** **************************************
      * DEFAULT PROPS
      *************************************** */
@@ -13,13 +10,10 @@ var MuiPaper = {
      *************************************** */
     styleOverrides: {
         root: { backgroundImage: 'none' },
-        outlined: function (_a) {
-            var theme = _a.theme;
-            return ({
-                borderColor: (0, styles_1.varAlpha)(theme.vars.palette.grey['500Channel'], 0.16),
-            });
-        },
+        outlined: ({ theme }) => ({
+            borderColor: varAlpha(theme.vars.palette.grey['500Channel'], 0.16),
+        }),
     },
 };
 // ----------------------------------------------------------------------
-exports.paper = { MuiPaper: MuiPaper };
+export const paper = { MuiPaper };

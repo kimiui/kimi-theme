@@ -1,13 +1,10 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useTabs = useTabs;
-var react_1 = require("react");
-function useTabs(defaultValue) {
-    var _a = (0, react_1.useState)(defaultValue), value = _a[0], setValue = _a[1];
-    var onChange = (0, react_1.useCallback)(function (event, newValue) {
+import { useMemo, useState, useCallback } from 'react';
+export function useTabs(defaultValue) {
+    const [value, setValue] = useState(defaultValue);
+    const onChange = useCallback((event, newValue) => {
         setValue(newValue);
     }, []);
-    var memoizedValue = (0, react_1.useMemo)(function () { return ({ value: value, setValue: setValue, onChange: onChange }); }, [onChange, value]);
+    const memoizedValue = useMemo(() => ({ value, setValue, onChange }), [onChange, value]);
     return memoizedValue;
 }

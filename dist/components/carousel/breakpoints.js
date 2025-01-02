@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.carouselBreakpoints = void 0;
-exports.carouselBreakpoints = {
+export const carouselBreakpoints = {
     xs: '(min-width: 0px)',
     sm: '(min-width: 600px)',
     md: '(min-width: 900px)',

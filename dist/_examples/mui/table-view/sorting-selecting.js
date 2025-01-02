@@ -1,35 +1,29 @@
 'use client';
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.SortingSelectingTable = SortingSelectingTable;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var Box_1 = __importDefault(require("@mui/material/Box"));
-var Table_1 = __importDefault(require("@mui/material/Table"));
-var Stack_1 = __importDefault(require("@mui/material/Stack"));
-var react_1 = require("react");
-var Tooltip_1 = __importDefault(require("@mui/material/Tooltip"));
-var TableRow_1 = __importDefault(require("@mui/material/TableRow"));
-var Checkbox_1 = __importDefault(require("@mui/material/Checkbox"));
-var TableCell_1 = __importDefault(require("@mui/material/TableCell"));
-var TableBody_1 = __importDefault(require("@mui/material/TableBody"));
-var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var iconify_1 = require("../../../components/iconify");
-var scrollbar_1 = require("../../../components/scrollbar");
-var table_1 = require("../../../components/table");
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import Box from '@mui/material/Box';
+import Table from '@mui/material/Table';
+import Stack from '@mui/material/Stack';
+import { useState, useEffect } from 'react';
+import Tooltip from '@mui/material/Tooltip';
+import TableRow from '@mui/material/TableRow';
+import Checkbox from '@mui/material/Checkbox';
+import TableCell from '@mui/material/TableCell';
+import TableBody from '@mui/material/TableBody';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import { Iconify } from '../../../components/iconify';
+import { Scrollbar } from '../../../components/scrollbar';
+import { useTable, emptyRows, getComparator, TableEmptyRows, TableHeadCustom, TableSelectedAction, TablePaginationCustom, } from '../../../components/table';
 function createData(name, calories, fat, carbs, protein) {
     return {
-        name: name,
-        calories: calories,
-        fat: fat,
-        carbs: carbs,
-        protein: protein,
+        name,
+        calories,
+        fat,
+        carbs,
+        protein,
     };
 }
-var TABLE_DATA = [
+const TABLE_DATA = [
     createData('Cupcake', 305, 3.7, 67, 4.3),
     createData('Donut', 452, 25.0, 51, 4.9),
     createData('Eclair', 262, 16.0, 24, 6.0),
@@ -43,7 +37,7 @@ var TABLE_DATA = [
     createData('Marshmallow', 318, 0, 81, 2.0),
     createData('Nougat', 360, 19.0, 9, 37.0),
 ];
-var TABLE_HEAD = [
+const TABLE_HEAD = [
     { id: 'name', label: 'Dessert (100g serving)', align: 'left' },
     { id: 'calories', label: 'Calories', align: 'center' },
     { id: 'fat', label: 'Fat (g)', align: 'center' },
@@ -51,33 +45,28 @@ var TABLE_HEAD = [
     { id: 'protein', label: 'Protein (g)', align: 'center' },
 ];
 // ----------------------------------------------------------------------
-function SortingSelectingTable() {
-    var table = (0, table_1.useTable)({ defaultOrderBy: 'calories' });
-    var _a = (0, react_1.useState)([]), tableData = _a[0], setTableData = _a[1];
-    (0, react_1.useEffect)(function () {
+export function SortingSelectingTable() {
+    const table = useTable({ defaultOrderBy: 'calories' });
+    const [tableData, setTableData] = useState([]);
+    useEffect(() => {
         setTableData(TABLE_DATA);
     }, []);
-    var dataFiltered = applyFilter({
+    const dataFiltered = applyFilter({
         inputData: tableData,
-        comparator: (0, table_1.getComparator)(table.order, table.orderBy),
+        comparator: getComparator(table.order, table.orderBy),
     });
-    return ((0, jsx_runtime_1.jsxs)("div", { children: [(0, jsx_runtime_1.jsxs)(Stack_1.default, { direction: "row", alignItems: "center", justifyContent: "space-between", sx: { p: 3 }, children: [(0, jsx_runtime_1.jsx)(Typography_1.default, { variant: "h6", children: " Title" }), (0, jsx_runtime_1.jsx)(Tooltip_1.default, { title: "Filter list", children: (0, jsx_runtime_1.jsx)(IconButton_1.default, { children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "ic:round-filter-list" }) }) })] }), (0, jsx_runtime_1.jsxs)(Box_1.default, { sx: { position: 'relative' }, children: [(0, jsx_runtime_1.jsx)(table_1.TableSelectedAction, { dense: table.dense, numSelected: table.selected.length, rowCount: tableData.length, onSelectAllRows: function (checked) {
-                            return table.onSelectAllRows(checked, tableData.map(function (row) { return row.name; }));
-                        }, action: (0, jsx_runtime_1.jsx)(Tooltip_1.default, { title: "Delete", children: (0, jsx_runtime_1.jsx)(IconButton_1.default, { color: "primary", children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "solar:trash-bin-trash-bold" }) }) }) }), (0, jsx_runtime_1.jsx)(scrollbar_1.Scrollbar, { children: (0, jsx_runtime_1.jsxs)(Table_1.default, { size: table.dense ? 'small' : 'medium', sx: { minWidth: 800 }, children: [(0, jsx_runtime_1.jsx)(table_1.TableHeadCustom, { order: table.order, orderBy: table.orderBy, headLabel: TABLE_HEAD, rowCount: tableData.length, numSelected: table.selected.length, onSort: table.onSort, onSelectAllRows: function (checked) {
-                                        return table.onSelectAllRows(checked, tableData.map(function (row) { return row.name; }));
-                                    } }), (0, jsx_runtime_1.jsxs)(TableBody_1.default, { children: [dataFiltered
+    return (_jsxs("div", { children: [_jsxs(Stack, { direction: "row", alignItems: "center", justifyContent: "space-between", sx: { p: 3 }, children: [_jsx(Typography, { variant: "h6", children: " Title" }), _jsx(Tooltip, { title: "Filter list", children: _jsx(IconButton, { children: _jsx(Iconify, { icon: "ic:round-filter-list" }) }) })] }), _jsxs(Box, { sx: { position: 'relative' }, children: [_jsx(TableSelectedAction, { dense: table.dense, numSelected: table.selected.length, rowCount: tableData.length, onSelectAllRows: (checked) => table.onSelectAllRows(checked, tableData.map((row) => row.name)), action: _jsx(Tooltip, { title: "Delete", children: _jsx(IconButton, { color: "primary", children: _jsx(Iconify, { icon: "solar:trash-bin-trash-bold" }) }) }) }), _jsx(Scrollbar, { children: _jsxs(Table, { size: table.dense ? 'small' : 'medium', sx: { minWidth: 800 }, children: [_jsx(TableHeadCustom, { order: table.order, orderBy: table.orderBy, headLabel: TABLE_HEAD, rowCount: tableData.length, numSelected: table.selected.length, onSort: table.onSort, onSelectAllRows: (checked) => table.onSelectAllRows(checked, tableData.map((row) => row.name)) }), _jsxs(TableBody, { children: [dataFiltered
                                             .slice(table.page * table.rowsPerPage, table.page * table.rowsPerPage + table.rowsPerPage)
-                                            .map(function (row) { return ((0, jsx_runtime_1.jsxs)(TableRow_1.default, { hover: true, onClick: function () { return table.onSelectRow(row.name); }, selected: table.selected.includes(row.name), children: [(0, jsx_runtime_1.jsx)(TableCell_1.default, { padding: "checkbox", children: (0, jsx_runtime_1.jsx)(Checkbox_1.default, { checked: table.selected.includes(row.name) }) }), (0, jsx_runtime_1.jsxs)(TableCell_1.default, { children: [" ", row.name, " "] }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "center", children: row.calories }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "center", children: row.fat }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "center", children: row.carbs }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "center", children: row.protein })] }, row.name)); }), (0, jsx_runtime_1.jsx)(table_1.TableEmptyRows, { height: table.dense ? 34 : 34 + 20, emptyRows: (0, table_1.emptyRows)(table.page, table.rowsPerPage, tableData.length) })] })] }) })] }), (0, jsx_runtime_1.jsx)(table_1.TablePaginationCustom, { page: table.page, dense: table.dense, count: dataFiltered.length, rowsPerPage: table.rowsPerPage, onPageChange: table.onChangePage, onChangeDense: table.onChangeDense, onRowsPerPageChange: table.onChangeRowsPerPage })] }));
+                                            .map((row) => (_jsxs(TableRow, { hover: true, onClick: () => table.onSelectRow(row.name), selected: table.selected.includes(row.name), children: [_jsx(TableCell, { padding: "checkbox", children: _jsx(Checkbox, { checked: table.selected.includes(row.name) }) }), _jsxs(TableCell, { children: [" ", row.name, " "] }), _jsx(TableCell, { align: "center", children: row.calories }), _jsx(TableCell, { align: "center", children: row.fat }), _jsx(TableCell, { align: "center", children: row.carbs }), _jsx(TableCell, { align: "center", children: row.protein })] }, row.name))), _jsx(TableEmptyRows, { height: table.dense ? 34 : 34 + 20, emptyRows: emptyRows(table.page, table.rowsPerPage, tableData.length) })] })] }) })] }), _jsx(TablePaginationCustom, { page: table.page, dense: table.dense, count: dataFiltered.length, rowsPerPage: table.rowsPerPage, onPageChange: table.onChangePage, onChangeDense: table.onChangeDense, onRowsPerPageChange: table.onChangeRowsPerPage })] }));
 }
-function applyFilter(_a) {
-    var inputData = _a.inputData, comparator = _a.comparator;
-    var stabilizedThis = inputData.map(function (el, index) { return [el, index]; });
-    stabilizedThis.sort(function (a, b) {
-        var order = comparator(a[0], b[0]);
+function applyFilter({ inputData, comparator }) {
+    const stabilizedThis = inputData.map((el, index) => [el, index]);
+    stabilizedThis.sort((a, b) => {
+        const order = comparator(a[0], b[0]);
         if (order !== 0)
             return order;
         return a[1] - b[1];
     });
-    inputData = stabilizedThis.map(function (el) { return el[0]; });
+    inputData = stabilizedThis.map((el) => el[0]);
     return inputData;
 }

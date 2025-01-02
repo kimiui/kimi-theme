@@ -1,26 +1,23 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useCarouselDots = useCarouselDots;
-var react_1 = require("react");
+import { useState, useEffect, useCallback } from 'react';
 // ----------------------------------------------------------------------
-function useCarouselDots(mainApi) {
-    var _a = (0, react_1.useState)(0), dotCount = _a[0], setDotCount = _a[1];
-    var _b = (0, react_1.useState)(0), selectedIndex = _b[0], setSelectedIndex = _b[1];
-    var _c = (0, react_1.useState)([]), scrollSnaps = _c[0], setScrollSnaps = _c[1];
-    var onClickDot = (0, react_1.useCallback)(function (index) {
+export function useCarouselDots(mainApi) {
+    const [dotCount, setDotCount] = useState(0);
+    const [selectedIndex, setSelectedIndex] = useState(0);
+    const [scrollSnaps, setScrollSnaps] = useState([]);
+    const onClickDot = useCallback((index) => {
         if (!mainApi)
             return;
         mainApi.scrollTo(index);
     }, [mainApi]);
-    var onInit = (0, react_1.useCallback)(function (_mainApi) {
+    const onInit = useCallback((_mainApi) => {
         setScrollSnaps(_mainApi.scrollSnapList());
     }, []);
-    var onSelect = (0, react_1.useCallback)(function (_mainApi) {
+    const onSelect = useCallback((_mainApi) => {
         setSelectedIndex(_mainApi.selectedScrollSnap());
         setDotCount(_mainApi.scrollSnapList().length);
     }, []);
-    (0, react_1.useEffect)(function () {
+    useEffect(() => {
         if (!mainApi)
             return;
         onInit(mainApi);
@@ -30,9 +27,9 @@ function useCarouselDots(mainApi) {
         mainApi.on('select', onSelect);
     }, [mainApi, onInit, onSelect]);
     return {
-        dotCount: dotCount,
-        scrollSnaps: scrollSnaps,
-        selectedIndex: selectedIndex,
-        onClickDot: onClickDot,
+        dotCount,
+        scrollSnaps,
+        selectedIndex,
+        onClickDot,
     };
 }

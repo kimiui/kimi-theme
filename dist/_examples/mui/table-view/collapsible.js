@@ -1,48 +1,35 @@
 'use client';
-"use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.CollapsibleTable = CollapsibleTable;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var ahooks_1 = require("ahooks");
-var Paper_1 = __importDefault(require("@mui/material/Paper"));
-var Table_1 = __importDefault(require("@mui/material/Table"));
-var Collapse_1 = __importDefault(require("@mui/material/Collapse"));
-var TableRow_1 = __importDefault(require("@mui/material/TableRow"));
-var TableBody_1 = __importDefault(require("@mui/material/TableBody"));
-var TableCell_1 = __importDefault(require("@mui/material/TableCell"));
-var TableHead_1 = __importDefault(require("@mui/material/TableHead"));
-var IconButton_1 = __importDefault(require("@mui/material/IconButton"));
-var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var iconify_1 = require("../../../components/iconify");
-var scrollbar_1 = require("../../../components/scrollbar");
-var utils_1 = require("./utils");
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { useBoolean } from 'ahooks';
+import Paper from '@mui/material/Paper';
+import Table from '@mui/material/Table';
+import Collapse from '@mui/material/Collapse';
+import TableRow from '@mui/material/TableRow';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableHead from '@mui/material/TableHead';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import { Iconify } from '../../../components/iconify';
+import { Scrollbar } from '../../../components/scrollbar';
+import { createData } from './utils';
 // ----------------------------------------------------------------------
-var TABLE_DATA = [
-    (0, utils_1.createData)('Frozen yoghurt', 159, 6.0, 24, 4.0, 3.99),
-    (0, utils_1.createData)('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.99),
-    (0, utils_1.createData)('Eclair', 262, 16.0, 24, 6.0, 3.79),
-    (0, utils_1.createData)('Cupcake', 305, 3.7, 67, 4.3, 2.5),
-    (0, utils_1.createData)('Gingerbread', 356, 16.0, 49, 3.9, 1.5),
+const TABLE_DATA = [
+    createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 3.99),
+    createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.99),
+    createData('Eclair', 262, 16.0, 24, 6.0, 3.79),
+    createData('Cupcake', 305, 3.7, 67, 4.3, 2.5),
+    createData('Gingerbread', 356, 16.0, 49, 3.9, 1.5),
 ];
-function CollapsibleTable() {
-    return ((0, jsx_runtime_1.jsx)(scrollbar_1.Scrollbar, { children: (0, jsx_runtime_1.jsxs)(Table_1.default, { sx: { minWidth: 800 }, children: [(0, jsx_runtime_1.jsx)(TableHead_1.default, { children: (0, jsx_runtime_1.jsxs)(TableRow_1.default, { children: [(0, jsx_runtime_1.jsx)(TableCell_1.default, {}), (0, jsx_runtime_1.jsx)(TableCell_1.default, { children: "Dessert (100g serving)" }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: "Calories" }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: "Fat\u00A0(g)" }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: "Carbs\u00A0(g)" }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: "Protein\u00A0(g)" })] }) }), (0, jsx_runtime_1.jsx)(TableBody_1.default, { children: TABLE_DATA.map(function (row) { return ((0, jsx_runtime_1.jsx)(CollapsibleTableRow, { row: row }, row.name)); }) })] }) }));
+export function CollapsibleTable() {
+    return (_jsx(Scrollbar, { children: _jsxs(Table, { sx: { minWidth: 800 }, children: [_jsx(TableHead, { children: _jsxs(TableRow, { children: [_jsx(TableCell, {}), _jsx(TableCell, { children: "Dessert (100g serving)" }), _jsx(TableCell, { align: "right", children: "Calories" }), _jsx(TableCell, { align: "right", children: "Fat\u00A0(g)" }), _jsx(TableCell, { align: "right", children: "Carbs\u00A0(g)" }), _jsx(TableCell, { align: "right", children: "Protein\u00A0(g)" })] }) }), _jsx(TableBody, { children: TABLE_DATA.map((row) => (_jsx(CollapsibleTableRow, { row: row }, row.name))) })] }) }));
 }
-function CollapsibleTableRow(_a) {
-    var row = _a.row;
-    var _b = (0, ahooks_1.useBoolean)(), collapsible = _b[0], collapsibleActions = _b[1];
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsxs)(TableRow_1.default, { sx: { '& > *': { borderBottom: 'unset' } }, children: [(0, jsx_runtime_1.jsx)(TableCell_1.default, { children: (0, jsx_runtime_1.jsx)(IconButton_1.default, { size: "small", color: collapsible ? 'inherit' : 'default', onClick: collapsibleActions.toggle, children: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: collapsible ? 'eva:arrow-ios-upward-fill' : 'eva:arrow-ios-downward-fill' }) }) }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { component: "th", scope: "row", children: row.name }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: row.calories }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: row.fat }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: row.carbs }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: row.protein })] }), (0, jsx_runtime_1.jsx)(TableRow_1.default, { children: (0, jsx_runtime_1.jsx)(TableCell_1.default, { sx: { py: 0 }, colSpan: 6, children: (0, jsx_runtime_1.jsx)(Collapse_1.default, { in: collapsible, timeout: "auto", unmountOnExit: true, children: (0, jsx_runtime_1.jsxs)(Paper_1.default, { variant: "outlined", sx: __assign({ py: 2, mb: 2, borderRadius: 1.5 }, (collapsible && { boxShadow: function (theme) { return theme.shadows[20]; } })), children: [(0, jsx_runtime_1.jsx)(Typography_1.default, { variant: "h6", component: "div", sx: { p: 2 }, children: "History" }), (0, jsx_runtime_1.jsxs)(Table_1.default, { size: "small", "aria-label": "purchases", children: [(0, jsx_runtime_1.jsx)(TableHead_1.default, { children: (0, jsx_runtime_1.jsxs)(TableRow_1.default, { children: [(0, jsx_runtime_1.jsx)(TableCell_1.default, { children: "Date" }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { children: "Customer" }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: "Amount" }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: "Total price ($)" })] }) }), (0, jsx_runtime_1.jsx)(TableBody_1.default, { children: row.history.map(function (historyRow) { return ((0, jsx_runtime_1.jsxs)(TableRow_1.default, { children: [(0, jsx_runtime_1.jsx)(TableCell_1.default, { component: "th", scope: "row", children: historyRow.date }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { children: historyRow.customerId }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: historyRow.amount }), (0, jsx_runtime_1.jsx)(TableCell_1.default, { align: "right", children: Math.round(historyRow.amount * row.price * 100) / 100 })] }, historyRow.date)); }) })] })] }) }) }) })] }));
+function CollapsibleTableRow({ row }) {
+    const [collapsible, collapsibleActions] = useBoolean();
+    return (_jsxs(_Fragment, { children: [_jsxs(TableRow, { sx: { '& > *': { borderBottom: 'unset' } }, children: [_jsx(TableCell, { children: _jsx(IconButton, { size: "small", color: collapsible ? 'inherit' : 'default', onClick: collapsibleActions.toggle, children: _jsx(Iconify, { icon: collapsible ? 'eva:arrow-ios-upward-fill' : 'eva:arrow-ios-downward-fill' }) }) }), _jsx(TableCell, { component: "th", scope: "row", children: row.name }), _jsx(TableCell, { align: "right", children: row.calories }), _jsx(TableCell, { align: "right", children: row.fat }), _jsx(TableCell, { align: "right", children: row.carbs }), _jsx(TableCell, { align: "right", children: row.protein })] }), _jsx(TableRow, { children: _jsx(TableCell, { sx: { py: 0 }, colSpan: 6, children: _jsx(Collapse, { in: collapsible, timeout: "auto", unmountOnExit: true, children: _jsxs(Paper, { variant: "outlined", sx: {
+                                py: 2,
+                                mb: 2,
+                                borderRadius: 1.5,
+                                ...(collapsible && { boxShadow: (theme) => theme.shadows[20] }),
+                            }, children: [_jsx(Typography, { variant: "h6", component: "div", sx: { p: 2 }, children: "History" }), _jsxs(Table, { size: "small", "aria-label": "purchases", children: [_jsx(TableHead, { children: _jsxs(TableRow, { children: [_jsx(TableCell, { children: "Date" }), _jsx(TableCell, { children: "Customer" }), _jsx(TableCell, { align: "right", children: "Amount" }), _jsx(TableCell, { align: "right", children: "Total price ($)" })] }) }), _jsx(TableBody, { children: row.history.map((historyRow) => (_jsxs(TableRow, { children: [_jsx(TableCell, { component: "th", scope: "row", children: historyRow.date }), _jsx(TableCell, { children: historyRow.customerId }), _jsx(TableCell, { align: "right", children: historyRow.amount }), _jsx(TableCell, { align: "right", children: Math.round(historyRow.amount * row.price * 100) / 100 })] }, historyRow.date))) })] })] }) }) }) })] }));
 }

@@ -1,66 +1,59 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.NavList = NavList;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var material_1 = require("@mui/material");
-var routes_react_1 = require("routes-react");
-var react_1 = require("react");
-var utils_1 = require("../../../utils");
-var useActiveLink_1 = require("../../../hooks/useActiveLink");
-var nav_item_1 = require("./nav-item");
-var classes_1 = require("../classes");
-var styles_1 = require("../styles");
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Typography } from '@mui/material';
+import { usePathname } from 'routes-react';
+import { useState, useEffect, useCallback } from 'react';
+import { isExternalLink } from '../../../utils';
+import { useActiveLink } from '../../../hooks/useActiveLink';
+import { NavItem } from './nav-item';
+import { navSectionClasses } from '../classes';
+import { NavUl, NavLi, NavCollapse } from '../styles';
 // ----------------------------------------------------------------------
-function NavList(_a) {
-    var _b;
-    var _c;
-    var data = _a.data, render = _a.render, depth = _a.depth, slotProps = _a.slotProps, enabledRootRedirect = _a.enabledRootRedirect;
-    var pathname = (0, routes_react_1.usePathname)();
-    var active = (0, useActiveLink_1.useActiveLink)(data.path, !!data.children);
-    var _d = (0, react_1.useState)(active), openMenu = _d[0], setOpenMenu = _d[1];
-    (0, react_1.useEffect)(function () {
+export function NavList({ data, render, depth, slotProps, enabledRootRedirect, }) {
+    const pathname = usePathname();
+    const active = useActiveLink(data.path, !!data.children);
+    const [openMenu, setOpenMenu] = useState(active);
+    useEffect(() => {
         if (!active) {
             handleCloseMenu();
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pathname]);
-    var handleToggleMenu = (0, react_1.useCallback)(function () {
+    const handleToggleMenu = useCallback(() => {
         if (data.children) {
-            setOpenMenu(function (prev) { return !prev; });
+            setOpenMenu((prev) => !prev);
         }
     }, [data.children]);
-    var handleCloseMenu = (0, react_1.useCallback)(function () {
+    const handleCloseMenu = useCallback(() => {
         setOpenMenu(false);
     }, []);
-    var renderNavItem = ((0, jsx_runtime_1.jsx)(nav_item_1.NavItem, { render: render, 
+    const renderNavItem = (_jsx(NavItem, { render: render, 
         // slots
         path: data.path, icon: data.icon, info: data.info, title: data.title, caption: data.caption, 
         // state
-        depth: depth, active: active, disabled: data.disabled, hasChild: !!data.children, open: data.children && openMenu, externalLink: (0, utils_1.isExternalLink)(data.path), enabledRootRedirect: enabledRootRedirect, 
+        depth: depth, active: active, disabled: data.disabled, hasChild: !!data.children, open: data.children && openMenu, externalLink: isExternalLink(data.path), enabledRootRedirect: enabledRootRedirect, 
         // styles
-        slotProps: depth === 1 ? slotProps === null || slotProps === void 0 ? void 0 : slotProps.rootItem : slotProps === null || slotProps === void 0 ? void 0 : slotProps.subItem, 
+        slotProps: depth === 1 ? slotProps?.rootItem : slotProps?.subItem, 
         // actions
         onClick: handleToggleMenu }));
     // Hidden item by role
-    if (data.roles && (slotProps === null || slotProps === void 0 ? void 0 : slotProps.currentRole)) {
-        if (!((_c = data === null || data === void 0 ? void 0 : data.roles) === null || _c === void 0 ? void 0 : _c.includes(slotProps === null || slotProps === void 0 ? void 0 : slotProps.currentRole))) {
+    if (data.roles && slotProps?.currentRole) {
+        if (!data?.roles?.includes(slotProps?.currentRole)) {
             return null;
         }
     }
     // Has children
     if (data.children) {
-        return ((0, jsx_runtime_1.jsxs)(styles_1.NavLi, { disabled: data.disabled, sx: (_b = {},
-                _b["& .".concat(classes_1.navSectionClasses.li)] = {
+        return (_jsxs(NavLi, { disabled: data.disabled, sx: {
+                [`& .${navSectionClasses.li}`]: {
                     '&:first-of-type': { mt: 'var(--nav-item-gap)' },
                 },
-                _b), children: [renderNavItem, (0, jsx_runtime_1.jsx)(styles_1.NavCollapse, { "data-group": data.title, in: openMenu, depth: depth, unmountOnExit: true, mountOnEnter: true, children: (0, jsx_runtime_1.jsx)(NavSubList, { data: data.children, render: render, depth: depth, slotProps: slotProps, enabledRootRedirect: enabledRootRedirect }) })] }));
+            }, children: [renderNavItem, _jsx(NavCollapse, { "data-group": data.title, in: openMenu, depth: depth, unmountOnExit: true, mountOnEnter: true, children: _jsx(NavSubList, { data: data.children, render: render, depth: depth, slotProps: slotProps, enabledRootRedirect: enabledRootRedirect }) })] }));
     }
     // Default
-    return (0, jsx_runtime_1.jsx)(styles_1.NavLi, { disabled: data.disabled, children: renderNavItem });
+    return _jsx(NavLi, { disabled: data.disabled, children: renderNavItem });
 }
 // ----------------------------------------------------------------------
-function NavSubList(_a) {
-    var data = _a.data, render = _a.render, depth = _a.depth, slotProps = _a.slotProps, enabledRootRedirect = _a.enabledRootRedirect;
-    return ((0, jsx_runtime_1.jsxs)(styles_1.NavUl, { sx: { gap: 'var(--nav-item-gap)' }, children: [data.map(function (list) { return ((0, jsx_runtime_1.jsx)(NavList, { data: list, render: render, depth: depth + 1, slotProps: slotProps, enabledRootRedirect: enabledRootRedirect }, list.title)); }), (0, jsx_runtime_1.jsx)(material_1.Typography, { variant: "button", sx: { px: 2, color: 'text.disabled' } })] }));
+function NavSubList({ data, render, depth, slotProps, enabledRootRedirect }) {
+    return (_jsxs(NavUl, { sx: { gap: 'var(--nav-item-gap)' }, children: [data.map((list) => (_jsx(NavList, { data: list, render: render, depth: depth + 1, slotProps: slotProps, enabledRootRedirect: enabledRootRedirect }, list.title))), _jsx(Typography, { variant: "button", sx: { px: 2, color: 'text.disabled' } })] }));
 }

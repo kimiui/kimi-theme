@@ -1,9 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MapControl = MapControl;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var react_map_gl_1 = require("react-map-gl");
-function MapControl(_a) {
-    var hideScale = _a.hideScale, hideGeolocate = _a.hideGeolocate, hideFullscreen = _a.hideFullscreen, hideNavigation = _a.hideNavigation;
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [!hideGeolocate && ((0, jsx_runtime_1.jsx)(react_map_gl_1.GeolocateControl, { position: "top-left", positionOptions: { enableHighAccuracy: true } })), !hideFullscreen && (0, jsx_runtime_1.jsx)(react_map_gl_1.FullscreenControl, { position: "top-left" }), !hideScale && (0, jsx_runtime_1.jsx)(react_map_gl_1.ScaleControl, { position: "bottom-left" }), !hideNavigation && (0, jsx_runtime_1.jsx)(react_map_gl_1.NavigationControl, { position: "bottom-left" })] }));
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { ScaleControl, GeolocateControl, NavigationControl, FullscreenControl } from 'react-map-gl';
+export function MapControl({ hideScale, hideGeolocate, hideFullscreen, hideNavigation }) {
+    return (_jsxs(_Fragment, { children: [!hideGeolocate && (_jsx(GeolocateControl, { position: "top-left", positionOptions: { enableHighAccuracy: true } })), !hideFullscreen && _jsx(FullscreenControl, { position: "top-left" }), !hideScale && _jsx(ScaleControl, { position: "bottom-left" }), !hideNavigation && _jsx(NavigationControl, { position: "bottom-left" })] }));
 }

@@ -1,79 +1,73 @@
 'use client';
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.BreadcrumbsView = BreadcrumbsView;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var Link_1 = __importDefault(require("@mui/material/Link"));
-var Stack_1 = __importDefault(require("@mui/material/Stack"));
-var Button_1 = __importDefault(require("@mui/material/Button"));
-var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var Breadcrumbs_1 = __importDefault(require("@mui/material/Breadcrumbs"));
-var paths_1 = require("../../../routes/paths");
-var iconify_1 = require("../../../components/iconify");
-var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
-var component_hero_1 = require("../../component-hero");
-var component_block_1 = require("../../component-block");
-var component_template_1 = require("../../component-template");
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import Link from '@mui/material/Link';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import { paths } from '../../../routes/paths';
+import { Iconify } from '../../../components/iconify';
+import { CustomBreadcrumbs } from '../../../components/custom-breadcrumbs';
+import { ComponentHero } from '../../component-hero';
+import { ComponentBlock } from '../../component-block';
+import { ScrollToViewTemplate } from '../../component-template';
 // ----------------------------------------------------------------------
-function BreadcrumbsView() {
-    var DEMO = [
+export function BreadcrumbsView() {
+    const DEMO = [
         {
             name: 'Text',
-            component: ((0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { children: (0, jsx_runtime_1.jsxs)(Breadcrumbs_1.default, { children: [(0, jsx_runtime_1.jsx)(Link_1.default, { color: "inherit", href: "#", children: "Material-UI" }), (0, jsx_runtime_1.jsx)(Link_1.default, { color: "inherit", href: "#", children: "Core" }), (0, jsx_runtime_1.jsx)(Typography_1.default, { sx: { color: 'text.primary' }, children: "Breadcrumb" })] }) })),
+            component: (_jsx(ComponentBlock, { children: _jsxs(Breadcrumbs, { children: [_jsx(Link, { color: "inherit", href: "#", children: "Material-UI" }), _jsx(Link, { color: "inherit", href: "#", children: "Core" }), _jsx(Typography, { sx: { color: 'text.primary' }, children: "Breadcrumb" })] }) })),
         },
         {
             name: 'With icon',
-            component: ((0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { children: (0, jsx_runtime_1.jsxs)(Breadcrumbs_1.default, { children: [(0, jsx_runtime_1.jsxs)(Link_1.default, { color: "inherit", href: "#", sx: { display: 'flex', alignItems: 'center', gap: 0.5 }, children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "solar:home-angle-2-bold-duotone" }), "Material-UI"] }), (0, jsx_runtime_1.jsxs)(Link_1.default, { color: "inherit", href: "#", sx: { display: 'flex', alignItems: 'center', gap: 0.5 }, children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "solar:atom-bold-duotone" }), "Core"] }), (0, jsx_runtime_1.jsxs)(Typography_1.default, { sx: {
+            component: (_jsx(ComponentBlock, { children: _jsxs(Breadcrumbs, { children: [_jsxs(Link, { color: "inherit", href: "#", sx: { display: 'flex', alignItems: 'center', gap: 0.5 }, children: [_jsx(Iconify, { icon: "solar:home-angle-2-bold-duotone" }), "Material-UI"] }), _jsxs(Link, { color: "inherit", href: "#", sx: { display: 'flex', alignItems: 'center', gap: 0.5 }, children: [_jsx(Iconify, { icon: "solar:atom-bold-duotone" }), "Core"] }), _jsxs(Typography, { sx: {
                                 gap: 0.5,
                                 display: 'flex',
                                 alignItems: 'center',
                                 color: 'text.primary',
-                            }, children: [(0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "solar:bell-bing-bold-duotone" }), "Breadcrumb"] })] }) })),
+                            }, children: [_jsx(Iconify, { icon: "solar:bell-bing-bold-duotone" }), "Breadcrumb"] })] }) })),
         },
         {
             name: 'Customized',
-            component: ((0, jsx_runtime_1.jsxs)(Stack_1.default, { spacing: 5, children: [(0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { children: (0, jsx_runtime_1.jsx)(custom_breadcrumbs_1.CustomBreadcrumbs, { links: [
+            component: (_jsxs(Stack, { spacing: 5, children: [_jsx(ComponentBlock, { children: _jsx(CustomBreadcrumbs, { links: [
                                 {
                                     name: 'Home',
                                     href: '#',
-                                    icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "solar:home-angle-2-bold-duotone" }),
+                                    icon: _jsx(Iconify, { icon: "solar:home-angle-2-bold-duotone" }),
                                 },
                                 {
                                     name: 'Link1',
                                     href: '#',
-                                    icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "eva:cube-outline" }),
+                                    icon: _jsx(Iconify, { icon: "eva:cube-outline" }),
                                 },
                                 {
                                     name: 'Link2',
                                     href: '#',
-                                    icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "eva:cube-outline" }),
+                                    icon: _jsx(Iconify, { icon: "eva:cube-outline" }),
                                 },
-                                { name: 'Link3', icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "eva:cube-outline" }) },
-                            ] }) }), (0, jsx_runtime_1.jsx)(component_block_1.ComponentBlock, { sx: { flexDirection: 'column', alignItems: 'unset' }, children: (0, jsx_runtime_1.jsx)(custom_breadcrumbs_1.CustomBreadcrumbs, { heading: "Heading", links: [
+                                { name: 'Link3', icon: _jsx(Iconify, { icon: "eva:cube-outline" }) },
+                            ] }) }), _jsx(ComponentBlock, { sx: { flexDirection: 'column', alignItems: 'unset' }, children: _jsx(CustomBreadcrumbs, { heading: "Heading", links: [
                                 {
                                     name: 'Home',
                                     href: '#',
-                                    icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "solar:home-angle-2-bold-duotone" }),
+                                    icon: _jsx(Iconify, { icon: "solar:home-angle-2-bold-duotone" }),
                                 },
                                 {
                                     name: 'Link1',
                                     href: '#',
-                                    icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "eva:cube-outline" }),
+                                    icon: _jsx(Iconify, { icon: "eva:cube-outline" }),
                                 },
                                 {
                                     name: 'Link2',
                                     href: '#',
-                                    icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "eva:cube-outline" }),
+                                    icon: _jsx(Iconify, { icon: "eva:cube-outline" }),
                                 },
-                                { name: 'Link3', icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "eva:cube-outline" }) },
-                            ], action: (0, jsx_runtime_1.jsx)(Button_1.default, { variant: "contained", startIcon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "mingcute:add-line" }), children: "New product" }) }) })] })),
+                                { name: 'Link3', icon: _jsx(Iconify, { icon: "eva:cube-outline" }) },
+                            ], action: _jsx(Button, { variant: "contained", startIcon: _jsx(Iconify, { icon: "mingcute:add-line" }), children: "New product" }) }) })] })),
         },
     ];
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(component_hero_1.ComponentHero, { children: (0, jsx_runtime_1.jsx)(custom_breadcrumbs_1.CustomBreadcrumbs, { heading: "Breadcrumbs", links: [
-                        { name: 'Components', href: paths_1.paths.docs.components.root },
+    return (_jsxs(_Fragment, { children: [_jsx(ComponentHero, { children: _jsx(CustomBreadcrumbs, { heading: "Breadcrumbs", links: [
+                        { name: 'Components', href: paths.docs.components.root },
                         { name: 'Breadcrumbs' },
-                    ], moreLink: ['https://mui.com/components/custom-breadcrumbs'] }) }), (0, jsx_runtime_1.jsx)(component_template_1.ScrollToViewTemplate, { data: DEMO })] }));
+                    ], moreLink: ['https://mui.com/components/custom-breadcrumbs'] }) }), _jsx(ScrollToViewTemplate, { data: DEMO })] }));
 }

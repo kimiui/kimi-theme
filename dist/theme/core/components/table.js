@@ -1,87 +1,65 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.table = void 0;
-var TableRow_1 = require("@mui/material/TableRow");
-var TableCell_1 = require("@mui/material/TableCell");
-var styles_1 = require("../../styles");
+import { tableRowClasses } from '@mui/material/TableRow';
+import { tableCellClasses } from '@mui/material/TableCell';
+import { varAlpha } from '../../styles';
 // ----------------------------------------------------------------------
-var MuiTableContainer = {
+const MuiTableContainer = {
     /** **************************************
      * STYLE
      *************************************** */
     styleOverrides: {
-        root: function (_a) {
-            var theme = _a.theme;
-            return ({
-                position: 'relative',
-                scrollbarWidth: 'thin',
-                scrollbarColor: "".concat((0, styles_1.varAlpha)(theme.vars.palette.text.disabledChannel, 0.4), " ").concat((0, styles_1.varAlpha)(theme.vars.palette.text.disabledChannel, 0.08)),
-            });
-        },
+        root: ({ theme }) => ({
+            position: 'relative',
+            scrollbarWidth: 'thin',
+            scrollbarColor: `${varAlpha(theme.vars.palette.text.disabledChannel, 0.4)} ${varAlpha(theme.vars.palette.text.disabledChannel, 0.08)}`,
+        }),
     },
 };
 // ----------------------------------------------------------------------
-var MuiTable = {
+const MuiTable = {
     /** **************************************
      * STYLE
      *************************************** */
     styleOverrides: {
-        root: function (_a) {
-            var theme = _a.theme;
-            return ({ '--palette-TableCell-border': theme.vars.palette.divider });
-        },
+        root: ({ theme }) => ({ '--palette-TableCell-border': theme.vars.palette.divider }),
     },
 };
 // ----------------------------------------------------------------------
-var MuiTableRow = {
+const MuiTableRow = {
     /** **************************************
      * STYLE
      *************************************** */
     styleOverrides: {
-        root: function (_a) {
-            var _b, _c;
-            var theme = _a.theme;
-            return (_b = {},
-                _b["&.".concat(TableRow_1.tableRowClasses.selected)] = {
-                    backgroundColor: (0, styles_1.varAlpha)(theme.vars.palette.primary.darkChannel, 0.04),
-                    '&:hover': { backgroundColor: (0, styles_1.varAlpha)(theme.vars.palette.primary.darkChannel, 0.08) },
-                },
-                _b['&:last-of-type'] = (_c = {}, _c["& .".concat(TableCell_1.tableCellClasses.root)] = { borderColor: 'transparent' }, _c),
-                _b);
-        },
+        root: ({ theme }) => ({
+            [`&.${tableRowClasses.selected}`]: {
+                backgroundColor: varAlpha(theme.vars.palette.primary.darkChannel, 0.04),
+                '&:hover': { backgroundColor: varAlpha(theme.vars.palette.primary.darkChannel, 0.08) },
+            },
+            '&:last-of-type': { [`& .${tableCellClasses.root}`]: { borderColor: 'transparent' } },
+        }),
     },
 };
 // ----------------------------------------------------------------------
-var MuiTableCell = {
+const MuiTableCell = {
     /** **************************************
      * STYLE
      *************************************** */
     styleOverrides: {
         root: { borderBottomStyle: 'dashed' },
-        head: function (_a) {
-            var theme = _a.theme;
-            return ({
-                fontSize: 14,
-                color: theme.vars.palette.text.secondary,
-                fontWeight: theme.typography.fontWeightSemiBold,
-                backgroundColor: theme.vars.palette.background.neutral,
-            });
-        },
-        stickyHeader: function (_a) {
-            var theme = _a.theme;
-            return ({
-                backgroundColor: theme.vars.palette.background.paper,
-                backgroundImage: "linear-gradient(to bottom, ".concat(theme.vars.palette.background.neutral, " 0%, ").concat(theme.vars.palette.background.neutral, " 100%)"),
-            });
-        },
-        paddingCheckbox: function (_a) {
-            var theme = _a.theme;
-            return ({ paddingLeft: theme.spacing(1) });
-        },
+        head: ({ theme }) => ({
+            fontSize: 14,
+            color: theme.vars.palette.text.secondary,
+            fontWeight: theme.typography.fontWeightSemiBold,
+            backgroundColor: theme.vars.palette.background.neutral,
+        }),
+        stickyHeader: ({ theme }) => ({
+            backgroundColor: theme.vars.palette.background.paper,
+            backgroundImage: `linear-gradient(to bottom, ${theme.vars.palette.background.neutral} 0%, ${theme.vars.palette.background.neutral} 100%)`,
+        }),
+        paddingCheckbox: ({ theme }) => ({ paddingLeft: theme.spacing(1) }),
     },
 };
 // ----------------------------------------------------------------------
-var MuiTablePagination = {
+const MuiTablePagination = {
     /** **************************************
      * DEFAULT PROPS
      *************************************** */
@@ -97,13 +75,10 @@ var MuiTablePagination = {
         root: { width: '100%' },
         toolbar: { height: 64 },
         actions: { marginRight: 8 },
-        select: function (_a) {
-            var theme = _a.theme;
-            return ({
-                paddingLeft: 8,
-                '&:focus': { borderRadius: theme.shape.borderRadius },
-            });
-        },
+        select: ({ theme }) => ({
+            paddingLeft: 8,
+            '&:focus': { borderRadius: theme.shape.borderRadius },
+        }),
         selectIcon: {
             right: 4,
             width: 16,
@@ -113,10 +88,10 @@ var MuiTablePagination = {
     },
 };
 // ----------------------------------------------------------------------
-exports.table = {
-    MuiTable: MuiTable,
-    MuiTableRow: MuiTableRow,
-    MuiTableCell: MuiTableCell,
-    MuiTableContainer: MuiTableContainer,
-    MuiTablePagination: MuiTablePagination,
+export const table = {
+    MuiTable,
+    MuiTableRow,
+    MuiTableCell,
+    MuiTableContainer,
+    MuiTablePagination,
 };

@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.logoClasses = void 0;
-exports.logoClasses = {
+export const logoClasses = {
     root: 'mnl__logo__root',
 };

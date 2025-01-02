@@ -1,76 +1,29 @@
-"use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-var __rest = (this && this.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-};
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.RHFCheckbox = RHFCheckbox;
-exports.RHFMultiCheckbox = RHFMultiCheckbox;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var Box_1 = __importDefault(require("@mui/material/Box"));
-var Checkbox_1 = __importDefault(require("@mui/material/Checkbox"));
-var FormGroup_1 = __importDefault(require("@mui/material/FormGroup"));
-var FormLabel_1 = __importDefault(require("@mui/material/FormLabel"));
-var FormControl_1 = __importDefault(require("@mui/material/FormControl"));
-var FormHelperText_1 = __importDefault(require("@mui/material/FormHelperText"));
-var react_hook_form_1 = require("react-hook-form");
-var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
-function RHFCheckbox(_a) {
-    var name = _a.name, helperText = _a.helperText, label = _a.label, slotProps = _a.slotProps, other = __rest(_a, ["name", "helperText", "label", "slotProps"]);
-    var control = (0, react_hook_form_1.useFormContext)().control;
-    var ariaLabel = "Checkbox ".concat(name);
-    return ((0, jsx_runtime_1.jsx)(react_hook_form_1.Controller, { name: name, control: control, render: function (_a) {
-            var _b;
-            var field = _a.field, error = _a.fieldState.error;
-            return ((0, jsx_runtime_1.jsxs)(Box_1.default, { sx: slotProps === null || slotProps === void 0 ? void 0 : slotProps.wrap, children: [(0, jsx_runtime_1.jsx)(FormControlLabel_1.default, __assign({ control: (0, jsx_runtime_1.jsx)(Checkbox_1.default, __assign({}, field, { checked: field.value }, slotProps === null || slotProps === void 0 ? void 0 : slotProps.checkbox, { inputProps: __assign(__assign({}, (!label && { 'aria-label': ariaLabel })), (_b = slotProps === null || slotProps === void 0 ? void 0 : slotProps.checkbox) === null || _b === void 0 ? void 0 : _b.inputProps) })), label: label }, other)), (!!error || helperText) && ((0, jsx_runtime_1.jsx)(FormHelperText_1.default, __assign({ error: !!error }, slotProps === null || slotProps === void 0 ? void 0 : slotProps.formHelperText, { children: error ? error === null || error === void 0 ? void 0 : error.message : helperText })))] }));
-        } }));
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import Box from '@mui/material/Box';
+import Checkbox from '@mui/material/Checkbox';
+import FormGroup from '@mui/material/FormGroup';
+import FormLabel from '@mui/material/FormLabel';
+import FormControl from '@mui/material/FormControl';
+import FormHelperText from '@mui/material/FormHelperText';
+import { Controller, useFormContext } from 'react-hook-form';
+import FormControlLabel from '@mui/material/FormControlLabel';
+export function RHFCheckbox({ name, helperText, label, slotProps, ...other }) {
+    const { control } = useFormContext();
+    const ariaLabel = `Checkbox ${name}`;
+    return (_jsx(Controller, { name: name, control: control, render: ({ field, fieldState: { error } }) => (_jsxs(Box, { sx: slotProps?.wrap, children: [_jsx(FormControlLabel, { control: _jsx(Checkbox, { ...field, checked: field.value, ...slotProps?.checkbox, inputProps: {
+                            ...(!label && { 'aria-label': ariaLabel }),
+                            ...slotProps?.checkbox?.inputProps,
+                        } }), label: label, ...other }), (!!error || helperText) && (_jsx(FormHelperText, { error: !!error, ...slotProps?.formHelperText, children: error ? error?.message : helperText }))] })) }));
 }
-function RHFMultiCheckbox(_a) {
-    var name = _a.name, label = _a.label, options = _a.options, slotProps = _a.slotProps, helperText = _a.helperText, other = __rest(_a, ["name", "label", "options", "slotProps", "helperText"]);
-    var control = (0, react_hook_form_1.useFormContext)().control;
-    var getSelected = function (selectedItems, item) {
-        return selectedItems.includes(item)
-            ? selectedItems.filter(function (value) { return value !== item; })
-            : __spreadArray(__spreadArray([], selectedItems, true), [item], false);
-    };
-    var accessibility = function (val) { return val; };
-    var ariaLabel = function (val) { return "Checkbox ".concat(val); };
-    return ((0, jsx_runtime_1.jsx)(react_hook_form_1.Controller, { name: name, control: control, render: function (_a) {
-            var _b;
-            var field = _a.field, error = _a.fieldState.error;
-            return ((0, jsx_runtime_1.jsxs)(FormControl_1.default, { component: "fieldset", sx: slotProps === null || slotProps === void 0 ? void 0 : slotProps.wrap, children: [label && ((0, jsx_runtime_1.jsx)(FormLabel_1.default, __assign({ component: "legend" }, slotProps === null || slotProps === void 0 ? void 0 : slotProps.formLabel, { sx: __assign({ mb: 1, typography: 'body2' }, (_b = slotProps === null || slotProps === void 0 ? void 0 : slotProps.formLabel) === null || _b === void 0 ? void 0 : _b.sx), children: label }))), (0, jsx_runtime_1.jsx)(FormGroup_1.default, __assign({}, other, { children: options.map(function (option) {
-                            var _a;
-                            return ((0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { control: (0, jsx_runtime_1.jsx)(Checkbox_1.default, __assign({ checked: field.value.includes(option.value), onChange: function () { return field.onChange(getSelected(field.value, option.value)); }, name: accessibility(option.label) }, slotProps === null || slotProps === void 0 ? void 0 : slotProps.checkbox, { inputProps: __assign(__assign({}, (!option.label && { 'aria-label': ariaLabel(option.label) })), (_a = slotProps === null || slotProps === void 0 ? void 0 : slotProps.checkbox) === null || _a === void 0 ? void 0 : _a.inputProps) })), label: option.label }, option.value));
-                        }) })), (!!error || helperText) && ((0, jsx_runtime_1.jsx)(FormHelperText_1.default, __assign({ error: !!error, sx: { mx: 0 } }, slotProps === null || slotProps === void 0 ? void 0 : slotProps.formHelperText, { children: error ? error === null || error === void 0 ? void 0 : error.message : helperText })))] }));
-        } }));
+export function RHFMultiCheckbox({ name, label, options, slotProps, helperText, ...other }) {
+    const { control } = useFormContext();
+    const getSelected = (selectedItems, item) => selectedItems.includes(item)
+        ? selectedItems.filter((value) => value !== item)
+        : [...selectedItems, item];
+    const accessibility = (val) => val;
+    const ariaLabel = (val) => `Checkbox ${val}`;
+    return (_jsx(Controller, { name: name, control: control, render: ({ field, fieldState: { error } }) => (_jsxs(FormControl, { component: "fieldset", sx: slotProps?.wrap, children: [label && (_jsx(FormLabel, { component: "legend", ...slotProps?.formLabel, sx: { mb: 1, typography: 'body2', ...slotProps?.formLabel?.sx }, children: label })), _jsx(FormGroup, { ...other, children: options.map((option) => (_jsx(FormControlLabel, { control: _jsx(Checkbox, { checked: field.value.includes(option.value), onChange: () => field.onChange(getSelected(field.value, option.value)), name: accessibility(option.label), ...slotProps?.checkbox, inputProps: {
+                                ...(!option.label && { 'aria-label': ariaLabel(option.label) }),
+                                ...slotProps?.checkbox?.inputProps,
+                            } }), label: option.label }, option.value))) }), (!!error || helperText) && (_jsx(FormHelperText, { error: !!error, sx: { mx: 0 }, ...slotProps?.formHelperText, children: error ? error?.message : helperText }))] })) }));
 }

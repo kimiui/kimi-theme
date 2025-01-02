@@ -1,11 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.mergeClasses = mergeClasses;
-exports.mergeRefs = mergeRefs;
-function mergeClasses(baseClasses, conditionalClasses) {
-    var base = baseClasses.filter(Boolean).join(' ');
-    var conditional = Object.keys(conditionalClasses)
-        .filter(function (key) { return conditionalClasses[key]; })
+export function mergeClasses(baseClasses, conditionalClasses) {
+    const base = baseClasses.filter(Boolean).join(' ');
+    const conditional = Object.keys(conditionalClasses)
+        .filter((key) => conditionalClasses[key])
         .join(' ');
     return [base, conditional].filter(Boolean).join(' ');
 }
@@ -13,9 +9,9 @@ function mergeClasses(baseClasses, conditionalClasses) {
  * Utility to merge multiple refs into one.
  * This ensures all refs receive the correct reference.
  */
-function mergeRefs(refs) {
-    return function (value) {
-        refs.forEach(function (ref) {
+export function mergeRefs(refs) {
+    return (value) => {
+        refs.forEach((ref) => {
             if (!ref)
                 return;
             if (typeof ref === 'function') {

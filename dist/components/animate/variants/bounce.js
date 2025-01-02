@@ -1,24 +1,10 @@
-"use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.varBounce = void 0;
-var transition_1 = require("./transition");
+import { varTranExit, varTranEnter } from './transition';
 // ----------------------------------------------------------------------
-var varBounce = function (props) {
-    var durationIn = props === null || props === void 0 ? void 0 : props.durationIn;
-    var durationOut = props === null || props === void 0 ? void 0 : props.durationOut;
-    var easeIn = props === null || props === void 0 ? void 0 : props.easeIn;
-    var easeOut = props === null || props === void 0 ? void 0 : props.easeOut;
+export const varBounce = (props) => {
+    const durationIn = props?.durationIn;
+    const durationOut = props?.durationOut;
+    const easeIn = props?.easeIn;
+    const easeOut = props?.easeOut;
     return {
         // IN
         in: {
@@ -26,7 +12,7 @@ var varBounce = function (props) {
             animate: {
                 scale: [0.3, 1.1, 0.9, 1.03, 0.97, 1],
                 opacity: [0, 1, 1, 1, 1, 1],
-                transition: (0, transition_1.varTranEnter)({ durationIn: durationIn, easeIn: easeIn }),
+                transition: varTranEnter({ durationIn, easeIn }),
             },
             exit: { scale: [0.9, 1.1, 0.3], opacity: [1, 1, 0] },
         },
@@ -36,13 +22,13 @@ var varBounce = function (props) {
                 y: [720, -24, 12, -4, 0],
                 scaleY: [4, 0.9, 0.95, 0.985, 1],
                 opacity: [0, 1, 1, 1, 1],
-                transition: __assign({}, (0, transition_1.varTranEnter)({ durationIn: durationIn, easeIn: easeIn })),
+                transition: { ...varTranEnter({ durationIn, easeIn }) },
             },
             exit: {
                 y: [12, -24, 720],
                 scaleY: [0.985, 0.9, 3],
                 opacity: [1, 1, 0],
-                transition: (0, transition_1.varTranExit)({ durationOut: durationOut, easeOut: easeOut }),
+                transition: varTranExit({ durationOut, easeOut }),
             },
         },
         inDown: {
@@ -51,13 +37,13 @@ var varBounce = function (props) {
                 y: [-720, 24, -12, 4, 0],
                 scaleY: [4, 0.9, 0.95, 0.985, 1],
                 opacity: [0, 1, 1, 1, 1],
-                transition: (0, transition_1.varTranEnter)({ durationIn: durationIn, easeIn: easeIn }),
+                transition: varTranEnter({ durationIn, easeIn }),
             },
             exit: {
                 y: [-12, 24, -720],
                 scaleY: [0.985, 0.9, 3],
                 opacity: [1, 1, 0],
-                transition: (0, transition_1.varTranExit)({ durationOut: durationOut, easeOut: easeOut }),
+                transition: varTranExit({ durationOut, easeOut }),
             },
         },
         inLeft: {
@@ -66,13 +52,13 @@ var varBounce = function (props) {
                 x: [-720, 24, -12, 4, 0],
                 scaleX: [3, 1, 0.98, 0.995, 1],
                 opacity: [0, 1, 1, 1, 1],
-                transition: (0, transition_1.varTranEnter)({ durationIn: durationIn, easeIn: easeIn }),
+                transition: varTranEnter({ durationIn, easeIn }),
             },
             exit: {
                 x: [0, 24, -720],
                 scaleX: [1, 0.9, 2],
                 opacity: [1, 1, 0],
-                transition: (0, transition_1.varTranExit)({ durationOut: durationOut, easeOut: easeOut }),
+                transition: varTranExit({ durationOut, easeOut }),
             },
         },
         inRight: {
@@ -81,13 +67,13 @@ var varBounce = function (props) {
                 x: [720, -24, 12, -4, 0],
                 scaleX: [3, 1, 0.98, 0.995, 1],
                 opacity: [0, 1, 1, 1, 1],
-                transition: (0, transition_1.varTranEnter)({ durationIn: durationIn, easeIn: easeIn }),
+                transition: varTranEnter({ durationIn, easeIn }),
             },
             exit: {
                 x: [0, -24, 720],
                 scaleX: [1, 0.9, 2],
                 opacity: [1, 1, 0],
-                transition: (0, transition_1.varTranExit)({ durationOut: durationOut, easeOut: easeOut }),
+                transition: varTranExit({ durationOut, easeOut }),
             },
         },
         // OUT
@@ -98,4 +84,3 @@ var varBounce = function (props) {
         outRight: { animate: { x: [0, -24, 720], scaleX: [1, 0.9, 2], opacity: [1, 1, 0] } },
     };
 };
-exports.varBounce = varBounce;

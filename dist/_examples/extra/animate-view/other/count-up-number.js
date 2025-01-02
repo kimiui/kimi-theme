@@ -1,9 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.AnimateCountUpNumber = AnimateCountUpNumber;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var animate_1 = require("../../../../components/animate");
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { AnimateCountUp } from '../../../../components/animate';
 // ----------------------------------------------------------------------
-function AnimateCountUpNumber() {
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(animate_1.AnimateCountUp, { component: "h6", variant: "h1", to: 500, unit: "+" }), (0, jsx_runtime_1.jsx)(animate_1.AnimateCountUp, { component: "h6", variant: "h1", from: 200, to: 500.14, toFixed: 2, unit: "k" })] }));
+export function AnimateCountUpNumber() {
+    return (_jsxs(_Fragment, { children: [_jsx(AnimateCountUp, { component: "h6", variant: "h1", to: 500, unit: "+" }), _jsx(AnimateCountUp, { component: "h6", variant: "h1", from: 200, to: 500.14, toFixed: 2, unit: "k" })] }));
 }

@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.navSectionClasses = void 0;
-exports.navSectionClasses = {
+export const navSectionClasses = {
     mini: {
         root: 'nav__section__mini',
     },

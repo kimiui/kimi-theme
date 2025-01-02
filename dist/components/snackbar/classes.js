@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.toasterClasses = void 0;
-exports.toasterClasses = {
+export const toasterClasses = {
     root: 'toaster__root',
     toast: 'toaster__toast',
     title: 'toaster__title',

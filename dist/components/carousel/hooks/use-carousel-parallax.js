@@ -1,37 +1,34 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useParallax = useParallax;
-var react_1 = require("react");
+import { useRef, useEffect, useCallback } from 'react';
 // ----------------------------------------------------------------------
-function useParallax(mainApi, parallax) {
-    var tweenFactor = (0, react_1.useRef)(0);
-    var tweenNodes = (0, react_1.useRef)([]);
-    var TWEEN_FACTOR_BASE = typeof parallax === 'number' ? parallax : 0.24;
-    var setTweenNodes = (0, react_1.useCallback)(function (_mainApi) {
+export function useParallax(mainApi, parallax) {
+    const tweenFactor = useRef(0);
+    const tweenNodes = useRef([]);
+    const TWEEN_FACTOR_BASE = typeof parallax === 'number' ? parallax : 0.24;
+    const setTweenNodes = useCallback((_mainApi) => {
         tweenNodes.current = _mainApi
             .slideNodes()
-            .map(function (slideNode) { return slideNode.querySelector('.slide__parallax__layer'); });
+            .map((slideNode) => slideNode.querySelector('.slide__parallax__layer'));
     }, []);
-    var setTweenFactor = (0, react_1.useCallback)(function (_mainApi) {
+    const setTweenFactor = useCallback((_mainApi) => {
         tweenFactor.current = TWEEN_FACTOR_BASE * _mainApi.scrollSnapList().length;
     }, [TWEEN_FACTOR_BASE]);
-    var tweenParallax = (0, react_1.useCallback)(function (_mainApi, eventName) {
-        var engine = _mainApi.internalEngine();
-        var scrollProgress = _mainApi.scrollProgress();
-        var slidesInView = _mainApi.slidesInView();
-        var isScrollEvent = eventName === 'scroll';
-        _mainApi.scrollSnapList().forEach(function (scrollSnap, snapIndex) {
-            var diffToTarget = scrollSnap - scrollProgress;
-            var slidesInSnap = engine.slideRegistry[snapIndex];
-            slidesInSnap.forEach(function (slideIndex) {
+    const tweenParallax = useCallback((_mainApi, eventName) => {
+        const engine = _mainApi.internalEngine();
+        const scrollProgress = _mainApi.scrollProgress();
+        const slidesInView = _mainApi.slidesInView();
+        const isScrollEvent = eventName === 'scroll';
+        _mainApi.scrollSnapList().forEach((scrollSnap, snapIndex) => {
+            let diffToTarget = scrollSnap - scrollProgress;
+            const slidesInSnap = engine.slideRegistry[snapIndex];
+            slidesInSnap.forEach((slideIndex) => {
                 if (isScrollEvent && !slidesInView.includes(slideIndex))
                     return;
                 if (engine.options.loop) {
-                    engine.slideLooper.loopPoints.forEach(function (loopItem) {
-                        var target = loopItem.target();
+                    engine.slideLooper.loopPoints.forEach((loopItem) => {
+                        const target = loopItem.target();
                         if (slideIndex === loopItem.index && target !== 0) {
-                            var sign = Math.sign(target);
+                            const sign = Math.sign(target);
                             if (sign === -1) {
                                 diffToTarget = scrollSnap - (1 + scrollProgress);
                             }
@@ -41,15 +38,15 @@ function useParallax(mainApi, parallax) {
                         }
                     });
                 }
-                var translateValue = diffToTarget * (-1 * tweenFactor.current) * 100;
-                var tweenNode = tweenNodes.current[slideIndex];
+                const translateValue = diffToTarget * (-1 * tweenFactor.current) * 100;
+                const tweenNode = tweenNodes.current[slideIndex];
                 if (tweenNode) {
-                    tweenNode.style.transform = "translateX(".concat(translateValue, "%)");
+                    tweenNode.style.transform = `translateX(${translateValue}%)`;
                 }
             });
         });
     }, []);
-    (0, react_1.useEffect)(function () {
+    useEffect(() => {
         if (!mainApi || !parallax)
             return;
         setTweenNodes(mainApi);

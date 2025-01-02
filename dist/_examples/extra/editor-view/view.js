@@ -1,46 +1,55 @@
 'use client';
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.EditorView = EditorView;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var react_1 = require("react");
-var Card_1 = __importDefault(require("@mui/material/Card"));
-var Stack_1 = __importDefault(require("@mui/material/Stack"));
-var Switch_1 = __importDefault(require("@mui/material/Switch"));
-var Typography_1 = __importDefault(require("@mui/material/Typography"));
-var FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
-var paths_1 = require("../../../routes/paths");
-var editor_1 = require("../../../components/editor");
-var markdown_1 = require("../../../components/markdown");
-var custom_breadcrumbs_1 = require("../../../components/custom-breadcrumbs");
-var component_hero_1 = require("../../component-hero");
-var component_block_1 = require("../../component-block");
+import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { useState } from 'react';
+import Card from '@mui/material/Card';
+import Stack from '@mui/material/Stack';
+import Switch from '@mui/material/Switch';
+import Typography from '@mui/material/Typography';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import { paths } from '../../../routes/paths';
+import { Editor } from '../../../components/editor';
+import { Markdown } from '../../../components/markdown';
+import { CustomBreadcrumbs } from '../../../components/custom-breadcrumbs';
+import { ComponentHero } from '../../component-hero';
+import { ComponentContainer } from '../../component-block';
 // ----------------------------------------------------------------------
-var defaultValue = "\n\n<h4>This is Heading 4</h4>\n<code>This is code</code>\n\n<pre><code class=\"language-javascript\">for (var i=1; i &#x3C;= 20; i++) {\n  if (i % 15 == 0)\n    return \"FizzBuzz\"\n  else if (i % 3 == 0)\n    return \"Fizz\"\n  else if (i % 5 == 0)\n    return \"Buzz\"\n  else\n    return i\n  }</code></pre>\n";
-function EditorView() {
-    var _a = (0, react_1.useState)(true), checked = _a[0], setChecked = _a[1];
-    var _b = (0, react_1.useState)(defaultValue), content = _b[0], setContent = _b[1];
-    var handleChange = function (event) {
+const defaultValue = `
+
+<h4>This is Heading 4</h4>
+<code>This is code</code>
+
+<pre><code class="language-javascript">for (var i=1; i &#x3C;= 20; i++) {
+  if (i % 15 == 0)
+    return "FizzBuzz"
+  else if (i % 3 == 0)
+    return "Fizz"
+  else if (i % 5 == 0)
+    return "Buzz"
+  else
+    return i
+  }</code></pre>
+`;
+export function EditorView() {
+    const [checked, setChecked] = useState(true);
+    const [content, setContent] = useState(defaultValue);
+    const handleChange = (event) => {
         setChecked(event.target.checked);
     };
-    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(component_hero_1.ComponentHero, { children: (0, jsx_runtime_1.jsx)(custom_breadcrumbs_1.CustomBreadcrumbs, { heading: "Editor", links: [{ name: 'Components', href: paths_1.paths.docs.components.root }, { name: 'Editor' }], moreLink: ['https://tiptap.dev/docs/editor/introduction'] }) }), (0, jsx_runtime_1.jsxs)(component_block_1.ComponentContainer, { maxWidth: false, sx: {
+    return (_jsxs(_Fragment, { children: [_jsx(ComponentHero, { children: _jsx(CustomBreadcrumbs, { heading: "Editor", links: [{ name: 'Components', href: paths.docs.components.root }, { name: 'Editor' }], moreLink: ['https://tiptap.dev/docs/editor/introduction'] }) }), _jsxs(ComponentContainer, { maxWidth: false, sx: {
                     rowGap: 5,
                     columnGap: 3,
                     display: 'grid',
                     gridTemplateColumns: { xs: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' },
-                }, children: [(0, jsx_runtime_1.jsxs)(Card_1.default, { sx: {
+                }, children: [_jsxs(Card, { sx: {
                             p: 3,
                             gap: 2,
                             flexShrink: 0,
                             display: 'flex',
                             flexDirection: 'column',
-                        }, children: [(0, jsx_runtime_1.jsx)(FormControlLabel_1.default, { control: (0, jsx_runtime_1.jsx)(Switch_1.default, { name: "fullItem", checked: checked, onChange: handleChange }), label: "Full item", labelPlacement: "start", sx: { ml: 'auto' } }), (0, jsx_runtime_1.jsx)(editor_1.Editor, { fullItem: checked, value: content, onChange: function (value) { return setContent(value); }, sx: { maxHeight: 720 } })] }), (0, jsx_runtime_1.jsxs)(Stack_1.default, { spacing: 1, sx: {
+                        }, children: [_jsx(FormControlLabel, { control: _jsx(Switch, { name: "fullItem", checked: checked, onChange: handleChange }), label: "Full item", labelPlacement: "start", sx: { ml: 'auto' } }), _jsx(Editor, { fullItem: checked, value: content, onChange: (value) => setContent(value), sx: { maxHeight: 720 } })] }), _jsxs(Stack, { spacing: 1, sx: {
                             p: 3,
                             borderRadius: 2,
                             overflowX: 'auto',
                             bgcolor: 'background.neutral',
-                        }, children: [(0, jsx_runtime_1.jsx)(Typography_1.default, { variant: "h6", children: "Preview" }), (0, jsx_runtime_1.jsx)(markdown_1.Markdown, { children: content })] })] })] }));
+                        }, children: [_jsx(Typography, { variant: "h6", children: "Preview" }), _jsx(Markdown, { children: content })] })] })] }));
 }

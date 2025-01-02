@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.stack = void 0;
 // ----------------------------------------------------------------------
-var MuiStack = {
+const MuiStack = {
     /** **************************************
      * DEFAULT PROPS
      *************************************** */
@@ -13,4 +10,4 @@ var MuiStack = {
     styleOverrides: {},
 };
 // ----------------------------------------------------------------------
-exports.stack = { MuiStack: MuiStack };
+export const stack = { MuiStack };

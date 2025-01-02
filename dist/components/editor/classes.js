@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.editorClasses = void 0;
-exports.editorClasses = {
+export const editorClasses = {
     root: 'nml__editor__root',
     toolbar: {
         hr: 'nml__editor__toolbar__hr',

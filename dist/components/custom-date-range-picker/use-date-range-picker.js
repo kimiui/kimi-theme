@@ -1,52 +1,49 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.useDateRangePicker = useDateRangePicker;
-var react_1 = require("react");
-var format_time_1 = require("../../utils/format-time");
+import { useState, useCallback } from 'react';
+import { fIsAfter, fDateRangeShortLabel } from '../../utils/format-time';
 // ----------------------------------------------------------------------
-function useDateRangePicker(start, end) {
-    var _a = (0, react_1.useState)(false), open = _a[0], setOpen = _a[1];
-    var _b = (0, react_1.useState)(end), endDate = _b[0], setEndDate = _b[1];
-    var _c = (0, react_1.useState)(start), startDate = _c[0], setStartDate = _c[1];
-    var error = (0, format_time_1.fIsAfter)(startDate, endDate);
-    var onOpen = (0, react_1.useCallback)(function () {
+export function useDateRangePicker(start, end) {
+    const [open, setOpen] = useState(false);
+    const [endDate, setEndDate] = useState(end);
+    const [startDate, setStartDate] = useState(start);
+    const error = fIsAfter(startDate, endDate);
+    const onOpen = useCallback(() => {
         setOpen(true);
     }, []);
-    var onClose = (0, react_1.useCallback)(function () {
+    const onClose = useCallback(() => {
         setOpen(false);
     }, []);
-    var onChangeStartDate = (0, react_1.useCallback)(function (newValue) {
+    const onChangeStartDate = useCallback((newValue) => {
         setStartDate(newValue);
     }, []);
-    var onChangeEndDate = (0, react_1.useCallback)(function (newValue) {
+    const onChangeEndDate = useCallback((newValue) => {
         if (error) {
             setEndDate(null);
         }
         setEndDate(newValue);
     }, [error]);
-    var onReset = (0, react_1.useCallback)(function () {
+    const onReset = useCallback(() => {
         setStartDate(null);
         setEndDate(null);
     }, []);
     return {
-        startDate: startDate,
-        endDate: endDate,
-        onChangeStartDate: onChangeStartDate,
-        onChangeEndDate: onChangeEndDate,
+        startDate,
+        endDate,
+        onChangeStartDate,
+        onChangeEndDate,
         //
-        open: open,
-        onOpen: onOpen,
-        onClose: onClose,
-        onReset: onReset,
+        open,
+        onOpen,
+        onClose,
+        onReset,
         //
         selected: !!startDate && !!endDate,
-        error: error,
+        error,
         //
-        label: (0, format_time_1.fDateRangeShortLabel)(startDate, endDate, true),
-        shortLabel: (0, format_time_1.fDateRangeShortLabel)(startDate, endDate),
+        label: fDateRangeShortLabel(startDate, endDate, true),
+        shortLabel: fDateRangeShortLabel(startDate, endDate),
         //
-        setStartDate: setStartDate,
-        setEndDate: setEndDate,
+        setStartDate,
+        setEndDate,
     };
 }

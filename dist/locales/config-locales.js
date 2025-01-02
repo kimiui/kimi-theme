@@ -1,28 +1,22 @@
 'use client';
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.changeLangMessages = exports.cookieName = exports.defaultNS = exports.languages = exports.fallbackLng = void 0;
-exports.i18nOptions = i18nOptions;
-exports.fallbackLng = 'en';
-exports.languages = ['en', 'fr', 'vi', 'cn', 'ar'];
-exports.defaultNS = 'common';
-exports.cookieName = 'i18next';
+export const fallbackLng = 'en';
+export const languages = ['en', 'fr', 'vi', 'cn', 'ar'];
+export const defaultNS = 'common';
+export const cookieName = 'i18next';
 // ----------------------------------------------------------------------
-function i18nOptions(lng, ns) {
-    if (lng === void 0) { lng = exports.fallbackLng; }
-    if (ns === void 0) { ns = exports.defaultNS; }
+export function i18nOptions(lng = fallbackLng, ns = defaultNS) {
     return {
         // debug: true,
-        lng: lng,
-        fallbackLng: exports.fallbackLng,
-        ns: ns,
-        defaultNS: exports.defaultNS,
-        fallbackNS: exports.defaultNS,
-        supportedLngs: exports.languages,
+        lng,
+        fallbackLng,
+        ns,
+        defaultNS,
+        fallbackNS: defaultNS,
+        supportedLngs: languages,
     };
 }
 // ----------------------------------------------------------------------
-exports.changeLangMessages = {
+export const changeLangMessages = {
     en: {
         success: 'Language has been changed!',
         error: 'Error changing language!',

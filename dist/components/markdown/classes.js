@@ -1,8 +1,5 @@
-"use strict";
 // ----------------------------------------------------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.markdownClasses = void 0;
-exports.markdownClasses = {
+export const markdownClasses = {
     root: 'nml__markdown__root',
     content: {
         pre: 'nml__editor__content__pre',

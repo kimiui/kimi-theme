@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.navBasicCssVars = void 0;
-var styles_1 = require("../../theme/styles");
+import { varAlpha } from '../../theme/styles';
 // ----------------------------------------------------------------------
 function desktopVars(theme) {
-    var shape = theme.shape, spacing = theme.spacing, palette = theme.vars.palette;
+    const { shape, spacing, vars: { palette }, } = theme;
     return {
         '--nav-item-gap': spacing(3),
         '--nav-item-radius': '0',
@@ -13,7 +10,7 @@ function desktopVars(theme) {
         '--nav-item-root-padding': '0',
         '--nav-item-root-active-color': palette.primary.dark,
         // sub
-        '--nav-item-sub-radius': "".concat(shape.borderRadius * 0.75, "px"),
+        '--nav-item-sub-radius': `${shape.borderRadius * 0.75}px`,
         '--nav-item-sub-padding': spacing(0.75, 1, 0.75, 1),
         '--nav-item-sub-color': palette.text.secondary,
         '--nav-item-sub-hover-color': palette.text.primary,
@@ -29,10 +26,10 @@ function desktopVars(theme) {
 }
 // ----------------------------------------------------------------------
 function mobileVars(theme) {
-    var shape = theme.shape, spacing = theme.spacing, palette = theme.vars.palette;
+    const { shape, spacing, vars: { palette }, } = theme;
     return {
         '--nav-item-gap': spacing(0.5),
-        '--nav-item-radius': "".concat(shape.borderRadius, "px"),
+        '--nav-item-radius': `${shape.borderRadius}px`,
         '--nav-item-pt': spacing(0.5),
         '--nav-item-pl': spacing(1.5),
         '--nav-item-pr': spacing(1),
@@ -44,8 +41,8 @@ function mobileVars(theme) {
         '--nav-item-root-height': '44px',
         '--nav-item-root-active-color': palette.primary.dark,
         '--nav-item-root-active-color-on-dark': palette.primary.light,
-        '--nav-item-root-active-bg': (0, styles_1.varAlpha)(palette.primary.mainChannel, 0.08),
-        '--nav-item-root-active-hover-bg': (0, styles_1.varAlpha)(palette.primary.mainChannel, 0.16),
+        '--nav-item-root-active-bg': varAlpha(palette.primary.mainChannel, 0.08),
+        '--nav-item-root-active-hover-bg': varAlpha(palette.primary.mainChannel, 0.16),
         '--nav-item-root-open-color': palette.text.primary,
         '--nav-item-root-open-bg': palette.action.hover,
         // sub
@@ -60,7 +57,7 @@ function mobileVars(theme) {
     };
 }
 // ----------------------------------------------------------------------
-exports.navBasicCssVars = {
+export const navBasicCssVars = {
     desktop: desktopVars,
     mobile: mobileVars,
 };

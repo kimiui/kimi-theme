@@ -1,16 +1,13 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.countries = void 0;
-var _mock_1 = require("../_mock");
+import { _mock } from '../_mock';
 // ----------------------------------------------------------------------
-exports.countries = [
+export const countries = [
     {
         timezones: ['America/Aruba'],
         latlng: [12.5, -69.96666666],
         name: 'Aruba',
         country_code: 'AW',
         capital: 'Oranjestad',
-        photoUrl: _mock_1._mock.image.cover(1),
+        photoUrl: _mock.image.cover(1),
     },
     {
         timezones: ['Asia/Kabul'],
@@ -18,7 +15,7 @@ exports.countries = [
         name: 'Afghanistan',
         country_code: 'AF',
         capital: 'Kabul',
-        photoUrl: _mock_1._mock.image.cover(2),
+        photoUrl: _mock.image.cover(2),
     },
     {
         timezones: ['Africa/Luanda'],
@@ -26,7 +23,7 @@ exports.countries = [
         name: 'Angola',
         country_code: 'AO',
         capital: 'Luanda',
-        photoUrl: _mock_1._mock.image.cover(3),
+        photoUrl: _mock.image.cover(3),
     },
     {
         timezones: ['Pacific/Efate'],
@@ -34,7 +31,7 @@ exports.countries = [
         name: 'Vanuatu',
         country_code: 'VU',
         capital: 'Port Vila',
-        photoUrl: _mock_1._mock.image.cover(4),
+        photoUrl: _mock.image.cover(4),
     },
     {
         timezones: ['Pacific/Wallis'],
@@ -42,7 +39,7 @@ exports.countries = [
         name: 'Wallis and Futuna',
         country_code: 'WF',
         capital: 'Mata-Utu',
-        photoUrl: _mock_1._mock.image.cover(5),
+        photoUrl: _mock.image.cover(5),
     },
     {
         timezones: ['Pacific/Apia'],
@@ -50,7 +47,7 @@ exports.countries = [
         name: 'Samoa',
         country_code: 'WS',
         capital: 'Apia',
-        photoUrl: _mock_1._mock.image.cover(6),
+        photoUrl: _mock.image.cover(6),
     },
     {
         timezones: ['Asia/Aden'],
@@ -58,7 +55,7 @@ exports.countries = [
         name: 'Yemen',
         country_code: 'YE',
         capital: "Sana'a",
-        photoUrl: _mock_1._mock.image.cover(7),
+        photoUrl: _mock.image.cover(7),
     },
     {
         timezones: ['Africa/Johannesburg'],
@@ -66,7 +63,7 @@ exports.countries = [
         name: 'South Africa',
         country_code: 'ZA',
         capital: 'Pretoria',
-        photoUrl: _mock_1._mock.image.cover(8),
+        photoUrl: _mock.image.cover(8),
     },
     {
         timezones: ['Africa/Lusaka'],
@@ -74,7 +71,7 @@ exports.countries = [
         name: 'Zambia',
         country_code: 'ZM',
         capital: 'Lusaka',
-        photoUrl: _mock_1._mock.image.cover(9),
+        photoUrl: _mock.image.cover(9),
     },
     {
         timezones: ['Africa/Harare'],
@@ -82,6 +79,6 @@ exports.countries = [
         name: 'Zimbabwe',
         country_code: 'ZW',
         capital: 'Harare',
-        photoUrl: _mock_1._mock.image.cover(10),
+        photoUrl: _mock.image.cover(10),
     },
 ];

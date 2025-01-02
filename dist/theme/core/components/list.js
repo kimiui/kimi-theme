@@ -1,30 +1,21 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.list = void 0;
 // ----------------------------------------------------------------------
-var MuiListItemIcon = {
+const MuiListItemIcon = {
     /** **************************************
      * STYLE
      *************************************** */
     styleOverrides: {
-        root: function (_a) {
-            var theme = _a.theme;
-            return ({ color: 'inherit', minWidth: 'auto', marginRight: theme.spacing(2) });
-        },
+        root: ({ theme }) => ({ color: 'inherit', minWidth: 'auto', marginRight: theme.spacing(2) }),
     },
 };
 // ----------------------------------------------------------------------
-var MuiListItemAvatar = {
+const MuiListItemAvatar = {
     /** **************************************
      * STYLE
      *************************************** */
-    styleOverrides: { root: function (_a) {
-            var theme = _a.theme;
-            return ({ minWidth: 'auto', marginRight: theme.spacing(2) });
-        } },
+    styleOverrides: { root: ({ theme }) => ({ minWidth: 'auto', marginRight: theme.spacing(2) }) },
 };
 // ----------------------------------------------------------------------
-var MuiListItemText = {
+const MuiListItemText = {
     /** **************************************
      * DEFAULT PROPS
      *************************************** */
@@ -35,8 +26,8 @@ var MuiListItemText = {
     styleOverrides: { root: { margin: 0 }, multiline: { margin: 0 } },
 };
 // ----------------------------------------------------------------------
-exports.list = {
-    MuiListItemIcon: MuiListItemIcon,
-    MuiListItemAvatar: MuiListItemAvatar,
-    MuiListItemText: MuiListItemText,
+export const list = {
+    MuiListItemIcon,
+    MuiListItemAvatar,
+    MuiListItemText,
 };

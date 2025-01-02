@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.DataGridBasic = DataGridBasic;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var x_data_grid_1 = require("@mui/x-data-grid");
-var iconify_1 = require("../../../components/iconify");
+import { jsx as _jsx } from "react/jsx-runtime";
+import { DataGrid, GridActionsCellItem } from '@mui/x-data-grid';
+import { Iconify } from '../../../components/iconify';
 // ----------------------------------------------------------------------
-var columns = [
+const columns = [
     { field: 'id', headerName: 'ID', width: 120 },
     {
         field: 'firstName',
@@ -33,7 +30,7 @@ var columns = [
         headerName: 'Full name',
         description: 'This column has a value getter and is not sortable.',
         flex: 1,
-        renderCell: function (params) { return "".concat(params.row.firstName, " ").concat(params.row.lastName); },
+        renderCell: (params) => `${params.row.firstName} ${params.row.lastName}`,
     },
     {
         type: 'actions',
@@ -45,14 +42,13 @@ var columns = [
         sortable: false,
         filterable: false,
         disableColumnMenu: true,
-        getActions: function (params) { return [
-            (0, jsx_runtime_1.jsx)(x_data_grid_1.GridActionsCellItem, { showInMenu: true, icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "solar:eye-bold" }), label: "View", onClick: function () { return console.info('VIEW', params.row.id); } }),
-            (0, jsx_runtime_1.jsx)(x_data_grid_1.GridActionsCellItem, { showInMenu: true, icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "solar:pen-bold" }), label: "Edit", onClick: function () { return console.info('EDIT', params.row.id); } }),
-            (0, jsx_runtime_1.jsx)(x_data_grid_1.GridActionsCellItem, { showInMenu: true, icon: (0, jsx_runtime_1.jsx)(iconify_1.Iconify, { icon: "solar:trash-bin-trash-bold" }), label: "Delete", onClick: function () { return console.info('DELETE', params.row.id); }, sx: { color: 'error.main' } }),
-        ]; },
+        getActions: (params) => [
+            _jsx(GridActionsCellItem, { showInMenu: true, icon: _jsx(Iconify, { icon: "solar:eye-bold" }), label: "View", onClick: () => console.info('VIEW', params.row.id) }),
+            _jsx(GridActionsCellItem, { showInMenu: true, icon: _jsx(Iconify, { icon: "solar:pen-bold" }), label: "Edit", onClick: () => console.info('EDIT', params.row.id) }),
+            _jsx(GridActionsCellItem, { showInMenu: true, icon: _jsx(Iconify, { icon: "solar:trash-bin-trash-bold" }), label: "Delete", onClick: () => console.info('DELETE', params.row.id), sx: { color: 'error.main' } }),
+        ],
     },
 ];
-function DataGridBasic(_a) {
-    var data = _a.data;
-    return (0, jsx_runtime_1.jsx)(x_data_grid_1.DataGrid, { columns: columns, rows: data, checkboxSelection: true, disableRowSelectionOnClick: true });
+export function DataGridBasic({ data }) {
+    return _jsx(DataGrid, { columns: columns, rows: data, checkboxSelection: true, disableRowSelectionOnClick: true });
 }

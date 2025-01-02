@@ -1,21 +1,14 @@
 'use client';
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.SimpleLayout = SimpleLayout;
-var jsx_runtime_1 = require("react/jsx-runtime");
-var ahooks_1 = require("ahooks");
-var Alert_1 = __importDefault(require("@mui/material/Alert"));
-var main_1 = require("./main");
-var header_base_1 = require("../core/header-base");
-var layout_section_1 = require("../core/layout-section");
-function SimpleLayout(_a) {
-    var sx = _a.sx, children = _a.children, content = _a.content;
-    var _b = (0, ahooks_1.useBoolean)(), mobileNavOpenActions = _b[1];
-    var layoutQuery = 'md';
-    return ((0, jsx_runtime_1.jsx)(layout_section_1.LayoutSection
+import { jsx as _jsx } from "react/jsx-runtime";
+import { useBoolean } from 'ahooks';
+import Alert from '@mui/material/Alert';
+import { Main, CompactContent } from './main';
+import { HeaderBase } from '../core/header-base';
+import { LayoutSection } from '../core/layout-section';
+export function SimpleLayout({ sx, children, content }) {
+    const [, mobileNavOpenActions] = useBoolean();
+    const layoutQuery = 'md';
+    return (_jsx(LayoutSection
     /** **************************************
      * Header
      *************************************** */
@@ -23,7 +16,7 @@ function SimpleLayout(_a) {
         /** **************************************
          * Header
          *************************************** */
-        headerSection: (0, jsx_runtime_1.jsx)(header_base_1.HeaderBase, { layoutQuery: layoutQuery, onOpenNav: mobileNavOpenActions.setTrue, slotsDisplay: {
+        headerSection: _jsx(HeaderBase, { layoutQuery: layoutQuery, onOpenNav: mobileNavOpenActions.setTrue, slotsDisplay: {
                 signIn: false,
                 account: false,
                 purchase: false,
@@ -34,7 +27,7 @@ function SimpleLayout(_a) {
                 localization: false,
                 notifications: false,
             }, slots: {
-                topArea: ((0, jsx_runtime_1.jsx)(Alert_1.default, { severity: "info", sx: { display: 'none', borderRadius: 0 }, children: "This is an info Alert." })),
+                topArea: (_jsx(Alert, { severity: "info", sx: { display: 'none', borderRadius: 0 }, children: "This is an info Alert." })),
             }, slotProps: { container: { maxWidth: false } } }), 
         /** **************************************
          * Footer
@@ -45,5 +38,5 @@ function SimpleLayout(_a) {
          *************************************** */
         cssVars: {
             '--layout-simple-content-compact-width': '448px',
-        }, sx: sx, children: (0, jsx_runtime_1.jsx)(main_1.Main, { children: (content === null || content === void 0 ? void 0 : content.compact) ? (0, jsx_runtime_1.jsx)(main_1.CompactContent, { children: children }) : children }) }));
+        }, sx: sx, children: _jsx(Main, { children: content?.compact ? _jsx(CompactContent, { children: children }) : children }) }));
 }

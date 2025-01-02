@@ -1,9 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.skeleton = void 0;
-var styles_1 = require("../../styles");
+import { varAlpha } from '../../styles';
 // ----------------------------------------------------------------------
-var MuiSkeleton = {
+const MuiSkeleton = {
     /** **************************************
      * DEFAULT PROPS
      *************************************** */
@@ -12,17 +9,11 @@ var MuiSkeleton = {
      * STYLE
      *************************************** */
     styleOverrides: {
-        root: function (_a) {
-            var theme = _a.theme;
-            return ({
-                backgroundColor: (0, styles_1.varAlpha)(theme.vars.palette.grey['400Channel'], 0.12),
-            });
-        },
-        rounded: function (_a) {
-            var theme = _a.theme;
-            return ({ borderRadius: theme.shape.borderRadius * 2 });
-        },
+        root: ({ theme }) => ({
+            backgroundColor: varAlpha(theme.vars.palette.grey['400Channel'], 0.12),
+        }),
+        rounded: ({ theme }) => ({ borderRadius: theme.shape.borderRadius * 2 }),
     },
 };
 // ----------------------------------------------------------------------
-exports.skeleton = { MuiSkeleton: MuiSkeleton };
+export const skeleton = { MuiSkeleton };

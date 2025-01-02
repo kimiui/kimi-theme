@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateAnchorOrigin = calculateAnchorOrigin;
 // ----------------------------------------------------------------------
-var POPOVER_DISTANCE = 0.75;
-function calculateAnchorOrigin(arrow) {
-    var props;
+const POPOVER_DISTANCE = 0.75;
+export function calculateAnchorOrigin(arrow) {
+    let props;
     switch (arrow) {
         /**
          * top-*
