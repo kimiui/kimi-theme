@@ -9,7 +9,7 @@ export declare const CheckboxIndeterminateIcon: (props: SvgIconProps) => import(
 export declare const checkbox: {
     MuiCheckbox: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiCheckbox"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Checkbox").CheckboxClasses, "MuiCheckbox", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Checkbox").CheckboxClasses, "MuiCheckbox", Theme>> | undefined;
         variants?: {
             props: Partial<import("@mui/material/Checkbox").CheckboxProps> | ((props: Partial<import("@mui/material/Checkbox").CheckboxProps> & {
                 ownerState: Partial<import("@mui/material/Checkbox").CheckboxProps>;
@@ -17,6 +17,6 @@ export declare const checkbox: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
 };

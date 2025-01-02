@@ -17,7 +17,7 @@ declare module '@mui/material/Chip' {
 export declare const chip: {
     MuiChip: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiChip"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Chip").ChipClasses, "MuiChip", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Chip").ChipClasses, "MuiChip", Theme>> | undefined;
         variants?: {
             props: Partial<ChipProps> | ((props: Partial<ChipProps> & {
                 ownerState: Partial<ChipProps>;
@@ -25,6 +25,6 @@ export declare const chip: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
 };

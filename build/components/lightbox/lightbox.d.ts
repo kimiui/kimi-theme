@@ -6,5 +6,5 @@ type DisplayTotalProps = {
     totalItems: number;
     disableTotal?: boolean;
 };
-export declare function DisplayTotal({ totalItems, disableTotal }: DisplayTotalProps): import("react/jsx-runtime").JSX.Element;
+export declare function DisplayTotal({ totalItems, disableTotal }: DisplayTotalProps): import("react/jsx-runtime").JSX.Element | null;
 export {};

@@ -10,7 +10,7 @@ declare module '@mui/material/Button' {
 export declare const button: {
     MuiButtonBase: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiButtonBase"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material").ButtonBaseClasses, "MuiButtonBase", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material").ButtonBaseClasses, "MuiButtonBase", Theme>> | undefined;
         variants?: {
             props: Partial<import("@mui/material").ButtonBaseProps> | ((props: Partial<import("@mui/material").ButtonBaseProps> & {
                 ownerState: Partial<import("@mui/material").ButtonBaseProps>;
@@ -18,11 +18,11 @@ export declare const button: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
     MuiButton: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiButton"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Button").ButtonClasses, "MuiButton", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Button").ButtonClasses, "MuiButton", Theme>> | undefined;
         variants?: {
             props: Partial<import("@mui/material/Button").ButtonProps> | ((props: Partial<import("@mui/material/Button").ButtonProps> & {
                 ownerState: Partial<import("@mui/material/Button").ButtonProps>;
@@ -30,6 +30,6 @@ export declare const button: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
 };

@@ -1,4 +1,4 @@
 export declare function formatNumberLocale(): {
-    code: string;
-    currency: string;
+    code: string | undefined;
+    currency: string | undefined;
 };

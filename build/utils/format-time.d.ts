@@ -19,19 +19,19 @@ export declare const formatStr: {
 export declare function today(format?: string): string;
 /** output: 17 Apr 2022 12:00 am
  */
-export declare function fDateTime(date: DatePickerFormat, format?: string): string;
+export declare function fDateTime(date: DatePickerFormat, format?: string): string | null;
 /** output: 17 Apr 2022
  */
-export declare function fDate(date: DatePickerFormat, format?: string): string;
+export declare function fDate(date: DatePickerFormat, format?: string): string | null;
 /** output: 12:00 am
  */
-export declare function fTime(date: DatePickerFormat, format?: string): string;
+export declare function fTime(date: DatePickerFormat, format?: string): string | null;
 /** output: 1713250100
  */
-export declare function fTimestamp(date: DatePickerFormat): number | "Invalid time value";
+export declare function fTimestamp(date: DatePickerFormat): number | "Invalid time value" | null;
 /** output: a few seconds, 2 years
  */
-export declare function fToNow(date: DatePickerFormat): string;
+export declare function fToNow(date: DatePickerFormat): string | null;
 /** output: boolean
  */
 export declare function fIsBetween(inputDate: DatePickerFormat, startDate: DatePickerFormat, endDate: DatePickerFormat): boolean;

@@ -96,7 +96,7 @@ export declare const _bankingCreditCard: {
     cardNumber: string;
     cardValid: string;
 }[];
-export declare const _bankingRecentTransitions: {
+export declare const _bankingRecentTransitions: ({
     id: string;
     name: string;
     avatarUrl: string;
@@ -106,7 +106,17 @@ export declare const _bankingRecentTransitions: {
     date: string;
     status: string;
     amount: number;
-}[];
+} | {
+    id: string;
+    name: null;
+    avatarUrl: null;
+    type: string;
+    message: string;
+    category: string;
+    date: string;
+    status: string;
+    amount: number;
+})[];
 export declare const _bookings: {
     id: string;
     destination: {

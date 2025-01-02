@@ -1,57 +1,57 @@
 import type { MapRef } from "react-map-gl";
 export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
-    zoom?: number;
-    hash?: boolean | string;
-    scrollZoom?: boolean | {
+    zoom?: number | undefined;
+    hash?: boolean | string | undefined;
+    scrollZoom?: (boolean | {
         around?: "center";
-    };
-    boxZoom?: boolean;
-    dragRotate?: boolean;
-    dragPan?: boolean | {
+    }) | undefined;
+    boxZoom?: boolean | undefined;
+    dragRotate?: boolean | undefined;
+    dragPan?: (boolean | {
         linearity?: number;
         easing?: (t: number) => number;
         deceleration?: number;
         maxSpeed?: number;
-    };
-    keyboard?: boolean;
-    doubleClickZoom?: boolean;
-    touchZoomRotate?: boolean | {
+    }) | undefined;
+    keyboard?: boolean | undefined;
+    doubleClickZoom?: boolean | undefined;
+    touchZoomRotate?: (boolean | {
         around?: "center";
-    };
-    touchPitch?: boolean | {
+    }) | undefined;
+    touchPitch?: (boolean | {
         around?: "center";
-    };
-    repaint?: boolean;
+    }) | undefined;
+    repaint?: boolean | undefined;
     config?: {
         [key: string]: import("mapbox-gl").ConfigSpecification;
-    };
-    interactive?: boolean;
-    bearingSnap?: number;
-    clickTolerance?: number;
-    pitchWithRotate?: boolean;
-    attributionControl?: boolean;
-    customAttribution?: string | Array<string>;
-    logoPosition?: import("mapbox-gl").ControlPosition;
-    failIfMajorPerformanceCaveat?: boolean;
-    preserveDrawingBuffer?: boolean;
-    antialias?: boolean;
-    refreshExpiredTiles?: boolean;
-    maxBounds?: import("mapbox-gl").LngLatBoundsLike;
-    minZoom?: number;
-    maxZoom?: number;
-    minPitch?: number;
-    maxPitch?: number;
-    cooperativeGestures?: boolean;
-    trackResize?: boolean;
-    bearing?: number;
-    pitch?: number;
-    projection?: import("mapbox-gl").ProjectionSpecification | string;
-    renderWorldCopies?: boolean;
-    minTileCacheSize?: number;
-    maxTileCacheSize?: number;
-    transformRequest?: import("mapbox-gl").RequestTransformFunction;
-    accessToken?: string;
-    testMode?: boolean;
+    } | undefined;
+    interactive?: boolean | undefined;
+    bearingSnap?: number | undefined;
+    clickTolerance?: number | undefined;
+    pitchWithRotate?: boolean | undefined;
+    attributionControl?: boolean | undefined;
+    customAttribution?: (string | Array<string>) | undefined;
+    logoPosition?: import("mapbox-gl").ControlPosition | undefined;
+    failIfMajorPerformanceCaveat?: boolean | undefined;
+    preserveDrawingBuffer?: boolean | undefined;
+    antialias?: boolean | undefined;
+    refreshExpiredTiles?: boolean | undefined;
+    maxBounds?: import("mapbox-gl").LngLatBoundsLike | undefined;
+    minZoom?: number | undefined;
+    maxZoom?: number | undefined;
+    minPitch?: number | undefined;
+    maxPitch?: number | undefined;
+    cooperativeGestures?: boolean | undefined;
+    trackResize?: boolean | undefined;
+    bearing?: number | undefined;
+    pitch?: number | undefined;
+    projection?: (import("mapbox-gl").ProjectionSpecification | string) | undefined;
+    renderWorldCopies?: boolean | undefined;
+    minTileCacheSize?: number | undefined;
+    maxTileCacheSize?: number | undefined;
+    transformRequest?: import("mapbox-gl").RequestTransformFunction | undefined;
+    accessToken?: string | undefined;
+    testMode?: boolean | undefined;
     locale?: Partial<{
         "AttributionControl.ToggleAttribution": string;
         "FullscreenControl.Enter": string;
@@ -66,24 +66,24 @@ export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
         "ScrollZoomBlocker.CtrlMessage": string;
         "ScrollZoomBlocker.CmdMessage": string;
         "TouchPanBlocker.Message": string;
-    }>;
-    language?: string;
-    worldview?: string;
-    crossSourceCollisions?: boolean;
-    collectResourceTiming?: boolean;
-    respectPrefersReducedMotion?: boolean;
+    }> | undefined;
+    language?: string | undefined;
+    worldview?: string | undefined;
+    crossSourceCollisions?: boolean | undefined;
+    collectResourceTiming?: boolean | undefined;
+    respectPrefersReducedMotion?: boolean | undefined;
     contextCreateOptions?: {
         extTextureFilterAnisotropicForceOff?: boolean;
         extTextureFloatLinearForceOff?: boolean;
         extStandardDerivativesForceOff?: boolean;
-    };
-    devtools?: boolean;
-    precompilePrograms?: boolean;
-    fadeDuration?: number;
-    localFontFamily?: string;
-    localIdeographFontFamily?: string;
-    performanceMetricsCollection?: boolean;
-    tessellationStep?: number;
+    } | undefined;
+    devtools?: boolean | undefined;
+    precompilePrograms?: boolean | undefined;
+    fadeDuration?: number | undefined;
+    localFontFamily?: string | undefined;
+    localIdeographFontFamily?: string | undefined;
+    performanceMetricsCollection?: boolean | undefined;
+    tessellationStep?: number | undefined;
 } & Partial<import("react-map-gl").ViewState> & import("react-map-gl/dist/esm/types/events-mapbox").MapCallbacks & {
     mapboxAccessToken?: string;
     initialViewState?: Partial<import("react-map-gl").ViewState> & {
@@ -100,15 +100,15 @@ export declare const MapWrapper: import("react").ForwardRefExoticComponent<{
         width: number;
         height: number;
     };
-    mapStyle?: string | import("mapbox-gl").StyleSpecification | import("react-map-gl/dist/esm/types").ImmutableLike<import("mapbox-gl").StyleSpecification>;
+    mapStyle?: string | import("mapbox-gl").StyleSpecification | import("react-map-gl/dist/esm/types").ImmutableLike<import("mapbox-gl").StyleSpecification> | undefined;
     styleDiffing?: boolean;
-    fog?: import("mapbox-gl").FogSpecification;
-    light?: import("mapbox-gl").LightSpecification;
-    terrain?: import("mapbox-gl").TerrainSpecification;
+    fog?: import("mapbox-gl").FogSpecification | undefined;
+    light?: import("mapbox-gl").LightSpecification | undefined;
+    terrain?: import("mapbox-gl").TerrainSpecification | null | undefined;
     interactiveLayerIds?: string[];
     cursor?: string;
 } & import("react-map-gl/dist/esm/utils/set-globals").GlobalSettings & {
-    mapLib?: import("react-map-gl").MapLib<import("mapbox-gl").Map> | Promise<import("react-map-gl").MapLib<import("mapbox-gl").Map>>;
+    mapLib?: import("react-map-gl").MapLib<import("mapbox-gl").Map> | Promise<import("react-map-gl").MapLib<import("mapbox-gl").Map>> | undefined;
     reuseMaps?: boolean;
     id?: string;
     style?: import("react").CSSProperties;

@@ -18,8 +18,8 @@ declare function verticalVars(theme: Theme): {
     '--nav-bullet-light-color': string;
     '--nav-bullet-dark-color': string;
     '--nav-item-sub-active-bg': string;
-    '--nav-subheader-color': string;
-    '--nav-subheader-hover-color': string;
+    '--nav-subheader-color'?: string | undefined;
+    '--nav-subheader-hover-color'?: string | undefined;
     '--nav-item-color': string;
     '--nav-item-hover-bg': string;
     '--nav-item-caption-color': string;
@@ -44,8 +44,8 @@ declare function miniVars(theme: Theme): {
     '--nav-icon-root-margin': string;
     '--nav-icon-sub-margin': string;
     '--nav-item-sub-active-bg': string;
-    '--nav-subheader-color': string;
-    '--nav-subheader-hover-color': string;
+    '--nav-subheader-color'?: string | undefined;
+    '--nav-subheader-hover-color'?: string | undefined;
     '--nav-item-color': string;
     '--nav-item-hover-bg': string;
     '--nav-item-caption-color': string;
@@ -71,8 +71,8 @@ declare function horizontalVars(theme: Theme): {
     '--nav-icon-sub-margin': string;
     '--nav-icon-root-margin': string;
     '--nav-item-sub-active-bg': string;
-    '--nav-subheader-color': string;
-    '--nav-subheader-hover-color': string;
+    '--nav-subheader-color'?: string | undefined;
+    '--nav-subheader-hover-color'?: string | undefined;
     '--nav-item-color': string;
     '--nav-item-hover-bg': string;
     '--nav-item-caption-color': string;

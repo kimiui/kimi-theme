@@ -18,7 +18,7 @@ declare module '@mui/material/Badge' {
 export declare const badge: {
     MuiBadge: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiBadge"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Badge").BadgeClasses, "MuiBadge", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Badge").BadgeClasses, "MuiBadge", Theme>> | undefined;
         variants?: {
             props: Partial<import("@mui/material/Badge").BadgeProps> | ((props: Partial<import("@mui/material/Badge").BadgeProps> & {
                 ownerState: Partial<import("@mui/material/Badge").BadgeProps>;
@@ -26,6 +26,6 @@ export declare const badge: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
 };

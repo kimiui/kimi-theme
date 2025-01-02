@@ -2,7 +2,7 @@ import type { Theme } from '@mui/material/styles';
 export declare const svgIcon: {
     MuiSvgIcon: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiSvgIcon"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material").SvgIconClasses, "MuiSvgIcon", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material").SvgIconClasses, "MuiSvgIcon", Theme>> | undefined;
         variants?: {
             props: Partial<import("@mui/material").SvgIconProps> | ((props: Partial<import("@mui/material").SvgIconProps> & {
                 ownerState: Partial<import("@mui/material").SvgIconProps>;
@@ -10,6 +10,6 @@ export declare const svgIcon: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
 };

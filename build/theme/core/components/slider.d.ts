@@ -10,7 +10,7 @@ declare module '@mui/material/Slider' {
 export declare const slider: {
     MuiSlider: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiSlider"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Slider").SliderClasses, "MuiSlider", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Slider").SliderClasses, "MuiSlider", Theme>> | undefined;
         variants?: {
             props: Partial<import("@mui/material/Slider").SliderProps> | ((props: Partial<import("@mui/material/Slider").SliderProps> & {
                 ownerState: Partial<import("@mui/material/Slider").SliderProps>;
@@ -18,6 +18,6 @@ export declare const slider: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
 };

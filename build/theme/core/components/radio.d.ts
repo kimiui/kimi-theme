@@ -8,7 +8,7 @@ export declare const RadioCheckedIcon: (props: SvgIconProps) => import("react/js
 export declare const radio: {
     MuiRadio: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiRadio"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Radio").RadioClasses, "MuiRadio", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/Radio").RadioClasses, "MuiRadio", Theme>> | undefined;
         variants?: {
             props: Partial<import("@mui/material/Radio").RadioProps> | ((props: Partial<import("@mui/material/Radio").RadioProps> & {
                 ownerState: Partial<import("@mui/material/Radio").RadioProps>;
@@ -16,6 +16,6 @@ export declare const radio: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
 };

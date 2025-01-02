@@ -915,4 +915,4 @@ export declare function getVariant(variant?: string, distance?: number): {
             ease: import("framer-motion").Easing;
         };
     };
-};
+} | undefined;

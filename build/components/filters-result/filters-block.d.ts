@@ -5,4 +5,4 @@ export type FilterBlockProps = {
     sx?: SxProps<Theme>;
     children: React.ReactNode;
 };
-export declare function FiltersBlock({ label, children, isShow, sx }: FilterBlockProps): import("react/jsx-runtime").JSX.Element;
+export declare function FiltersBlock({ label, children, isShow, sx }: FilterBlockProps): import("react/jsx-runtime").JSX.Element | null;

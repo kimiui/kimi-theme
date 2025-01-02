@@ -3,7 +3,7 @@ import type { Theme } from '@mui/material/styles';
 export declare const dataGrid: {
     MuiDataGrid: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiDataGrid"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/x-data-grid").GridClasses, "MuiDataGrid", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/x-data-grid").GridClasses, "MuiDataGrid", Theme>> | undefined;
     };
 };
 /**

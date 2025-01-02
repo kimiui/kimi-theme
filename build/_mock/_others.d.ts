@@ -33,7 +33,7 @@ export declare const _contacts: {
 }[];
 export declare const _notifications: {
     id: string;
-    avatarUrl: string;
+    avatarUrl: string | null;
     type: string;
     category: string;
     isUnRead: boolean;

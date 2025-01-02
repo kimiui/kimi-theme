@@ -6,4 +6,4 @@ export type TableSelectedActionProps = StackProps & {
     action?: React.ReactNode;
     onSelectAllRows: (checked: boolean) => void;
 };
-export declare function TableSelectedAction({ dense, action, rowCount, numSelected, onSelectAllRows, sx, ...other }: TableSelectedActionProps): import("react/jsx-runtime").JSX.Element;
+export declare function TableSelectedAction({ dense, action, rowCount, numSelected, onSelectAllRows, sx, ...other }: TableSelectedActionProps): import("react/jsx-runtime").JSX.Element | null;

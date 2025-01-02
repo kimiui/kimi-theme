@@ -11,11 +11,11 @@ export declare const PickerClockIcon: (props: SvgIconProps) => import("react/jsx
 export declare const datePicker: {
     MuiPickersPopper: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiPickersPopper"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/x-date-pickers/internals").PickersPopperClasses, "MuiPickersPopper", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/x-date-pickers/internals").PickersPopperClasses, "MuiPickersPopper", Theme>> | undefined;
     };
     MuiPickersLayout: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiPickersLayout"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/x-date-pickers/PickersLayout/pickersLayoutClasses").PickersLayoutClasses, "MuiPickersLayout", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/x-date-pickers/PickersLayout/pickersLayoutClasses").PickersLayoutClasses, "MuiPickersLayout", Theme>> | undefined;
     };
     MuiDatePicker: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiDatePicker"];

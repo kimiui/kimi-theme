@@ -16,7 +16,7 @@ type ApplyFilterProps = {
     query: string;
 };
 export declare function applyFilter({ inputData, query }: ApplyFilterProps): ItemProps[];
-export declare function splitPath(array: NavItemBaseProps[], key: string): string[];
+export declare function splitPath(array: NavItemBaseProps[], key: string): string[] | null;
 export declare function handleLoop(array: any, subheader?: string): any;
 type GroupsProps = {
     [key: string]: ItemProps[];

@@ -22,7 +22,7 @@ declare module '@mui/material/Pagination' {
 export declare const pagination: {
     MuiPagination: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiPagination"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material").PaginationClasses, "MuiPagination", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material").PaginationClasses, "MuiPagination", Theme>> | undefined;
         variants?: {
             props: Partial<import("@mui/material").PaginationProps> | ((props: Partial<import("@mui/material").PaginationProps> & {
                 ownerState: Partial<import("@mui/material").PaginationProps>;
@@ -30,6 +30,6 @@ export declare const pagination: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
 };

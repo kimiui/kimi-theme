@@ -11,7 +11,7 @@ declare module '@mui/material/ButtonGroup' {
 export declare const buttonGroup: {
     MuiButtonGroup: {
         defaultProps?: import("@mui/material/styles").ComponentsProps["MuiButtonGroup"];
-        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/ButtonGroup").ButtonGroupClasses, "MuiButtonGroup", Theme>>;
+        styleOverrides?: Partial<import("@mui/material/styles/overrides").OverridesStyleRules<keyof import("@mui/material/ButtonGroup").ButtonGroupClasses, "MuiButtonGroup", Theme>> | undefined;
         variants?: {
             props: Partial<ButtonGroupProps> | ((props: Partial<ButtonGroupProps> & {
                 ownerState: Partial<ButtonGroupProps>;
@@ -19,6 +19,6 @@ export declare const buttonGroup: {
             style: import("@mui/styled-engine").Interpolation<{
                 theme: Theme;
             }>;
-        }[];
+        }[] | undefined;
     };
 };

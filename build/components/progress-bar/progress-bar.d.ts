@@ -1,2 +1,2 @@
 import './styles.css';
-export declare function ProgressBar(): any;
+export declare function ProgressBar(): null;

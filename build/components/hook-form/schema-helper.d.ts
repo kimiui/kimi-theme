@@ -17,7 +17,7 @@ export declare const schemaHelper: {
      * date
      * defaultValue === null
      */
-    date: (props?: InputProps) => zod.ZodPipeline<zod.ZodEffects<zod.ZodNullable<zod.ZodDate>, string, Date>, zod.ZodUnion<[zod.ZodNumber, zod.ZodString, zod.ZodDate, zod.ZodNull]>>;
+    date: (props?: InputProps) => zod.ZodPipeline<zod.ZodEffects<zod.ZodNullable<zod.ZodDate>, string | null, Date | null>, zod.ZodUnion<[zod.ZodNumber, zod.ZodString, zod.ZodDate, zod.ZodNull]>>;
     /**
      * editor
      * defaultValue === '' | <p></p>
@@ -27,7 +27,7 @@ export declare const schemaHelper: {
      * object
      * defaultValue === null
      */
-    objectOrNull: <T>(props?: InputProps) => zod.ZodEffects<zod.ZodEffects<zod.ZodType<T, zod.ZodTypeDef, T>, T, T>, T, T>;
+    objectOrNull: <T>(props?: InputProps) => zod.ZodEffects<zod.ZodEffects<zod.ZodType<T, zod.ZodTypeDef, T>, T & ({} | undefined), T>, T & ({} | undefined), T>;
     /**
      * boolean
      * defaultValue === false
@@ -37,7 +37,7 @@ export declare const schemaHelper: {
      * file
      * defaultValue === '' || null
      */
-    file: (props?: InputProps) => zod.ZodEffects<zod.ZodType<string | File, zod.ZodTypeDef, string | File>, string | File, string | File>;
+    file: (props?: InputProps) => zod.ZodEffects<zod.ZodType<string | File | null, zod.ZodTypeDef, string | File | null>, string | File | null, string | File | null>;
     /**
      * files
      * defaultValue === []

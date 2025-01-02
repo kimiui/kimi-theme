@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "Kimi UI Theme",
   "private": false,
   "license": "MIT",
@@ -22,7 +22,8 @@
   "scripts": {
     "dev": "vite",
     "docs": "tsc && vite build",
-    "build": "rm -rf build && tsc -p ./tsconfig-build.json && tsc-alias -p ./tsconfig-build.json && yarn copy-resources",
+    "preview": "yarn docs && vite preview",
+    "build": "rm -rf build && tsc -p ./tsconfig.build.json && tsc-alias -p ./tsconfig.build.json && yarn copy-resources",
     "copy-resources": "yarn copy-css && yarn copy-types && yarn copy-locales",
     "copy-css": "cpx 'lib/**/*.css' build/",
     "copy-types": "cpx 'lib/**/*.d.ts' build/",

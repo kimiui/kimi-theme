@@ -1,1 +1,1 @@
-export declare function useScrollToTop(): any;
+export declare function useScrollToTop(): null;
