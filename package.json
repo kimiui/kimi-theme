@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Kimi UI Theme",
   "private": false,
   "license": "MIT",
@@ -21,8 +21,11 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && tsc -p ./tsconfig-build.json && tsc-alias -p ./tsconfig-build.json && yarn copy-css",
+    "build": "rm -rf dist && tsc -p ./tsconfig-build.json && tsc-alias -p ./tsconfig-build.json && yarn copy-resources",
+    "copy-resources": "yarn copy-css && yarn copy-types && yarn copy-locales",
     "copy-css": "cpx 'lib/**/*.css' dist/",
+    "copy-types": "cpx 'lib/**/*.d.ts' dist/",
+    "copy-locales": "cpx 'lib/locales/**/*.json' dist/locales/",
     "watch": "tsc -w",
     "lint": "eslint \"./**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
