@@ -26,6 +26,6 @@
       "lib/*": ["./lib/*"]
     }
   },
-  "include": ["./generate-exports.js", "src/**/*.ts", "src/**/*.tsx", "lib/**/*.ts", "lib/**/*.tsx"],
+  "include": ["./generate-exports.js", "src/**/*.ts", "src/**/*.tsx", "lib/**/*.ts", "lib/**/*.tsx", "./vite.config.ts"],
   "exclude": ["node_modules", "src/**/*.js", "src/**/*.d.ts", "lib/**/*.js", "lib/**/*.d.ts"]
 }

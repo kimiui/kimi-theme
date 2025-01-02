@@ -6,11 +6,11 @@
   "private": false,
   "license": "MIT",
   "type": "module",
-  "main": "build/index.js",
-  "module": "build/index.esm.js",
-  "types": "build/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "build"
+    "dist"
   ],
   "repository": {
     "type": "git",
@@ -21,13 +21,13 @@
   ],
   "scripts": {
     "dev": "vite",
-    "docs": "tsc && vite build",
-    "preview": "yarn docs && vite preview",
-    "build": "rm -rf build && tsc -p ./tsconfig.build.json && tsc-alias -p ./tsconfig.build.json && yarn copy-resources",
+    "docs": "tsc && vite build --outDir docs",
+    "preview": "vite preview --outDir docs",
+    "build": "rm -rf dist && tsc -p ./tsconfig.build.json && tsc-alias -p ./tsconfig.build.json && yarn copy-resources",
     "copy-resources": "yarn copy-css && yarn copy-types && yarn copy-locales",
-    "copy-css": "cpx 'lib/**/*.css' build/",
-    "copy-types": "cpx 'lib/**/*.d.ts' build/",
-    "copy-locales": "cpx 'lib/locales/**/*.json' build/locales/",
+    "copy-css": "cpx 'lib/**/*.css' dist/",
+    "copy-types": "cpx 'lib/**/*.d.ts' dist/",
+    "copy-locales": "cpx 'lib/locales/**/*.json' dist/locales/",
     "watch": "tsc -w",
     "lint": "eslint \"./**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",

@@ -19,7 +19,8 @@ coverage
 .swc
 _static
 out
-**/dist
+**/build
+**/docs
 
 # environment variables
 .env
