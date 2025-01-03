@@ -11,7 +11,7 @@ type Props = {
   };
 };
 
-export function ChartScatter({ chart }: Props) {
+export function ChartScatter({ chart }: Readonly<Props>) {
   const chartOptions = useChart({
     chart: {
       zoom: {
@@ -22,7 +22,7 @@ export function ChartScatter({ chart }: Props) {
     legend: { show: true },
     xaxis: {
       tickAmount: 8,
-      labels: { formatter: (val) => parseFloat(val).toFixed(1) },
+      labels: { formatter: (val: any) => parseFloat(val).toFixed(1) },
     },
     markers: { size: 6 },
   });
