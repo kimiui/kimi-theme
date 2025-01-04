@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "description": "Kimi UI Theme",
   "private": false,
   "license": "MIT",
@@ -152,6 +152,7 @@
     "@tiptap/starter-kit": "^2.4.0",
     "@vitejs/plugin-react-swc": "^3.7.2",
     "ahooks": "^3.8.4",
+    "apexcharts": "^4.3.0",
     "autosuggest-highlight": "^3.3.4",
     "axios": "^1.7.2",
     "dayjs": "^1.11.11",

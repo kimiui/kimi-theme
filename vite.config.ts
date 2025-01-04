@@ -1,11 +1,7 @@
 import { resolve } from 'path';
-import dts from 'vite-plugin-dts';
-import type { Plugin } from 'vite';
 import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
 import react from '@vitejs/plugin-react-swc';
-import { libInjectCss } from 'vite-plugin-lib-inject-css';
-import preserveDirectives from 'rollup-preserve-directives';
 //----------------------------------------------------------------------
 
 const PORT = 8080;
@@ -13,8 +9,6 @@ const PORT = 8080;
 export default defineConfig({
   plugins: [
     react(),
-    libInjectCss(),
-    dts({ include: 'lib' }),
     checker({
       typescript: true,
       eslint: {
@@ -25,7 +19,6 @@ export default defineConfig({
         initialIsOpen: false,
       },
     }),
-    preserveDirectives() as Plugin,
   ],
   resolve: {
     alias: {

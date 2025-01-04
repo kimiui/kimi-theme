@@ -99,7 +99,6 @@ export function useChart(options?: ChartOptions): ChartOptions {
         ...options?.states?.hover,
         filter: {
           type: 'darken',
-          value: 0.88,
           ...options?.states?.hover?.filter,
         },
       },
@@ -107,7 +106,6 @@ export function useChart(options?: ChartOptions): ChartOptions {
         ...options?.states?.active,
         filter: {
           type: 'darken',
-          value: 0.88,
           ...options?.states?.active?.filter,
         },
       },
