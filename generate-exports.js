@@ -12,9 +12,16 @@ function generateExports(dir, basePath = '.') {
     if (entry.isDirectory()) {
       const subExports = generateExports(join(dir, entry.name), join(basePath, entry.name));
       Object.assign(exports, subExports);
-    } else if (entry.isFile() && (entry.name === 'index.js' || entry.name === 'index.d.ts')) {
+    } else if (
+      entry.isFile() &&
+      (entry.name === 'index.js' || entry.name === 'index.d.ts' || entry.name.endsWith('.css'))
+    ) {
       const exportPath = join(basePath, entry.name).replace(/\\/g, '/');
-      const key = `./${basePath.replace(/\\/g, '/')}`;
+      let key = `./${basePath.replace(/\\/g, '/')}`;
+      if (entry.name === 'styles.css') {
+        key += `/${entry.name}`;
+      }
+
       if (
         !['./.'].includes(key) &&
         !key.includes('_examples') &&
