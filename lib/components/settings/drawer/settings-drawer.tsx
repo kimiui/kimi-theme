@@ -30,7 +30,7 @@ export function SettingsDrawer({
   hideDirection,
   hideColorScheme,
 }: Readonly<SettingsDrawerProps>) {
-  const theme: any = useTheme();
+  const theme = useTheme();
 
   const settings = useSettingsContext();
 
@@ -130,7 +130,6 @@ export function SettingsDrawer({
         <Stack spacing={6} sx={{ px: 2.5, pb: 5 }}>
           <Box gap={2} display="grid" gridTemplateColumns="repeat(2, 1fr)">
             {!hideColorScheme && renderMode}
-            {/* {!hideContrast && renderContrast} */}
             {!hideDirection && renderRTL}
           </Box>
           {!(hideNavLayout && hideNavColor) && renderNav}
