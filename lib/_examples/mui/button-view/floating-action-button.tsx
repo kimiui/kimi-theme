@@ -1,7 +1,7 @@
 'use client';
 
-import { m } from 'framer-motion';
 import Stack from '@mui/material/Stack';
+import { motion as m } from 'motion/react';
 import Fab, { fabClasses } from '@mui/material/Fab';
 
 import { Iconify } from 'lib/components/iconify';

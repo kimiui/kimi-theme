@@ -1,8 +1,8 @@
 'use client';
 
-import { m } from 'framer-motion';
 import Paper from '@mui/material/Paper';
 import { RouterLink } from 'routes-react';
+import { motion as m } from 'motion/react';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 

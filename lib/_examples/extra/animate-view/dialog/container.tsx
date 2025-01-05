@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import { m, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'motion/react';
 import DialogTitle from '@mui/material/DialogTitle';
 import type { StackProps } from '@mui/material/Stack';
 import type { PaperProps } from '@mui/material/Paper';

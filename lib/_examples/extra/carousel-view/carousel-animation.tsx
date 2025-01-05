@@ -1,8 +1,8 @@
 'use client';
 
-import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import { motion as m } from 'motion/react';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
@@ -24,7 +24,7 @@ type Props = {
   }[];
 };
 
-export function CarouselAnimation({ data }: Props) {
+export function CarouselAnimation({ data }: Readonly<Props>) {
   const carousel = useCarousel();
 
   return (
@@ -59,7 +59,7 @@ type CarouselItemProps = {
   item: Props['data'][number];
 };
 
-function CarouselItem({ item, index, selected }: CarouselItemProps) {
+function CarouselItem({ item, index, selected }: Readonly<CarouselItemProps>) {
   const theme = useTheme();
 
   return (

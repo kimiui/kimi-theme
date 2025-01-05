@@ -1,7 +1,7 @@
 'use client';
 
-import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
+import { motion as m } from 'motion/react';
 import { useTheme } from '@mui/material/styles';
 
 import { varPath } from 'lib/components/animate';

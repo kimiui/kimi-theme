@@ -1,5 +1,5 @@
-import { m } from 'framer-motion';
 import { useCallback } from 'react';
+import { motion as m } from 'motion/react';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';

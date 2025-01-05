@@ -1,8 +1,8 @@
 'use client';
 
 import { useRef, useMemo } from 'react';
-import { useScroll } from 'framer-motion';
-import type { MotionValue } from 'framer-motion';
+import { useScroll } from 'motion/react';
+import type { MotionValue } from 'motion/react';
 
 // ----------------------------------------------------------------------
 

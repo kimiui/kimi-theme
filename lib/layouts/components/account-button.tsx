@@ -1,6 +1,6 @@
-import { m } from 'framer-motion';
 import NoSsr from '@mui/material/NoSsr';
 import Avatar from '@mui/material/Avatar';
+import { motion as m } from 'motion/react';
 import SvgIcon from '@mui/material/SvgIcon';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';

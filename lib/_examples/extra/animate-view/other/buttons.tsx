@@ -1,7 +1,7 @@
 'use client';
 
-import { m } from 'framer-motion';
 import Fab from '@mui/material/Fab';
+import { motion as m } from 'motion/react';
 import IconButton from '@mui/material/IconButton';
 
 import { Iconify } from 'lib/components/iconify';

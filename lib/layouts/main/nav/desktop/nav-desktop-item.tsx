@@ -1,10 +1,10 @@
 'use client';
 
-import { m } from 'framer-motion';
 import { forwardRef } from 'react';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import { RouterLink } from 'routes-react';
+import { motion as m } from 'motion/react';
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
 import type { LinkProps } from '@mui/material/Link';

@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
+import { motion as m } from 'motion/react';
 import type { StackProps } from '@mui/material/Stack';
 
 import { _mock } from 'lib/_mock';

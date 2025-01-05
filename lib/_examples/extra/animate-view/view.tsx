@@ -41,7 +41,7 @@ export function AnimateView() {
         <CustomBreadcrumbs
           heading="Animate"
           links={[{ name: 'Components', href: paths.docs.components.root }, { name: 'Animate' }]}
-          moreLink={['https://www.framer.com/api/motion']}
+          moreLink={['https://motion.dev/docs']}
         />
       </ComponentHero>
 

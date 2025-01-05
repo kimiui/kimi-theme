@@ -1,5 +1,5 @@
-import { useInView } from 'framer-motion';
-import type { UseInViewOptions } from 'framer-motion';
+import { useInView } from 'motion/react';
+import type { UseInViewOptions } from 'motion/react';
 import type { Breakpoint } from '@mui/material/styles';
 import { useRef, useState, forwardRef, useCallback, startTransition } from 'react';
 

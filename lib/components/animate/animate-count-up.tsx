@@ -2,9 +2,9 @@
 
 import { useRef, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
-import type { UseInViewOptions } from 'framer-motion';
+import type { UseInViewOptions } from 'motion/react';
 import type { TypographyProps } from '@mui/material/Typography';
-import { m, animate, useInView, useTransform, useMotionValue } from 'framer-motion';
+import { animate, useInView, motion as m, useTransform, useMotionValue } from 'motion/react';
 
 // ----------------------------------------------------------------------
 

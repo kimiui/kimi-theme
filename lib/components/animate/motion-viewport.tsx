@@ -1,7 +1,7 @@
-import { m } from 'framer-motion';
 import { forwardRef } from 'react';
 import Box from '@mui/material/Box';
-import type { MotionProps } from 'framer-motion';
+import { motion as m } from 'motion/react';
+import type { MotionProps } from 'motion/react';
 import type { BoxProps } from '@mui/material/Box';
 
 import { useResponsive } from 'lib/hooks';

@@ -1,10 +1,10 @@
 'use client';
 
-import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
+import { motion as m } from 'motion/react';
 import type { BoxProps } from '@mui/material/Box';
 import { useRef, useState, useEffect } from 'react';
-import type { Easing, RepeatType } from 'framer-motion';
+import type { Easing, RepeatType } from 'motion/react';
 
 import { borderGradient } from 'lib/theme/styles';
 

@@ -1,6 +1,5 @@
 'use client';
 
-import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import { useBoolean } from 'ahooks';
@@ -8,6 +7,7 @@ import Badge from '@mui/material/Badge';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
+import { motion as m } from 'motion/react';
 import SvgIcon from '@mui/material/SvgIcon';
 import Tooltip from '@mui/material/Tooltip';
 import { useState, useCallback } from 'react';

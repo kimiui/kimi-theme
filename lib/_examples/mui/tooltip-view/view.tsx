@@ -1,10 +1,10 @@
 'use client';
 
-import { m } from 'framer-motion';
 import Fab from '@mui/material/Fab';
 import Zoom from '@mui/material/Zoom';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
+import { motion as m } from 'motion/react';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import type { TooltipProps } from '@mui/material/Tooltip';
@@ -121,11 +121,15 @@ export function TooltipView() {
             <Button color="inherit">Grow</Button>
           </Tooltip>
 
-          <Tooltip TransitionComponent={Fade} TransitionProps={{ timeout: 600 }} title="Add">
+          <Tooltip
+            title="Add"
+            slots={{ transition: Fade }}
+            slotProps={{ transition: { timeout: 600 } }}
+          >
             <Button color="inherit">Fade</Button>
           </Tooltip>
 
-          <Tooltip TransitionComponent={Zoom} title="Add">
+          <Tooltip title="Add" slots={{ transition: Zoom }}>
             <Button color="inherit">Zoom</Button>
           </Tooltip>
         </ComponentBlock>

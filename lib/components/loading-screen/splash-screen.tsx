@@ -4,7 +4,9 @@ import Box from '@mui/material/Box';
 import Portal from '@mui/material/Portal';
 import type { BoxProps } from '@mui/material/Box';
 
-import { AnimateLogo1 } from 'lib/components/animate';
+import { AnimateImageRotate } from 'lib/components/animate';
+
+import { Image } from '../image';
 
 // ----------------------------------------------------------------------
 
@@ -31,7 +33,9 @@ export function SplashScreen({ portal = true, sx, ...other }: Props) {
         }}
         {...other}
       >
-        <AnimateLogo1 />
+        <AnimateImageRotate
+          image={<Image src="https://www.kimistores.com/images/logo-single.svg" />}
+        />
       </Box>
     </Box>
   );

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Fab from '@mui/material/Fab';
 import type { FabProps } from '@mui/material/Fab';
-import { useScroll, useMotionValueEvent } from 'framer-motion';
+import { useScroll, useMotionValueEvent } from 'motion/react';
 
 import { Iconify } from 'lib/components/iconify';
 

@@ -1,6 +1,6 @@
-import { m } from 'framer-motion';
 import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
+import { motion as m } from 'motion/react';
 import SvgIcon from '@mui/material/SvgIcon';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
@@ -81,8 +81,10 @@ export function ContactsPopover({ data = [], sx, ...other }: ContactsPopoverProp
               <ListItemText
                 primary={contact.name}
                 secondary={contact.status === 'offline' ? fToNow(contact.lastActivity) : ''}
-                primaryTypographyProps={{ typography: 'subtitle2' }}
-                secondaryTypographyProps={{ typography: 'caption', color: 'text.disabled' }}
+                slotProps={{
+                  primary: { typography: 'subtitle2' },
+                  secondary: { typography: 'caption', color: 'text.disabled' },
+                }}
               />
             </MenuItem>
           ))}

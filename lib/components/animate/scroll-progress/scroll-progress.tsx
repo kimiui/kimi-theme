@@ -2,11 +2,11 @@
 
 import Box from '@mui/material/Box';
 import type { SVGProps } from 'react';
-import { m, useSpring } from 'framer-motion';
 import { styled } from '@mui/material/styles';
-import type { MotionValue } from 'framer-motion';
+import type { MotionValue } from 'motion/react';
 import type { BoxProps } from '@mui/material/Box';
 import type { Theme } from '@mui/material/styles';
+import { useSpring, motion as m } from 'motion/react';
 import { type MUIStyledCommonProps } from '@mui/system/createStyled';
 
 // ----------------------------------------------------------------------

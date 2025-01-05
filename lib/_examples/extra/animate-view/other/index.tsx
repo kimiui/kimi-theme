@@ -7,14 +7,19 @@ import IconButton from '@mui/material/IconButton';
 
 import { _mock } from 'lib/_mock';
 import { varAlpha } from 'lib/theme/styles';
+import { Image } from 'lib/components/image';
 import { Iconify } from 'lib/components/iconify';
-import { AnimateLogo1, AnimateLogo2, AnimateBorder, AnimateAvatar } from 'lib/components/animate';
+import {
+  AnimateBorder,
+  AnimateAvatar,
+  AnimateImageZoom,
+  AnimateImageRotate,
+} from 'lib/components/animate';
 
 import { SvgPath } from './svg-path';
 import { AnimateButton } from './buttons';
 import { AnimateCountUpNumber } from './count-up-number';
 import { ComponentBlock } from '../../../component-block';
-
 // ----------------------------------------------------------------------
 
 export function AnimateOther() {
@@ -55,8 +60,16 @@ export function AnimateOther() {
       </ComponentBlock>
 
       <ComponentBlock title="Logo" sx={{ gap: 5 }}>
-        <AnimateLogo1 />
-        <AnimateLogo2 />
+        <AnimateImageZoom
+          image={
+            <Image src="https://www.kimistores.com/images/logo-single.svg" sx={{ height: 40 }} />
+          }
+        />
+        <AnimateImageRotate
+          image={
+            <Image src="https://www.kimistores.com/images/logo-single.svg" sx={{ height: 40 }} />
+          }
+        />
       </ComponentBlock>
 
       <ComponentBlock title="Avatar" sx={{ gap: 5 }}>

@@ -1,7 +1,7 @@
-import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
-import type { Transition } from 'framer-motion';
+import { motion as m } from 'motion/react';
+import type { Transition } from 'motion/react';
 import type { BoxProps } from '@mui/material/Box';
 import type { AvatarProps } from '@mui/material/Avatar';
 
