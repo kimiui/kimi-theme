@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.33",
+  "version": "0.0.34",
   "description": "Kimi UI Theme",
   "private": false,
   "license": "MIT",
@@ -122,7 +122,6 @@
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-    "@faker-js/faker": "^8.4.1",
     "@fontsource/barlow": "^5.0.13",
     "@fontsource/dm-sans": "^5.0.21",
     "@fontsource/inter": "^5.0.18",
@@ -199,8 +198,6 @@
     "stylis-plugin-rtl": "^2.1.1",
     "swr": "^2.2.5",
     "turndown": "^7.2.0",
-    "vite-plugin-checker": "^0.8.0",
-    "vite-plugin-dts": "^4.4.0",
     "yet-another-react-lightbox": "^3.20.0",
     "zod": "^3.23.8"
   },
@@ -234,6 +231,8 @@
     "tsc-alias": "^1.8.10",
     "typescript": "^5.7.2",
     "vite": "^6.0.6",
+    "vite-plugin-checker": "^0.8.0",
+    "vite-plugin-dts": "^4.4.0",
     "vite-plugin-lib-inject-css": "^2.2.0"
   },
   "resolutions": {

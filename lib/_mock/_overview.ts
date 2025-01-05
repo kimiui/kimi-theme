@@ -1,5 +1,3 @@
-import { faker } from '@faker-js/faker';
-
 import { today } from 'lib/utils/format-time';
 
 import { _mock } from './_mock';
@@ -16,9 +14,9 @@ export const _topSales = [
 ].map((name, index) => ({
   id: _mock.id(index),
   name,
-  sales: faker.number.float({ min: 1000, max: 5000 }),
+  sales: 1000,
   image: `/assets/images/products/product-${index + 1}.webp`,
-  price: faker.number.float({ min: 20, max: 100 }),
+  price: 50,
 }));
 
 export const _appInstalled = ['Germany', 'England', 'France', 'Korean', 'USA'].map(
