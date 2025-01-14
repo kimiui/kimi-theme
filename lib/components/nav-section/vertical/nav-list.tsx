@@ -1,7 +1,6 @@
 'use client';
 
 import { Typography } from '@mui/material';
-import { usePathname } from 'routes-react';
 import { useState, useEffect, useCallback } from 'react';
 
 import { isExternalLink } from 'lib/utils';
@@ -22,9 +21,9 @@ export function NavList({
   slotProps,
   enabledRootRedirect,
 }: Readonly<NavListProps>) {
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
-  const active = useActiveLink(data.path, !!data.children);
+  const active = useActiveLink({ itemPath: data.path, deep: !!data.children });
 
   const [openMenu, setOpenMenu] = useState(active);
 

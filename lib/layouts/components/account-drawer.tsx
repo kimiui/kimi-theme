@@ -10,7 +10,6 @@ import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import { useRouter, usePathname } from 'routes-react';
 import type { IconButtonProps } from '@mui/material/IconButton';
 
 import { _mock } from 'lib/_mock';
@@ -39,9 +38,7 @@ export type AccountDrawerProps = IconButtonProps & {
 export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
   const theme = useTheme();
 
-  const router = useRouter();
-
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   const { user } = _mock;
 
@@ -58,9 +55,9 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
   const handleClickItem = useCallback(
     (path: string) => {
       handleCloseDrawer();
-      router.push(path);
+      window.location.href = path;
     },
-    [handleCloseDrawer, router]
+    [handleCloseDrawer]
   );
 
   const renderAvatar = (

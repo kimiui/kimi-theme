@@ -3,7 +3,6 @@ import Divider from '@mui/material/Divider';
 import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
-import { useRouter, usePathname } from 'routes-react';
 import type { IconButtonProps } from '@mui/material/IconButton';
 
 import { _mock } from 'lib/_mock';
@@ -27,17 +26,15 @@ export type AccountPopoverProps = IconButtonProps & {
 };
 
 export function AccountPopover({ data = [], onSignOut, sx, ...other }: AccountPopoverProps) {
-  const router = useRouter();
-
   const popover = usePopover();
 
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   const { user } = _mock;
 
   const handleClickItem = (path: string) => {
     popover.onClose();
-    router.push(path);
+    window.location.href = path;
   };
 
   return (

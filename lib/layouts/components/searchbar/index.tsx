@@ -2,7 +2,6 @@
 
 import Box from '@mui/material/Box';
 import { useBoolean } from 'ahooks';
-import { useRouter } from 'routes-react';
 import SvgIcon from '@mui/material/SvgIcon';
 import { useState, useCallback } from 'react';
 import match from 'autosuggest-highlight/match';
@@ -35,8 +34,6 @@ export type SearchbarProps = BoxProps & {
 export function Searchbar({ data: navItems = [], sx, ...other }: SearchbarProps) {
   const theme = useTheme();
 
-  const router = useRouter();
-
   const [search, { toggle, setTrue, setFalse }] = useBoolean();
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -60,11 +57,11 @@ export function Searchbar({ data: navItems = [], sx, ...other }: SearchbarProps)
       if (isExternalLink(path)) {
         window.open(path);
       } else {
-        router.push(path);
+        window.location.href = path;
       }
       handleClose();
     },
-    [handleClose, router]
+    [handleClose]
   );
 
   const handleSearch = useCallback((event: React.ChangeEvent<HTMLTextAreaElement>) => {

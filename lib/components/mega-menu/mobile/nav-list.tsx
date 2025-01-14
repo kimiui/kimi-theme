@@ -2,7 +2,6 @@
 
 import Stack from '@mui/material/Stack';
 import Drawer from '@mui/material/Drawer';
-import { usePathname } from 'routes-react';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
@@ -22,9 +21,9 @@ import type { NavListProps } from '../types';
 // ----------------------------------------------------------------------
 
 export function NavList({ data, render, cssVars, slotProps }: Readonly<NavListProps>) {
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
-  const active = useActiveLink(data.path, !!data.children);
+  const active = useActiveLink({ itemPath: data.path, deep: !!data.children });
 
   const [openMenu, setOpenMenu] = useState(false);
 

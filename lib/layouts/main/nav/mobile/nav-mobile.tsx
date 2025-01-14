@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import { usePathname } from 'routes-react';
 
 import { Logo } from 'lib/components/logo';
 import { NavUl } from 'lib/components/nav-section';
@@ -25,7 +24,7 @@ export type NavMobileProps = NavMainProps & {
 };
 
 export function NavMobile({ data, open, onClose, slots, sx }: NavMobileProps) {
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   useEffect(() => {
     if (open) {

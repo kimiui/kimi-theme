@@ -2,7 +2,6 @@
 
 import Stack from '@mui/material/Stack';
 import Drawer from '@mui/material/Drawer';
-import { usePathname } from 'routes-react';
 import SvgIcon from '@mui/material/SvgIcon';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
@@ -30,7 +29,7 @@ export function MegaMenuMobile({
 }: MegaMenuProps) {
   const theme = useTheme();
 
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   const [openDrawer, setOpenDrawer] = useState(false);
 

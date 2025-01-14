@@ -1,7 +1,6 @@
 'use client';
 
 import Paper from '@mui/material/Paper';
-import { usePathname } from 'routes-react';
 import Popover from '@mui/material/Popover';
 import { useTheme } from '@mui/material/styles';
 import { useRef, useState, useEffect, useCallback } from 'react';
@@ -28,11 +27,11 @@ export function NavList({
 }: Readonly<NavListProps>) {
   const theme = useTheme();
 
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   const navItemRef = useRef<HTMLButtonElement | null>(null);
 
-  const active = useActiveLink(data.path, !!data.children);
+  const active = useActiveLink({ itemPath: data.path, deep: !!data.children });
 
   const [openMenu, setOpenMenu] = useState(false);
 

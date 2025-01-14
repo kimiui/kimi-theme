@@ -1,7 +1,6 @@
 'use client';
 
 import NProgress from 'nprogress';
-import { usePathname } from 'routes-react';
 import { useState, useEffect } from 'react';
 
 import './styles.css';
@@ -9,7 +8,7 @@ import './styles.css';
 // ----------------------------------------------------------------------
 
 export function ProgressBar() {
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   const [mounted, setMounted] = useState(false);
 

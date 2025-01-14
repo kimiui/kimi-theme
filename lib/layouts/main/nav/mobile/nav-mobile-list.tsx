@@ -13,7 +13,7 @@ import type { NavListProps } from '../types';
 // ----------------------------------------------------------------------
 
 export function NavList({ data }: Readonly<NavListProps>) {
-  const active = useActiveLink(data.path, !!data.children);
+  const active = useActiveLink({ itemPath: data.path, deep: !!data.children });
 
   const [openMenu, setOpenMenu] = useState(false);
 

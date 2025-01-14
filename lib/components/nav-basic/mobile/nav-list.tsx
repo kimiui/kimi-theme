@@ -1,6 +1,5 @@
 'use client';
 
-import { usePathname } from 'routes-react';
 import Collapse from '@mui/material/Collapse';
 import { useState, useEffect, useCallback } from 'react';
 
@@ -21,9 +20,9 @@ export function NavList({
   slotProps,
   enabledRootRedirect,
 }: Readonly<NavListProps>) {
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
-  const active = useActiveLink(data.path, !!data.children);
+  const active = useActiveLink({ itemPath: data.path, deep: !!data.children });
 
   const [openMenu, setOpenMenu] = useState(active);
 

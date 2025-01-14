@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import Stack from '@mui/material/Stack';
 import Portal from '@mui/material/Portal';
-import { usePathname } from 'routes-react';
 import { useTheme } from '@mui/material/styles';
 import ListSubheader from '@mui/material/ListSubheader';
 import { useRef, useState, useEffect, useCallback } from 'react';
@@ -25,11 +24,11 @@ export function NavList({ data }: Readonly<NavListProps>) {
 
   const navItemRef = useRef<HTMLButtonElement | null>(null);
 
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   const [openMenu, setOpenMenu] = useState(false);
 
-  const active = useActiveLink(data.path, !!data.children);
+  const active = useActiveLink({ itemPath: data.path, deep: !!data.children });
 
   const [clientRect, setClientRect] = useState<Record<string, number>>({
     top: 0,
@@ -150,7 +149,7 @@ export function NavList({ data }: Readonly<NavListProps>) {
 // ----------------------------------------------------------------------
 
 function NavSubList({ data, subheader, sx, ...other }: NavSubListProps) {
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   const isDashboard = subheader === 'Dashboard';
 
