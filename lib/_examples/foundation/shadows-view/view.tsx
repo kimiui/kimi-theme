@@ -27,7 +27,6 @@ export function ShadowsView() {
   const shadows = Object.values(theme.shadows);
 
   const SYSTEM = shadows.slice(1, shadows.length);
-  console.log(SYSTEM);
 
   const DEMO = [
     {
