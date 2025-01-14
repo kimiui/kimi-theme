@@ -1,6 +1,5 @@
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import { RouterLink } from 'routes-react';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
@@ -56,7 +55,6 @@ function CarouselItem({ item }: Readonly<CarouselItemProps>) {
 
   return (
     <Link
-      component={RouterLink as any}
       href={item.path}
       color="inherit"
       underline="none"

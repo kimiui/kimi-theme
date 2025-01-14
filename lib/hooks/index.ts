@@ -5,7 +5,6 @@ export * from './useClientRect';
 export * from './useResponsive';
 export * from './useActiveLink';
 export * from './useDoubleClick';
-export * from './useScrollToTop';
 export * from './useLocalStorage';
 export * from './useEventListener';
 export * from './useCopyToClipboard';

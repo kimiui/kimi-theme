@@ -1,12 +1,15 @@
-import { usePathname } from 'routes-react';
+'use client';
 
-import { hasParams, removeParams, isExternalLink, removeLastSlash } from 'lib/utils/helper';
+import { hasParams, removeParams, isExternalLink } from 'lib/utils/helper';
 
 // ----------------------------------------------------------------------
+type Props = {
+  itemPath: string;
+  deep?: boolean;
+};
 
-export function useActiveLink(itemPath: string, deep: boolean = true): boolean {
-  const pathname = removeLastSlash(usePathname());
-
+export function useActiveLink({ itemPath, deep = true }: Props): boolean {
+  const { pathname } = window.location;
   const pathHasParams = hasParams(itemPath);
 
   /* Start check */

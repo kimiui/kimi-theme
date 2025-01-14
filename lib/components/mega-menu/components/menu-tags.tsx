@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
-import { RouterLink } from 'routes-react';
 import Typography from '@mui/material/Typography';
 
 import type { MenuTagsProps } from '../types';
@@ -17,7 +16,6 @@ export function MenuTags({ tags, ...other }: MenuTagsProps) {
       {tags.map((tag, index) => (
         <Link
           key={tag.title}
-          component={RouterLink as any}
           href={tag.path}
           variant="caption"
           sx={{

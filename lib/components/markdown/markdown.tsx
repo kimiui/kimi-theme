@@ -50,7 +50,7 @@ type ComponentTag = {
 
 const rehypePlugins = [rehypeRaw, rehypeHighlight, [remarkGfm, { singleTilde: false }]];
 
-const components = (RouterLink: any) => ({
+const components = () => ({
   img: ({ node, ...other }: ComponentTag) => (
     <Image
       ratio="16/9"
@@ -60,9 +60,7 @@ const components = (RouterLink: any) => ({
     />
   ),
   a: ({ href, children, node, ...other }: ComponentTag) => {
-    const linkProps = isExternalLink(href)
-      ? { target: '_blank', rel: 'noopener' }
-      : { component: RouterLink };
+    const linkProps = isExternalLink(href) ? { target: '_blank', rel: 'noopener' } : {};
 
     return (
       <Link {...linkProps} href={href} className={markdownClasses.content.link} {...other}>

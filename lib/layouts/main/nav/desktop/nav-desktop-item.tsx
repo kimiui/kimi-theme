@@ -3,7 +3,6 @@
 import { forwardRef } from 'react';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
-import { RouterLink } from 'routes-react';
 import { motion as m } from 'motion/react';
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
@@ -116,7 +115,7 @@ type NavItemDashboardProps = LinkProps & {
 
 export function NavItemDashboard({ path, sx, ...other }: NavItemDashboardProps) {
   return (
-    <Link component={RouterLink as any} href={path} sx={{ width: 1, height: 1 }} {...other}>
+    <Link href={path} sx={{ width: 1, height: 1 }} {...other}>
       <CardActionArea
         sx={{
           height: 1,

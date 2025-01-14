@@ -1,7 +1,7 @@
 'use client';
 
+import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
-import { RouterLink } from 'routes-react';
 import { motion as m } from 'motion/react';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
@@ -25,14 +25,14 @@ type Props = {
 export function ComponentCard({ item }: Readonly<Props>) {
   return (
     <Paper
-      component={RouterLink as any}
+      component={Link}
       href={item.href}
       variant="outlined"
       sx={{
         overflow: 'hidden',
         position: 'relative',
         textDecoration: 'none',
-        borderColor: (theme) => varAlpha(theme.vars.palette.grey['500Channel'], 0.12),
+        '&:hover': { textDecoration: 'none !important' },
       }}
     >
       {item.category && (

@@ -2,7 +2,6 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid2';
 import Stack from '@mui/material/Stack';
-import { RouterLink } from 'routes-react';
 import Divider from '@mui/material/Divider';
 import { useTheme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
@@ -131,13 +130,7 @@ export function Footer({ layoutQuery, sx }: Readonly<FooterProps>) {
                   </Typography>
 
                   {list.children.map((link) => (
-                    <Link
-                      key={link.name}
-                      component={RouterLink as any}
-                      href={link.href}
-                      color="inherit"
-                      variant="body2"
-                    >
+                    <Link key={link.name} href={link.href} color="inherit" variant="body2">
                       {link.name}
                     </Link>
                   ))}

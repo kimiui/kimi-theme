@@ -1,8 +1,9 @@
+'use client';
+
 import { forwardRef } from 'react';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { RouterLink, usePathname } from 'routes-react';
 
 import { removeLastSlash } from 'lib/utils';
 
@@ -13,7 +14,7 @@ import type { NavSubListProps, NavSubItemProps } from '../types';
 // ----------------------------------------------------------------------
 
 export function NavSubList({ data, slotProps, ...other }: NavSubListProps) {
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   return (
     <>
@@ -54,7 +55,6 @@ export const NavSubItem = forwardRef<HTMLAnchorElement, NavSubItemProps>(
     <NavLi key={title}>
       <Link
         ref={ref}
-        component={RouterLink as any}
         href={path}
         noWrap
         sx={{

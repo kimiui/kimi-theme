@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
-import { RouterLink } from 'routes-react';
 
 import type { BreadcrumbsLinkProps } from './types';
 
@@ -50,7 +49,7 @@ export function BreadcrumbsLink({ link, activeLast, disabled }: Readonly<Props>)
 
   if (link.href) {
     return (
-      <Link component={RouterLink as any} href={link.href} sx={styles}>
+      <Link href={link.href} sx={styles}>
         {renderContent}
       </Link>
     );

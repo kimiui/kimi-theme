@@ -2,9 +2,7 @@
 
 import { useBoolean } from 'ahooks';
 import Alert from '@mui/material/Alert';
-import { usePathname } from 'routes-react';
 import { useTheme } from '@mui/material/styles';
-import { BrowserRouter } from 'react-router-dom';
 import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
 
 import { Main } from './main';
@@ -29,7 +27,7 @@ export type MainLayoutProps = {
 export function MainLayout({ sx, data, children }: Readonly<MainLayoutProps>) {
   const theme = useTheme();
 
-  const pathname = usePathname();
+  const { pathname } = window.location;
 
   const [mobileNavOpen, mobileNavOpenActions] = useBoolean();
 
@@ -42,7 +40,7 @@ export function MainLayout({ sx, data, children }: Readonly<MainLayoutProps>) {
   console.log('navData', navData);
 
   return (
-    <BrowserRouter>
+    <>
       <NavMobile data={navData} open={mobileNavOpen} onClose={mobileNavOpenActions.setFalse} />
 
       <LayoutSection
@@ -94,6 +92,6 @@ export function MainLayout({ sx, data, children }: Readonly<MainLayoutProps>) {
       >
         <Main>{children}</Main>
       </LayoutSection>
-    </BrowserRouter>
+    </>
   );
 }

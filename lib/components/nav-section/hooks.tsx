@@ -1,6 +1,5 @@
 import { cloneElement } from 'react';
 import type { ReactNode } from 'react';
-import { RouterLink } from 'routes-react';
 
 import type { NavItemProps } from './types';
 
@@ -44,7 +43,7 @@ export function useNavItem({
 
   const linkProps = externalLink
     ? { href: path, target: '_blank', rel: 'noopener' }
-    : { component: RouterLink, href: path };
+    : { href: path };
 
   const baseProps = hasChild && !enabledRootRedirect ? { component: 'div' } : linkProps;
 
