@@ -7,6 +7,7 @@ import { Logo } from 'lib/components/logo';
 import { LoadingScreen } from 'lib/components';
 import { DashboardLayout } from 'lib/layouts/dashboard';
 
+import packageJson from '../../package.json';
 import { navData as docsNavData } from './config-nav-docs';
 
 const IntroductionPage = lazy(() => import('../pages/introduction/page'));
@@ -98,7 +99,7 @@ export function Router() {
                   </Typography>
 
                   <Typography variant="caption" sx={{ ml: 1, color: 'text.secondary' }}>
-                    v0.0.10
+                    v{packageJson.version}
                   </Typography>
                 </Stack>
               ),
