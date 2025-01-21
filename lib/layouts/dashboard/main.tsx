@@ -8,7 +8,6 @@ import type { Breakpoint } from '@mui/material/styles';
 import type { ContainerProps } from '@mui/material/Container';
 
 import { layoutClasses } from 'lib/layouts/classes';
-import { useSettingsContext } from 'lib/components/settings';
 
 // ----------------------------------------------------------------------
 
@@ -52,14 +51,11 @@ export function DashboardContent({
 }: DashboardContentProps) {
   const theme = useTheme();
 
-  const settings = useSettingsContext();
-
   const layoutQuery: Breakpoint = 'lg';
 
   return (
     <Container
       className={layoutClasses.content}
-      maxWidth={settings.compactLayout ? maxWidth : false}
       sx={{
         display: 'flex',
         flex: '1 1 auto',
