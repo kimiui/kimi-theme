@@ -160,7 +160,6 @@ export const navData = [
         title: 'Lightbox',
         path: paths.docs.components.extra.lightbox,
       },
-      { title: 'Map', path: paths.docs.components.extra.map },
       {
         title: 'Markdown',
         path: paths.docs.components.extra.markdown,

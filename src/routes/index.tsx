@@ -63,7 +63,6 @@ const FormWizardPage = lazy(() => import('../pages/components/extra/form-wizard/
 const ImagePage = lazy(() => import('../pages/components/extra/image/page'));
 const LabelPage = lazy(() => import('../pages/components/extra/label/page'));
 const LightboxPage = lazy(() => import('../pages/components/extra/lightbox/page'));
-const MapPage = lazy(() => import('../pages/components/extra/map/page'));
 const MarkdownPage = lazy(() => import('../pages/components/extra/markdown/page'));
 const MegaMenuPage = lazy(() => import('../pages/components/extra/mega-menu/page'));
 const MultiLanguagePage = lazy(() => import('../pages/components/extra/multi-language/page'));
@@ -194,7 +193,6 @@ export function Router() {
                 { path: 'image', element: <ImagePage /> },
                 { path: 'label', element: <LabelPage /> },
                 { path: 'lightbox', element: <LightboxPage /> },
-                { path: 'map', element: <MapPage /> },
                 { path: 'markdown', element: <MarkdownPage /> },
                 { path: 'mega-menu', element: <MegaMenuPage /> },
                 { path: 'multi-language', element: <MultiLanguagePage /> },

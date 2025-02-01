@@ -1,4 +1,3 @@
-export * from './map';
 export * from './logo';
 export * from './chart';
 export * from './image';
