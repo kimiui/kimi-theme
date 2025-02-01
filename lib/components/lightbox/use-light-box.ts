@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import type { Slide, SlideImage, SlideVideo } from 'yet-another-react-lightbox';
+import type { Slide } from 'yet-another-react-lightbox';
 
 import type { UseLightBoxReturn } from './types';
 
@@ -13,9 +13,7 @@ export function useLightBox(slides: Slide[]): UseLightBoxReturn {
   const handleOpen = useCallback(
     (slideUrl: string) => {
       const slideIndex = slides.findIndex((slide) =>
-        slide.type === 'video'
-          ? (slide as SlideVideo).poster === slideUrl
-          : (slide as SlideImage).src === slideUrl
+        slide.type === 'video' ? slide.poster === slideUrl : slide.src === slideUrl
       );
 
       setSelected(slideIndex);

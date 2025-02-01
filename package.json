@@ -1,7 +1,7 @@
 {
   "name": "kimi-theme",
   "author": "KimiStores",
-  "version": "0.0.38",
+  "version": "0.0.39",
   "description": "Kimi UI Theme",
   "private": false,
   "license": "MIT",
@@ -193,7 +193,7 @@
     "stylis-plugin-rtl": "^2.1.1",
     "swr": "^2.2.5",
     "turndown": "^7.2.0",
-    "yet-another-react-lightbox": "^3.20.0",
+    "yet-another-react-lightbox": "^3.21.7",
     "zod": "^3.23.8"
   },
   "devDependencies": {
