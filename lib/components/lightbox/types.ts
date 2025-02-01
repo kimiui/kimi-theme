@@ -1,4 +1,4 @@
-import type { Slide as SlideType, LightboxExternalProps } from 'yet-another-react-lightbox';
+import type { SlideImage, SlideVideo, LightboxExternalProps } from 'yet-another-react-lightbox';
 // ----------------------------------------------------------------------
 
 export type LightBoxProps = LightboxExternalProps & {
@@ -20,4 +20,4 @@ export type UseLightBoxReturn = {
   setSelected: React.Dispatch<React.SetStateAction<number>>;
 };
 
-export type Slide = SlideType;
+export type Slide = SlideImage | SlideVideo;
