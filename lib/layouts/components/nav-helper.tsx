@@ -2,33 +2,29 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { Fab, Link } from '@mui/material';
 import { motion as m } from 'motion/react';
 import Typography from '@mui/material/Typography';
 import type { StackProps } from '@mui/material/Stack';
 import { alpha as hexAlpha } from '@mui/material/styles';
 
+import { Iconify } from 'lib/components';
 import { varAlpha, bgGradient } from 'lib/theme/styles';
 
 // ----------------------------------------------------------------------
 
 export function NavHelper({ sx, ...other }: StackProps) {
   return (
-    <Stack sx={{ px: 2, py: 5, textAlign: 'center', ...sx }} {...other}>
-      <Stack alignItems="center">
-        <Stack spacing={0.5} sx={{ mb: 2, mt: 1.5, width: 1, maxWidth: 150 }}>
-          <Typography variant="body2">Need help, Please check our docs</Typography>
-
-          <Button
-            href="https://docs.kimistores.com"
-            target="_blank"
-            variant="contained"
-            size="small"
-            color="primary"
-          >
-            Document
-          </Button>
-        </Stack>
-      </Stack>
+    <Stack sx={{ p: 2, textAlign: 'center', ...sx }} {...other}>
+      <Fab size="small" color="secondary" aria-label="add" variant="extended">
+        <Iconify icon="bi:question-circle" />
+        <Typography variant="body2">
+          Need help? Check our{' '}
+          <Link href="https://docs.kimistores.com" target="_blank">
+            docs
+          </Link>
+        </Typography>
+      </Fab>
     </Stack>
   );
 }

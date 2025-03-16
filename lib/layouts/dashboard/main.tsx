@@ -62,7 +62,6 @@ export function DashboardContent({
         flexDirection: 'column',
         pt: 'var(--layout-dashboard-content-pt)',
         pb: 'var(--layout-dashboard-content-pb)',
-        backgroundColor: theme.palette.background.neutral,
         [theme.breakpoints.up(layoutQuery)]: {
           px: 'var(--layout-dashboard-content-px)',
         },

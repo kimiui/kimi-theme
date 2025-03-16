@@ -205,7 +205,12 @@ export function DashboardLayout({ sx, children, data, slotProps }: Readonly<Dash
                       <Logo />
                     </Box>
                   ),
-                bottom: 'bottom' in (data?.sidebar ?? {}) ? data?.sidebar?.bottom : <NavHelper />,
+                bottom:
+                  'bottom' in (data?.sidebar ?? {}) ? (
+                    data?.sidebar?.bottom
+                  ) : (
+                    <NavHelper sx={{ position: 'absolute', bottom: 0 }} />
+                  ),
                 ...slotProps?.sidebar,
               }}
             />
