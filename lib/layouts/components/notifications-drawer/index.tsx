@@ -18,7 +18,6 @@ import type { IconButtonProps } from '@mui/material/IconButton';
 import { Label } from 'lib/components/label';
 import { Iconify } from 'lib/components/iconify';
 import { varHover } from 'lib/components/animate';
-import { Scrollbar } from 'lib/components/scrollbar';
 import { CustomTabs } from 'lib/components/custom-tabs';
 
 import { NotificationItem } from './notification-item';
@@ -106,15 +105,13 @@ export function NotificationsDrawer({ data = [], sx, ...other }: NotificationsDr
   );
 
   const renderList = (
-    <Scrollbar>
-      <Box component="ul">
-        {notifications?.map((notification) => (
-          <Box component="li" key={notification.id} sx={{ display: 'flex' }}>
-            <NotificationItem notification={notification} />
-          </Box>
-        ))}
-      </Box>
-    </Scrollbar>
+    <Box component="ul">
+      {notifications?.map((notification) => (
+        <Box component="li" key={notification.id} sx={{ display: 'flex' }}>
+          <NotificationItem notification={notification} />
+        </Box>
+      ))}
+    </Box>
   );
 
   return (

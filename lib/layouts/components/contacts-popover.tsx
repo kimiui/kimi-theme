@@ -10,9 +10,7 @@ import type { IconButtonProps } from '@mui/material/IconButton';
 
 import { fToNow } from 'lib/utils/format-time';
 import { varHover } from 'lib/components/animate';
-import { Scrollbar } from 'lib/components/scrollbar';
 import { usePopover, CustomPopover } from 'lib/components/custom-popover';
-
 // ----------------------------------------------------------------------
 
 export type ContactsPopoverProps = IconButtonProps & {
@@ -62,33 +60,32 @@ export function ContactsPopover({ data = [], sx, ...other }: ContactsPopoverProp
         slotProps={{
           arrow: { offset: 20 },
         }}
+        sx={{ maxHeight: 320 }}
       >
         <Typography variant="h6" sx={{ p: 1.5 }}>
           Contacts <span>({data.length})</span>
         </Typography>
 
-        <Scrollbar sx={{ height: 320, width: 320 }}>
-          {data.map((contact) => (
-            <MenuItem key={contact.id} sx={{ p: 1 }}>
-              <Badge
-                variant={contact.status as 'alway' | 'online' | 'busy' | 'offline'}
-                anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-                sx={{ mr: 2 }}
-              >
-                <Avatar alt={contact.name} src={contact.avatarUrl} />
-              </Badge>
+        {data.map((contact) => (
+          <MenuItem key={contact.id} sx={{ p: 1 }}>
+            <Badge
+              variant={contact.status as 'alway' | 'online' | 'busy' | 'offline'}
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+              sx={{ mr: 2 }}
+            >
+              <Avatar alt={contact.name} src={contact.avatarUrl} />
+            </Badge>
 
-              <ListItemText
-                primary={contact.name}
-                secondary={contact.status === 'offline' ? fToNow(contact.lastActivity) : ''}
-                slotProps={{
-                  primary: { typography: 'subtitle2' },
-                  secondary: { typography: 'caption', color: 'text.disabled' },
-                }}
-              />
-            </MenuItem>
-          ))}
-        </Scrollbar>
+            <ListItemText
+              primary={contact.name}
+              secondary={contact.status === 'offline' ? fToNow(contact.lastActivity) : ''}
+              slotProps={{
+                primary: { typography: 'subtitle2' },
+                secondary: { typography: 'caption', color: 'text.disabled' },
+              }}
+            />
+          </MenuItem>
+        ))}
       </CustomPopover>
     </>
   );

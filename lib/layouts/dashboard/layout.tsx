@@ -101,11 +101,11 @@ export function DashboardLayout({ sx, children, data, slotProps }: Readonly<Dash
             }}
             slotsDisplay={{
               signIn: false,
-              purchase: false,
-              helpLink: false,
-              workspaces: false,
-              contacts: false,
-              localization: false,
+              purchase: true,
+              helpLink: true,
+              workspaces: true,
+              contacts: true,
+              localization: true,
               ...slotProps?.header?.slotsDisplay,
             }}
             slots={{
@@ -205,12 +205,7 @@ export function DashboardLayout({ sx, children, data, slotProps }: Readonly<Dash
                       <Logo />
                     </Box>
                   ),
-                bottom:
-                  'bottom' in (data?.sidebar ?? {}) ? (
-                    data?.sidebar?.bottom
-                  ) : (
-                    <NavHelper sx={{ position: 'absolute', bottom: 0 }} />
-                  ),
+                bottom: 'bottom' in (data?.sidebar ?? {}) ? data?.sidebar?.bottom : null,
                 ...slotProps?.sidebar,
               }}
             />
@@ -248,6 +243,7 @@ export function DashboardLayout({ sx, children, data, slotProps }: Readonly<Dash
         }}
       >
         <Main isNavHorizontal={isNavHorizontal}>{children}</Main>
+        <NavHelper sx={{ position: 'fixed', bottom: 10, right: 10 }} />
       </LayoutSection>
     </>
   );

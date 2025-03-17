@@ -7,8 +7,6 @@ import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import { useState, useEffect, useCallback, cloneElement } from 'react';
 
-import { Scrollbar } from 'lib/components/scrollbar';
-
 import { NavList } from './nav-list';
 import { NavUl } from '../../nav-section';
 import { megaMenuClasses } from '../classes';
@@ -93,21 +91,19 @@ export function MegaMenuMobile({
       >
         {slots?.topArea}
 
-        <Scrollbar fillContent>
-          <Stack component="nav" className={megaMenuClasses.mobile.root} sx={sx} {...other}>
-            <NavUl sx={{ gap: 'var(--nav-item-gap)' }}>
-              {data.map((list) => (
-                <NavList
-                  key={list.title}
-                  data={list}
-                  render={render}
-                  cssVars={cssVars}
-                  slotProps={slotProps}
-                />
-              ))}
-            </NavUl>
-          </Stack>
-        </Scrollbar>
+        <Stack component="nav" className={megaMenuClasses.mobile.root} sx={sx} {...other}>
+          <NavUl sx={{ gap: 'var(--nav-item-gap)' }}>
+            {data.map((list) => (
+              <NavList
+                key={list.title}
+                data={list}
+                render={render}
+                cssVars={cssVars}
+                slotProps={slotProps}
+              />
+            ))}
+          </NavUl>
+        </Stack>
 
         {slots?.bottomArea}
       </Drawer>

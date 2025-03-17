@@ -9,7 +9,6 @@ import { useState, useEffect, useCallback } from 'react';
 
 import { useActiveLink } from 'lib/hooks';
 import { isExternalLink } from 'lib/utils';
-import { Scrollbar } from 'lib/components/scrollbar';
 
 import { NavItem } from './nav-item';
 import { Iconify } from '../../iconify';
@@ -95,13 +94,11 @@ export function NavList({ data, render, cssVars, slotProps }: Readonly<NavListPr
 
           <Divider />
 
-          <Scrollbar fillContent sx={{ p: 2 }}>
-            <Stack component="nav" spacing={4}>
-              <NavUl sx={{ gap: 3 }}>
-                <NavSubList data={data.children} slotProps={slotProps} />
-              </NavUl>
-            </Stack>
-          </Scrollbar>
+          <Stack component="nav" spacing={4}>
+            <NavUl sx={{ gap: 3 }}>
+              <NavSubList data={data.children} slotProps={slotProps} />
+            </NavUl>
+          </Stack>
         </Drawer>
       </NavLi>
     );

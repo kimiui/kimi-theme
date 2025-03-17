@@ -3,7 +3,6 @@ import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 
-import { Scrollbar } from 'lib/components/scrollbar';
 import { TableHeadCustom } from 'lib/components/table';
 
 // ----------------------------------------------------------------------
@@ -38,22 +37,20 @@ const TABLE_HEAD = [
 
 export function BasicTable() {
   return (
-    <Scrollbar>
-      <Table sx={{ minWidth: 800 }}>
-        <TableHeadCustom headLabel={TABLE_HEAD} />
+    <Table sx={{ minWidth: 800 }}>
+      <TableHeadCustom headLabel={TABLE_HEAD} />
 
-        <TableBody>
-          {TABLE_DATA.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell>{row.name}</TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </Scrollbar>
+      <TableBody>
+        {TABLE_DATA.map((row) => (
+          <TableRow key={row.name}>
+            <TableCell>{row.name}</TableCell>
+            <TableCell align="right">{row.calories}</TableCell>
+            <TableCell align="right">{row.fat}</TableCell>
+            <TableCell align="right">{row.carbs}</TableCell>
+            <TableCell align="right">{row.protein}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
   );
 }

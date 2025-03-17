@@ -18,7 +18,6 @@ import { varAlpha } from 'lib/theme/styles';
 import { useEventListener } from 'lib/hooks';
 import { Label } from 'lib/components/label';
 import { Iconify } from 'lib/components/iconify';
-import { Scrollbar } from 'lib/components/scrollbar';
 import { SearchNotFound } from 'lib/components/search-not-found';
 import type { NavSectionProps } from 'lib/components/nav-section';
 
@@ -176,11 +175,7 @@ export function Searchbar({ data: navItems = [], sx, ...other }: SearchbarProps)
           />
         </Box>
 
-        {notFound ? (
-          <SearchNotFound query={searchQuery} sx={{ py: 15 }} />
-        ) : (
-          <Scrollbar sx={{ px: 3, pb: 3, pt: 2, height: 400 }}>{renderItems()}</Scrollbar>
-        )}
+        {notFound ? <SearchNotFound query={searchQuery} sx={{ py: 15 }} /> : renderItems()}
       </Dialog>
     </>
   );

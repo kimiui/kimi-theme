@@ -17,7 +17,6 @@ import { paths } from 'lib/routes/paths';
 import { varAlpha } from 'lib/theme/styles';
 import { Label } from 'lib/components/label';
 import { Iconify } from 'lib/components/iconify';
-import { Scrollbar } from 'lib/components/scrollbar';
 import { AnimateAvatar } from 'lib/components/animate';
 
 import { UpgradeBlock } from './nav-helper';
@@ -104,89 +103,87 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
           <Iconify icon="mingcute:close-line" />
         </IconButton>
 
-        <Scrollbar>
-          <Stack alignItems="center" sx={{ pt: 8 }}>
-            {renderAvatar}
+        <Stack alignItems="center" sx={{ pt: 8 }}>
+          {renderAvatar}
 
-            <Typography variant="subtitle1" noWrap sx={{ mt: 2 }}>
-              {user?.displayName}
-            </Typography>
+          <Typography variant="subtitle1" noWrap sx={{ mt: 2 }}>
+            {user?.displayName}
+          </Typography>
 
-            <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }} noWrap>
-              {user?.email}
-            </Typography>
-          </Stack>
+          <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }} noWrap>
+            {user?.email}
+          </Typography>
+        </Stack>
 
-          <Stack direction="row" spacing={1} flexWrap="wrap" justifyContent="center" sx={{ p: 3 }}>
-            {[...Array(3)].map((_, index) => (
-              <Tooltip
-                key={_mock.fullName(index + 1)}
-                title={`Switch to: ${_mock.fullName(index + 1)}`}
-              >
-                <Avatar
-                  alt={_mock.fullName(index + 1)}
-                  src={_mock.image.avatar(index + 1)}
-                  onClick={() => {}}
-                />
-              </Tooltip>
-            ))}
+        <Stack direction="row" spacing={1} flexWrap="wrap" justifyContent="center" sx={{ p: 3 }}>
+          {[...Array(3)].map((_, index) => (
+            <Tooltip
+              key={_mock.fullName(index + 1)}
+              title={`Switch to: ${_mock.fullName(index + 1)}`}
+            >
+              <Avatar
+                alt={_mock.fullName(index + 1)}
+                src={_mock.image.avatar(index + 1)}
+                onClick={() => {}}
+              />
+            </Tooltip>
+          ))}
 
-            <Tooltip title="Add account">
-              <IconButton
+          <Tooltip title="Add account">
+            <IconButton
+              sx={{
+                bgcolor: varAlpha(theme.vars.palette.grey['500Channel'], 0.08),
+                border: `dashed 1px ${varAlpha(theme.vars.palette.grey['500Channel'], 0.32)}`,
+              }}
+            >
+              <Iconify icon="mingcute:add-line" />
+            </IconButton>
+          </Tooltip>
+        </Stack>
+
+        <Stack
+          sx={{
+            py: 3,
+            px: 2.5,
+            borderTop: `dashed 1px ${theme.vars.palette.divider}`,
+            borderBottom: `dashed 1px ${theme.vars.palette.divider}`,
+          }}
+        >
+          {data.map((option) => {
+            const rootLabel = pathname.includes('/dashboard') ? 'Home' : 'Dashboard';
+
+            const rootHref = pathname.includes('/dashboard') ? '/' : paths.dashboard.root;
+
+            return (
+              <MenuItem
+                key={option.label}
+                onClick={() => handleClickItem(option.label === 'Home' ? rootHref : option.href)}
                 sx={{
-                  bgcolor: varAlpha(theme.vars.palette.grey['500Channel'], 0.08),
-                  border: `dashed 1px ${varAlpha(theme.vars.palette.grey['500Channel'], 0.32)}`,
+                  py: 1,
+                  color: 'text.secondary',
+                  '& svg': { width: 24, height: 24 },
+                  '&:hover': { color: 'text.primary' },
                 }}
               >
-                <Iconify icon="mingcute:add-line" />
-              </IconButton>
-            </Tooltip>
-          </Stack>
+                {option.icon}
 
-          <Stack
-            sx={{
-              py: 3,
-              px: 2.5,
-              borderTop: `dashed 1px ${theme.vars.palette.divider}`,
-              borderBottom: `dashed 1px ${theme.vars.palette.divider}`,
-            }}
-          >
-            {data.map((option) => {
-              const rootLabel = pathname.includes('/dashboard') ? 'Home' : 'Dashboard';
+                <Box component="span" sx={{ ml: 2 }}>
+                  {option.label === 'Home' ? rootLabel : option.label}
+                </Box>
 
-              const rootHref = pathname.includes('/dashboard') ? '/' : paths.dashboard.root;
+                {option.info && (
+                  <Label color="error" sx={{ ml: 1 }}>
+                    {option.info}
+                  </Label>
+                )}
+              </MenuItem>
+            );
+          })}
+        </Stack>
 
-              return (
-                <MenuItem
-                  key={option.label}
-                  onClick={() => handleClickItem(option.label === 'Home' ? rootHref : option.href)}
-                  sx={{
-                    py: 1,
-                    color: 'text.secondary',
-                    '& svg': { width: 24, height: 24 },
-                    '&:hover': { color: 'text.primary' },
-                  }}
-                >
-                  {option.icon}
-
-                  <Box component="span" sx={{ ml: 2 }}>
-                    {option.label === 'Home' ? rootLabel : option.label}
-                  </Box>
-
-                  {option.info && (
-                    <Label color="error" sx={{ ml: 1 }}>
-                      {option.info}
-                    </Label>
-                  )}
-                </MenuItem>
-              );
-            })}
-          </Stack>
-
-          <Box sx={{ px: 2.5, py: 3 }}>
-            <UpgradeBlock />
-          </Box>
-        </Scrollbar>
+        <Box sx={{ px: 2.5, py: 3 }}>
+          <UpgradeBlock />
+        </Box>
 
         <Box sx={{ p: 2.5 }}>
           <SignOutButton onClose={handleCloseDrawer} />

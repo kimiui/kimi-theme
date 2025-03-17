@@ -16,9 +16,28 @@ import { varAlpha, bgGradient } from 'lib/theme/styles';
 export function NavHelper({ sx, ...other }: StackProps) {
   return (
     <Stack sx={{ p: 2, textAlign: 'center', ...sx }} {...other}>
-      <Fab size="small" color="secondary" aria-label="add" variant="extended">
-        <Iconify icon="bi:question-circle" />
-        <Typography variant="body2">
+      <Fab
+        size="medium"
+        color="secondary"
+        aria-label="add"
+        variant="extended"
+        sx={{ overflow: 'hidden', gap: 0 }}
+      >
+        <Iconify icon="ic:round-question-mark" />
+        <Typography
+          variant="body2"
+          className="text"
+          sx={{
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            display: 'inline-block',
+            width: 0,
+            transition: (theme) => theme.transitions.create('width', { duration: 500 }),
+            '.MuiFab-root:hover &': {
+              width: '180px',
+            },
+          }}
+        >
           Need help? Check our{' '}
           <Link href="https://docs.kimistores.com" target="_blank">
             docs

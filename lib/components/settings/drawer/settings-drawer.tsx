@@ -14,7 +14,6 @@ import { paper, varAlpha } from 'lib/theme/styles';
 import { Iconify } from '../../iconify';
 import { BaseOption } from './base-option';
 import { NavOptions } from './nav-options';
-import { Scrollbar } from '../../scrollbar';
 import { useSettingsContext } from '../context';
 import { defaultSettings } from '../config-settings';
 import { FullScreenButton } from './fullscreen-button';
@@ -126,15 +125,13 @@ export function SettingsDrawer({
     >
       {renderHead}
 
-      <Scrollbar>
-        <Stack spacing={6} sx={{ px: 2.5, pb: 5 }}>
-          <Box gap={2} display="grid" gridTemplateColumns="repeat(2, 1fr)">
-            {!hideColorScheme && renderMode}
-            {!hideDirection && renderRTL}
-          </Box>
-          {!(hideNavLayout && hideNavColor) && renderNav}
-        </Stack>
-      </Scrollbar>
+      <Stack spacing={6} sx={{ px: 2.5, pb: 5 }}>
+        <Box gap={2} display="grid" gridTemplateColumns="repeat(2, 1fr)">
+          {!hideColorScheme && renderMode}
+          {!hideDirection && renderRTL}
+        </Box>
+        {!(hideNavLayout && hideNavColor) && renderNav}
+      </Stack>
     </Drawer>
   );
 }

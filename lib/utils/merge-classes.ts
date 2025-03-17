@@ -1,11 +1,13 @@
 export function mergeClasses(
   baseClasses: (string | undefined | null)[],
-  conditionalClasses: { [key: string]: boolean }
+  conditionalClasses?: { [key: string]: boolean }
 ): string {
   const base = baseClasses.filter(Boolean).join(' ');
-  const conditional = Object.keys(conditionalClasses)
-    .filter((key) => conditionalClasses[key])
-    .join(' ');
+  const conditional = conditionalClasses
+    ? Object.keys(conditionalClasses)
+        .filter((key) => conditionalClasses[key])
+        .join(' ')
+    : '';
 
   return [base, conditional].filter(Boolean).join(' ');
 }

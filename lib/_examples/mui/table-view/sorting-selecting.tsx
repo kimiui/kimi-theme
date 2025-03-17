@@ -13,7 +13,6 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 
 import { Iconify } from 'lib/components/iconify';
-import { Scrollbar } from 'lib/components/scrollbar';
 import {
   useTable,
   emptyRows,
@@ -115,54 +114,52 @@ export function SortingSelectingTable() {
           }
         />
 
-        <Scrollbar>
-          <Table size={table.dense ? 'small' : 'medium'} sx={{ minWidth: 800 }}>
-            <TableHeadCustom
-              order={table.order}
-              orderBy={table.orderBy}
-              headLabel={TABLE_HEAD}
-              rowCount={tableData.length}
-              numSelected={table.selected.length}
-              onSort={table.onSort}
-              onSelectAllRows={(checked) =>
-                table.onSelectAllRows(
-                  checked,
-                  tableData.map((row) => row.name)
-                )
-              }
+        <Table size={table.dense ? 'small' : 'medium'} sx={{ minWidth: 800 }}>
+          <TableHeadCustom
+            order={table.order}
+            orderBy={table.orderBy}
+            headLabel={TABLE_HEAD}
+            rowCount={tableData.length}
+            numSelected={table.selected.length}
+            onSort={table.onSort}
+            onSelectAllRows={(checked) =>
+              table.onSelectAllRows(
+                checked,
+                tableData.map((row) => row.name)
+              )
+            }
+          />
+
+          <TableBody>
+            {dataFiltered
+              .slice(
+                table.page * table.rowsPerPage,
+                table.page * table.rowsPerPage + table.rowsPerPage
+              )
+              .map((row) => (
+                <TableRow
+                  hover
+                  key={row.name}
+                  onClick={() => table.onSelectRow(row.name)}
+                  selected={table.selected.includes(row.name)}
+                >
+                  <TableCell padding="checkbox">
+                    <Checkbox checked={table.selected.includes(row.name)} />
+                  </TableCell>
+                  <TableCell> {row.name} </TableCell>
+                  <TableCell align="center">{row.calories}</TableCell>
+                  <TableCell align="center">{row.fat}</TableCell>
+                  <TableCell align="center">{row.carbs}</TableCell>
+                  <TableCell align="center">{row.protein}</TableCell>
+                </TableRow>
+              ))}
+
+            <TableEmptyRows
+              height={table.dense ? 34 : 34 + 20}
+              emptyRows={emptyRows(table.page, table.rowsPerPage, tableData.length)}
             />
-
-            <TableBody>
-              {dataFiltered
-                .slice(
-                  table.page * table.rowsPerPage,
-                  table.page * table.rowsPerPage + table.rowsPerPage
-                )
-                .map((row) => (
-                  <TableRow
-                    hover
-                    key={row.name}
-                    onClick={() => table.onSelectRow(row.name)}
-                    selected={table.selected.includes(row.name)}
-                  >
-                    <TableCell padding="checkbox">
-                      <Checkbox checked={table.selected.includes(row.name)} />
-                    </TableCell>
-                    <TableCell> {row.name} </TableCell>
-                    <TableCell align="center">{row.calories}</TableCell>
-                    <TableCell align="center">{row.fat}</TableCell>
-                    <TableCell align="center">{row.carbs}</TableCell>
-                    <TableCell align="center">{row.protein}</TableCell>
-                  </TableRow>
-                ))}
-
-              <TableEmptyRows
-                height={table.dense ? 34 : 34 + 20}
-                emptyRows={emptyRows(table.page, table.rowsPerPage, tableData.length)}
-              />
-            </TableBody>
-          </Table>
-        </Scrollbar>
+          </TableBody>
+        </Table>
       </Box>
 
       <TablePaginationCustom

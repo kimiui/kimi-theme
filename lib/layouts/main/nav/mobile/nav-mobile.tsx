@@ -6,7 +6,6 @@ import Drawer from '@mui/material/Drawer';
 
 import { Logo } from 'lib/components/logo';
 import { NavUl } from 'lib/components/nav-section';
-import { Scrollbar } from 'lib/components/scrollbar';
 
 import { NavList } from './nav-mobile-list';
 
@@ -52,15 +51,13 @@ export function NavMobile({ data, open, onClose, slots, sx }: NavMobileProps) {
         </Box>
       )}
 
-      <Scrollbar fillContent>
-        <Box component="nav" display="flex" flexDirection="column" flex="1 1 auto" sx={{ pb: 3 }}>
-          <NavUl>
-            {data.map((list) => (
-              <NavList key={list.title} data={list} />
-            ))}
-          </NavUl>
-        </Box>
-      </Scrollbar>
+      <Box component="nav" display="flex" flexDirection="column" flex="1 1 auto" sx={{ pb: 3 }}>
+        <NavUl>
+          {data.map((list) => (
+            <NavList key={list.title} data={list} />
+          ))}
+        </NavUl>
+      </Box>
 
       {slots?.bottomArea}
     </Drawer>

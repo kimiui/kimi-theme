@@ -12,7 +12,6 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 
 import { Iconify } from 'lib/components/iconify';
-import { Scrollbar } from 'lib/components/scrollbar';
 
 import { createData } from './utils';
 
@@ -28,26 +27,24 @@ const TABLE_DATA = [
 
 export function CollapsibleTable() {
   return (
-    <Scrollbar>
-      <Table sx={{ minWidth: 800 }}>
-        <TableHead>
-          <TableRow>
-            <TableCell />
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
-          </TableRow>
-        </TableHead>
+    <Table sx={{ minWidth: 800 }}>
+      <TableHead>
+        <TableRow>
+          <TableCell />
+          <TableCell>Dessert (100g serving)</TableCell>
+          <TableCell align="right">Calories</TableCell>
+          <TableCell align="right">Fat&nbsp;(g)</TableCell>
+          <TableCell align="right">Carbs&nbsp;(g)</TableCell>
+          <TableCell align="right">Protein&nbsp;(g)</TableCell>
+        </TableRow>
+      </TableHead>
 
-        <TableBody>
-          {TABLE_DATA.map((row) => (
-            <CollapsibleTableRow key={row.name} row={row} />
-          ))}
-        </TableBody>
-      </Table>
-    </Scrollbar>
+      <TableBody>
+        {TABLE_DATA.map((row) => (
+          <CollapsibleTableRow key={row.name} row={row} />
+        ))}
+      </TableBody>
+    </Table>
   );
 }
 

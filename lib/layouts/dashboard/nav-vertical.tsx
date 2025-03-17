@@ -2,7 +2,6 @@ import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import type { Breakpoint } from '@mui/material/styles';
 
-import { Scrollbar } from 'lib/components/scrollbar';
 import { varAlpha, hideScrollY } from 'lib/theme/styles';
 import type { NavSectionProps } from 'lib/components/nav-section';
 import { NavSectionMini, NavSectionVertical } from 'lib/components/nav-section';
@@ -38,14 +37,12 @@ export function NavVertical({
     <>
       {slotProps?.top}
 
-      <Scrollbar fillContent sx={{ mb: 5 }}>
-        <NavSectionVertical
-          data={data}
-          sx={{ px: 2, flex: '1 1 auto' }}
-          slotProps={slotProps}
-          {...other}
-        />
-      </Scrollbar>
+      <NavSectionVertical
+        data={data}
+        sx={{ px: 2, flex: '1 1 auto' }}
+        slotProps={slotProps}
+        {...other}
+      />
 
       {slotProps?.bottom}
     </>

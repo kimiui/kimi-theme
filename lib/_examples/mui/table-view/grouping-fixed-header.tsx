@@ -6,7 +6,6 @@ import TableHead from '@mui/material/TableHead';
 import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 
-import { Scrollbar } from 'lib/components/scrollbar';
 import { useTable, TablePaginationCustom } from 'lib/components/table';
 
 // ----------------------------------------------------------------------
@@ -81,65 +80,63 @@ export function GroupingFixedHeaderTable() {
 
   return (
     <>
-      <Scrollbar sx={{ maxHeight: 400 }}>
-        <Table stickyHeader sx={{ minWidth: 800 }}>
-          <TableHead>
-            <TableRow>
+      <Table stickyHeader sx={{ minWidth: 800 }}>
+        <TableHead>
+          <TableRow>
+            <TableCell
+              align="center"
+              colSpan={2}
+              sx={{
+                borderBottomColor: 'transparent',
+                background: (theme) => theme.vars.palette.background.paper,
+              }}
+            >
+              Country
+            </TableCell>
+            <TableCell
+              align="center"
+              colSpan={3}
+              sx={{
+                borderBottomColor: 'transparent',
+                background: (theme) => theme.vars.palette.background.paper,
+              }}
+            >
+              Details
+            </TableCell>
+          </TableRow>
+
+          <TableRow>
+            {COLUMNS.map((column) => (
               <TableCell
-                align="center"
-                colSpan={2}
-                sx={{
-                  borderBottomColor: 'transparent',
-                  background: (theme) => theme.vars.palette.background.paper,
-                }}
+                key={column.id}
+                align={column.align}
+                style={{ top: 56, minWidth: column.minWidth }}
               >
-                Country
+                {column.label}
               </TableCell>
-              <TableCell
-                align="center"
-                colSpan={3}
-                sx={{
-                  borderBottomColor: 'transparent',
-                  background: (theme) => theme.vars.palette.background.paper,
-                }}
-              >
-                Details
-              </TableCell>
-            </TableRow>
-
-            <TableRow>
-              {COLUMNS.map((column) => (
-                <TableCell
-                  key={column.id}
-                  align={column.align}
-                  style={{ top: 56, minWidth: column.minWidth }}
-                >
-                  {column.label}
-                </TableCell>
-              ))}
-            </TableRow>
-          </TableHead>
-
-          <TableBody>
-            {TABLE_DATA.slice(
-              table.page * table.rowsPerPage,
-              table.page * table.rowsPerPage + table.rowsPerPage
-            ).map((row) => (
-              <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
-                {COLUMNS.map((column) => {
-                  const value = row[column.id];
-
-                  return (
-                    <TableCell key={column.id} align={column.align}>
-                      {column.format && typeof value === 'number' ? column.format(value) : value}
-                    </TableCell>
-                  );
-                })}
-              </TableRow>
             ))}
-          </TableBody>
-        </Table>
-      </Scrollbar>
+          </TableRow>
+        </TableHead>
+
+        <TableBody>
+          {TABLE_DATA.slice(
+            table.page * table.rowsPerPage,
+            table.page * table.rowsPerPage + table.rowsPerPage
+          ).map((row) => (
+            <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+              {COLUMNS.map((column) => {
+                const value = row[column.id];
+
+                return (
+                  <TableCell key={column.id} align={column.align}>
+                    {column.format && typeof value === 'number' ? column.format(value) : value}
+                  </TableCell>
+                );
+              })}
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
 
       <TablePaginationCustom
         page={table.page}

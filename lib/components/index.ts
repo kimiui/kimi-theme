@@ -14,7 +14,6 @@ export * from './markdown';
 export * from './snackbar';
 export * from './hook-form';
 export * from './mega-menu';
-export * from './scrollbar';
 export * from './svg-color';
 export * from './color-utils';
 export * from './custom-tabs';
