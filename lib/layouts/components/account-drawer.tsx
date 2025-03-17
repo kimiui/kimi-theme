@@ -10,19 +10,22 @@ import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
+import { Button, Popover, Divider } from '@mui/material';
 import type { IconButtonProps } from '@mui/material/IconButton';
 
-import { _mock } from 'lib/_mock';
 import { paths } from 'lib/routes/paths';
 import { varAlpha } from 'lib/theme/styles';
 import { Label } from 'lib/components/label';
+import { ACCOUNTS } from 'lib/_mock/accounts';
 import { Iconify } from 'lib/components/iconify';
 import { AnimateAvatar } from 'lib/components/animate';
+import { usePopover } from 'lib/components/custom-popover';
+import { ThemeModeToggle } from 'lib/components/theme-mode-toggle';
+import { FullScreenButton } from 'lib/components/settings/drawer/fullscreen-button';
 
 import { UpgradeBlock } from './nav-helper';
 import { AccountButton } from './account-button';
 import { SignOutButton } from './sign-out-button';
-
 // ----------------------------------------------------------------------
 
 export type AccountDrawerProps = IconButtonProps & {
@@ -38,8 +41,16 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
   const theme = useTheme();
 
   const { pathname } = window.location;
+  const mediaQuery = 'sm';
 
-  const { user } = _mock;
+  const {
+    open: openPopover,
+    anchorEl,
+    onClose: onClosePopover,
+    onOpen: onOpenPopover,
+  } = usePopover();
+
+  const [user, setUser] = useState(ACCOUNTS[0]);
 
   const [open, setOpen] = useState(false);
 
@@ -63,7 +74,7 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
     <AnimateAvatar
       width={96}
       slotProps={{
-        avatar: { src: user?.photoURL, alt: user?.displayName },
+        avatar: { src: user?.avatar, alt: user?.name },
         overlay: {
           border: 2,
           spacing: 3,
@@ -74,7 +85,7 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
         },
       }}
     >
-      {user?.displayName?.charAt(0).toUpperCase()}
+      {user?.name?.charAt(0).toUpperCase()}
     </AnimateAvatar>
   );
 
@@ -83,8 +94,8 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
       <AccountButton
         open={open}
         onClick={handleOpenDrawer}
-        photoURL={user?.photoURL}
-        displayName={user?.displayName}
+        photoURL={user?.avatar}
+        displayName={user?.name}
         sx={sx}
         {...other}
       />
@@ -96,18 +107,34 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
         slotProps={{ backdrop: { invisible: true } }}
         PaperProps={{ sx: { width: 320 } }}
       >
-        <IconButton
-          onClick={handleCloseDrawer}
-          sx={{ top: 12, left: 12, zIndex: 9, position: 'absolute' }}
+        <Stack
+          direction="row"
+          justifyContent="flex-end"
+          spacing={0}
+          sx={{
+            p: 1,
+            position: 'absolute',
+            top: 0,
+            right: 10,
+            zIndex: 9,
+            backdropFilter: 'blur(8px)',
+            left: 0,
+          }}
         >
-          <Iconify icon="mingcute:close-line" />
-        </IconButton>
+          <FullScreenButton />
+
+          <ThemeModeToggle />
+
+          <IconButton onClick={handleCloseDrawer}>
+            <Iconify icon="mingcute:close-line" />
+          </IconButton>
+        </Stack>
 
         <Stack alignItems="center" sx={{ pt: 8 }}>
           {renderAvatar}
 
           <Typography variant="subtitle1" noWrap sx={{ mt: 2 }}>
-            {user?.displayName}
+            {user?.name}
           </Typography>
 
           <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }} noWrap>
@@ -115,31 +142,76 @@ export function AccountDrawer({ data = [], sx, ...other }: AccountDrawerProps) {
           </Typography>
         </Stack>
 
-        <Stack direction="row" spacing={1} flexWrap="wrap" justifyContent="center" sx={{ p: 3 }}>
-          {[...Array(3)].map((_, index) => (
-            <Tooltip
-              key={_mock.fullName(index + 1)}
-              title={`Switch to: ${_mock.fullName(index + 1)}`}
-            >
-              <Avatar
-                alt={_mock.fullName(index + 1)}
-                src={_mock.image.avatar(index + 1)}
-                onClick={() => {}}
-              />
-            </Tooltip>
-          ))}
+        <Box
+          sx={{
+            p: 3,
+            gap: 1,
+            flexWrap: 'wrap',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <Button
+            variant="outlined"
+            disableRipple
+            onClick={onOpenPopover}
+            fullWidth
+            sx={[
+              {
+                py: 1,
+                gap: { xs: 0.5, [mediaQuery]: 1 },
+              },
+            ]}
+          >
+            <Typography variant="body2" sx={{ flexGrow: 1 }}>
+              Show more accounts
+            </Typography>
 
-          <Tooltip title="Add account">
-            <IconButton
-              sx={{
-                bgcolor: varAlpha(theme.vars.palette.grey['500Channel'], 0.08),
-                border: `dashed 1px ${varAlpha(theme.vars.palette.grey['500Channel'], 0.32)}`,
-              }}
-            >
-              <Iconify icon="mingcute:add-line" />
-            </IconButton>
-          </Tooltip>
-        </Stack>
+            <Iconify width={16} icon="carbon:chevron-down" sx={{ color: 'text.disabled' }} />
+          </Button>
+
+          <Popover
+            open={openPopover}
+            anchorEl={anchorEl}
+            onClose={onClosePopover}
+            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+            slotProps={{ paper: { sx: { p: 1, width: 1, maxWidth: 280 } } }}
+          >
+            {ACCOUNTS.filter((a) => a.id !== user.id).map((account) => (
+              <Button
+                key={account.id}
+                fullWidth
+                onClick={() => {
+                  setUser(account);
+                  onClosePopover();
+                }}
+              >
+                <Avatar alt={account.name} src={account.avatar} />
+                <Box
+                  display="flex"
+                  flexDirection="column"
+                  alignItems="flex-start"
+                  sx={{ p: 1, flexGrow: 1 }}
+                >
+                  <Typography variant="body2" noWrap>
+                    {account.name}
+                  </Typography>
+                  <Typography variant="caption" noWrap>
+                    {account.email}
+                  </Typography>
+                </Box>
+              </Button>
+            ))}
+
+            <Divider sx={{ my: 1 }} />
+
+            <Tooltip title="Add account">
+              <Button variant="text" startIcon={<Iconify icon="mingcute:add-line" />} fullWidth>
+                Add another account
+              </Button>
+            </Tooltip>
+          </Popover>
+        </Box>
 
         <Stack
           sx={{

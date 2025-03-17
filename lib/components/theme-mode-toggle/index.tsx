@@ -18,12 +18,8 @@ export function ThemeModeToggle() {
 
   return (
     <IconButton
-      size="large"
+      size="medium"
       onClick={() => settings.onUpdateField('colorScheme', isLight ? 'dark' : 'light')}
-      sx={{
-        color: 'text.primary',
-        ...(isLight && { bgcolor: 'background.paper' }),
-      }}
     >
       {isLight ? <Iconify icon="line-md:moon-simple" /> : <Iconify icon="line-md:sunny" />}
     </IconButton>

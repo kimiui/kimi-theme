@@ -34,6 +34,7 @@ export function FullScreenButton() {
             }),
           },
         }}
+        size="medium"
       >
         <SvgColor
           src={`/assets/icons/setting/${fullscreen ? 'ic-exit-full-screen' : 'ic-full-screen'}.svg`}

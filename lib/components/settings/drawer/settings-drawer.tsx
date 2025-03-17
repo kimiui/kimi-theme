@@ -27,13 +27,12 @@ export function SettingsDrawer({
   hideNavColor,
   hideNavLayout,
   hideDirection,
-  hideColorScheme,
 }: Readonly<SettingsDrawerProps>) {
   const theme = useTheme();
 
   const settings = useSettingsContext();
 
-  const { mode, setMode } = useColorScheme();
+  const { setMode } = useColorScheme();
 
   const renderHead = (
     <Box display="flex" alignItems="center" sx={{ py: 2, pr: 1, pl: 2.5 }}>
@@ -62,18 +61,6 @@ export function SettingsDrawer({
         </IconButton>
       </Tooltip>
     </Box>
-  );
-
-  const renderMode = (
-    <BaseOption
-      label="Dark mode"
-      icon="moon"
-      selected={settings.colorScheme === 'dark'}
-      onClick={() => {
-        settings.onUpdateField('colorScheme', mode === 'light' ? 'dark' : 'light');
-        setMode(mode === 'light' ? 'dark' : 'light');
-      }}
-    />
   );
 
   const renderRTL = (
@@ -127,7 +114,6 @@ export function SettingsDrawer({
 
       <Stack spacing={6} sx={{ px: 2.5, pb: 5 }}>
         <Box gap={2} display="grid" gridTemplateColumns="repeat(2, 1fr)">
-          {!hideColorScheme && renderMode}
           {!hideDirection && renderRTL}
         </Box>
         {!(hideNavLayout && hideNavColor) && renderNav}
