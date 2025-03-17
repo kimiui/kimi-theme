@@ -8,8 +8,6 @@ import { Logo } from 'lib/components/logo';
 import { NavSectionVertical } from 'lib/components/nav-section';
 import type { NavSectionProps } from 'lib/components/nav-section';
 
-import { NavHelper } from '../components/nav-helper';
-
 // ----------------------------------------------------------------------
 
 type NavMobileProps = NavSectionProps & {
@@ -51,7 +49,6 @@ export function NavMobile({ data, open, onClose, slots, sx, ...other }: NavMobil
       )}
 
       <NavSectionVertical data={data} sx={{ px: 2, flex: '1 1 auto' }} {...other} />
-      <NavHelper />
 
       {slots?.bottomArea}
     </Drawer>
